@@ -17,14 +17,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261004-name-palette">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261004-horizontal-header">
+  <script src="script.js?v=20261004-header" defer></script>
   <title>Oluwaseun Omodele — Electrical Engineering</title>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header"><div class="nav-wrap">
-    <button id="menu-toggle" class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu <span aria-hidden="true">+</span></button>
+    <a class="site-brand" href="#top" aria-label="Oluwaseun Omodele, back to top">Oluwaseun Omodele</a>
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
     <nav id="site-nav" aria-label="Main navigation">
       <a href="#about">About</a><a href="#projects">Projects</a>
       <a href="https://github.com/ojomodel" target="_blank" rel="noopener noreferrer">GitHub <span class="external" aria-hidden="true">↗</span></a>
@@ -35,10 +36,14 @@
   <main id="main" class="page-shell">
     <section class="hero reveal" aria-labelledby="intro-title">
       <div class="hero-topline"><span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Electrical engineering</span><span class="edition">HOUSTON, TX / 2029</span></div>
+      <div class="hero-layout">
       <h1 id="intro-title">Oluwaseun<br><span>Omodele</span></h1>
+      <div class="hero-copy">
       <p class="hero-statement">Building robots from CAD to control.</p>
       <p class="hero-description">I’m an electrical engineering student at the University of Houston, Class of 2029. I bring mechanical design, embedded electronics, and software together to build physical systems—starting with a five-channel robot arm.</p>
       <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a></div>
+      </div>
+      </div>
       <div class="hero-footnote"><span>CAD <i aria-hidden="true">/</i> EMBEDDED SYSTEMS <i aria-hidden="true">/</i> ROBOTICS</span><a href="#about" aria-label="Scroll to about"><span aria-hidden="true">↓</span></a></div>
     </section>
     <section id="about" class="section" data-section aria-labelledby="about-title">
@@ -50,8 +55,11 @@
       <div class="section-heading reveal"><span class="section-number">02 / SELECTED WORK</span><h2 id="projects-title">Built beyond the screen.</h2><p>A closer look at the systems I’m putting together.</p></div>
       <article id="career-fair-robot" class="project" aria-labelledby="robot-title">
         <div class="project-top reveal"><span class="eyebrow">01 — ROBOTICS / EMBEDDED SYSTEMS</span><span class="project-year">2026</span></div>
+        <div class="project-layout">
+        <div class="project-copy">
         <h3 id="robot-title" class="project-title reveal">Career fair robot.<br><span>From design to motion.</span></h3>
         <p class="project-intro reveal">A printed arm with five servo channels, an ESP32 control bridge, and a Unity interface for joint control, inverse kinematics, and motion recording.</p>
+        </div>
         <div class="project-gallery reveal" data-gallery>
           <div class="gallery-tabs" aria-label="Robot arm project views">
             <button id="tab-design" type="button" data-gallery-tab aria-controls="panel-design">CAD assembly</button><button id="tab-wrist" type="button" data-gallery-tab aria-controls="panel-wrist">Wrist detail</button><button id="tab-unity" type="button" data-gallery-tab aria-controls="panel-unity">Control studio</button><button id="tab-build" type="button" data-gallery-tab aria-controls="panel-build">Physical build</button><button id="tab-enclosure" type="button" data-gallery-tab aria-controls="panel-enclosure">Enclosure</button>
@@ -62,6 +70,7 @@
           <figure id="panel-build" data-gallery-panel><div class="physical-stage"><div class="image-note" aria-hidden="true"><span>FROM CONCEPT</span><span class="note-rule"></span><strong>to the<br>workbench.</strong><span>DESIGN. BUILD. ITERATE.</span></div><img src="assets/physical-prototype.webp" width="900" height="1200" alt="Red and black 3D-printed robot arm with an open gripper, assembled on a desk with its electronics" loading="lazy"></div><figcaption><span>Physical prototype during development</span><span>04 / 05</span></figcaption></figure>
           <figure id="panel-enclosure" data-gallery-panel><div class="media-stage"><img src="assets/enclosure-cad.webp" width="1400" height="980" alt="CAD design of a vented electronics enclosure attached beside the robot base" loading="lazy"></div><figcaption><span>Revised enclosure CAD: 43.6 mm internal height</span><span>05 / 05</span></figcaption></figure>
         </div>
+        </div>
         <details class="case-study reveal" open><summary><span>The engineering story</span><span class="expand-label">SITUATION → RESULT <b aria-hidden="true">+</b></span></summary><ol class="case-study-body star-list">
           <li class="build-row"><span class="build-index" aria-hidden="true">S</span><div><h4>Situation</h4><p>The printed arm needed its mechanical assembly, servo electronics, and digital model to work together. Early iterations exposed attachment-fit problems and a mismatch in servo-driver timing.</p></div></li>
           <li class="build-row"><span class="build-index" aria-hidden="true">T</span><div><h4>Task</h4><p>Create one interface for five servo channels, make the printed connections consistent, and record complete movements instead of working through eight fixed recording stages.</p></div></li>
@@ -71,9 +80,13 @@
       </article>
       <article id="motor-arm" class="project original-project" aria-labelledby="motor-arm-title">
         <div class="project-top reveal"><span class="eyebrow">02 — ORIGINAL MECHANICAL DESIGN</span><span class="project-year">2026</span></div>
+        <div class="project-layout">
+        <div class="project-copy">
         <h3 id="motor-arm-title" class="project-title reveal">Motor arm.<br><span>My original Fusion 360 design.</span></h3>
         <p class="project-intro reveal">I designed this arm’s structure and gripper in Fusion 360: the base housing, rotating platform, shoulder, elbow, and linkage-driven jaws.</p>
+        </div>
         <figure class="project-gallery motor-arm-image reveal"><div class="media-stage"><img src="assets/original-motor-arm.webp" width="1600" height="1200" alt="Oluwaseun’s original Motor arm CAD geometry, showing the side enclosure, thin structural links, and geared gripper" loading="lazy"></div><figcaption><span>Motor arm — mechanical geometry from the saved design</span><span>FUSION 360</span></figcaption></figure>
+        </div>
         <details class="case-study reveal" open><summary><span>From sketches to an assembly</span><span class="expand-label">SITUATION → RESULT <b aria-hidden="true">+</b></span></summary><ol class="case-study-body star-list">
           <li class="build-row"><span class="build-index" aria-hidden="true">S</span><div><h4>Situation</h4><p>I wanted to develop my own articulated robot-arm mechanism in Fusion 360.</p></div></li>
           <li class="build-row"><span class="build-index" aria-hidden="true">T</span><div><h4>Task</h4><p>Design the base, rotating platform, arm links, and gripper as a mechanical assembly around the servos.</p></div></li>
