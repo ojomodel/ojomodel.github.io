@@ -52,9 +52,12 @@
 
 .reactor-outline-plate svg {
   display: block;
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   overflow: visible;
+  transform: translateZ(.6px);
   filter: drop-shadow(0 0 var(--reactor-halo) rgba(180, 228, 255, calc(var(--reactor-power) * .7)));
 }
 
@@ -64,29 +67,35 @@
 }
 
 .reactor-outline-plate .reactor-inscription {
-  fill: color-mix(in srgb, #c0c6ca calc(100% - var(--reactor-power) * 100%), #fff);
+  fill: #101c25;
   stroke: none;
 }
 
-/* One always-present light travels outside the SVG's 268/600 rim.
-   JS owns the plate's tilt; this child only rotates around its own center. */
+/* Show the light behind the lettering, retaining the opaque inner mechanism. */
+.reactor-outline-plate .reactor-inscription-ring > circle:first-child {
+  fill: transparent;
+}
+
+/* The SVG inscription occupies radii 215..268 in its 600-unit viewBox.
+   Fill that entire annulus; rotate only the light, never the inscription. */
 .reactor-orbit-light {
   display: block;
   position: absolute;
-  inset: 2.4%;
+  inset: 5.333333%;
   border-radius: 50%;
   overflow: hidden;
   pointer-events: none;
-  opacity: calc(.85 + var(--reactor-power) * .15);
+  opacity: 1;
   background: radial-gradient(farthest-side,
-    transparent calc(100% - 11px),
-    rgba(182, 224, 255, .12) calc(100% - 9px),
-    rgba(220, 243, 255, .45) calc(100% - 5px),
-    rgba(193, 231, 255, .2) calc(100% - 2px),
+    transparent 80.22%,
+    #9bb7c7 80.5%,
+    #c4dce8 86%,
+    #d5e8f2 94%,
+    #aac9dc 99.4%,
     transparent 100%);
   filter: drop-shadow(0 0 5px rgba(213, 240, 255, .95))
           drop-shadow(0 0 calc(10px + var(--reactor-power) * 9px) rgba(178, 221, 247, .75));
-  transform: translateZ(.6px);
+  transform: translateZ(0);
 }
 
 .reactor-orbit-light::before {
@@ -104,8 +113,8 @@
     #f1faff 342deg,
     #fff 354deg,
     transparent 360deg);
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #000 calc(100% - 7px), #fff calc(100% - 2px), transparent 100%);
-  mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #000 calc(100% - 7px), #fff calc(100% - 2px), transparent 100%);
+  -webkit-mask: radial-gradient(farthest-side, transparent 80.22%, #000 80.5%, #000 99.4%, transparent 100%);
+  mask: radial-gradient(farthest-side, transparent 80.22%, #000 80.5%, #000 99.4%, transparent 100%);
 }
 
 @keyframes reactor-orbit-light-turn {
@@ -114,6 +123,7 @@
 
 .reactor-outline-glow {
   position: absolute;
+  z-index: 2;
   inset: 3%;
   border-radius: 50%;
   transform: translateZ(1px);
