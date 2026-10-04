@@ -79,3 +79,76 @@ html[data-motion=reduced]{scroll-behavior:auto}html[data-motion=reduced] *,html[
   .site-header.nav-enhanced.menu-open #site-nav{display:flex}
 }
 @media(max-width:560px){.nav-wrap{width:calc(100% - 40px)}}
+
+/* Personal introduction and the earlier design archive. */
+.location{display:inline-flex;align-items:center;gap:8px;letter-spacing:.015em}
+.location svg{width:15px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;flex:none}
+.hero-footnote .hero-contact{display:inline-flex;align-items:center;gap:14px;font-size:12px;line-height:1.6;width:auto;text-align:left;color:var(--muted)}
+.hero-footnote .hero-contact:hover{color:var(--text);transform:none}
+.hero-contact span{font-size:16px}
+.about-personal{min-width:0}
+.about-copy .pronunciation{font:13px/1.6 var(--sans);margin-top:6px;margin-bottom:26px;color:var(--accent)}
+.about-copy .pronunciation em{font-style:italic;letter-spacing:.045em}
+.about-personal .education-line{margin-top:32px}
+.prototype-section{margin-top:76px}
+.prototype-section h3{font:400 clamp(23px,2.5vw,30px)/1.4 var(--mono);letter-spacing:-.035em}
+.prototype-section .section-heading>p{font-size:15px}
+.prototype-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.prototype-card{min-width:0;border:1px solid var(--line);background:var(--surface)}
+.prototype-media{height:240px;background:#111;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.prototype-media img{width:100%;height:100%;object-fit:contain}
+.prototype-thumbnail img{width:auto;height:auto;max-width:85%;max-height:205px}
+.prototype-card figcaption{padding:23px 22px;border-top:1px solid var(--line)}
+.prototype-card h4{font:400 18px/1.5 var(--sans)}
+.prototype-card figcaption span{display:block;color:var(--muted);font-size:12px;margin-top:6px}
+@media(min-width:1000px){#about{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}#about>.section-heading{grid-column:1 / -1}.about-personal .education-line{max-width:780px}}
+@media(max-width:999px){.prototype-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.location{margin-top:16px;display:flex}.hero-footnote .hero-contact{font-size:11px;gap:9px}.prototype-grid{grid-template-columns:minmax(0,1fr);gap:22px}.prototype-section{margin-top:56px}.prototype-media{height:230px}.prototype-card figcaption{padding:19px}.prototype-thumbnail img{max-height:200px}}
+/* Seun's original interactive reactor illustration. */
+.personal-reactor{width:min(100%,360px);margin:0 auto;text-align:center;isolation:isolate}
+.reactor-button{display:block;position:relative;width:100%;aspect-ratio:1;margin:0;padding:0;border:0;border-radius:50%;background:transparent;color:#888;appearance:none;cursor:pointer;touch-action:pan-y pinch-zoom;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.reactor-button:focus-visible{outline:1px solid #b3b3b3;outline-offset:5px}
+.reactor-art{display:block;width:100%;height:auto;overflow:visible}
+.reactor-housing,.reactor-mechanics{fill:none;stroke:#575757;stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+.reactor-housing{stroke:#454545}
+.reactor-inscription{fill:#a2a2a2;font:400 14px "Space Mono",monospace;letter-spacing:4px}
+.reactor-coil-frame{fill:#0a0a0a;stroke:#8b8b8b}
+.reactor-winding{stroke:#686868;stroke-width:1.3}
+.reactor-circuit{stroke:#a2a2a2}
+.reactor-rim,.reactor-inner-rim{stroke:#a3a3a3;stroke-width:2}
+.reactor-channel{stroke:#777;stroke-width:1.7}
+.reactor-core{fill:#111;stroke:#959595;stroke-width:1.4}
+.reactor-core-lines{stroke:#484848;stroke-width:.8}
+.reactor-center{fill:#151515;stroke:#a1a1a1}
+.reactor-aura{opacity:0;transition:opacity .35s ease}
+.reactor-rim,.reactor-inner-rim,.reactor-channel,.reactor-winding,.reactor-core,.reactor-center,.reactor-inscription{transition:stroke .28s ease,fill .28s ease,filter .35s ease}
+.reactor-button.is-lit .reactor-aura{opacity:.85}
+.reactor-button.is-lit .reactor-rim,.reactor-button.is-lit .reactor-inner-rim,.reactor-button.is-lit .reactor-channel{stroke:#eff7ff;filter:drop-shadow(0 0 4px #dcefff)}
+.reactor-button.is-lit .reactor-winding{stroke:#cddae4}
+.reactor-button.is-lit .reactor-core{fill:#263139;stroke:#f0f8ff;filter:drop-shadow(0 0 8px #dcefff)}
+.reactor-button.is-lit .reactor-center{fill:#f3faff;stroke:#fff;filter:drop-shadow(0 0 9px #ecf6ff)}
+.reactor-button.is-lit .reactor-inscription{fill:#eee}
+.reactor-caption{margin-top:5px;color:var(--muted,#aaa);font:400 10px/1.8 "Space Mono",monospace;letter-spacing:.04em}
+.reactor-caption-credit{display:block;color:#707070;font:400 12px/1.8 "DM Sans",sans-serif;letter-spacing:0}
+.reactor-pointer-hint,.reactor-keyboard-hint{display:none}
+.personal-reactor:focus-within .reactor-touch-hint,.personal-reactor:focus-within .reactor-pointer-hint{display:none}
+.personal-reactor:has(.reactor-button:focus-visible) .reactor-keyboard-hint{display:inline}
+.personal-reactor:focus-within:not(:has(.reactor-button:focus-visible)) .reactor-touch-hint{display:inline}
+.reactor-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(hover:hover) and (pointer:fine){
+  .reactor-pointer-hint{display:inline}.reactor-touch-hint{display:none}
+  .personal-reactor:focus-within:not(:has(.reactor-button:focus-visible)) .reactor-touch-hint{display:none}
+  .personal-reactor:focus-within:not(:has(.reactor-button:focus-visible)) .reactor-pointer-hint{display:inline}
+  .reactor-button.reactor-hover-ready:hover .reactor-aura{opacity:.85}
+  .reactor-button.reactor-hover-ready:hover .reactor-rim,.reactor-button.reactor-hover-ready:hover .reactor-inner-rim,.reactor-button.reactor-hover-ready:hover .reactor-channel{stroke:#eff7ff;filter:drop-shadow(0 0 4px #dcefff)}
+  .reactor-button.reactor-hover-ready:hover .reactor-winding{stroke:#cddae4}
+  .reactor-button.reactor-hover-ready:hover .reactor-core{fill:#263139;stroke:#f0f8ff;filter:drop-shadow(0 0 8px #dcefff)}
+  .reactor-button.reactor-hover-ready:hover .reactor-center{fill:#f3faff;stroke:#fff;filter:drop-shadow(0 0 9px #ecf6ff)}
+  .reactor-button.reactor-hover-ready:hover .reactor-inscription{fill:#eee}
+}
+@media(prefers-reduced-motion:reduce){
+  .reactor-aura,.reactor-rim,.reactor-inner-rim,.reactor-channel,.reactor-winding,.reactor-core,.reactor-center,.reactor-inscription{transition:none}
+}
+
+.personal-reactor{align-self:center}@media(max-width:999px){.personal-reactor{margin-top:42px}}
+.about-copy .about-belief{color:var(--text)}

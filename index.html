@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Oluwaseun Omodele — electrical engineering student at the University of Houston. Explore my original robot-arm designs, embedded systems, and engineering projects.">
+  <meta name="description" content="Oluwaseun Omodele — electrical engineering student at the University of Houston. A personal portfolio of hands-on projects, ideas, and the things I’m learning to build.">
   <meta name="theme-color" content="#0a0a0a">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Oluwaseun Omodele — Electrical Engineering">
-  <meta property="og:description" content="Building robots from CAD to control. Electrical engineering at the University of Houston, Class of 2029.">
+  <meta property="og:description" content="Welcome to my portfolio. Electrical engineering at the University of Houston, Class of 2029. Building, repairing, and bringing ideas to life.">
   <meta property="og:url" content="https://oluwaseuno.com/">
   <meta property="og:image" content="https://oluwaseuno.com/assets/social-preview.png">
   <meta property="og:image:width" content="1200">
@@ -17,8 +17,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261004-horizontal-header">
-  <script src="script.js?v=20261004-header" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261004-personal-about">
+  <link rel="stylesheet" href="assets/reactor-sketchfab.css?v=20261004-exact">
+  <link rel="stylesheet" href="assets/prototype-viewer.css?v=20261004">
+  <script src="script.js?v=20261004-personal-about" defer></script>
+  <script type="module" src="assets/reactor-sketchfab.js?v=20261004-exact"></script>
+  <script type="module" src="assets/prototype-viewer.js?v=20261004"></script>
   <title>Oluwaseun Omodele — Electrical Engineering</title>
 </head>
 <body id="top">
@@ -35,36 +39,48 @@
   </div></header>
   <main id="main" class="page-shell">
     <section class="hero reveal" aria-labelledby="intro-title">
-      <div class="hero-topline"><span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Electrical engineering</span><span class="edition">HOUSTON, TX / 2029</span></div>
+      <div class="hero-topline"><span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Electrical engineering</span><span class="edition location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Based in Houston, TX</span></span></div>
       <div class="hero-layout">
       <h1 id="intro-title">Oluwaseun<br><span>Omodele</span></h1>
       <div class="hero-copy">
-      <p class="hero-statement">Building robots from CAD to control.</p>
-      <p class="hero-description">I’m an electrical engineering student at the University of Houston, Class of 2029. I bring mechanical design, embedded electronics, and software together to build physical systems—starting with a five-channel robot arm.</p>
+      <p class="hero-statement">Welcome to my portfolio</p>
+      <p class="hero-description">I’m an electrical engineering student at the University of Houston, Class of 2029. I enjoy building things from the ground up, working with my hands, and figuring out how to make things work.</p>
       <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a></div>
       </div>
       </div>
-      <div class="hero-footnote"><span>CAD <i aria-hidden="true">/</i> EMBEDDED SYSTEMS <i aria-hidden="true">/</i> ROBOTICS</span><a href="#about" aria-label="Scroll to about"><span aria-hidden="true">↓</span></a></div>
+      <div class="hero-footnote"><a class="hero-contact" href="mailto:seunomodelee@gmail.com">seunomodelee@gmail.com <span aria-hidden="true">↗</span></a><a class="scroll-link" href="#about" aria-label="Scroll to about"><span aria-hidden="true">↓</span></a></div>
     </section>
     <section id="about" class="section" data-section aria-labelledby="about-title">
-      <div class="section-heading reveal"><span class="section-number">01 / ABOUT</span><h2 id="about-title">Curiosity, made tangible.</h2></div>
-      <div class="about-copy reveal"><p class="lead">I design my own robot mechanisms in Fusion 360, from sketches and individual parts to assembled models.</p><p>Motor arm is my original mechanical design project. My career-fair project combines a physical arm, embedded electronics, and a Unity interface. Together, they show how I approach design, assembly, and control.</p></div>
-      <div class="education-line reveal"><div class="education-mark" aria-hidden="true">UH</div><div><h3>University of Houston</h3><p>Electrical Engineering</p></div><span class="education-year">CLASS OF 2029</span></div>
+      <div class="section-heading reveal"><span class="section-number">ABOUT</span><h2 id="about-title">Curiosity, made tangible.</h2></div>
+      <div class="about-personal">
+        <div class="about-copy reveal">
+          <p class="lead">I’m Oluwaséun.</p>
+          <p class="pronunciation">Pronounced <em>o-lu-wa-shh-ee-un</em>.</p>
+          <p>I repair scooters for friends, troubleshoot robot vacuums, and fix things around the house. I’ve also put together all the furniture in my home. Taking something apart, diagnosing the problem, and learning how it works is a big part of the fun for me.</p>
+          <p>Iron Man is a big part of what inspires me: his gadgets, his workshop, and the way he approaches problems. I relate to his independence and the instinct to find a way forward—even if that means questioning the problem itself.</p>
+          <p class="about-belief">I believe there’s always a way. If I can imagine it, I want to figure out how to make it real.</p>
+        </div>
+        <div class="education-line reveal"><div class="education-mark" aria-hidden="true">UH</div><div><h3>University of Houston</h3><p>Electrical Engineering</p></div><span class="education-year">CLASS OF 2029</span></div>
+      </div>
+      <figure class="personal-reactor reveal">
+        <figcaption class="reactor-caption">Proof that Oluwaseun has a heart.<br><a href="https://sketchfab.com/3d-models/arc-reactor-proof-that-tony-stark-has-a-heart-c37adc7fd9074213a011de9336b79d8f" target="_blank" rel="noopener noreferrer">Explore the 3D reactor by Huqandiy on Sketchfab ↗</a></figcaption>
+      </figure>
+
     </section>
     <section id="projects" class="section" data-section aria-labelledby="projects-title">
-      <div class="section-heading reveal"><span class="section-number">02 / SELECTED WORK</span><h2 id="projects-title">Built beyond the screen.</h2><p>A closer look at the systems I’m putting together.</p></div>
-      <article id="career-fair-robot" class="project" aria-labelledby="robot-title">
-        <div class="project-top reveal"><span class="eyebrow">01 — ROBOTICS / EMBEDDED SYSTEMS</span><span class="project-year">2026</span></div>
+      <div class="section-heading reveal"><h2 id="projects-title">Projects</h2></div>
+      <article id="servo-arm" class="project" aria-labelledby="robot-title">
+        <div class="project-top reveal"><span class="eyebrow">ROBOTICS / EMBEDDED SYSTEMS</span><span class="project-year">2026</span></div>
         <div class="project-layout">
         <div class="project-copy">
-        <h3 id="robot-title" class="project-title reveal">Career fair robot.<br><span>From design to motion.</span></h3>
+        <h3 id="robot-title" class="project-title reveal">Servo arm.<br><span>From design to motion.</span></h3>
         <p class="project-intro reveal">A printed arm with five servo channels, an ESP32 control bridge, and a Unity interface for joint control, inverse kinematics, and motion recording.</p>
         </div>
         <div class="project-gallery reveal" data-gallery>
           <div class="gallery-tabs" aria-label="Robot arm project views">
             <button id="tab-design" type="button" data-gallery-tab aria-controls="panel-design">CAD assembly</button><button id="tab-wrist" type="button" data-gallery-tab aria-controls="panel-wrist">Wrist detail</button><button id="tab-unity" type="button" data-gallery-tab aria-controls="panel-unity">Control studio</button><button id="tab-build" type="button" data-gallery-tab aria-controls="panel-build">Physical build</button><button id="tab-enclosure" type="button" data-gallery-tab aria-controls="panel-enclosure">Enclosure</button>
           </div>
-          <figure id="panel-design" data-gallery-panel><div class="media-stage light-stage"><img src="assets/robot-cad.webp" width="1400" height="1089" alt="Career fair arm CAD assembly with covers around the links and servo mounts" loading="lazy"></div><figcaption><span>Career fair arm during CAD development</span><span>01 / 05</span></figcaption></figure>
+          <figure id="panel-design" data-gallery-panel><div class="media-stage light-stage"><img src="assets/robot-cad.webp" width="1400" height="1089" alt="Servo arm CAD assembly with covers around the links and servo mounts" loading="lazy"></div><figcaption><span>Servo arm during CAD development</span><span>01 / 05</span></figcaption></figure>
           <figure id="panel-wrist" data-gallery-panel><div class="media-stage light-stage"><img src="assets/wrist-detail.webp" width="1400" height="1089" alt="CAD close-up of the wrist carrier, servos, and gripper linkage with covers hidden" loading="lazy"></div><figcaption><span>Wrist and gripper inspection during CAD development</span><span>02 / 05</span></figcaption></figure>
           <figure id="panel-unity" data-gallery-panel><div class="media-stage"><img src="assets/unity-joints.webp" width="1600" height="1000" alt="Unity control studio with the arm model, five joint controls, and motion-speed settings in simulation mode" loading="lazy"></div><figcaption><span>Unity joint-control interface in simulation mode</span><span>03 / 05</span></figcaption></figure>
           <figure id="panel-build" data-gallery-panel><div class="physical-stage"><div class="image-note" aria-hidden="true"><span>FROM CONCEPT</span><span class="note-rule"></span><strong>to the<br>workbench.</strong><span>DESIGN. BUILD. ITERATE.</span></div><img src="assets/physical-prototype.webp" width="900" height="1200" alt="Red and black 3D-printed robot arm with an open gripper, assembled on a desk with its electronics" loading="lazy"></div><figcaption><span>Physical prototype during development</span><span>04 / 05</span></figcaption></figure>
@@ -78,34 +94,26 @@
           <li class="build-row"><span class="build-index" aria-hidden="true">R</span><div><h4>Result</h4><p>Connected <strong>five servo channels</strong> to the Unity controls and expanded recording in Unity from <strong>eight fixed stages to takes up to 10 minutes</strong>. A separate enclosure revision increased CAD internal height from <strong>22.6 to 43.6 mm (about +93%)</strong>, preserving 45 other components.</p></div></li>
         </ol></details>
       </article>
-      <article id="motor-arm" class="project original-project" aria-labelledby="motor-arm-title">
-        <div class="project-top reveal"><span class="eyebrow">02 — ORIGINAL MECHANICAL DESIGN</span><span class="project-year">2026</span></div>
-        <div class="project-layout">
-        <div class="project-copy">
-        <h3 id="motor-arm-title" class="project-title reveal">Motor arm.<br><span>My original Fusion 360 design.</span></h3>
-        <p class="project-intro reveal">I designed this arm’s structure and gripper in Fusion 360: the base housing, rotating platform, shoulder, elbow, and linkage-driven jaws.</p>
+      <section class="prototype-section" aria-labelledby="prototypes-title">
+        <div class="section-heading reveal"><h3 id="prototypes-title">Failed prototypes</h3><p>Earlier designs, and part of the process of getting here.</p></div>
+        <div class="prototype-grid">
+          <article id="motor-arm" class="prototype-card reveal"><figure><div class="prototype-viewer" data-prototype-model="assets/motor-arm.model.json" data-prototype-name="Motor arm"></div><figcaption><h4>Motor arm</h4><span>Original Fusion 360 design</span></figcaption></figure></article>
+          <article class="prototype-card reveal"><figure><div class="prototype-media prototype-thumbnail"><img src="assets/official-v2-thumbnail.png" alt="Fusion 360 project thumbnail for my earlier Official V2 Robotic Arm" loading="lazy"></div><figcaption><h4>Official V2 Robotic Arm</h4><span>Earlier arm iteration</span></figcaption></figure></article>
+          <article class="prototype-card reveal"><figure><div class="prototype-media prototype-thumbnail"><img src="assets/mg996r-holder-thumbnail.png" alt="Fusion 360 project thumbnail for my MG996R Servo Holder" loading="lazy"></div><figcaption><h4>MG996R Servo Holder</h4><span>Early servo-holder design</span></figcaption></figure></article>
         </div>
-        <figure class="project-gallery motor-arm-image reveal"><div class="media-stage"><img src="assets/original-motor-arm.webp" width="1600" height="1200" alt="Oluwaseun’s original Motor arm CAD geometry, showing the side enclosure, thin structural links, and geared gripper" loading="lazy"></div><figcaption><span>Motor arm — mechanical geometry from the saved design</span><span>FUSION 360</span></figcaption></figure>
-        </div>
-        <details class="case-study reveal" open><summary><span>From sketches to an assembly</span><span class="expand-label">SITUATION → RESULT <b aria-hidden="true">+</b></span></summary><ol class="case-study-body star-list">
-          <li class="build-row"><span class="build-index" aria-hidden="true">S</span><div><h4>Situation</h4><p>I wanted to develop my own articulated robot-arm mechanism in Fusion 360.</p></div></li>
-          <li class="build-row"><span class="build-index" aria-hidden="true">T</span><div><h4>Task</h4><p>Design the base, rotating platform, arm links, and gripper as a mechanical assembly around the servos.</p></div></li>
-          <li class="build-row"><span class="build-index" aria-hidden="true">A</span><div><h4>Action</h4><p>Built the structural parts from native sketches and features, then developed the gear-and-link mechanism that connects the two gripper jaws.</p></div></li>
-          <li class="build-row"><span class="build-index" aria-hidden="true">R</span><div><h4>Result</h4><p>Created a native CAD assembly with a <strong>two-gear, four-link, two-jaw gripper</strong>. Its horn attachment pattern became the reference for mounting parts on the later career-fair arm.</p></div></li>
-        </ol></details>
-      </article>
+      </section>
       <a class="more-work text-link reveal" href="https://github.com/ojomodel" target="_blank" rel="noopener noreferrer">More of what I’m learning on GitHub <span aria-hidden="true">↗</span></a>
     </section>
     <section class="section toolkit" aria-labelledby="toolkit-title">
-      <div class="section-heading reveal"><span class="section-number">03 / TECHNICAL SKILLS</span><h2 id="toolkit-title">Tools behind the work.</h2></div>
+      <div class="section-heading reveal"><span class="section-number">TECHNICAL SKILLS</span><h2 id="toolkit-title">Tools behind the work.</h2></div>
       <dl class="toolkit-list reveal"><div><dt>Embedded</dt><dd>ESP32 · C++ / Arduino · PCA9685</dd></div><div><dt>Software</dt><dd>Unity · C# · Git</dd></div><div><dt>Design</dt><dd>Fusion 360 · 3D printing</dd></div></dl>
     </section>
     <section id="resume" class="section resume-section" data-section aria-labelledby="resume-title">
-      <div class="section-heading reveal"><span class="section-number">04 / RESUME</span><h2 id="resume-title">My background, at a glance.</h2></div>
+      <div class="section-heading reveal"><span class="section-number">RESUME</span><h2 id="resume-title">My background, at a glance.</h2></div>
       <div class="resume-layout reveal"><div class="resume-copy"><p>My education, experience, and background in a format you can take with you.</p><p class="resume-date">Résumé (2025) · Earlier experience</p><a class="button button-primary" href="assets/oluwaseun-omodele-resume.pdf" target="_blank" rel="noopener">View resume <span aria-hidden="true">↗</span></a><a class="text-link download-link" href="assets/oluwaseun-omodele-resume.pdf" download="Oluwaseun-Omodele-Resume.pdf">Download PDF <span aria-hidden="true">↓</span></a></div><a class="resume-preview" href="assets/oluwaseun-omodele-resume.pdf" target="_blank" rel="noopener" aria-label="Open Oluwaseun Omodele’s 2025 resume PDF"><img src="assets/resume-preview.webp" alt="Preview of Oluwaseun Omodele’s 2025 resume" width="612" height="792" loading="lazy"><span class="resume-preview-label">RESUME.PDF <span aria-hidden="true">↗</span></span></a></div>
     </section>
     <section id="contact" class="section contact-section" data-section aria-labelledby="contact-title">
-      <div class="reveal"><span class="section-number">05 / CONTACT</span><h2 id="contact-title">Let’s build<br>something <em>real.</em></h2><p>Have a project, an opportunity, or something you’re working on?<br class="desktop-break"> I’d love to hear about it.</p><a class="contact-email" href="mailto:seunomodelee@gmail.com">seunomodelee@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/ojomodel" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/ojomodel" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
+      <div class="reveal"><span class="section-number">CONTACT</span><h2 id="contact-title">Let’s build<br>something <em>real.</em></h2><p>Have a project, an opportunity, or something you’re working on?<br class="desktop-break"> I’d love to hear about it.</p><a class="contact-email" href="mailto:seunomodelee@gmail.com">seunomodelee@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/ojomodel" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/ojomodel" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
     </section>
     <footer class="site-footer"><span>© 2026 Oluwaseun Omodele</span><button id="motion-toggle" type="button" hidden aria-pressed="false">Motion: reduced</button><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
   </main>
