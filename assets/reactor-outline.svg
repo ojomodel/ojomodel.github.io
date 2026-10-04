@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none" aria-labelledby="reactor-outline-title reactor-outline-description">
+  <title id="reactor-outline-title">Proof that Oluwaseun has a heart</title>
+  <desc id="reactor-outline-description">An original silver line-art reactor with ten radial coils, concentric mechanical rings, and a small triangular hub. The outer ring reads Proof that Oluwaseun has a heart.</desc>
+  <defs>
+    <path id="olu-reactor-letter-top" d="M60 300A240 240 0 0 1 540 300"/>
+    <path id="olu-reactor-letter-bottom" d="M60 300A240 240 0 0 0 540 300"/>
+    <g id="olu-reactor-coil" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M282 102Q300 96 318 102L322 154Q300 162 278 154Z" fill="#0c0d0e" stroke="#747b80" stroke-width="1.6"/>
+      <path d="M282 108Q300 102 318 108M281 114Q300 108 319 114M281 120Q300 114 319 120M280 126Q300 120 320 126M280 132Q300 126 320 132M279 138Q300 132 321 138M279 144Q300 138 321 144M278 150Q300 144 322 150" stroke="#92999e" stroke-width="1.6"/>
+      <path d="M286 102V97H314V102M284 156V162H316V156" stroke="#bec3c7" stroke-width="1.9"/>
+      <path class="reactor-lit" d="M290 99V94M310 99V94M290 162V170M310 162V170" stroke="#929ca4" stroke-width="2"/>
+      <path d="M286 106L283 151M314 106L317 151" stroke="#363d42" stroke-width="1.2"/>
+    </g>
+    <g id="olu-reactor-mount" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M291 105L288 142L295 154H305L312 142L309 105" fill="#0a0b0c" stroke="#515a61" stroke-width="1.3"/>
+      <circle cx="300" cy="119" r="5.5" fill="#111416" stroke="#879198" stroke-width="1.4"/>
+      <path d="M297 119H303" stroke="#9ba3a9" stroke-width="1.1"/>
+      <path d="M296 133V144H304V133" stroke="#333d44" stroke-width="1.1"/>
+    </g>
+    <g id="olu-reactor-vent">
+      <rect x="296.6" y="173" width="6.8" height="13" rx="2.7" fill="#090b0d" stroke="#525e66" stroke-width="1"/>
+      <path d="M299 176V182" stroke="#1b242a" stroke-width="1.1"/>
+    </g>
+    <g id="olu-reactor-hub-arm" stroke-linejoin="round">
+      <path d="M291 199H309L313 210L307 225H293L287 210Z" fill="#101316" stroke="#7b868f" stroke-width="1.3"/>
+      <path class="reactor-lit" d="M296 204H304L307 210L303 219H297L293 210Z" stroke="#abb4bc" stroke-width="1.8"/>
+    </g>
+  </defs>
+
+  <!-- The inscription is part of the object, with no stand or external artwork. -->
+  <g class="reactor-inscription-ring">
+    <circle cx="300" cy="300" r="268" fill="#0b0c0d" stroke="#9ea5aa" stroke-width="2"/>
+    <circle cx="300" cy="300" r="263" stroke="#414a51" stroke-width=".9"/>
+    <circle cx="300" cy="300" r="258" stroke="#222a30" stroke-width=".7"/>
+    <circle cx="300" cy="300" r="215" fill="#090b0d" stroke="#9ba4aa" stroke-width="1.8"/>
+    <circle cx="300" cy="300" r="220" stroke="#343e46" stroke-width=".8"/>
+    <g class="reactor-inscription" fill="#c0c6ca" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="400" letter-spacing="3">
+      <text><textPath href="#olu-reactor-letter-top" startOffset="50%" text-anchor="middle">PROOF THAT OLUWASEUN</textPath></text>
+      <text dy="9"><textPath href="#olu-reactor-letter-bottom" startOffset="50%" text-anchor="middle">HAS A HEART</textPath></text>
+    </g>
+    <g stroke="#818b93" stroke-width="1.3">
+      <circle cx="58" cy="300" r="5.5" fill="#15191c"/>
+      <circle cx="542" cy="300" r="5.5" fill="#15191c"/>
+      <path d="M54.5 300H61.5M538.5 300H545.5"/>
+    </g>
+    <path d="M38 288H43M38 312H43M557 288H562M557 312H562" stroke="#47535c" stroke-width="1.2"/>
+  </g>
+
+  <g class="reactor-outer-mechanism">
+    <circle cx="300" cy="300" r="209" stroke="#3d4851" stroke-width="1.2"/>
+    <circle cx="300" cy="300" r="201" stroke="#67737c" stroke-width="1.5"/>
+    <circle cx="300" cy="300" r="189" stroke="#46545f" stroke-width="2" stroke-dasharray="78 40.75" transform="rotate(-90 300 300)"/>
+    <circle class="reactor-lit" cx="300" cy="300" r="151" stroke="#929da7" stroke-width="2.3"/>
+    <use href="#olu-reactor-mount" transform="rotate(18 300 300)"/>
+    <use href="#olu-reactor-mount" transform="rotate(54 300 300)"/>
+    <use href="#olu-reactor-mount" transform="rotate(90 300 300)"/>
+    <use href="#olu-reactor-mount" transform="rotate(126 300 300)"/>
+    <use href="#olu-reactor-mount" transform="rotate(162 300 300)"/>
+    <use href="#olu-reactor-mount" transform="rotate(198 300 300)"/>
+    <use href="#olu-reactor-mount" transform="rotate(234 300 300)"/>
+    <use href="#olu-reactor-mount" transform="rotate(270 300 300)"/>
+    <use href="#olu-reactor-mount" transform="rotate(306 300 300)"/>
+    <use href="#olu-reactor-mount" transform="rotate(342 300 300)"/>
+    <use href="#olu-reactor-coil"/>
+    <use href="#olu-reactor-coil" transform="rotate(36 300 300)"/>
+    <use href="#olu-reactor-coil" transform="rotate(72 300 300)"/>
+    <use href="#olu-reactor-coil" transform="rotate(108 300 300)"/>
+    <use href="#olu-reactor-coil" transform="rotate(144 300 300)"/>
+    <use href="#olu-reactor-coil" transform="rotate(180 300 300)"/>
+    <use href="#olu-reactor-coil" transform="rotate(216 300 300)"/>
+    <use href="#olu-reactor-coil" transform="rotate(252 300 300)"/>
+    <use href="#olu-reactor-coil" transform="rotate(288 300 300)"/>
+    <use href="#olu-reactor-coil" transform="rotate(324 300 300)"/>
+  </g>
+
+  <g class="reactor-inner-housing">
+    <circle cx="300" cy="300" r="143" fill="#0c0f12" stroke="#aab2b8" stroke-width="2"/>
+    <circle cx="300" cy="300" r="138" stroke="#333f48" stroke-width="1.2"/>
+    <circle cx="300" cy="300" r="132" stroke="#667680" stroke-width="1.2"/>
+    <use href="#olu-reactor-vent"/>
+    <use href="#olu-reactor-vent" transform="rotate(15 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(30 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(45 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(60 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(75 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(90 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(105 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(120 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(135 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(150 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(165 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(180 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(195 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(210 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(225 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(240 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(255 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(270 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(285 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(300 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(315 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(330 300 300)"/>
+    <use href="#olu-reactor-vent" transform="rotate(345 300 300)"/>
+    <circle cx="300" cy="300" r="109" fill="#0a0d10" stroke="#8c9ba6" stroke-width="1.8"/>
+    <circle class="reactor-lit" cx="300" cy="300" r="104" stroke="#c1c9cf" stroke-width="3"/>
+    <circle cx="300" cy="300" r="97" stroke="#46545f" stroke-width="1"/>
+    <circle class="reactor-lit" cx="300" cy="300" r="91" stroke="#8797a2" stroke-width="1.8" stroke-dasharray="158 32.59" transform="rotate(-90 300 300)"/>
+    <use href="#olu-reactor-hub-arm"/>
+    <use href="#olu-reactor-hub-arm" transform="rotate(120 300 300)"/>
+    <use href="#olu-reactor-hub-arm" transform="rotate(240 300 300)"/>
+  </g>
+
+  <g class="reactor-core-housing" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="300" cy="300" r="79" fill="#0c1014" stroke="#4a5c68" stroke-width="1.2"/>
+    <circle class="reactor-lit" cx="300" cy="300" r="72" stroke="#c4cfd7" stroke-width="2.5"/>
+    <circle cx="300" cy="300" r="64" stroke="#495c69" stroke-width=".8"/>
+    <circle class="reactor-lit" cx="300" cy="300" r="58" stroke="#748995" stroke-width="1.5" stroke-dasharray="1.5 13.68"/>
+    <path d="M300 242V267M350 329L330 317M250 329L270 317" stroke="#677d8b" stroke-width="1.3"/>
+    <path d="M271 250L329 350M329 250L271 350M242 300H358" stroke="#223542" stroke-width=".85"/>
+    <path d="M300 264L332 319H268Z" fill="#111a20" stroke="#afc0cb" stroke-width="2"/>
+    <path class="reactor-lit" d="M300 276L321 313H279Z" stroke="#d1dce3" stroke-width="1.8"/>
+    <circle class="reactor-lit" cx="300" cy="300" r="7" fill="#14212a" stroke="#a9bdcb" stroke-width="1.4"/>
+    <circle cx="300" cy="253" r="2.3" fill="#99aab6"/>
+    <circle cx="340.7" cy="323.5" r="2.3" fill="#99aab6"/>
+    <circle cx="259.3" cy="323.5" r="2.3" fill="#99aab6"/>
+  </g>
+</svg>
+

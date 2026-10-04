@@ -1,0 +1,22 @@
+.personal-reactor.reactor-outline{width:min(100%,490px);margin:0 auto;isolation:isolate;--reactor-power:0;--reactor-whiteout:0;--reactor-halo:2px}
+.reactor-outline-stage{position:relative;width:100%;aspect-ratio:1;perspective:950px}
+.reactor-outline-control{display:block;position:absolute;inset:0;width:100%;height:100%;padding:12px;border:0;background:transparent;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;appearance:none;perspective:950px}
+.reactor-outline-control:disabled{cursor:wait}
+.reactor-outline-control:focus-visible{outline:1px solid #a7b3bc;outline-offset:-10px;border-radius:50%}
+.reactor-outline[data-dragging=true] .reactor-outline-control{cursor:grabbing}
+.reactor-outline-plate{display:block;position:relative;width:100%;height:100%;transform-style:preserve-3d;will-change:transform;pointer-events:none}
+.reactor-outline-plate svg{display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 0 var(--reactor-halo) rgba(180,228,255,calc(var(--reactor-power)*.7)))}
+.reactor-outline-plate .reactor-lit{stroke:color-mix(in srgb,#626f79 calc(100% - var(--reactor-power)*100%),#e5f7ff);filter:drop-shadow(0 0 calc(var(--reactor-power)*6px) #bceaff)}
+.reactor-outline-plate .reactor-inscription{fill:color-mix(in srgb,#c0c6ca calc(100% - var(--reactor-power)*100%),#fff);stroke:none}
+.reactor-outline-glow{position:absolute;inset:3%;border-radius:50%;transform:translateZ(1px);opacity:var(--reactor-whiteout);background:radial-gradient(circle,#fff 0%,#f6fdff 43%,rgba(223,246,255,.95) 61%,rgba(194,234,255,.38) 72%,transparent 79%);box-shadow:0 0 48px 10px rgba(191,230,255,.4);filter:blur(6px);pointer-events:none}
+.reactor-outline-caption{text-align:center;margin:8px 0 0;color:#83888c;font:400 10px/1.8 'Space Mono',monospace}
+.reactor-touch-help,.reactor-key-help{display:none}
+.reactor-outline-reset{display:block;margin:10px auto 0;padding:5px 11px;color:#a5a5a5;border:1px solid #313131;background:transparent;border-radius:2px;font:400 11px/1.5 'DM Sans',sans-serif;cursor:pointer}
+.reactor-outline-reset:hover{color:#eee;border-color:#777}
+.reactor-outline-reset:focus-visible{outline:1px solid #b6d9e9;outline-offset:3px}
+.reactor-outline-status{display:block;font:12px/1.5 'DM Sans',sans-serif;margin-top:8px}
+.reactor-outline-status[hidden]{display:none}
+.reactor-outline:has(.reactor-outline-control:focus-visible) .reactor-pointer-help,.reactor-outline:has(.reactor-outline-control:focus-visible) .reactor-touch-help{display:none}
+.reactor-outline:has(.reactor-outline-control:focus-visible) .reactor-key-help{display:inline}
+@media(hover:none),(pointer:coarse){.reactor-pointer-help{display:none}.reactor-touch-help{display:inline}}
+@media(max-width:560px){.personal-reactor.reactor-outline{max-width:390px}.reactor-outline-control{padding:7px}.reactor-outline-caption{font-size:9px}}
