@@ -67,8 +67,11 @@
 }
 
 .reactor-outline-plate .reactor-inscription {
-  fill: #101c25;
-  stroke: none;
+  fill: #c0c6ca;
+  stroke: #071017;
+  stroke-width: 1.4px;
+  paint-order: stroke fill;
+  stroke-linejoin: round;
 }
 
 /* Show the light behind the lettering, retaining the opaque inner mechanism. */
@@ -77,7 +80,7 @@
 }
 
 /* The SVG inscription occupies radii 215..268 in its 600-unit viewBox.
-   Fill that entire annulus; rotate only the light, never the inscription. */
+   A moving arc fills the band's width; the rest stays dark at idle. */
 .reactor-orbit-light {
   display: block;
   position: absolute;
@@ -86,13 +89,7 @@
   overflow: hidden;
   pointer-events: none;
   opacity: 1;
-  background: radial-gradient(farthest-side,
-    transparent 80.22%,
-    #9bb7c7 80.5%,
-    #c4dce8 86%,
-    #d5e8f2 94%,
-    #aac9dc 99.4%,
-    transparent 100%);
+  background: transparent;
   filter: drop-shadow(0 0 5px rgba(213, 240, 255, .95))
           drop-shadow(0 0 calc(10px + var(--reactor-power) * 9px) rgba(178, 221, 247, .75));
   transform: translateZ(0);
