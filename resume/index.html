@@ -29,7 +29,10 @@
   <script src="/assets/portfolio-pages.js?v=20261005-clean-projects" defer></script>
   <link rel="stylesheet" href="/assets/ambient-status.css?v=20261005-houston">
   <script src="/assets/ambient-status.js?v=20261005-houston" defer></script>
-  <script src="/assets/section-route.js?v=20261005" defer></script>
+  <script src="/assets/section-route.js?v=20261005-heading" defer></script>
+  <link rel="stylesheet" href="/assets/resume-viewer.css?v=20261005-inline">
+  <script type="module" src="/assets/resume-viewer.js?v=20261005-inline"></script>
+  <link rel="stylesheet" href="/assets/parts-costs.css?v=20261005">
 </head>
 <body id="top" data-landing-section="resume">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -101,10 +104,56 @@
     <section class="section toolkit" aria-labelledby="toolkit-title">
       <div class="section-heading reveal"><span class="section-number">TECHNICAL SKILLS</span><h2 id="toolkit-title">Tools behind the work.</h2></div>
       <dl class="toolkit-list reveal"><div><dt>Embedded</dt><dd>ESP32 · C++ / Arduino · PCA9685</dd></div><div><dt>Software</dt><dd>Unity · C# · Git</dd></div><div><dt>Design</dt><dd>Fusion 360 · 3D printing</dd></div></dl>
+      <div class="parts-costs" aria-labelledby="parts-costs-title">
+        <div class="parts-costs-intro">
+          <h3 id="parts-costs-title">Parts &amp; costs.</h3>
+          <p>Components and supplies purchased along the way.</p>
+          <p class="parts-costs-total"><span>Listed parts total</span><strong>$48.58<small>USD</small></strong></p>
+        </div>
+        <div class="parts-costs-breakdown">
+          <table aria-describedby="parts-costs-note">
+            <thead><tr><th scope="col">Component</th><th scope="col">Quantity</th><th scope="col">Cost</th></tr></thead>
+            <tbody>
+                <tr><th scope="row">ESP32 development board<span>HiLetgo ESP-WROOM-32</span></th><td>1 board</td><td>$9.99</td></tr>
+                <tr><th scope="row">Solderless breadboards<span>830 tie points</span></th><td>3-pack</td><td>$6.99</td></tr>
+                <tr><th scope="row">PCA9685 servo driver<span>16-channel PWM</span></th><td>1 board</td><td>$3.33</td></tr>
+                <tr><th scope="row">MG996R servos<span>180° rotation</span></th><td>5-pack</td><td>$7.40</td></tr>
+                <tr><th scope="row">MG90S servos<span>180° rotation</span></th><td>5-pack</td><td>$8.35</td></tr>
+                <tr><th scope="row">Servo extension cables<span>100 mm</span></th><td>10-pack</td><td>$2.60</td></tr>
+                <tr><th scope="row">Silicone power cable<span>18 AWG · 2 conductors</span></th><td>5 m</td><td>$5.46</td></tr>
+                <tr><th scope="row">XY joystick modules<span>Dual-axis</span></th><td>2 modules</td><td>$4.46</td></tr>
+            </tbody>
+          </table>
+          <p class="parts-costs-note" id="parts-costs-note">Costs cover the quantities shown. ESP32 and breadboards use listed prices; the other rows use order totals. Printing and other unlisted materials are not included.</p>
+        </div>
+      </div>
     </section>
     <section id="resume" class="section resume-section" data-section aria-labelledby="resume-title">
       <div class="section-heading reveal"><span class="section-number">RESUME</span><h2 id="resume-title">My background, at a glance.</h2></div>
-      <div class="resume-layout reveal"><div class="resume-copy"><p>My education, experience, and background in a format you can take with you.</p><p class="resume-date">Résumé · Updated October 2026</p><a class="button button-primary" href="/resume.pdf" target="_blank" rel="noopener">View resume <span aria-hidden="true">↗</span></a><a class="text-link download-link" href="/resume.pdf" download="Oluwaseun-Omodele-Resume.pdf">Download PDF <span aria-hidden="true">↓</span></a></div><a class="resume-preview" href="/resume.pdf" target="_blank" rel="noopener" aria-label="Open Oluwaseun Omodele’s current resume PDF"><img src="/assets/resume-preview.webp?v=20261005-overleaf" alt="Preview of Oluwaseun Omodele’s current resume" width="612" height="792" loading="lazy"><span class="resume-preview-label">RESUME.PDF <span aria-hidden="true">↗</span></span></a></div>
+      <div class="resume-layout resume-inline-layout reveal">
+        <div class="resume-copy resume-inline-copy">
+          <p>Education, experience, and the work behind it.</p>
+          <p class="resume-date">Résumé · Updated October 2026</p>
+        </div>
+        <div class="resume-reader" data-resume-reader data-pdf-url="/resume.pdf">
+          <div class="resume-reader-toolbar">
+            <span class="resume-reader-page">1 page · PDF</span>
+            <div class="resume-reader-zoom">
+              <button type="button" data-resume-zoom="out" aria-label="Zoom out">−</button>
+              <output data-resume-scale aria-live="polite">100%</output>
+              <button type="button" data-resume-zoom="in" aria-label="Zoom in">+</button>
+              <button type="button" data-resume-fit>Fit width</button>
+            </div>
+            <a class="resume-reader-download" href="/resume.pdf" download="Oluwaseun-Omodele-Resume.pdf">Download PDF <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="resume-reader-viewport" tabindex="0" role="region" aria-label="Scrollable resume document">
+            <div class="resume-reader-pages"></div>
+          </div>
+          <p class="resume-reader-status" role="status">Loading resume…</p>
+          <noscript><p><a href="/resume.pdf">Open the resume PDF</a></p></noscript>
+        </div>
+        <a class="resume-open-original" href="/resume.pdf" target="_blank" rel="noopener">Open PDF in a new tab <span aria-hidden="true">↗</span></a>
+      </div>
     </section>
     <section id="contact" class="section contact-section" data-section aria-labelledby="contact-title">
       <div class="reveal"><span class="section-number">CONTACT</span><h2 id="contact-title">Let’s build<br>something <em>real.</em></h2><p>Have a project, an opportunity, or something you’re working on?<br class="desktop-break"> I’d love to hear about it.</p><a class="contact-email" href="mailto:seunomodelee@gmail.com">seunomodelee@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/ojomodel" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/ojomodel" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
