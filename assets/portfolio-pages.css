@@ -2,6 +2,9 @@
 .home-project .project-title a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.15em}
 .home-project .media-stage:focus-visible{outline-offset:-4px}
 @media(max-width:560px){.home-project .gallery-tabs button{flex:1 0 45%}}
+.home-project .showcase-gallery:has(#panel-orbit:not([hidden])){background:transparent;border-color:transparent}
+.home-project .showcase-gallery figcaption a:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:560px){.home-project .showcase-gallery .gallery-tabs{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin}.home-project .showcase-gallery .gallery-tabs button{flex:0 0 auto;white-space:nowrap}.home-project .showcase-gallery .gallery-tabs button[aria-selected=true]:after{bottom:0}}
 .menu-toggle svg{display:block;width:24px;height:24px;margin-left:auto}
 .menu-toggle .menu-close,.menu-toggle[aria-expanded=true] .menu-bars{display:none}
 .menu-toggle[aria-expanded=true] .menu-close{display:block}
