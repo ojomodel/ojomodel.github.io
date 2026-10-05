@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="styles.css?v=20261005-native-prototypes">
   <link rel="stylesheet" href="assets/reactor-outline.css?v=20261005-center-touch">
   <link rel="stylesheet" href="assets/prototype-viewer.css?v=20261004">
-  <link rel="stylesheet" href="assets/servo-case-study.css?v=20261004-mechanical">
+  <link rel="stylesheet" href="assets/servo-case-study.css?v=20261005-final-first">
   <script src="script.js?v=20261004-personal-about" defer></script>
   <script type="module" src="assets/reactor-outline.js?v=20261005-center-touch"></script>
   <script type="module" src="assets/prototype-viewer.js?v=20261005-native-prototypes"></script>
@@ -74,23 +74,45 @@
         <div class="project-top reveal"><span class="eyebrow">ROBOTICS / MECHANICAL DESIGN / EMBEDDED SYSTEMS</span><span class="project-year">2026</span></div>
         <div class="project-layout">
           <div class="project-copy">
-            <h3 id="robot-title" class="project-title reveal">Servo arm.<br><span>Built. Tested. Redesigned.</span></h3>
-            <p class="project-intro reveal">I built a five-channel robot arm, then redesigned almost the entire structure after testing exposed its biggest weakness: too much weight for a small base. This is how I moved from bulky printed parts to a slimmer arm with a more stable foundation.</p>
+            <h3 id="robot-title" class="project-title reveal">4-DOF Robotic Arm.<br><span>Built. Tested. Redesigned.</span></h3>
+            <p class="project-intro reveal">I built this robotic arm with four positioning joints and a servo gripper. The current design combines a slimmer printed structure, a wider base, embedded electronics, and a Unity control interface—developed through testing and redesign.</p>
             <p class="cs-role reveal">My work: Fusion 360 design, 3D printing, assembly, electronics integration, testing, and the Unity control interface.</p>
-            <nav class="cs-jump reveal" aria-label="Servo arm case study"><a href="#arm-problems">The challenge ↓</a><a href="#arm-redesign">Before &amp; after ↓</a><a href="#arm-demo">Watch the demo ↘</a></nav>
+            <nav class="cs-jump reveal" aria-label="4-DOF robotic arm case study"><a href="#arm-demo">Watch the demo ↘</a><a href="#arm-prototypes">Earlier prototypes ↓</a><a href="#arm-redesign">Before &amp; after ↓</a></nav>
           </div>
           <div class="project-gallery reveal" data-gallery>
-            <div class="gallery-tabs" aria-label="Robot arm project views"><button id="tab-design" type="button" data-gallery-tab aria-controls="panel-design">CAD assembly</button><button id="tab-wrist" type="button" data-gallery-tab aria-controls="panel-wrist">Wrist detail</button><button id="tab-unity" type="button" data-gallery-tab aria-controls="panel-unity">Control studio</button></div>
-            <figure id="panel-design" data-gallery-panel><div class="media-stage light-stage"><img src="assets/robot-cad.webp" width="1400" height="1089" alt="Enclosed robot arm CAD study with covers around the links and servo mounts" loading="lazy"></div><figcaption><span>Enclosed-arm CAD during development</span><span>01 / 03</span></figcaption></figure>
-            <figure id="panel-wrist" data-gallery-panel><div class="media-stage light-stage"><img src="assets/wrist-detail.webp" width="1400" height="1089" alt="Wrist carrier and revised gripper linkage in Fusion 360, with covers hidden" loading="lazy"></div><figcaption><span>Wrist and gripper geometry · CAD inspection</span><span>02 / 03</span></figcaption></figure>
-            <figure id="panel-unity" data-gallery-panel><div class="media-stage"><img src="assets/unity-joints.webp" width="1600" height="1000" alt="Unity control studio displaying the arm model and five joint controls in simulation mode" loading="lazy"></div><figcaption><span>Unity joint-control interface · simulation view</span><span>03 / 03</span></figcaption></figure>
+            <div class="gallery-tabs" aria-label="Robot arm project views"><button id="tab-current" type="button" data-gallery-tab aria-controls="panel-current">Final design</button><button id="tab-design" type="button" data-gallery-tab aria-controls="panel-design">CAD assembly</button><button id="tab-wrist" type="button" data-gallery-tab aria-controls="panel-wrist">Wrist detail</button><button id="tab-unity" type="button" data-gallery-tab aria-controls="panel-unity">Control studio</button></div>
+            <figure id="panel-current" data-gallery-panel><div class="media-stage"><img src="assets/arm-current-build.webp" width="550" height="495" alt="Current red and black servo arm holding a red block, from the final demonstration" loading="lazy"></div><figcaption><span>Final design · physical build</span><span>01 / 04</span></figcaption></figure>
+            <figure id="panel-design" data-gallery-panel><div class="media-stage light-stage"><img src="assets/robot-cad.webp" width="1400" height="1089" alt="Enclosed robot arm CAD study with covers around the links and servo mounts" loading="lazy"></div><figcaption><span>Enclosed-arm CAD during development</span><span>02 / 04</span></figcaption></figure>
+            <figure id="panel-wrist" data-gallery-panel><div class="media-stage light-stage"><img src="assets/wrist-detail.webp" width="1400" height="1089" alt="Wrist carrier and revised gripper linkage in Fusion 360, with covers hidden" loading="lazy"></div><figcaption><span>Wrist and gripper geometry · CAD inspection</span><span>03 / 04</span></figcaption></figure>
+            <figure id="panel-unity" data-gallery-panel><div class="media-stage"><img src="assets/unity-joints.webp" width="1600" height="1000" alt="Unity control studio displaying the arm model and five joint controls in simulation mode" loading="lazy"></div><figcaption><span>Unity joint-control interface · simulation view</span><span>04 / 04</span></figcaption></figure>
           </div>
         </div>
+
+        <section id="arm-demo" class="cs-section cs-demo-feature" aria-labelledby="arm-demo-title">
+          <div class="cs-demo-copy reveal"><span class="eyebrow">THE FINAL BUILD</span><h4 id="arm-demo-title">See it in action.</h4><p>The physical arm grips and moves red blocks with its Unity control interface visible on screen.</p><a class="text-link" href="#arm-prototypes">Explore the earlier prototypes <span aria-hidden="true">↓</span></a></div>
+          <figure class="cs-demo reveal"><video controls playsinline preload="none" poster="assets/arm-demo-poster.webp" width="1920" height="1080" aria-label="4-DOF robotic arm demonstration, 60 FPS, showing the physical arm moving blocks beside its Unity interface"><source src="assets/servo-arm-demo-60fps.mp4" type="video/mp4"><p>Your browser cannot play this video. <a href="assets/servo-arm-demo-60fps.mp4">Open the 60 FPS demonstration.</a></p></video><figcaption><span>Physical arm + Unity control interface</span><span>1080p · 60 FPS · 1 minute · silent</span></figcaption></figure>
+        </section>
 
         <section class="cs-section" aria-labelledby="arm-how-title">
           <div class="cs-heading reveal"><span class="eyebrow">HOW IT WORKS</span><h4 id="arm-how-title">From a command to motion.</h4></div>
           <p class="cs-prose reveal">The Unity interface sends joint commands over USB to the ESP32. The PCA9685 provides the control signals for five servo channels. I can use the Xbox controller for direct control or record a sequence of commanded movements for playback.</p>
           <ol class="cs-system reveal" aria-label="Control signal path"><li><strong>Unity + Xbox</strong><span>Interface, joint targets &amp; recordings</span></li><li><strong>USB → ESP32</strong><span>Command link</span></li><li><strong>PCA9685</strong><span>Servo control signals</span></li><li><strong>Physical arm</strong><span>Base, shoulder, elbow, wrist &amp; gripper</span></li></ol>
+        </section>
+
+        <section id="arm-prototypes" class="cs-section" aria-labelledby="arm-early-title">
+          <div class="cs-heading reveal"><span class="eyebrow">EARLY PHYSICAL BUILDS</span><h4 id="arm-early-title">What the first assemblies taught me.</h4></div>
+          <div class="cs-split cs-early">
+            <figure class="cs-media reveal"><img src="assets/arm-early-base.webp" width="1400" height="2213" alt="Earlier black printed arm structure standing on its compact cylindrical base" loading="lazy"><figcaption>The early black assembly · July 2026. Its compact base had to support large printed links.</figcaption></figure>
+            <div class="cs-copy reveal"><h5>Weight and the base belong in the same design decision.</h5><p>The original base was too small for the mass and reach of the arm. During testing, I noticed wobbling rather than the stable foundation I wanted.</p><p>Making the individual parts function was only part of the problem. The whole structure also needed a sensible balance between arm geometry, weight, and support.</p><h5>My response</h5><p>I reduced unnecessary bulk in the arm and increased the base footprint. I treated the redesign as a change to the whole assembly, rather than trying to solve the wobble with one small adjustment.</p></div>
+          </div>
+          <div class="prototype-section">
+            <div class="section-heading reveal"><h4 id="prototypes-title">Failed prototypes &amp; earlier CAD</h4><p>Other designs I explored along the way. Rotate the original Fusion models to inspect them.</p></div>
+            <div class="prototype-grid">
+              <article id="motor-arm" class="prototype-card reveal"><figure><div class="prototype-viewer" data-prototype-model="assets/motor-arm.model.json?v=20261005" data-prototype-name="Motor arm"></div><figcaption><h5>Motor arm</h5><span>Original Fusion 360 design</span><p class="prototype-reason">The wire routing left too much exposed. I wanted cleaner packaging.</p></figcaption></figure></article>
+              <article class="prototype-card reveal"><figure><div class="prototype-viewer" data-prototype-model="assets/official-v2-robotic-arm.model.json" data-prototype-name="Official V2 Robotic Arm"></div><figcaption><h5>Official V2 Robotic Arm</h5><span>Earlier arm iteration</span><p class="prototype-reason">I aimed for a grid-style design, but it didn’t work out. The gripper wasn’t fully functional.</p></figcaption></figure></article>
+              <article class="prototype-card reveal"><figure><div class="prototype-viewer" data-prototype-model="assets/mg996r-servo-holder.model.json" data-prototype-name="MG996R Servo Holder"></div><figcaption><h5>MG996R Servo Holder</h5><span>Original model · gripper parts shown separated</span><p class="prototype-reason">The assembly was too heavy for the base.</p></figcaption></figure></article>
+            </div>
+          </div>
         </section>
 
         <section class="cs-section" aria-labelledby="arm-design-title">
@@ -112,21 +134,7 @@
           </ol>
         </section>
 
-        <section class="cs-section" aria-labelledby="arm-early-title">
-          <div class="cs-heading reveal"><span class="eyebrow">EARLY PHYSICAL BUILDS</span><h4 id="arm-early-title">What the first assemblies taught me.</h4></div>
-          <div class="cs-split cs-early">
-            <figure class="cs-media reveal"><img src="assets/arm-early-base.webp" width="1400" height="2213" alt="Earlier black printed arm structure standing on its compact cylindrical base" loading="lazy"><figcaption>The early black assembly · July 2026. Its compact base had to support large printed links.</figcaption></figure>
-            <div class="cs-copy reveal"><h5>Weight and the base belong in the same design decision.</h5><p>The original base was too small for the mass and reach of the arm. During testing, I noticed wobbling rather than the stable foundation I wanted.</p><p>Making the individual parts function was only part of the problem. The whole structure also needed a sensible balance between arm geometry, weight, and support.</p><h5>My response</h5><p>I reduced unnecessary bulk in the arm and increased the base footprint. I treated the redesign as a change to the whole assembly, rather than trying to solve the wobble with one small adjustment.</p></div>
-          </div>
-          <div class="prototype-section">
-            <div class="section-heading reveal"><h4 id="prototypes-title">Failed prototypes &amp; earlier CAD</h4><p>Other designs I explored along the way. Rotate the original Fusion models to inspect them.</p></div>
-            <div class="prototype-grid">
-              <article id="motor-arm" class="prototype-card reveal"><figure><div class="prototype-viewer" data-prototype-model="assets/motor-arm.model.json?v=20261005" data-prototype-name="Motor arm"></div><figcaption><h5>Motor arm</h5><span>Original Fusion 360 design</span><p class="prototype-reason">The wire routing left too much exposed. I wanted cleaner packaging.</p></figcaption></figure></article>
-              <article class="prototype-card reveal"><figure><div class="prototype-viewer" data-prototype-model="assets/official-v2-robotic-arm.model.json" data-prototype-name="Official V2 Robotic Arm"></div><figcaption><h5>Official V2 Robotic Arm</h5><span>Earlier arm iteration</span><p class="prototype-reason">I aimed for a grid-style design, but it didn’t work out. The gripper wasn’t fully functional.</p></figcaption></figure></article>
-              <article class="prototype-card reveal"><figure><div class="prototype-viewer" data-prototype-model="assets/mg996r-servo-holder.model.json" data-prototype-name="MG996R Servo Holder"></div><figcaption><h5>MG996R Servo Holder</h5><span>Original model · gripper parts shown separated</span><p class="prototype-reason">The assembly was too heavy for the base.</p></figcaption></figure></article>
-            </div>
-          </div>
-        </section>
+
 
         <section id="arm-redesign" class="cs-section" aria-labelledby="arm-redesign-title">
           <div class="cs-heading reveal"><span class="eyebrow">THE REDESIGN</span><h4 id="arm-redesign-title">Less bulk. A wider foundation.</h4></div>
@@ -162,12 +170,7 @@
           <aside class="cs-debug-note reveal"><h5>A small usability issue during testing</h5><p>The ESP32 sometimes needed a manual reset when reconnecting the controls. It added friction during repeated tests, but did not prevent the arm from functioning. I did not conclusively identify one cause.</p></aside>
         </section>
 
-        <section id="arm-demo" class="cs-section cs-finale" aria-labelledby="arm-demo-title">
-          <div class="cs-heading reveal"><span class="eyebrow">THE CURRENT BUILD</span><h4 id="arm-demo-title">From CAD to reality.</h4></div>
-          <p class="cs-prose reveal">The physical arm and Unity interface, together. This demo is the result of designing, printing, assembling, testing, and revising the system—not getting every decision right the first time.</p>
-          <figure class="cs-demo reveal"><video controls playsinline preload="none" poster="assets/arm-demo-poster.webp" width="1920" height="1080" aria-label="Servo arm demonstration, 60 FPS, showing the physical arm moving blocks beside its Unity interface"><source src="assets/servo-arm-demo-60fps.mp4" type="video/mp4"><p>Your browser cannot play this video. <a href="assets/servo-arm-demo-60fps.mp4">Open the 60 FPS demonstration.</a></p></video><figcaption><span>Physical arm + Unity control interface</span><span>1080p · 60 FPS · 1 minute · silent</span></figcaption></figure>
-          <p class="cs-video-description reveal">In the demo, the arm grips and moves red blocks on the workbench while the Unity model is visible on the monitor. The footage brings the mechanical build and its control interface together.</p>
-        </section>
+
       </article>
 
       <a class="more-work text-link reveal" href="https://github.com/ojomodel" target="_blank" rel="noopener noreferrer">More of what I’m learning on GitHub <span aria-hidden="true">↗</span></a>
