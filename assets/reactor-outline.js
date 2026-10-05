@@ -5,11 +5,13 @@ async function initOutlineReactor() {
   host.classList.add('reactor-outline'); host.dataset.ready = 'loading'; host.replaceChildren();
   const stage = document.createElement('div'); stage.className = 'reactor-outline-stage';
   const control = document.createElement('button'); control.type = 'button'; control.className = 'reactor-outline-control';
-  control.setAttribute('aria-label', 'Proof that Oluwaseun has a heart. Hover or hold to illuminate the reactor.'); control.disabled = true;
+  control.setAttribute('aria-label', 'Proof that Oluwaseun has a heart. Hover or hold the center to illuminate the reactor.'); control.disabled = true;
   const plate = document.createElement('span'); plate.className = 'reactor-outline-plate';
   const orbit = document.createElement('span'); orbit.className = 'reactor-orbit-light'; orbit.setAttribute('aria-hidden', 'true');
   const glow = document.createElement('span'); glow.className = 'reactor-outline-glow'; glow.setAttribute('aria-hidden', 'true');
-  plate.append(orbit, glow); control.append(plate); stage.append(control);
+  // Keep the artwork independent of the input target: its outer ring must not
+  // intercept a phone swipe just because the center supports press-and-hold.
+  plate.append(orbit, glow); stage.append(plate, control);
   const status = document.createElement('span'); status.className = 'reactor-outline-status';
   status.setAttribute('role', 'status'); status.textContent = 'Loading reactor…'; host.append(stage, status);
   try {
