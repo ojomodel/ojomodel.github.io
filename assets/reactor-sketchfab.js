@@ -35,7 +35,7 @@ export function initSketchfabReactor(host = document.querySelector('.personal-re
   host.replaceChildren();
   const stage = document.createElement('div'); stage.className = 'reactor-embed-stage';
   const frame = document.createElement('iframe'); frame.className = 'reactor-embed-frame';
-  frame.title = 'Arc reactor — original Sketchfab 3D model';
+  frame.title = 'Arc reactor original Sketchfab 3D model';
   frame.allow = 'autoplay; fullscreen; xr-spatial-tracking'; frame.allowFullscreen = true;
   const control = document.createElement('button'); control.className = 'reactor-charge-control'; control.type = 'button';
   control.setAttribute('aria-label', 'Charge the arc reactor');
