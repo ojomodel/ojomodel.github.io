@@ -57,25 +57,21 @@ export async function createArmShowcase(host) {
   host.setAttribute('role', 'region');
   host.setAttribute('aria-label', 'Rotating 3D robotic arm');
   const id = `arm-showcase-${++nextShowcase}`;
-  host.innerHTML = `<div class="arm-showcase-stage"><p class="arm-showcase-status" role="status">Loading the arm…</p></div><div class="arm-showcase-controls"><span class="arm-showcase-label" aria-hidden="true">LIVE 3D</span><div class="arm-showcase-actions"><button type="button" data-showcase-action="rotate" aria-pressed="false">Rotate</button><button type="button" data-showcase-action="motion" aria-pressed="false">Pause rotation</button><button type="button" data-showcase-action="home">Home view</button></div></div><p class="arm-showcase-hint" id="${id}-hint"></p>`;
+  host.innerHTML = `<div class="arm-showcase-stage"><p class="arm-showcase-status" role="status">Loading the arm…</p></div><div class="arm-showcase-controls"><span class="arm-showcase-label" aria-hidden="true">LIVE 3D</span><div class="arm-showcase-actions"><button type="button" data-showcase-action="rotate" aria-pressed="false">Rotate</button><button type="button" data-showcase-action="home">Home view</button></div></div><p class="arm-showcase-hint" id="${id}-hint"></p>`;
   const stage = host.querySelector('.arm-showcase-stage');
   const status = host.querySelector('.arm-showcase-status');
   const hint = host.querySelector('.arm-showcase-hint');
-  const motionButton = host.querySelector('[data-showcase-action="motion"]');
   const rotateButton = host.querySelector('[data-showcase-action="rotate"]');
   const buttons = [...host.querySelectorAll('button')];
   buttons.forEach(button => { button.disabled = true; });
   const coarsePointer = matchMedia('(any-pointer: coarse)');
-  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  const hasReducedMotion = () => document.documentElement.dataset.motion === 'reduced' ||
-    (document.documentElement.dataset.motion !== 'full' && reducedMotion.matches);
 
   let renderer, scene, camera, rig, environment;
   let ready = false, disposed = false, contextLost = false;
   let intersecting = false, pageVisible = !document.hidden, touchRotating = false;
-  let autoRotate = !hasReducedMotion(), frame = 0, lastTime = 0, frameCount = 0;
+  let frame = 0, lastTime = 0, frameCount = 0;
   let pointer = null, modelRadius = .3, currentZoom = 1;
-  let resizeObserver, intersectionObserver, panelObserver, motionObserver;
+  let resizeObserver, intersectionObserver, panelObserver;
   const geometryResources = [], materialResources = [], cleanupListeners = [];
   // Match the simulation's side view: gripper at left, 15 degrees above level.
   const homeTheta = 2.85, homePhi = 1.31;
@@ -93,14 +89,12 @@ export async function createArmShowcase(host) {
     !host.closest('[hidden], [aria-hidden="true"]') && stage.clientWidth > 0 && stage.clientHeight > 0;
 
   function updateControls() {
-    motionButton.textContent = autoRotate ? 'Pause rotation' : 'Resume rotation';
-    motionButton.setAttribute('aria-pressed', String(autoRotate));
     rotateButton.textContent = touchRotating ? 'Done' : 'Rotate';
     rotateButton.setAttribute('aria-pressed', String(touchRotating));
-    host.dataset.autoRotate = String(autoRotate);
+    host.dataset.autoRotate = 'true';
     host.dataset.touchRotating = String(touchRotating);
     hint.textContent = touchRotating ? 'Drag in any direction · Done to scroll' :
-      coarsePointer.matches ? 'Tap Rotate to explore · swipe to scroll' : 'Drag in any direction to explore';
+      coarsePointer.matches ? 'Tap Rotate to explore · release to keep spinning' : 'Drag to explore · release to keep spinning';
   }
   function stopFrame() {
     if (frame) cancelAnimationFrame(frame);
@@ -116,23 +110,16 @@ export async function createArmShowcase(host) {
     if (!shown()) { stopFrame(); return; }
     const delta = lastTime ? Math.min((time - lastTime) / 1000, .05) : 0;
     lastTime = time;
-    if (autoRotate && !pointer) {
+    if (!pointer) {
       idleRotation.setFromAxisAngle(idleAxis, delta * .24);
       rig.quaternion.premultiply(idleRotation).normalize();
     }
     renderer.render(scene, camera);
     host.dataset.frameCount = String(++frameCount);
     host.dataset.orientation = JSON.stringify(rig.quaternion.toArray().map(value => Number(value.toFixed(6))));
-    host.dataset.animating = String(autoRotate && !pointer);
-    if (autoRotate && !pointer) queueFrame();
+    host.dataset.animating = String(!pointer);
+    if (!pointer) queueFrame();
     else lastTime = 0;
-  }
-  function setMotion(value) {
-    autoRotate = value;
-    lastTime = 0;
-    updateControls();
-    if (!value) stopFrame();
-    queueFrame();
   }
   function releasePointer() {
     if (!pointer || !renderer) return;
@@ -141,13 +128,14 @@ export async function createArmShowcase(host) {
     pointer = null;
     canvas.classList.remove('is-dragging');
     if (canvas.hasPointerCapture(pointerId)) canvas.releasePointerCapture(pointerId);
+    lastTime = 0;
+    queueFrame();
   }
   function setTouchRotation(value) {
     touchRotating = value;
     releasePointer();
     host.classList.toggle('is-touch-rotating', value);
     if (renderer) renderer.domElement.style.touchAction = value ? 'none' : 'pan-y';
-    if (value) setMotion(false);
     updateControls();
   }
   function updateVisibility() {
@@ -175,7 +163,8 @@ export async function createArmShowcase(host) {
   }
   function home() {
     if (!ready) return;
-    setMotion(false);
+    releasePointer();
+    lastTime = 0;
     rig.quaternion.copy(homeOrientation);
     currentZoom = 1;
     fitCamera();
@@ -186,7 +175,6 @@ export async function createArmShowcase(host) {
     resizeObserver?.disconnect();
     intersectionObserver?.disconnect();
     panelObserver?.disconnect();
-    motionObserver?.disconnect();
     cleanupListeners.forEach(remove => remove());
     environment?.dispose();
     geometryResources.forEach(geometry => geometry.dispose());
@@ -286,19 +274,20 @@ export async function createArmShowcase(host) {
     const canvas = renderer.domElement;
     canvas.tabIndex = 0;
     canvas.setAttribute('role', 'img');
-    canvas.setAttribute('aria-label', 'Three-dimensional robotic arm. Drag or use arrow keys to rotate; Q and E roll, Space pauses or resumes, Home restores the starting view.');
+    canvas.setAttribute('aria-label', 'Continuously rotating three-dimensional robotic arm. Drag or use arrow keys to turn it; Q and E roll, Home restores the starting view. Automatic rotation resumes when you release it.');
     canvas.setAttribute('aria-describedby', hint.id);
     canvas.style.touchAction = 'pan-y';
     stage.append(canvas);
     listen(canvas, 'pointerdown', event => {
       if (event.button !== 0 || pointer || (event.pointerType === 'touch' && !touchRotating)) return;
       event.preventDefault();
-      setMotion(false);
+      stopFrame();
       canvas.focus({ preventScroll: true });
       canvas.setPointerCapture(event.pointerId);
       const rect = canvas.getBoundingClientRect();
       pointer = { id: event.pointerId, point: virtualSpherePoint(event.clientX - rect.left, event.clientY - rect.top, rect.width, rect.height) };
       canvas.classList.add('is-dragging');
+      queueFrame();
     });
     listen(canvas, 'pointermove', event => {
       if (!pointer || pointer.id !== event.pointerId) return;
@@ -312,28 +301,23 @@ export async function createArmShowcase(host) {
       if (pointer?.id === event.pointerId) releasePointer();
     }));
     listen(canvas, 'blur', releasePointer);
+    listen(window, 'blur', releasePointer);
     listen(canvas, 'keydown', event => {
       const rotations = { ArrowLeft: [0, 1, 0, -.15], ArrowRight: [0, 1, 0, .15], ArrowUp: [1, 0, 0, -.15], ArrowDown: [1, 0, 0, .15], q: [0, 0, 1, .15], e: [0, 0, 1, -.15] };
       const rotation = rotations[event.key];
       if (rotation) {
-        event.preventDefault(); setMotion(false);
+        event.preventDefault();
         rig.quaternion.premultiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(...rotation.slice(0, 3)), rotation[3])).normalize();
         queueFrame();
-      } else if (event.key === ' ' || event.key === 'Spacebar') { event.preventDefault(); setMotion(!autoRotate); }
-      else if (event.key === 'Home') { event.preventDefault(); home(); }
+      } else if (event.key === 'Home') { event.preventDefault(); home(); }
       else if (event.key === 'Escape') { event.preventDefault(); setTouchRotation(false); }
     });
-    listen(motionButton, 'click', () => { releasePointer(); setTouchRotation(false); setMotion(!autoRotate); });
     listen(rotateButton, 'click', () => setTouchRotation(!touchRotating));
     listen(host.querySelector('[data-showcase-action="home"]'), 'click', home);
     listen(document, 'visibilitychange', () => { pageVisible = !document.hidden; updateVisibility(); });
-    listen(window, 'pagehide', event => { stopFrame(); if (!event.persisted) { disposed = true; cleanResources(); } });
+    listen(window, 'pagehide', event => { pageVisible = false; releasePointer(); stopFrame(); if (!event.persisted) { disposed = true; cleanResources(); } });
     listen(window, 'pageshow', () => { pageVisible = !document.hidden; updateVisibility(); });
     listen(coarsePointer, 'change', updateControls);
-    const preferenceChanged = () => { setTouchRotation(false); setMotion(!hasReducedMotion()); };
-    listen(reducedMotion, 'change', preferenceChanged);
-    motionObserver = new MutationObserver(preferenceChanged);
-    motionObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-motion'] });
     const panel = host.closest('[data-gallery-panel]');
     if (panel) {
       panelObserver = new MutationObserver(updateVisibility);
