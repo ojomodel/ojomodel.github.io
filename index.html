@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="assets/arm-showcase.css?v=20261005">
   <script type="module" src="assets/arm-showcase.js?v=20261005-continuous"></script>
   <script src="assets/portfolio-pages.js?v=20261005-compact" defer></script>
+  <link rel="stylesheet" href="assets/ambient-status.css?v=20261005-houston">
+  <script src="assets/ambient-status.js?v=20261005-houston" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -43,7 +45,7 @@
   </div></header>
   <main id="main" class="page-shell">
     <section class="hero reveal" aria-labelledby="intro-title">
-      <div class="hero-topline"><span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Electrical engineering</span><span class="edition location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Based in Houston, TX</span></span></div>
+      <div class="hero-topline"><span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Electrical engineering</span><div class="ambient-status" data-ambient-status data-weather-state="loading"><span class="ambient-status__location">Houston, TX</span><span class="ambient-status__divider" aria-hidden="true"></span><span class="ambient-status__clock" title="Current time in Houston, Texas"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><time aria-label="Houston Central Time">--:--</time><span class="ambient-status__zone" data-clock-zone>CT</span></span><span class="ambient-status__divider ambient-status__divider--weather" aria-hidden="true"></span><a class="ambient-status__weather" href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer" data-weather-link title="Houston weather · Data by Open-Meteo" aria-label="Houston weather · Data by Open-Meteo"><svg viewBox="0 0 24 24" aria-hidden="true" data-weather-icon><path d="M7 18a4 4 0 0 1-.6-8A6 6 0 0 1 18 8.5 4.8 4.8 0 0 1 18 18Z"/></svg><span class="ambient-status__temperature" data-weather-temperature></span><span class="ambient-status__condition" data-weather-condition>Weather</span></a></div></div>
       <div class="hero-layout">
       <h1 id="intro-title">Oluwaseun<br><span>Omodele</span></h1>
       <div class="hero-copy">
