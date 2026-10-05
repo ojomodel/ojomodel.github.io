@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A 4-DOF robotic arm designed and built by Oluwaseun Omodele. Watch the working build, explore the interactive CAD model, and see the redesign.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="4-DOF Robotic Arm — Oluwaseun Omodele">
+  <meta property="og:description" content="From Fusion 360 to a working robotic arm. The build, the interactive model, and what changed through testing.">
+  <meta property="og:url" content="https://oluwaseuno.com/robotic-arm.html">
+  <meta property="og:image" content="https://oluwaseuno.com/assets/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="canonical" href="https://oluwaseuno.com/robotic-arm.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261005-native-prototypes">
+  <link rel="stylesheet" href="assets/prototype-viewer.css?v=20261004">
+  <script src="script.js?v=20261004-personal-about" defer></script>
+  <script type="module" src="assets/prototype-viewer.js?v=20261005-native-prototypes"></script>
+  <title>4-DOF Robotic Arm — Oluwaseun Omodele</title>
+  <link rel="stylesheet" href="assets/portfolio-pages.css?v=20261005-compact">
+  <link rel="stylesheet" href="assets/current-arm-viewer.css?v=20261005">
+  <script type="module" src="assets/current-arm-viewer.js?v=20261005"></script>
+  <script src="assets/portfolio-pages.js?v=20261005-compact" defer></script>
+</head>
+<body id="top" class="arm-project-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="nav-wrap">
+    <a class="site-brand" href="./" aria-label="Oluwaseun Omodele, home">Oluwaseun Omodele</a>
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="./#about">About</a><a href="./#projects">Projects</a>
+      <a href="https://github.com/ojomodel" target="_blank" rel="noopener noreferrer">GitHub <span class="external" aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/in/ojomodel" target="_blank" rel="noopener noreferrer">LinkedIn <span class="external" aria-hidden="true">↗</span></a>
+      <a href="./#resume">Resume</a><a href="./#contact">Contact</a>
+    </nav>
+  </div></header>
+  <main id="main" class="page-shell project-shell">
+    <a class="project-back" href="./#projects">← All projects</a>
+    <article aria-labelledby="project-title">
+      <header class="arm-intro">
+        <div class="arm-intro-copy"><span class="eyebrow">PERSONAL PROJECT / 2026</span><h1 id="project-title">4-DOF<br>Robotic Arm.</h1><p class="arm-deck">From an idea to a working system.</p><p>I designed, printed, and assembled an arm with four positioning joints and a servo gripper, then connected it to a Unity control interface.</p><p class="arm-role">My work: CAD, 3D printing, assembly, electronics integration, and controls.</p><div class="arm-links"><a class="button button-primary" href="#arm-interactive">Move the model <span aria-hidden="true">↓</span></a><a class="text-link" href="#arm-redesign">See the redesign <span aria-hidden="true">↓</span></a></div></div>
+        <div class="project-gallery arm-media" data-gallery>
+          <div class="gallery-tabs" aria-label="Finished arm views"><button type="button" data-gallery-tab aria-controls="arm-demo">Demo</button><button type="button" data-gallery-tab aria-controls="arm-photo">Finished build</button><button type="button" data-gallery-tab aria-controls="arm-studio">Control studio</button></div>
+          <figure id="arm-demo" data-gallery-panel><div class="arm-video-stage"><video controls playsinline preload="none" poster="assets/arm-demo-poster.webp" width="1920" height="1080" aria-label="Robotic arm moving blocks beside its Unity control interface"><source src="assets/servo-arm-demo-60fps.mp4" type="video/mp4"><p><a href="assets/servo-arm-demo-60fps.mp4">Watch the demonstration.</a></p></video></div><figcaption><span>The physical build in action</span><span>1 min · 60 FPS · silent</span></figcaption></figure>
+          <figure id="arm-photo" data-gallery-panel><div class="arm-photo-stage"><img src="assets/arm-current-photo.webp" width="1400" height="1867" alt="Current red and black robotic arm photographed on the workbench" loading="lazy"></div><figcaption><span>Finished build · workshop photograph</span></figcaption></figure>
+          <figure id="arm-studio" data-gallery-panel><div class="arm-photo-stage"><img src="assets/unity-joints.webp" width="1600" height="1000" alt="Unity joint controls and a simulation of the arm" loading="lazy"></div><figcaption><span>The Unity control interface · simulation view</span></figcaption></figure>
+        </div>
+      </header>
+      <section id="arm-interactive" class="arm-section" aria-labelledby="interactive-title">
+        <div class="arm-section-heading"><div><span class="eyebrow">EXPLORE THE DESIGN</span><h2 id="interactive-title">Put it in motion.</h2></div><p>Rotate the CAD model and try the joints.</p></div>
+        <div class="current-arm-viewer" data-current-arm-model="assets/current-arm.model.json"></div>
+        <p class="arm-caption">The CAD assembly used in my Unity simulation. Later enclosure and mounting-hole revisions are not shown.</p>
+        <div class="signal-path" aria-label="Physical arm control signal path"><span>Unity + Xbox</span><b aria-hidden="true">→</b><span>USB / ESP32</span><b aria-hidden="true">→</b><span>PCA9685</span><b aria-hidden="true">→</b><span>Five servo channels</span></div>
+      </section>
+      <section id="arm-redesign" class="arm-section" aria-labelledby="redesign-title">
+        <div class="arm-section-heading"><div><span class="eyebrow">WHAT CHANGED</span><h2 id="redesign-title">Less bulk. A wider foundation.</h2></div><p>The early arm wobbled under its own weight. Testing pushed me to rethink the structure, base, and printed fits together.</p></div>
+        <div class="arm-comparison"><figure><span class="arm-image-label">BEFORE / EARLY ASSEMBLY</span><img src="assets/arm-early-assembly.webp" width="1400" height="1948" alt="Earlier bulky black robotic arm on a compact cylindrical base" loading="lazy"></figure><figure><span class="arm-image-label">AFTER / CURRENT BUILD</span><img src="assets/arm-current-photo.webp" width="1400" height="1867" alt="The current red and black arm with slimmer links and a wider base" loading="lazy"></figure></div>
+        <div class="arm-lessons"><div><h3>Weight &amp; support</h3><p>Slimmer links reduced unnecessary bulk. A wider base made the newer build more stable in use.</p></div><div><h3>Printed fit</h3><p>I revised connections with unwanted play, learning to design around physical FDM prints as well as CAD dimensions.</p></div><div><h3>Gripper &amp; packaging</h3><p>I revised the wrist and gripper geometry and developed a taller enclosure for more electronics space.</p></div></div>
+      </section>
+      <section id="arm-prototypes" class="arm-section arm-notebook" aria-labelledby="notebook-title">
+        <div class="arm-section-heading"><div><span class="eyebrow">THE PROCESS</span><h2 id="notebook-title">A closer look, if you’re curious.</h2></div></div>
+        <details id="prototypes-title" class="arm-disclosure"><summary><span>Failed prototypes</span><span class="disclosure-meta">3 original Fusion models <b aria-hidden="true">+</b></span></summary><div class="disclosure-body"><p class="arm-caption">Rotate the earlier designs to see where the project started.</p>
+            <div class="prototype-grid">
+              <article id="motor-arm" class="prototype-card reveal"><figure><div class="prototype-viewer" data-prototype-model="assets/motor-arm.model.json?v=20261005" data-prototype-name="Motor arm"></div><figcaption><h3>Motor arm</h3><span>Original Fusion 360 design</span><p class="prototype-reason">The wire routing left too much exposed. I wanted cleaner packaging.</p></figcaption></figure></article>
+              <article class="prototype-card reveal"><figure><div class="prototype-viewer" data-prototype-model="assets/official-v2-robotic-arm.model.json" data-prototype-name="Official V2 Robotic Arm"></div><figcaption><h3>Official V2 Robotic Arm</h3><span>Earlier arm iteration</span><p class="prototype-reason">I aimed for a grid-style design, but it didn’t work out. The gripper wasn’t fully functional.</p></figcaption></figure></article>
+              <article class="prototype-card reveal"><figure><div class="prototype-viewer" data-prototype-model="assets/mg996r-servo-holder.model.json" data-prototype-name="MG996R Servo Holder"></div><figcaption><h3>MG996R Servo Holder</h3><span>Original model · gripper parts shown separated</span><p class="prototype-reason">The assembly was too heavy for the base.</p></figcaption></figure></article>
+            </div>
+        </div></details>
+        <details class="arm-disclosure" id="arm-build-photos"><summary><span>From prints to assembly</span><span class="disclosure-meta">Workshop photographs <b aria-hidden="true">+</b></span></summary><div class="disclosure-body"><div class="arm-comparison notebook-images"><figure><img src="assets/arm-first-prints.webp" width="1400" height="989" alt="Early grey brackets, gears and gripper parts on the print bed" loading="lazy"><figcaption>Early printed parts · July 2026</figcaption></figure><figure><img src="assets/arm-redesign-workbench.webp" width="1400" height="1867" alt="Red printed components and electronics laid out for assembly" loading="lazy"><figcaption>Revised components, ready to assemble</figcaption></figure></div></div></details>
+        <details class="arm-disclosure" id="arm-design-details"><summary><span>Gripper &amp; electronics enclosure</span><span class="disclosure-meta">Design details <b aria-hidden="true">+</b></span></summary><div class="disclosure-body"><h3>Reworking the gripper geometry</h3><div class="arm-comparison notebook-images"><figure><img src="assets/arm-early-gripper.webp" width="1400" height="1033" alt="Earlier red gripper with long jaws" loading="lazy"><figcaption>Earlier physical gripper</figcaption></figure><figure><img src="assets/wrist-detail.webp" width="1400" height="1089" alt="Redesigned wrist and gripper linkage in Fusion 360" loading="lazy"><figcaption>Revised wrist and gripper · CAD</figcaption></figure></div><h3>Making room for the electronics</h3><p>The enclosure redesign adds 21 mm of internal height, from 22.6 to 43.6 mm. These are CAD designs.</p><div class="arm-comparison notebook-images"><figure><img src="assets/arm-enclosure-before.webp" width="1200" height="840" alt="Lower enclosure beside the arm base in CAD" loading="lazy"><figcaption>Before · 22.6 mm internal height</figcaption></figure><figure><img src="assets/arm-enclosure-after.webp" width="1200" height="840" alt="Taller enclosure beside the arm base in CAD" loading="lazy"><figcaption>After · 43.6 mm internal height</figcaption></figure></div><p class="arm-caption">One issue still to investigate: the ESP32 sometimes needed a manual reset when reconnecting. I haven’t conclusively identified the cause.</p></div></details>
+      </section>
+    </article>
+    <div class="project-end"><a class="text-link" href="./#projects">← Back to projects</a><a class="text-link" href="mailto:seunomodelee@gmail.com">Let’s talk about the build <span aria-hidden="true">↗</span></a></div>
+    <footer class="site-footer"><span>© 2026 Oluwaseun Omodele</span><button id="motion-toggle" type="button" hidden aria-pressed="false">Motion: reduced</button><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </main>
+</body>
+</html>
