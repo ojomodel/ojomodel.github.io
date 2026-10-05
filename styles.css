@@ -101,6 +101,7 @@ html[data-motion=reduced]{scroll-behavior:auto}html[data-motion=reduced] *,html[
 .prototype-card figcaption{padding:23px 22px;border-top:1px solid var(--line)}
 .prototype-card h4{font:400 18px/1.5 var(--sans)}
 .prototype-card figcaption span{display:block;color:var(--muted);font-size:12px;margin-top:6px}
+.prototype-card .prototype-reason{margin:16px 0 0;color:var(--text);font-size:14px;line-height:1.7}
 @media(min-width:1000px){#about{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}#about>.section-heading{grid-column:1 / -1}.about-personal .education-line{max-width:780px}}
 @media(max-width:999px){.prototype-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.location{margin-top:16px;display:flex}.hero-footnote .hero-contact{font-size:11px;gap:9px}.prototype-grid{grid-template-columns:minmax(0,1fr);gap:22px}.prototype-section{margin-top:56px}.prototype-media{height:230px}.prototype-card figcaption{padding:19px}.prototype-thumbnail img{max-height:200px}}
