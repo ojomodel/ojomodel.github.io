@@ -1,0 +1,56 @@
+/* Scoped to the servo-arm case study; the rest of the portfolio is unchanged. */
+#servo-arm .cs-role{font-size:14px;margin-top:22px;max-width:620px}
+#servo-arm .cs-jump{display:flex;flex-wrap:wrap;gap:10px 23px;margin-top:27px;font:11px/1.8 var(--mono)}
+#servo-arm .cs-jump a{padding:7px 0;border-bottom:1px solid #555}
+#servo-arm .cs-jump a:hover{color:#fff;border-color:#ddd}
+#servo-arm .cs-section{margin-top:76px;padding-top:44px;border-top:1px solid var(--line);scroll-margin-top:25px}
+#servo-arm .cs-heading{display:grid;grid-template-columns:minmax(150px,.4fr) minmax(0,1fr);gap:30px;align-items:baseline;margin-bottom:29px}
+#servo-arm .cs-heading h4{font-size:clamp(22px,2.7vw,32px);font-weight:400;line-height:1.4;letter-spacing:-.04em}
+#servo-arm .cs-heading .eyebrow{font-size:10px;letter-spacing:.08em}
+#servo-arm .cs-prose{max-width:900px;font-size:17px}
+#servo-arm .cs-system,#servo-arm .cs-evolution{padding:0;list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:30px 0 0;border:1px solid var(--line)}
+#servo-arm .cs-system li,#servo-arm .cs-evolution li{position:relative;padding:25px;border-right:1px solid var(--line)}
+#servo-arm .cs-system li:last-child,#servo-arm .cs-evolution li:last-child{border-right:0}
+#servo-arm .cs-system strong,#servo-arm .cs-evolution strong{display:block;font:400 14px/1.6 var(--mono);margin-bottom:9px}
+#servo-arm .cs-system span,#servo-arm .cs-evolution span{display:block;color:var(--muted);font-size:13px;line-height:1.7}
+#servo-arm .cs-system li:not(:last-child)::after,#servo-arm .cs-evolution li:not(:last-child)::after{content:'→';position:absolute;right:-10px;top:28px;background:var(--bg);color:#888;padding:0 3px;z-index:1}
+#servo-arm .cs-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+#servo-arm .cs-copy{max-width:690px}
+#servo-arm .cs-copy p+p{margin-top:20px}
+#servo-arm h5{font:500 19px/1.5 var(--sans);margin:0 0 15px;color:var(--text)}
+#servo-arm .cs-copy p+h5{margin-top:34px}
+#servo-arm .cs-media{border:1px solid var(--line);background:#101010;min-width:0;overflow:hidden}
+#servo-arm .cs-media img{width:100%;height:430px;object-fit:cover}
+#servo-arm .cs-media figcaption{padding:17px 21px;border-top:1px solid var(--line);font:12px/1.7 var(--sans);color:var(--muted)}
+#servo-arm .cs-early{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+#servo-arm .cs-early .cs-media img{height:520px;object-fit:contain;background:#0d0d0d}
+#servo-arm .cs-statement{max-width:1050px;font-size:clamp(20px,2.3vw,29px);line-height:1.5;color:var(--text);margin:0 0 30px}
+#servo-arm .cs-star{padding:0;margin:0;list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+#servo-arm .cs-star li{padding-top:19px;border-top:1px solid #454545}
+#servo-arm .cs-star p{font-size:15px;line-height:1.8;margin-top:14px}
+#servo-arm .prototype-section{margin-top:50px}
+#servo-arm .prototype-section .section-heading h4{font-size:24px;font-weight:400;line-height:1.4}
+#servo-arm .prototype-section .section-heading p{font-size:14px}
+#servo-arm .prototype-card h5{font-size:17px;margin-bottom:5px}
+#servo-arm .cs-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:30px}
+#servo-arm .cs-comparison .cs-media{display:flex;flex-direction:column}
+#servo-arm .cs-comparison figcaption{flex:1}
+#servo-arm .cs-comparison img{height:450px;object-fit:contain;background:#0d0d0d}
+#servo-arm .cs-image-label{display:block;padding:15px 20px;font:10px/1.7 var(--mono);letter-spacing:.05em;border-bottom:1px solid var(--line);color:#ccc}
+#servo-arm .cs-note{font-size:12px;line-height:1.8;color:#989898;margin-top:17px;max-width:950px}
+#servo-arm .cs-workbench{margin-top:48px}
+#servo-arm .cs-workbench .cs-media img{object-fit:contain;height:430px}
+#servo-arm .cs-gripper .cs-contain,#servo-arm .cs-enclosure .cs-contain{background:#fff}
+#servo-arm .cs-gripper+p.cs-prose{font-size:15px;margin-top:23px}
+#servo-arm .cs-enclosure img{height:auto;aspect-ratio:10/7}
+#servo-arm .cs-enclosure strong{font:400 24px/1.5 var(--mono);color:#fff;margin-right:8px}
+#servo-arm .cs-debug-note{padding-left:24px;margin-top:35px;border-left:1px solid #626262;max-width:940px}
+#servo-arm .cs-debug-note h5{font-size:16px;margin-bottom:8px}
+#servo-arm .cs-debug-note p{font-size:14px}
+#servo-arm .cs-demo{margin-top:30px;border:1px solid var(--line);background:#101010}
+#servo-arm .cs-demo video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0d0d0d}
+#servo-arm .cs-demo figcaption{display:flex;justify-content:space-between;gap:12px;padding:17px 21px;font:11px/1.7 var(--mono);color:var(--muted)}
+#servo-arm .cs-video-description{font-size:13px;margin-top:18px;max-width:940px}
+@media(max-width:1050px){#servo-arm .cs-system,#servo-arm .cs-evolution,#servo-arm .cs-star{grid-template-columns:repeat(2,minmax(0,1fr))}#servo-arm .cs-system li:nth-child(2),#servo-arm .cs-evolution li:nth-child(2){border-right:0}#servo-arm .cs-system li:nth-child(2)::after,#servo-arm .cs-evolution li:nth-child(2)::after{display:none}#servo-arm .cs-system li:nth-child(n+3),#servo-arm .cs-evolution li:nth-child(n+3){border-top:1px solid var(--line)}#servo-arm .cs-split{gap:28px}#servo-arm .cs-media img,#servo-arm .cs-comparison img{height:350px}}
+@media(max-width:760px){#servo-arm .cs-heading{grid-template-columns:1fr;gap:12px}#servo-arm .cs-split,#servo-arm .cs-early,#servo-arm .cs-comparison{grid-template-columns:1fr;gap:24px}#servo-arm .cs-section{margin-top:54px;padding-top:32px}#servo-arm .cs-prose,#servo-arm .cs-copy p{font-size:15px}#servo-arm .cs-comparison img{height:auto;max-height:450px;aspect-ratio:4/3}#servo-arm .cs-early .cs-media img{height:420px}#servo-arm .cs-media img{height:auto;max-height:420px;object-fit:contain}#servo-arm .cs-workbench .cs-media img{height:380px}#servo-arm .cs-demo figcaption{flex-direction:column;gap:4px;font-size:10px}#servo-arm .cs-role{font-size:13px}#servo-arm .cs-system li,#servo-arm .cs-evolution li{padding:20px 15px}#servo-arm .cs-system strong,#servo-arm .cs-evolution strong{font-size:12px}#servo-arm .cs-system span,#servo-arm .cs-evolution span{font-size:12px}#servo-arm .cs-enclosure img{max-height:none;aspect-ratio:10/7}#servo-arm .cs-media figcaption{padding:15px}#servo-arm .cs-image-label{padding:12px 15px}}
+@media(max-width:420px){#servo-arm .cs-star{grid-template-columns:1fr;gap:20px}#servo-arm .cs-star p{margin-top:9px}#servo-arm .cs-jump{gap:8px 18px}#servo-arm .project-top .eyebrow{max-width:250px}#servo-arm .cs-early .cs-media img{height:370px}}
