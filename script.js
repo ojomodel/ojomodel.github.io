@@ -193,13 +193,13 @@
       if (returnFocus) menuToggle.focus({ preventScroll: true });
       header.classList.remove("menu-open");
       menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.textContent = "Menu";
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
     }
 
     menuToggle.addEventListener("click", () => {
       const open = menuToggle.getAttribute("aria-expanded") !== "true";
       menuToggle.setAttribute("aria-expanded", String(open));
-      menuToggle.textContent = open ? "Close" : "Menu";
+      menuToggle.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
       header.classList.toggle("menu-open", open);
     });
     header.querySelector(".site-brand")?.addEventListener("click", () => closeMenu());
