@@ -1,4 +1,10 @@
 /* A short homepage and a focused, independently readable project page. */
+.home-project .project-title a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.15em}
+.home-project .media-stage:focus-visible{outline-offset:-4px}
+@media(max-width:560px){.home-project .gallery-tabs button{flex:1 0 45%}}
+.menu-toggle svg{display:block;width:24px;height:24px;margin-left:auto}
+.menu-toggle .menu-close,.menu-toggle[aria-expanded=true] .menu-bars{display:none}
+.menu-toggle[aria-expanded=true] .menu-close{display:block}
 .featured-project{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,100px);align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0}
 .featured-photo{position:relative;background:#111;border:1px solid var(--line);display:block;overflow:hidden}
 .featured-photo img{width:100%;height:360px;object-fit:contain;transition:transform .35s}
