@@ -24,7 +24,8 @@
   border: 0;
   background: transparent;
   cursor: pointer;
-  touch-action: pan-y;
+  /* A press belongs to the reactor until release, including finger drift. */
+  touch-action: none;
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -95,23 +96,32 @@
   transform: translateZ(0);
 }
 
-.reactor-orbit-light::before {
+.reactor-orbit-light::before,
+.reactor-orbit-light::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
   animation: reactor-orbit-light-turn 7s linear infinite;
   will-change: transform;
+}
+
+.reactor-orbit-light::before {
   background: conic-gradient(from 0deg,
     transparent 0deg 258deg,
     rgba(200, 227, 244, .05) 276deg,
     rgba(203, 232, 251, .4) 307deg,
     rgba(220, 241, 255, .9) 330deg,
     #f1faff 342deg,
-    #fff 354deg,
-    transparent 360deg);
+    #fff 354deg 360deg);
   -webkit-mask: radial-gradient(farthest-side, transparent 80.22%, #000 80.5%, #000 99.4%, transparent 100%);
   mask: radial-gradient(farthest-side, transparent 80.22%, #000 80.5%, #000 99.4%, transparent 100%);
+}
+
+.reactor-orbit-light::after {
+  /* Circular head: radius26.5 on the inscription band's radius241.5 path. */
+  background: radial-gradient(circle closest-side at 50% 4.94403%,
+    #fff 0% 90%, rgba(241, 250, 255, .92) 94%, transparent 100%);
 }
 
 @keyframes reactor-orbit-light-turn {
@@ -144,11 +154,14 @@
 /* Pausing, rather than removing the animation, preserves its current position.
    Full is the site's explicit override for the OS preference. */
 html[data-motion="reduced"] .reactor-orbit-light::before,
-.reactor-outline[data-suspended="true"] .reactor-orbit-light::before {
+html[data-motion="reduced"] .reactor-orbit-light::after,
+.reactor-outline[data-suspended="true"] .reactor-orbit-light::before,
+.reactor-outline[data-suspended="true"] .reactor-orbit-light::after {
   animation-play-state: paused;
 }
 @media (prefers-reduced-motion: reduce) {
-  html:not([data-motion="full"]) .reactor-orbit-light::before { animation-play-state: paused; }
+  html:not([data-motion="full"]) .reactor-orbit-light::before,
+  html:not([data-motion="full"]) .reactor-orbit-light::after { animation-play-state: paused; }
 }
 @media (max-width: 560px) {
   .personal-reactor.reactor-outline { max-width: 390px; }

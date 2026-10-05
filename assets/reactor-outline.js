@@ -66,22 +66,18 @@ async function initOutlineReactor() {
     releaseHold(); lastDirect = performance.now(); assistiveUntil = 0; held = { id, kind, x: event.clientX, y: event.clientY };
     if (kind !== 'mouse') { hover = false; aimX = aimY = 0; } wake();
   }
-  function movedHold(event) {
-    // Finger jitter must not reset charging. A deliberate swipe gives scrolling back to the page.
-    if (held && Math.hypot(event.clientX - held.x, event.clientY - held.y) > 24) releaseHold();
-  }
   if ('PointerEvent' in window) {
     control.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse' && fineQuery.matches) { hover = true; mouseAim(event); wake(); } });
     control.addEventListener('pointerleave', event => { if (event.pointerType === 'mouse') { hover = false; aimX = aimY = 0; wake(); } });
     control.addEventListener('pointerdown', event => {
       if (event.isPrimary === false || (event.pointerType === 'mouse' && event.button !== 0)) return;
+      if (event.pointerType !== 'mouse' && event.cancelable !== false) event.preventDefault();
       beginHold(event.pointerId, 'pointer', event);
       if (event.pointerType === 'mouse' && fineQuery.matches) { hover = true; mouseAim(event); }
       try { control.setPointerCapture(event.pointerId); } catch { /* Window release listeners cover capture failures. */ }
     });
     control.addEventListener('pointermove', event => {
       if (event.pointerType === 'mouse' && fineQuery.matches) mouseAim(event);
-      else if (held && held.id === event.pointerId) movedHold(event);
     });
     const end = event => {
       if (!held || held.id !== event.pointerId) return;
@@ -93,11 +89,13 @@ async function initOutlineReactor() {
     // Older Safari fallback: charge starts on contact without waiting for a synthetic click.
     control.addEventListener('touchstart', event => {
       if (event.touches.length !== 1) { stopInput(); return; }
+      if (event.cancelable !== false) event.preventDefault();
       const touch = event.changedTouches[0]; beginHold(touch.identifier, 'touch', touch);
-    }, { passive: true });
+    }, { passive: false });
     control.addEventListener('touchmove', event => {
-      const touch = Array.from(event.touches).find(item => held && item.identifier === held.id); if (touch) movedHold(touch);
-    }, { passive: true });
+      // Keep charging throughout a held contact; scrolling remains available outside this control.
+      if (held && event.cancelable !== false) event.preventDefault();
+    }, { passive: false });
     const endTouch = event => {
       if (Array.from(event.changedTouches).some(item => held && item.identifier === held.id)) { lastDirect = performance.now(); hover = false; releaseHold(); }
     };
