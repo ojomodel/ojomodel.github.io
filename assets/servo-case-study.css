@@ -51,6 +51,14 @@
 #servo-arm .cs-demo video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0d0d0d}
 #servo-arm .cs-demo figcaption{display:flex;justify-content:space-between;gap:12px;padding:17px 21px;font:11px/1.7 var(--mono);color:var(--muted)}
 #servo-arm .cs-video-description{font-size:13px;margin-top:18px;max-width:940px}
+#servo-arm .cs-demo-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:48px;align-items:center}
+#servo-arm .cs-demo-feature .cs-demo{margin:0;width:100%;max-width:720px;justify-self:center}
+#servo-arm .cs-demo-copy{max-width:480px}
+#servo-arm .cs-demo-copy h4{font:400 clamp(22px,2.7vw,32px)/1.4 var(--mono);letter-spacing:-.04em;margin:14px 0 20px}
+#servo-arm .cs-demo-copy p{font-size:16px}
+#servo-arm .cs-demo-copy .text-link{font-size:12px;margin-top:24px}
+#servo-arm .cs-demo-feature .cs-demo figcaption{flex-direction:column;gap:4px}
+@media(max-width:1000px){#servo-arm .cs-demo-feature{grid-template-columns:1fr;gap:24px}#servo-arm .cs-demo-feature .cs-demo{justify-self:start}#servo-arm .cs-demo-copy{max-width:640px}}
 @media(max-width:1050px){#servo-arm .cs-system,#servo-arm .cs-evolution,#servo-arm .cs-star{grid-template-columns:repeat(2,minmax(0,1fr))}#servo-arm .cs-system li:nth-child(2),#servo-arm .cs-evolution li:nth-child(2){border-right:0}#servo-arm .cs-system li:nth-child(2)::after,#servo-arm .cs-evolution li:nth-child(2)::after{display:none}#servo-arm .cs-system li:nth-child(n+3),#servo-arm .cs-evolution li:nth-child(n+3){border-top:1px solid var(--line)}#servo-arm .cs-split{gap:28px}#servo-arm .cs-media img,#servo-arm .cs-comparison img{height:350px}}
 @media(max-width:760px){#servo-arm .cs-heading{grid-template-columns:1fr;gap:12px}#servo-arm .cs-split,#servo-arm .cs-early,#servo-arm .cs-comparison{grid-template-columns:1fr;gap:24px}#servo-arm .cs-section{margin-top:54px;padding-top:32px}#servo-arm .cs-prose,#servo-arm .cs-copy p{font-size:15px}#servo-arm .cs-comparison img{height:auto;max-height:450px;aspect-ratio:4/3}#servo-arm .cs-early .cs-media img{height:420px}#servo-arm .cs-media img{height:auto;max-height:420px;object-fit:contain}#servo-arm .cs-workbench .cs-media img{height:380px}#servo-arm .cs-demo figcaption{flex-direction:column;gap:4px;font-size:10px}#servo-arm .cs-role{font-size:13px}#servo-arm .cs-system li,#servo-arm .cs-evolution li{padding:20px 15px}#servo-arm .cs-system strong,#servo-arm .cs-evolution strong{font-size:12px}#servo-arm .cs-system span,#servo-arm .cs-evolution span{font-size:12px}#servo-arm .cs-enclosure img{max-height:none;aspect-ratio:10/7}#servo-arm .cs-media figcaption{padding:15px}#servo-arm .cs-image-label{padding:12px 15px}}
 @media(max-width:420px){#servo-arm .cs-star{grid-template-columns:1fr;gap:20px}#servo-arm .cs-star p{margin-top:9px}#servo-arm .cs-jump{gap:8px 18px}#servo-arm .project-top .eyebrow{max-width:250px}#servo-arm .cs-early .cs-media img{height:370px}}
