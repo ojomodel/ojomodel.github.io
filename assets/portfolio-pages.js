@@ -2,7 +2,7 @@
   // Keep previously shared project anchors useful after the page split.
   const projectHashes = new Set(['#arm-demo', '#arm-interactive', '#arm-prototypes', '#arm-redesign', '#prototypes-title', '#motor-arm', '#arm-design-details', '#arm-build-photos']);
   if (!document.body.classList.contains('arm-project-page')) {
-    if (projectHashes.has(location.hash)) location.replace(`robotic-arm.html${location.hash}`);
+    if (projectHashes.has(location.hash)) location.replace(`/projects/${location.hash}`);
     return;
   }
   function revealAnchor() {
