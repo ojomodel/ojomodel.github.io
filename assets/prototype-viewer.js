@@ -45,7 +45,9 @@ export function createPrototypeViewer(host) {
   };
   let scene,renderer,camera,object,resizeObserver;
   let visible=true,ready=false,disposed=false,focused=false,interacting=false;
-  let theta=-0.95,phi=1.08,distance=3.8,fitDistance=3.8,radius=1;
+  // Match the front/right isometric view used by these native Fusion documents.
+  const homeTheta=Math.PI/4,homePhi=Math.acos(1/Math.sqrt(3));
+  let theta=homeTheta,phi=homePhi,distance=3.8,fitDistance=3.8,radius=1;
   let fitPoints=new Float32Array();
   const target=new THREE.Vector3();
   const pointers=new Map();
@@ -86,7 +88,7 @@ export function createPrototypeViewer(host) {
     }
     return required+radius*0.025;
   }
-  function reset(){theta=-0.95;phi=1.08;fitDistance=fitForView();distance=fitDistance;render();}
+  function reset(){theta=homeTheta;phi=homePhi;fitDistance=fitForView();distance=fitDistance;render();}
   function setInteracting(value){
     interacting=value;host.classList.toggle('is-exploring',value);
     touchButton.textContent=value?'Done':'Explore';touchButton.setAttribute('aria-pressed',String(value));
