@@ -1,0 +1,147 @@
+@import url('./vendor/pdfjs/text-layer.css');
+
+[data-route-focus]:focus { outline: none; }
+.resume-inline-layout {
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 0 0;
+  border: 0;
+  border-top: 1px solid var(--line, #292929);
+}
+.resume-inline-copy {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-bottom: 26px;
+}
+.resume-inline-copy p { max-width: 700px; font-size: 16px; }
+.resume-inline-copy .resume-date {
+  margin: 0;
+  color: var(--muted, #aaa);
+  font: 11px/1.6 var(--mono, monospace);
+}
+.resume-open-original {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--muted, #aaa);
+  font: 11px/1.6 var(--mono, monospace);
+}
+.resume-open-original:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+.resume-reader {
+  min-width: 0;
+  width: 100%;
+  border: 0;
+  outline: 0;
+}
+
+.resume-reader-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  padding: 0 0 16px;
+  color: var(--muted, #b1b1b1);
+  font: 12px/1.4 var(--mono, monospace);
+}
+
+.resume-reader-zoom {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.resume-reader-zoom button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  min-width: 38px;
+  padding: 6px 10px;
+  background: transparent;
+  border: 0;
+  border-radius: 3px;
+  color: var(--text, #f2f2f2);
+  font: inherit;
+}
+
+.resume-reader-zoom button[data-resume-zoom] { font-size: 21px; }
+.resume-reader-zoom button:hover:not(:disabled) { background: #ffffff12; }
+.resume-reader-zoom button:disabled { opacity: .35; cursor: default; }
+.resume-reader-zoom output { min-width: 4.5ch; text-align: center; }
+.resume-reader-zoom [data-resume-fit] { margin-left: 7px; }
+.resume-reader-zoom [aria-pressed='true'] { background: #ffffff0a; }
+.resume-reader-toolbar > a { color: var(--text, #f2f2f2); padding: 8px 0; white-space: nowrap; }
+.resume-reader-toolbar > a:hover, .resume-reader-status a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+.resume-reader-viewport {
+  height: min(72vh, 780px);
+  height: min(72svh, 780px);
+  min-height: 340px;
+  overflow: auto;
+  background: #141414;
+  border: 0;
+  border-radius: 0;
+  touch-action: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #777 #161616;
+  scroll-behavior: auto;
+}
+
+.resume-reader-viewport:focus { outline: none; }
+.resume-reader-viewport:focus-visible {
+  outline: 2px solid var(--accent, #bdbdbd);
+  outline-offset: 5px;
+}
+
+.resume-reader-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: max-content;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.resume-reader-paper {
+  flex: none;
+  position: relative;
+  background: #fff;
+  color: #000;
+  line-height: 1;
+  isolation: isolate;
+}
+
+.resume-reader-paper canvas { display: block; max-width: none; }
+.resume-reader-paper .textLayer { -webkit-text-size-adjust: none; }
+.resume-reader-paper .textLayer span { font-family: sans-serif; }
+.resume-reader-links { position: absolute; inset: 0; pointer-events: none; }
+.resume-reader-links a { position: absolute; pointer-events: auto; }
+.resume-reader-links a:hover { background: #005eff12; }
+.resume-reader-links a:focus-visible { outline: 2px solid #2465d7; outline-offset: 2px; }
+.resume-reader-status {
+  min-height: 1.5em;
+  padding-top: 13px;
+  font: 11px/1.6 var(--mono, monospace);
+  color: var(--muted, #aaa);
+}
+.resume-reader-status a { color: var(--muted, #aaa); margin-left: 8px; }
+.resume-reader[data-resume-ready='error'] .resume-reader-viewport { display: none; }
+
+@media (max-width: 560px) {
+  .resume-inline-layout { padding-top: 20px; }
+  .resume-inline-copy { margin-bottom: 20px; }
+  .resume-inline-copy p { font-size: 14px; }
+  .resume-reader-toolbar { gap: 8px; font-size: 10px; padding-bottom: 12px; }
+  .resume-reader-page { flex: 1; }
+  .resume-reader-zoom { order: 3; width: 100%; justify-content: center; }
+  .resume-reader-zoom button { min-width: 44px; min-height: 44px; }
+  .resume-reader-viewport { min-height: 280px; height: min(68svh, 640px); }
+  .resume-reader-status { font-size: 10px; }
+  .resume-reader-status a { display: inline-block; margin-left: 0; }
+}

@@ -40,12 +40,17 @@
     rootStyle.setProperty('scroll-behavior', 'auto', 'important');
     section.scrollIntoView({ behavior: 'auto', block: 'start' });
 
-    // Put keyboard and screen-reader navigation at the same named section.
-    const hadTabIndex = section.hasAttribute('tabindex');
-    if (!hadTabIndex) section.setAttribute('tabindex', '-1');
-    section.focus({ preventScroll: true });
+    // Announce the destination heading without outlining the whole section.
+    const focusTarget = section.querySelector('h1, h2, h3') || section;
+    const hadTabIndex = focusTarget.hasAttribute('tabindex');
+    if (!hadTabIndex) focusTarget.setAttribute('tabindex', '-1');
+    focusTarget.setAttribute('data-route-focus', '');
+    focusTarget.focus({ preventScroll: true });
     if (!hadTabIndex) {
-      section.addEventListener('blur', () => section.removeAttribute('tabindex'), { once: true });
+      focusTarget.addEventListener('blur', () => {
+        focusTarget.removeAttribute('tabindex');
+        focusTarget.removeAttribute('data-route-focus');
+      }, { once: true });
     }
     document.documentElement.dataset.landedSection = sectionId;
     requestAnimationFrame(() => {

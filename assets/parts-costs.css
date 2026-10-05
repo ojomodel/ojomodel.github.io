@@ -1,0 +1,16 @@
+.parts-costs{grid-column:1/-1;display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:64px;padding-top:34px;margin-top:12px;border-top:1px solid var(--line)}
+.parts-costs-intro h3{font:400 25px/1.4 var(--mono);letter-spacing:-.04em}
+.parts-costs-intro>p{font-size:14px;max-width:330px;margin-top:12px}
+.parts-costs-total{display:grid;gap:4px;margin-top:26px!important;font:11px/1.6 var(--mono)!important;color:var(--muted)}
+.parts-costs-total strong{font:400 38px/1.4 var(--mono);letter-spacing:-.05em;color:var(--text)}
+.parts-costs-total strong small{font:11px var(--mono);letter-spacing:0;color:var(--muted);margin-left:8px}
+.parts-costs table{border-collapse:collapse;width:100%;text-align:left;font-size:14px;line-height:1.55}
+.parts-costs th,.parts-costs td{padding:13px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.parts-costs thead th{font:10px/1.5 var(--mono);color:var(--muted);padding-top:0;padding-bottom:14px}
+.parts-costs tbody th{font-weight:400;color:var(--text);padding-right:20px}
+.parts-costs tbody th span{display:block;font-size:11px;color:var(--muted);margin-top:3px}
+.parts-costs td:nth-child(2){color:var(--muted);white-space:nowrap;padding-right:22px}
+.parts-costs td:last-child,.parts-costs th:last-child{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.parts-costs-note{font-size:11px;line-height:1.75;margin-top:16px;max-width:760px;color:var(--muted)}
+@media(max-width:800px){.parts-costs{grid-template-columns:1fr;gap:25px;padding-top:26px;margin-top:24px}.parts-costs-intro{display:grid;grid-template-columns:1fr auto;column-gap:20px}.parts-costs-intro>p:not(.parts-costs-total){grid-column:1;max-width:100%}.parts-costs-intro .parts-costs-total{grid-column:2;grid-row:1/3;margin-top:0!important;text-align:right;align-self:center}.parts-costs-total strong{font-size:30px}.parts-costs-intro h3{font-size:23px}}
+@media(max-width:450px){.parts-costs{gap:22px}.parts-costs table{font-size:12px}.parts-costs tbody th{padding-right:12px}.parts-costs td:nth-child(2){padding-right:12px;font-size:11px}.parts-costs-intro{display:block}.parts-costs-intro .parts-costs-total{display:flex;align-items:baseline;justify-content:space-between;margin-top:22px!important;text-align:left;gap:16px}.parts-costs tbody th span{font-size:10px}.parts-costs-note{font-size:10px}}
