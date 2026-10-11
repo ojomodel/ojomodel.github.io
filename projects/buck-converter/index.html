@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A 10W buck converter design study by Oluwaseun Omodele: a two-layer KiCad PCB, circuit analysis, and an honest verification record. Designed and simulated; not hardware tested.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>10W DC-DC Buck Converter | Oluwaseun Omodele</title>
+  <link rel="canonical" href="https://oluwaseuno.com/projects/buck-converter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="10W DC-DC Buck Converter | Oluwaseun Omodele">
+  <meta property="og:description" content="Power electronics and PCB design. Designed and Simulated — Not Hardware Tested.">
+  <meta property="og:url" content="https://oluwaseuno.com/projects/buck-converter/">
+  <meta property="og:image" content="https://oluwaseuno.com/assets/buck-converter/pcb/top-layer.png">
+  <meta property="og:image:width" content="2448">
+  <meta property="og:image:height" content="1542">
+  <meta property="og:image:alt" content="Unaltered native KiCad top-layer export of the buck converter board. CAD design, not a physical board photograph.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://oluwaseuno.com/assets/buck-converter/pcb/top-layer.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=20261005-native-prototypes">
+  <link rel="stylesheet" href="/assets/portfolio-pages.css?v=20261005-project-menu">
+  <link rel="stylesheet" href="/assets/buck-converter.css?v=20261010-local">
+  <script src="/script.js?v=20261005-project-menu" defer></script>
+</head>
+<body id="top" class="buck-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="nav-wrap">
+    <a class="site-brand" href="/" aria-label="Oluwaseun Omodele, home">Oluwaseun Omodele</a>
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-nav" aria-expanded="false"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path class="menu-bars" d="M4 5h16M4 12h16M4 19h16"/><path class="menu-close" d="m5 5 14 14M19 5 5 19"/></svg></button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="/about/" data-nav-section="about">About</a>
+      <details class="nav-projects"><summary>Projects <svg class="nav-projects-chevron" viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="m3 4.5 3 3 3-3"/></svg></summary><ul class="nav-projects-list"><li><a href="/projects/">001 Robotic Arm</a></li><li><a href="/projects/buck-converter/" aria-current="page">002 DC-DC Buck Converter</a></li></ul></details>
+      <a href="https://github.com/ojomodel" target="_blank" rel="noopener noreferrer">GitHub <span class="external" aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/in/ojomodel" target="_blank" rel="noopener noreferrer">LinkedIn <span class="external" aria-hidden="true">↗</span></a>
+      <a href="/resume/" data-nav-section="resume">Resume</a><a href="/contact/" data-nav-section="contact">Contact</a>
+    </nav>
+  </div></header>
+  <main id="main" class="page-shell project-shell">
+    <a class="project-back" href="/#projects">← All projects</a>
+    <article aria-labelledby="buck-title">
+      <header class="buck-hero">
+        <div>
+          <span class="eyebrow">002 / POWER ELECTRONICS / 2026</span>
+          <h1 id="buck-title">10W DC-DC<br>Buck Converter.<br><span>From circuit<br>to layout.</span></h1>
+          <p class="buck-deck">A compact power-supply design study: component selection, switching-circuit analysis, and a two-layer PCB built around the TI TPS54302.</p>
+          <p class="buck-status">Designed and Simulated — Not Hardware Tested</p>
+          <div class="buck-links"><a class="button button-primary" href="#buck-design">Explore the design <span aria-hidden="true">↓</span></a><a class="text-link" href="#buck-files">Download CAD <span aria-hidden="true">↓</span></a></div>
+        </div>
+        <div class="project-gallery" data-gallery>
+          <div class="gallery-tabs" aria-label="Native PCB layer exports"><button id="buck-tab-top" type="button" data-gallery-tab aria-controls="buck-panel-top">Top layer</button><button id="buck-tab-bottom" type="button" data-gallery-tab aria-controls="buck-panel-bottom">Bottom layer</button></div>
+          <figure id="buck-panel-top" data-gallery-panel><a class="buck-cad-stage" href="/assets/buck-converter/pcb/top-layer.png" target="_blank" rel="noopener" aria-label="Open full-resolution top-layer PCB export"><img src="/assets/buck-converter/pcb/top-layer.png" width="2448" height="1542" alt="Native KiCad top-layer export showing red copper areas, component footprints, and the routed buck converter circuit"></a><figcaption><span>Native KiCad export · Top layer</span><a href="/assets/buck-converter/pcb/top-layer.png" target="_blank" rel="noopener">View full size ↗</a></figcaption></figure>
+          <figure id="buck-panel-bottom" data-gallery-panel><a class="buck-cad-stage" href="/assets/buck-converter/pcb/bottom-layer.png" target="_blank" rel="noopener" aria-label="Open full-resolution bottom-layer PCB export"><img src="/assets/buck-converter/pcb/bottom-layer.png" width="2448" height="1542" loading="lazy" alt="Native KiCad bottom-layer export showing the converter board's lower copper and routing"></a><figcaption><span>Native KiCad export · Bottom layer</span><a href="/assets/buck-converter/pcb/bottom-layer.png" target="_blank" rel="noopener">View full size ↗</a></figcaption></figure>
+        </div>
+      </header>
+      <dl class="buck-specs" aria-label="Design targets and PCB dimensions"><div><dt>INPUT TARGET</dt><dd>9–18 V</dd></div><div><dt>OUTPUT TARGET</dt><dd>5 V / 2 A</dd></div><div><dt>BOARD SIZE</dt><dd>54 × 34 mm</dd></div><div><dt>PCB STACK</dt><dd>2 layers</dd></div></dl>
+
+      <section id="buck-design" class="buck-section" aria-labelledby="buck-design-title">
+        <div class="buck-section-head"><div><span class="eyebrow">01 / CIRCUIT &amp; LAYOUT</span><h2 id="buck-design-title">The design, in detail.</h2></div><p>The goal was a 10W supply across a 9–18 V input range. The editable schematic and PCB capture the regulator, passive components, feedback network, and connections.</p></div>
+        <figure class="buck-schematic"><a href="/assets/buck-converter/schematic/schematic.pdf" target="_blank" rel="noopener" aria-label="Open the native KiCad schematic PDF to inspect component values"><img src="/assets/buck-converter/schematic/schematic.png" loading="lazy" alt="Full native KiCad schematic of the TPS54302 buck converter, including input capacitors, inductor, output capacitors, and feedback divider"></a><figcaption>Unaltered native KiCad schematic export · Select to inspect the PDF ↗</figcaption></figure>
+        <div class="buck-decisions"><div><h3>Setting the output</h3><p>A 90.9 kΩ / 12.3 kΩ feedback divider targets approximately 5.003 V nominal. It replaces an earlier divider whose calculated upper corner reached 5.300 V. The design includes an 82 pF feed-forward capacitor.</p></div><div><h3>Accounting for capacitance</h3><p>Three 22 µF output capacitors provide 66 µF nominal. Analysis assumes only 33 µF effective after DC bias. That 50% assumption still needs checking against the selected capacitor’s bias curve.</p></div><div><h3>Keeping the sources editable</h3><p>The board contains 16 components and 36 pins. The supplied verification cross-checks PCB connectivity against the schematic, alongside KiCad electrical and design-rule checks.</p></div></div>
+      </section>
+
+      <section id="buck-analysis" class="buck-section" aria-labelledby="buck-analysis-title">
+        <div class="buck-section-head"><div><span class="eyebrow">02 / ANALYSIS</span><h2 id="buck-analysis-title">What the model tells us.</h2></div><p>Simulation helps test assumptions. These results describe an educational switching model and do not establish the performance of an assembled TPS54302 board.</p></div>
+        <div class="buck-results">
+          <div class="buck-model-note"><h3>The controller is an assumption.</h3><p>The official TI PSpice model failed transient convergence in ngspice. The six completed simulation runs therefore use an <strong>educational switching model with an assumed controller</strong>, not a validated TPS54302 model.</p><p>The load steps expose that limitation: model output falls to <strong>4.119 V</strong> and rises to <strong>5.887 V</strong> during 0.5 A ↔ 2 A transitions. These excursions are retained as results, not predictions of the real device.</p></div>
+          <div><table class="buck-result-table"><caption>EDUCATIONAL MODEL · SIMULATED RESULTS</caption><tbody><tr><th scope="row">Steady-state output</th><td>Approximately 5.003 V</td></tr><tr><th scope="row">Output ripple at 2 A</th><td>5.686–9.286 mV across 9–18 V input</td></tr><tr><th scope="row">Load-step range</th><td>4.119–5.887 V</td></tr><tr><th scope="row">Startup peak</th><td>5.030 V with assumed 5 ms soft start</td></tr><tr><th scope="row">Efficiency</th><td>Theoretical loss estimate only; not measured</td></tr></tbody></table><p class="buck-note">Model assumptions: 400 kHz switching, 10 µH inductance, 33 µF effective output capacitance, and 2 mΩ output-capacitor ESR. Steady-state measurements use the 7.75–8.00 ms simulation window.</p></div>
+        </div>
+        <p class="buck-note">Hardware operation, continuous 2 A thermal performance, loop stability, full-temperature output accuracy, and physical efficiency remain unverified. The temperature-drift calculation reaches 4.847–5.161 V, outside the ±3% target; an unfavorable thermal sensitivity case reaches 172 °C. These are analysis limits to resolve, not measured board temperatures or output voltages.</p>
+
+        <div id="buck-waveforms" class="buck-waveforms" aria-labelledby="buck-waveforms-title">
+          <h3 id="buck-waveforms-title">Inside the simulation.</h3>
+          <p class="buck-plot-scope">Native ngspice exports from an educational switching model with an assumed controller. These are not validated TPS54302 manufacturer-model results or physical measurements.</p>
+          <p class="buck-plot-help">Choose a waveform, then select the graph to open its original full-size SVG.</p>
+          <div class="project-gallery buck-plot-gallery" data-gallery>
+            <div class="gallery-tabs" aria-label="Simulation waveforms"><button id="plot-tab-load-voltage-12V" type="button" data-gallery-tab aria-controls="plot-panel-load-voltage-12V">Load voltage</button><button id="plot-tab-load-current-12V" type="button" data-gallery-tab aria-controls="plot-panel-load-current-12V">Load current</button><button id="plot-tab-startup-12V" type="button" data-gallery-tab aria-controls="plot-panel-startup-12V">Startup</button><button id="plot-tab-ripple-9V" type="button" data-gallery-tab aria-controls="plot-panel-ripple-9V">Ripple · 9 V</button><button id="plot-tab-ripple-12V" type="button" data-gallery-tab aria-controls="plot-panel-ripple-12V">Ripple · 12 V</button><button id="plot-tab-ripple-18V" type="button" data-gallery-tab aria-controls="plot-panel-ripple-18V">Ripple · 18 V</button><button id="plot-tab-inductor-9V" type="button" data-gallery-tab aria-controls="plot-panel-inductor-9V">Inductor · 9 V</button><button id="plot-tab-inductor-12V" type="button" data-gallery-tab aria-controls="plot-panel-inductor-12V">Inductor · 12 V</button><button id="plot-tab-inductor-18V" type="button" data-gallery-tab aria-controls="plot-panel-inductor-18V">Inductor · 18 V</button></div>
+          <figure id="plot-panel-load-voltage-12V" data-gallery-panel>
+            <a class="buck-plot-stage" href="/assets/buck-converter/simulation/svg/load-voltage-12V.svg" target="_blank" rel="noopener" aria-label="Open full-size load voltage simulator plot"><img src="/assets/buck-converter/simulation/png/load-voltage-12V.png" width="2048" height="1536" loading="lazy" alt="Native ngspice export of output voltage during the 0.5 to 2 to 0.5 amp load sequence; the educational model falls to about 4.119 volts and peaks at about 5.887 volts."></a>
+            <figcaption><span>Load-step output voltage · 12 V input · 6.5–11 ms. The complete simulated undershoot and overshoot are retained.</span><a href="/assets/buck-converter/simulation/svg/load-voltage-12V.svg" target="_blank" rel="noopener">View original SVG ↗</a></figcaption>
+          </figure>
+          <figure id="plot-panel-load-current-12V" data-gallery-panel>
+            <a class="buck-plot-stage" href="/assets/buck-converter/simulation/svg/load-current-12V.svg" target="_blank" rel="noopener" aria-label="Open full-size load current simulator plot"><img src="/assets/buck-converter/simulation/png/load-current-12V.png" width="2048" height="1536" loading="lazy" alt="Native ngspice export of applied load current changing from 0.5 to 2 amps and back to 0.5 amps."></a>
+            <figcaption><span>Applied load · 12 V input · 0.5 → 2 → 0.5 A with 10 µs edges · 6.5–11 ms.</span><a href="/assets/buck-converter/simulation/svg/load-current-12V.svg" target="_blank" rel="noopener">View original SVG ↗</a></figcaption>
+          </figure>
+          <figure id="plot-panel-startup-12V" data-gallery-panel>
+            <a class="buck-plot-stage" href="/assets/buck-converter/simulation/svg/startup-12V.svg" target="_blank" rel="noopener" aria-label="Open full-size startup simulator plot"><img src="/assets/buck-converter/simulation/png/startup-12V.png" width="2048" height="1536" loading="lazy" alt="Native ngspice export of the educational model starting up toward 5 volts over an 8 millisecond window."></a>
+            <figcaption><span>Output startup · 12 V input · 0–8 ms · Assumed 5 ms soft start.</span><a href="/assets/buck-converter/simulation/svg/startup-12V.svg" target="_blank" rel="noopener">View original SVG ↗</a></figcaption>
+          </figure>
+          <figure id="plot-panel-ripple-9V" data-gallery-panel>
+            <a class="buck-plot-stage" href="/assets/buck-converter/simulation/svg/ripple-9V.svg" target="_blank" rel="noopener" aria-label="Open full-size ripple · 9 v simulator plot"><img src="/assets/buck-converter/simulation/png/ripple-9V.png" width="2048" height="1536" loading="lazy" alt="Native ngspice export of simulated output voltage ripple at 9 volt input and 2 amp load."></a>
+            <figcaption><span>Output ripple · 9 V input, 2 A load · 7.98–8.00 ms. The vertical axis shows volts.</span><a href="/assets/buck-converter/simulation/svg/ripple-9V.svg" target="_blank" rel="noopener">View original SVG ↗</a></figcaption>
+          </figure>
+          <figure id="plot-panel-ripple-12V" data-gallery-panel>
+            <a class="buck-plot-stage" href="/assets/buck-converter/simulation/svg/ripple-12V.svg" target="_blank" rel="noopener" aria-label="Open full-size ripple · 12 v simulator plot"><img src="/assets/buck-converter/simulation/png/ripple-12V.png" width="2048" height="1536" loading="lazy" alt="Native ngspice export of simulated output voltage ripple at 12 volt input and 2 amp load."></a>
+            <figcaption><span>Output ripple · 12 V input, 2 A load · 7.98–8.00 ms. The vertical axis shows volts.</span><a href="/assets/buck-converter/simulation/svg/ripple-12V.svg" target="_blank" rel="noopener">View original SVG ↗</a></figcaption>
+          </figure>
+          <figure id="plot-panel-ripple-18V" data-gallery-panel>
+            <a class="buck-plot-stage" href="/assets/buck-converter/simulation/svg/ripple-18V.svg" target="_blank" rel="noopener" aria-label="Open full-size ripple · 18 v simulator plot"><img src="/assets/buck-converter/simulation/png/ripple-18V.png" width="2048" height="1536" loading="lazy" alt="Native ngspice export of simulated output voltage ripple at 18 volt input and 2 amp load."></a>
+            <figcaption><span>Output ripple · 18 V input, 2 A load · 7.98–8.00 ms. The vertical axis shows volts.</span><a href="/assets/buck-converter/simulation/svg/ripple-18V.svg" target="_blank" rel="noopener">View original SVG ↗</a></figcaption>
+          </figure>
+          <figure id="plot-panel-inductor-9V" data-gallery-panel>
+            <a class="buck-plot-stage" href="/assets/buck-converter/simulation/svg/inductor-9V.svg" target="_blank" rel="noopener" aria-label="Open full-size inductor · 9 v simulator plot"><img src="/assets/buck-converter/simulation/png/inductor-9V.png" width="2048" height="1536" loading="lazy" alt="Native ngspice export of simulated inductor current at 9 volt input and 2 amp load."></a>
+            <figcaption><span>Inductor current · 9 V input, 2 A load · 7.985–8.00 ms.</span><a href="/assets/buck-converter/simulation/svg/inductor-9V.svg" target="_blank" rel="noopener">View original SVG ↗</a></figcaption>
+          </figure>
+          <figure id="plot-panel-inductor-12V" data-gallery-panel>
+            <a class="buck-plot-stage" href="/assets/buck-converter/simulation/svg/inductor-12V.svg" target="_blank" rel="noopener" aria-label="Open full-size inductor · 12 v simulator plot"><img src="/assets/buck-converter/simulation/png/inductor-12V.png" width="2048" height="1536" loading="lazy" alt="Native ngspice export of simulated inductor current at 12 volt input and 2 amp load."></a>
+            <figcaption><span>Inductor current · 12 V input, 2 A load · 7.985–8.00 ms.</span><a href="/assets/buck-converter/simulation/svg/inductor-12V.svg" target="_blank" rel="noopener">View original SVG ↗</a></figcaption>
+          </figure>
+          <figure id="plot-panel-inductor-18V" data-gallery-panel>
+            <a class="buck-plot-stage" href="/assets/buck-converter/simulation/svg/inductor-18V.svg" target="_blank" rel="noopener" aria-label="Open full-size inductor · 18 v simulator plot"><img src="/assets/buck-converter/simulation/png/inductor-18V.png" width="2048" height="1536" loading="lazy" alt="Native ngspice export of simulated inductor current at 18 volt input and 2 amp load."></a>
+            <figcaption><span>Inductor current · 18 V input, 2 A load · 7.985–8.00 ms.</span><a href="/assets/buck-converter/simulation/svg/inductor-18V.svg" target="_blank" rel="noopener">View original SVG ↗</a></figcaption>
+          </figure>
+          </div>
+          <p class="buck-note">Exported directly by ngspice 46. These previews are standard renderings of its unchanged SVG files; axes, labels, and transient excursions are preserved. The ripple and current plots show a shorter detail window than the numerical summary above.</p>
+        </div>
+      </section>
+
+      <section id="buck-files" class="buck-section" aria-labelledby="buck-files-title">
+        <div class="buck-section-head"><div><span class="eyebrow">03 / VERIFICATION &amp; FILES</span><h2 id="buck-files-title">Inspect the actual CAD.</h2></div><p>The supplied KiCad 10.0.6 verification reports record the results below. They verify the design files against the configured rules; they do not replace fabrication or bench testing.</p></div>
+        <ul class="buck-verification"><li><strong>0 ERC issues</strong><span>Electrical rules</span></li><li><strong>0 DRC issues</strong><span>PCB design rules</span></li><li><strong>0 unconnected</strong><span>Board connections</span></li></ul>
+        <div class="buck-downloads"><div class="buck-download-copy"><h3>KiCad source package</h3><p>Editable schematic and board files, required project libraries and model attribution, bill of materials, and native ERC/DRC reports. The circuit and board illustrations are direct KiCad exports of these design files. No physical board has been fabricated or tested.</p></div><a class="button button-primary" href="/assets/buck-converter/downloads/5V-2A-Buck-Converter-CAD.zip" download>Download CAD ZIP <span aria-hidden="true">↓</span></a></div>
+      </section>
+    </article>
+    <nav class="project-end" aria-label="More portfolio projects"><a class="text-link" href="/projects/">← 001 Robotic Arm</a><a class="text-link" href="/contact/">Let’s connect ↗</a></nav>
+    <footer class="site-footer"><span>© 2026 Oluwaseun Omodele</span><button id="motion-toggle" type="button" hidden aria-pressed="false">Motion: reduced</button><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </main>
+</body>
+</html>

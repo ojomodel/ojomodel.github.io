@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="/assets/resume-viewer.css?v=20261005-inline">
   <script type="module" src="/assets/resume-viewer.js?v=20261005-inline"></script>
   <link rel="stylesheet" href="/assets/parts-costs.css?v=20261005">
+  <link rel="stylesheet" href="/assets/buck-converter.css?v=20261010-local">
 </head>
 <body id="top" data-landing-section="resume">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -41,7 +42,7 @@
     <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-nav" aria-expanded="false"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path class="menu-bars" d="M4 5h16M4 12h16M4 19h16"/><path class="menu-close" d="m5 5 14 14M19 5 5 19"/></svg></button>
     <nav id="site-nav" aria-label="Main navigation">
       <a href="/about/" data-nav-section="about">About</a>
-      <details class="nav-projects"><summary data-nav-section="projects">Projects <svg class="nav-projects-chevron" viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="m3 4.5 3 3 3-3"/></svg></summary><ul class="nav-projects-list"><li><a href="/projects/">001 Robotic Arm</a></li></ul></details>
+      <details class="nav-projects"><summary data-nav-section="projects">Projects <svg class="nav-projects-chevron" viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="m3 4.5 3 3 3-3"/></svg></summary><ul class="nav-projects-list"><li><a href="/projects/">001 Robotic Arm</a></li><li><a href="/projects/buck-converter/">002 DC-DC Buck Converter</a></li></ul></details>
       <a href="https://github.com/ojomodel" target="_blank" rel="noopener noreferrer">GitHub <span class="external" aria-hidden="true">↗</span></a>
       <a href="https://www.linkedin.com/in/ojomodel" target="_blank" rel="noopener noreferrer">LinkedIn <span class="external" aria-hidden="true">↗</span></a>
       <a href="/resume/" data-nav-section="resume">Resume</a><a href="/contact/" data-nav-section="contact">Contact</a>
@@ -96,6 +97,23 @@
             <figure id="panel-wrist" data-gallery-panel><a class="media-stage light-stage" href="/projects/" aria-label="Explore the 4-DOF Robotic Arm project wrist detail"><img src="/assets/wrist-detail.webp" width="1400" height="1089" alt="Wrist carrier and revised gripper linkage in Fusion 360, with covers hidden" loading="lazy"></a><figcaption><span>Wrist and gripper geometry · CAD inspection</span><span>04 / 05</span></figcaption></figure>
             <figure id="panel-unity" data-gallery-panel><a class="media-stage" href="/projects/" aria-label="Explore the 4-DOF Robotic Arm project control studio"><img src="/assets/unity-joints.webp" width="1600" height="1000" alt="Unity control studio displaying the arm model and five joint controls in simulation mode" loading="lazy"></a><figcaption><span>Unity joint-control interface · simulation view</span><span>05 / 05</span></figcaption></figure>
           </div>
+        </div>
+      </article>
+
+      <article id="buck-converter" class="project home-project" aria-labelledby="buck-card-title">
+        <div class="project-top"><span class="eyebrow">002 / POWER ELECTRONICS / PCB DESIGN</span><span class="project-year">2026</span></div>
+        <div class="project-layout">
+          <div class="project-copy">
+            <h3 id="buck-card-title" class="project-title"><a href="/projects/buck-converter/">10W DC-DC<br>Buck Converter.</a><br><span>From circuit to layout.</span></h3>
+            <p class="project-intro">A power-supply design study targeting 9–18 V input and 5 V / 2 A output, with an editable two-layer KiCad board and switching-circuit analysis.</p>
+            <p class="buck-status">Designed and Simulated — Not Hardware Tested</p>
+            <ul class="tags" aria-label="Project tools"><li>KiCad</li><li>ngspice</li><li>Circuit analysis</li></ul>
+            <a class="text-link buck-card-link" href="/projects/buck-converter/">Explore the project <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="buck-card-media" href="/projects/buck-converter/" aria-label="Explore the 10W DC-DC Buck Converter project">
+            <img src="/assets/buck-converter/pcb/top-layer.png" width="2448" height="1542" loading="lazy" alt="KiCad top-layer export of the 54 by 34 millimeter buck converter PCB, showing copper, components, and routing">
+            <span class="buck-card-caption"><span>Native KiCad PCB export · Top layer</span><span>Explore 002 ↗</span></span>
+          </a>
         </div>
       </article>
 
