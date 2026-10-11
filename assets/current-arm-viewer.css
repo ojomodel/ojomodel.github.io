@@ -40,4 +40,3 @@
 @media(max-width:440px){.current-arm-stage{height:220px}.current-arm-viewer{gap:8px 18px;padding:12px}.current-arm-slider-heading{font-size:10px}.current-arm-control-heading button{min-height:36px}}
 @media(pointer:coarse){.current-arm-slider input{height:34px}.current-arm-control-heading button{min-height:40px;min-width:44px}}
 @media(max-height:650px) and (max-width:760px){.current-arm-stage{height:180px}}
-@media(prefers-reduced-motion:reduce){.current-arm-viewer button{transition:none}}

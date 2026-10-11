@@ -1,36 +1,13 @@
 (() => {
   "use strict";
 
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  const motionToggle = document.getElementById("motion-toggle");
-  let motionPreference = null;
-  try {
-    const saved = window.localStorage.getItem("portfolio-motion");
-    if (saved === "full" || saved === "reduced") motionPreference = saved;
-  } catch {
-    // A blocked storage API should not prevent the page from working.
-  }
+  document.documentElement.dataset.motion = "full";
   const reveals = [...document.querySelectorAll(".reveal")];
   const intersections = new WeakMap();
   const initialTransitions = new Map();
   let revealObserver;
   let revealFrame;
   let revealGeneration = 0;
-
-  function motionIsReduced() {
-    return motionPreference === "reduced" || (motionPreference !== "full" && reducedMotion.matches);
-  }
-
-  function updateMotionPreference() {
-    const reduced = motionIsReduced();
-    document.documentElement.dataset.motion = reduced ? "reduced" : "full";
-    if (motionToggle) {
-      motionToggle.hidden = false;
-      motionToggle.setAttribute("aria-pressed", String(!reduced));
-      motionToggle.textContent = reduced ? "Motion: reduced" : "Motion: on";
-    }
-    configureReveals();
-  }
 
   function updateReveal(element) {
     const visible = intersections.get(element) || element.contains(document.activeElement);
@@ -53,7 +30,7 @@
     revealObserver = null;
     restoreRevealTransitions();
     reveals.forEach((element) => element.classList.remove("reveal-ready"));
-    if (motionIsReduced() || !("IntersectionObserver" in window)) {
+    if (!("IntersectionObserver" in window)) {
       reveals.forEach((element) => element.classList.add("is-visible"));
       return;
     }
@@ -94,28 +71,11 @@
     element.addEventListener("focusin", () => element.classList.add("is-visible"));
     element.addEventListener("focusout", () => {
       requestAnimationFrame(() => {
-        if (!motionIsReduced() && revealObserver) updateReveal(element);
+        if (revealObserver) updateReveal(element);
       });
     });
   });
-  updateMotionPreference();
-  motionToggle?.addEventListener("click", () => {
-    motionPreference = motionIsReduced() ? "full" : "reduced";
-    try {
-      window.localStorage.setItem("portfolio-motion", motionPreference);
-    } catch {
-      // The selected preference still applies for this page visit.
-    }
-    updateMotionPreference();
-  });
-  const handleSystemMotionChange = () => {
-    if (motionPreference === null) updateMotionPreference();
-  };
-  if (reducedMotion.addEventListener) {
-    reducedMotion.addEventListener("change", handleSystemMotionChange);
-  } else {
-    reducedMotion.addListener(handleSystemMotionChange);
-  }
+  configureReveals();
 
   document.querySelectorAll("[data-gallery]").forEach((gallery, galleryIndex) => {
     const tabList = gallery.querySelector(".gallery-tabs");
