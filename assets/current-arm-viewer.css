@@ -1,26 +1,43 @@
-.current-arm-viewer{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(250px,1fr);width:100%;min-width:0;border:1px solid #303339;background:#101215;color:#e6e8ec;overflow:hidden}
-.current-arm-viewer:empty{min-height:505px}
-.current-arm-visual{min-width:0;background:radial-gradient(ellipse at 50% 40%,#242931,#15181d 60%,#101215);border-right:1px solid #303339}
-.current-arm-stage{position:relative;height:430px;min-width:0}
-.current-arm-stage canvas{display:block;width:100%;height:100%;cursor:grab;outline-offset:-4px}
+.current-arm-viewer{display:grid;grid-template-columns:minmax(140px,.72fr) minmax(0,2fr) minmax(140px,.72fr);grid-template-areas:"heading heading heading" "base model elbow" "shoulder model wrist" "gripper gripper gripper" "note note note";gap:12px 22px;padding:18px;width:100%;min-width:0;box-sizing:border-box;border:0;background:transparent;color:#e6e8ec;overflow:hidden}
+.current-arm-viewer:empty{min-height:500px}
+.current-arm-visual{grid-area:model;position:relative;min-width:0;align-self:stretch;border:0;background:transparent}
+.current-arm-stage{position:relative;height:360px;min-width:0}
+.current-arm-stage canvas{display:block;width:100%;height:100%;cursor:grab;outline:none;-webkit-tap-highlight-color:transparent}
 .current-arm-stage canvas.is-dragging{cursor:grabbing}
-.current-arm-status{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:30px;color:#b9c0cb;font:13px/1.6 var(--sans,sans-serif);text-align:center}
+.current-arm-status{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:22px;color:#b9c0cb;font:13px/1.6 var(--sans,sans-serif);text-align:center}
 .current-arm-status[hidden]{display:none}
 .current-arm-viewer button{appearance:none;min-width:38px;min-height:38px;display:inline-flex;justify-content:center;align-items:center;border:1px solid #3b424d;border-radius:4px;background:#1d2229;color:#e0e5ec;padding:7px 11px;font:11px/1.2 var(--mono,monospace);cursor:pointer;transition:background .15s,border-color .15s}
 .current-arm-viewer button:hover{background:#2c343f;border-color:#8392a7}
 .current-arm-viewer :focus-visible{outline:2px solid #c5e8ff;outline-offset:3px}
+.current-arm-stage canvas:focus,.current-arm-stage canvas:focus-visible{outline:none}
+.current-arm-visual:has(canvas:focus-visible)::after{content:"";position:absolute;bottom:4px;left:calc(50% - 18px);width:36px;height:2px;background:#c5e8ff;pointer-events:none}
 .current-arm-viewer button:disabled{opacity:.35;cursor:wait}
-.current-arm-controls{align-self:center;padding:28px;min-width:0}
-.current-arm-control-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:28px;font:13px/1.5 var(--mono,monospace)}
+.current-arm-controls,.current-arm-sliders{display:contents}
+.current-arm-control-heading{grid-area:heading;display:flex;justify-content:space-between;align-items:center;gap:12px;font:13px/1.5 var(--mono,monospace)}
 .current-arm-control-heading button{white-space:nowrap;font-size:10px}
-.current-arm-sliders{display:grid;gap:24px}
-.current-arm-slider{display:block;min-width:0}
-.current-arm-slider-heading{display:flex;justify-content:space-between;gap:12px;font:12px/1.5 var(--mono,monospace);color:#dce0e6}
+.current-arm-slider{display:block;align-self:center;min-width:0}
+.current-arm-slider:nth-child(1){grid-area:base}
+.current-arm-slider:nth-child(2){grid-area:shoulder}
+.current-arm-slider:nth-child(3){grid-area:elbow}
+.current-arm-slider:nth-child(4){grid-area:wrist}
+.current-arm-slider:nth-child(5){grid-area:gripper;border-top:1px solid #252a32;padding-top:12px}
+.current-arm-slider-heading{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font:12px/1.5 var(--mono,monospace);color:#dce0e6}
 .current-arm-slider output{color:#a4adbb;font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap}
-.current-arm-slider input{display:block;accent-color:#cdd7e4;width:100%;height:26px;margin:6px 0 0;cursor:ew-resize;touch-action:pan-y}
-.current-arm-note{margin:25px 0 0!important;font:10px/1.7 var(--mono,monospace)!important;color:#949dab!important}
+.current-arm-slider input{display:block;accent-color:#cdd7e4;width:100%;height:30px;margin:5px 0 0;cursor:ew-resize;touch-action:pan-y}
+.current-arm-note{grid-area:note;margin:0!important;font:10px/1.5 var(--mono,monospace)!important;color:#949dab!important}
 .current-arm-viewer [hidden]{display:none!important}
-@media(max-width:760px){.current-arm-viewer{grid-template-columns:minmax(0,1fr)}.current-arm-visual{border-right:0;border-bottom:1px solid #303339}.current-arm-stage{height:360px}.current-arm-controls{padding:24px}.current-arm-sliders{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px}.current-arm-control-heading{margin-bottom:20px}.current-arm-note{margin-top:20px!important}}
-@media(max-width:440px){.current-arm-stage{height:330px}.current-arm-controls{padding:20px}.current-arm-sliders{grid-template-columns:1fr;gap:13px}.current-arm-control-heading{margin-bottom:16px}}
+@media(max-width:760px){
+  .current-arm-viewer{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"heading heading" "model model" "base elbow" "shoulder wrist" "gripper gripper" "note note";gap:10px 22px;padding:14px}
+  .current-arm-visual{border:0}
+  .current-arm-stage{height:250px}
+  .current-arm-control-heading{font-size:12px}
+  .current-arm-slider-heading{font-size:11px;gap:5px}
+  .current-arm-slider output{font-size:10px}
+  .current-arm-slider input{height:32px;margin-top:2px}
+  .current-arm-slider:nth-child(5){padding-top:8px}
+  .current-arm-note{font-size:9px!important}
+}
+@media(max-width:440px){.current-arm-stage{height:220px}.current-arm-viewer{gap:8px 18px;padding:12px}.current-arm-slider-heading{font-size:10px}.current-arm-control-heading button{min-height:36px}}
+@media(pointer:coarse){.current-arm-slider input{height:34px}.current-arm-control-heading button{min-height:40px;min-width:44px}}
+@media(max-height:650px) and (max-width:760px){.current-arm-stage{height:180px}}
 @media(prefers-reduced-motion:reduce){.current-arm-viewer button{transition:none}}
-@media(pointer:coarse){.current-arm-viewer button{min-height:44px;min-width:44px}.current-arm-slider input{height:34px}}

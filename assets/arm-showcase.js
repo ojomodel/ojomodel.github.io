@@ -257,6 +257,7 @@ export async function createArmShowcase(host) {
       if (event.button !== 0 || pointer) return;
       if (event.pointerType !== 'touch') event.preventDefault();
       stopFrame();
+      canvas.classList.add('is-pointer-focused');
       canvas.focus({ preventScroll: true });
       canvas.setPointerCapture(event.pointerId);
       const rect = canvas.getBoundingClientRect();
@@ -275,9 +276,10 @@ export async function createArmShowcase(host) {
     ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(type => listen(canvas, type, event => {
       if (pointer?.id === event.pointerId) releasePointer();
     }));
-    listen(canvas, 'blur', releasePointer);
+    listen(canvas, 'blur', () => { canvas.classList.remove('is-pointer-focused'); releasePointer(); });
     listen(window, 'blur', releasePointer);
     listen(canvas, 'keydown', event => {
+      canvas.classList.remove('is-pointer-focused');
       const rotations = { ArrowLeft: [0, 1, 0, -.15], ArrowRight: [0, 1, 0, .15], ArrowUp: [1, 0, 0, -.15], ArrowDown: [1, 0, 0, .15], q: [0, 0, 1, .15], e: [0, 0, 1, -.15] };
       const rotation = rotations[event.key];
       if (rotation) {

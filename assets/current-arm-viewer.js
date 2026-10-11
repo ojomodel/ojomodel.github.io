@@ -61,7 +61,7 @@ export async function createCurrentArmViewer(host) {
   host.setAttribute('role','region');
   host.setAttribute('aria-label','Interactive robotic arm CAD model');
   const id = 'current-arm-' + ++nextViewer;
-  host.innerHTML = `<div class="current-arm-visual"><div class="current-arm-stage"><p class="current-arm-status" role="status">Loading the CAD model…</p></div></div><div class="current-arm-controls"><div class="current-arm-control-heading"><span>Try the joints</span><button type="button" data-action="reset">Reset pose</button></div><div class="current-arm-sliders"></div><p class="current-arm-note">CAD exploration · four positioning joints + gripper</p></div>`;
+  host.innerHTML = `<div class="current-arm-visual"><div class="current-arm-stage"><p class="current-arm-status" role="status">Loading the CAD model…</p></div></div><div class="current-arm-controls"><div class="current-arm-control-heading"><span>Joint angles</span><button type="button" data-action="reset">Reset pose</button></div><div class="current-arm-sliders"></div><p class="current-arm-note">CAD exploration · four positioning joints + gripper</p></div>`;
   const stage = host.querySelector('.current-arm-stage');
   const status = host.querySelector('.current-arm-status');
   const sliderHost = host.querySelector('.current-arm-sliders');

@@ -26,14 +26,14 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css?v=20261005-native-prototypes">
   <link rel="stylesheet" href="/assets/parts-costs.css?v=20261005">
-  <link rel="stylesheet" href="/assets/prototype-viewer.css?v=20261010-direct">
+  <link rel="stylesheet" href="/assets/prototype-viewer.css?v=20261010-compact">
   <script src="/script.js?v=20261005-project-menu" defer></script>
   <script type="module" src="/assets/prototype-viewer.js?v=20261010-direct"></script>
   <title>4-DOF Robotic Arm Oluwaseun Omodele</title>
   <link rel="stylesheet" href="/assets/servo-case-study.css?v=20261005-final-first">
-  <link rel="stylesheet" href="/assets/portfolio-pages.css?v=20261005-project-menu">
-  <link rel="stylesheet" href="/assets/current-arm-viewer.css?v=20261010-direct">
-  <script type="module" src="/assets/current-arm-viewer.js?v=20261010-direct"></script>
+  <link rel="stylesheet" href="/assets/portfolio-pages.css?v=20261010-explore">
+  <link rel="stylesheet" href="/assets/current-arm-viewer.css?v=20261010-compact">
+  <script type="module" src="/assets/current-arm-viewer.js?v=20261010-compact"></script>
   <script src="/assets/portfolio-pages.js?v=20261005-clean-projects" defer></script>
 </head>
 <body id="top" class="arm-project-page">
@@ -53,7 +53,7 @@
     <a class="project-back" href="/#projects">← All projects</a>
     <article id="servo-arm" aria-labelledby="project-title">
       <header class="arm-intro">
-        <div class="arm-intro-copy"><span class="eyebrow">PERSONAL PROJECT / 2026</span><h1 id="project-title">4-DOF<br>Robotic Arm.</h1><p class="arm-deck">Built. Tested. Redesigned.</p><p>I built this robotic arm with four positioning joints and a servo gripper. The current design combines a slimmer printed structure, a wider base, embedded electronics, and a Unity control interface developed through testing and redesign.</p><p class="arm-role">My work: Fusion 360 design, 3D printing, assembly, electronics integration, testing, and the Unity control interface.</p><div class="arm-links"><a class="button button-primary" href="#arm-interactive">Move the model <span aria-hidden="true">↓</span></a><a class="button" href="https://github.com/ojomodel/robotic-arm" target="_blank" rel="noopener noreferrer">View Source on GitHub <span aria-hidden="true">↗</span></a><a class="text-link" href="#arm-redesign">See the redesign <span aria-hidden="true">↓</span></a><a class="text-link" href="#arm-parts">Parts &amp; costs <span aria-hidden="true">&#8595;</span></a></div></div>
+        <div class="arm-intro-copy"><span class="eyebrow">PERSONAL PROJECT / 2026</span><h1 id="project-title">4-DOF<br>Robotic Arm.</h1><p class="arm-deck">Built. Tested. Redesigned.</p><p>I built this robotic arm with four positioning joints and a servo gripper. The current design combines a slimmer printed structure, a wider base, embedded electronics, and a Unity control interface developed through testing and redesign.</p><p class="arm-role">My work: Fusion 360 design, 3D printing, assembly, electronics integration, testing, and the Unity control interface.</p><div class="arm-links"><a class="button button-primary" href="#arm-interactive">Move the model <span aria-hidden="true">↓</span></a><a class="button" href="https://github.com/ojomodel" target="_blank" rel="noopener noreferrer">View my GitHub <span aria-hidden="true">↗</span></a><a class="text-link" href="#arm-redesign">See the redesign <span aria-hidden="true">↓</span></a><a class="text-link" href="#arm-parts">Parts &amp; costs <span aria-hidden="true">&#8595;</span></a></div></div>
         <div class="project-gallery arm-media" data-gallery>
           <div class="gallery-tabs" aria-label="Finished arm views"><button type="button" data-gallery-tab aria-controls="arm-demo">Demo</button><button type="button" data-gallery-tab aria-controls="arm-photo">Finished build</button><button type="button" data-gallery-tab aria-controls="arm-studio">Control studio</button></div>
           <figure id="arm-demo" data-gallery-panel><div class="arm-video-stage"><video controls playsinline preload="none" poster="/assets/arm-demo-poster.webp" width="1920" height="1080" aria-label="Robotic arm moving blocks beside its Unity control interface"><source src="/assets/servo-arm-demo-60fps.mp4" type="video/mp4"><p><a href="/assets/servo-arm-demo-60fps.mp4">Watch the demonstration.</a></p></video></div><figcaption><span>The physical build in action</span><span>1 min · 60 FPS · silent</span></figcaption></figure>
@@ -62,7 +62,7 @@
         </div>
       </header>
       <section id="arm-interactive" class="arm-section" aria-labelledby="interactive-title">
-        <div class="arm-section-heading"><div><span class="eyebrow">EXPLORE THE DESIGN</span><h2 id="interactive-title">Put it in motion.</h2></div><p>Rotate the CAD model and try the joints.</p></div>
+        <div class="arm-section-heading"><div><span class="eyebrow">EXPLORE THE DESIGN</span><h2 id="interactive-title">Put it in motion.</h2></div></div>
         <div class="current-arm-viewer" data-current-arm-model="/assets/current-arm.model.json"></div>
         <p class="arm-caption">The CAD assembly used in my Unity simulation. Later enclosure and mounting-hole revisions are not shown.</p>
       </section>

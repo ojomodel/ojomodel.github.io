@@ -96,3 +96,12 @@
 .arm-project-page #servo-arm .cs-copy p+h3{margin-top:34px}
 .arm-project-page #servo-arm .cs-debug-note h3{font-size:16px;margin-bottom:8px}
 .arm-project-page #servo-arm .cs-section{scroll-margin-top:0}
+
+/* A clear, full-size entry into each project case study. */
+.project-explore{display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;max-width:540px;min-height:112px;margin:22px 0 26px;padding:24px 28px;background:#f0eee8;color:#101010;border:1px solid #f0eee8;font:700 clamp(28px,2.7vw,44px)/1.2 var(--mono);letter-spacing:-.045em;text-decoration:none;transition:background .2s,color .2s,transform .2s}
+.project-explore>span:first-child{max-width:9.6em}
+.project-explore>span:last-child{flex:none;font-weight:400}
+.project-explore:hover{background:#fff;color:#000;transform:translateY(-2px)}
+.project-explore:focus-visible{outline:2px solid #fff;outline-offset:5px}
+@media(max-width:560px){.project-explore{min-height:104px;margin:20px 0 24px;padding:20px;gap:14px;font-size:30px}}
+@media(max-width:359px){.project-explore{padding:18px;font-size:27px}}

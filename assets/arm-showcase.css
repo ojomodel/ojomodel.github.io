@@ -2,8 +2,10 @@
 .arm-showcase-stage{position:relative;width:100%;height:clamp(350px,31vw,580px);min-width:0;background:transparent}
 .arm-showcase-stage canvas{display:block;width:100%;height:100%;outline-offset:-5px;cursor:grab;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 .arm-showcase-stage canvas.is-dragging{cursor:grabbing}
-.arm-showcase canvas:focus-visible{outline:2px solid #dae4ed;outline-offset:-4px}
+.arm-showcase canvas:focus{outline:none;box-shadow:none}
+.arm-showcase canvas:focus-visible:not(.is-pointer-focused){box-shadow:inset 0 -2px 0 #dae4ed}
 .arm-showcase-status{position:absolute;inset:0;display:grid;place-items:center;padding:32px;margin:0!important;color:#a5abb4;font:11px/1.8 var(--mono,monospace);text-align:center}
 .arm-showcase [hidden]{display:none!important}
 @media(max-width:760px){.arm-showcase-stage{height:350px}}
 @media(max-width:380px){.arm-showcase-stage{height:300px}}
+.showcase-gallery:has([data-gallery-panel]:not([hidden]) [data-arm-showcase]){background:transparent;border-color:transparent}
