@@ -1,5 +1,6 @@
 import * as THREE from './three.module.min.js';
 import { GLTFLoader } from './vendor/three/GLTFLoader.js';
+import { mergeGeometries } from './vendor/three/BufferGeometryUtils.js';
 
 // Project screen points onto a virtual sphere with a smooth hyperbolic rim.
 // Quaternion deltas avoid the poles and axis locks of an azimuth/elevation orbit.
@@ -13,6 +14,51 @@ export function virtualSpherePoint(x, y, width, height) {
 
 export function sphereRotation(from, to) {
   return new THREE.Quaternion().setFromUnitVectors(from, to).normalize();
+}
+
+// KiCad exports individual solid faces as meshes. Batch only static opaque
+// faces sharing the same material; translucent faces keep their own sorting.
+export function batchOpaqueCadFaces(source) {
+  source.updateMatrixWorld(true);
+  const assembly = new THREE.Group();
+  const batches = new Map(), originals = new Set(), retained = new Set();
+  let sourceMeshCount = 0;
+  source.traverse(node => {
+    if (!node.isMesh) return;
+    sourceMeshCount++;
+    const material = node.material, geometry = node.geometry;
+    const opaque = !Array.isArray(material) && !material.transparent && material.opacity === 1;
+    const staticFace = !node.isSkinnedMesh && !node.isInstancedMesh &&
+      !Object.keys(geometry.morphAttributes).length && !geometry.groups.length &&
+      geometry.drawRange.start === 0 && geometry.drawRange.count === Infinity;
+    if (!opaque || !staticFace) {
+      const mesh = node.clone(false);
+      mesh.matrixAutoUpdate = false;
+      mesh.matrix.copy(node.matrixWorld);
+      assembly.add(mesh);
+      retained.add(geometry);
+      return;
+    }
+    const attributes = Object.entries(geometry.attributes).map(([name, value]) =>
+      `${name}:${value.itemSize}:${value.normalized}:${value.array.constructor.name}`).sort().join('|');
+    const key = `${material.uuid}/${!!geometry.index}/${attributes}/${node.renderOrder}/${node.layers.mask}`;
+    if (!batches.has(key)) batches.set(key, { node, geometries: [] });
+    batches.get(key).geometries.push(geometry.clone().applyMatrix4(node.matrixWorld));
+    originals.add(geometry);
+  });
+  for (const { node, geometries } of batches.values()) {
+    const geometry = mergeGeometries(geometries, false);
+    if (!geometry) throw new Error('Incompatible native PCB faces');
+    const mesh = new THREE.Mesh(geometry, node.material);
+    mesh.name = node.material.name || 'Native CAD faces';
+    mesh.renderOrder = node.renderOrder;
+    mesh.layers.mask = node.layers.mask;
+    assembly.add(mesh);
+    geometries.forEach(part => part.dispose());
+  }
+  originals.forEach(geometry => { if (!retained.has(geometry)) geometry.dispose(); });
+  assembly.userData.sourceMeshCount = sourceMeshCount;
+  return assembly;
 }
 
 function studioEnvironment(renderer) {
@@ -169,7 +215,7 @@ export async function createPcbShowcase(host) {
   try {
     const url = new URL(host.dataset.pcbShowcase, document.baseURI);
     const gltf = await new GLTFLoader().loadAsync(url.href);
-    const assembly = gltf.scene;
+    const assembly = batchOpaqueCadFaces(gltf.scene);
     renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, powerPreference: 'low-power' });
     renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 1.75));
     renderer.setClearColor(0x000000, 0);
@@ -211,6 +257,7 @@ export async function createPcbShowcase(host) {
     if (!Number.isFinite(modelRadius) || modelRadius <= 0) throw new Error('Empty PCB geometry');
     assembly.position.sub(center);
     host.dataset.meshCount = String(meshCount);
+    host.dataset.sourceMeshCount = String(assembly.userData.sourceMeshCount);
     host.dataset.modelSource = 'Native KiCad assembly';
     rig.quaternion.copy(homeOrientation);
     scene.add(new THREE.HemisphereLight(0xecf3ff, 0x333641, 1.8));
@@ -229,6 +276,7 @@ export async function createPcbShowcase(host) {
       if (event.button !== 0 || pointer) return;
       if (event.pointerType !== 'touch') event.preventDefault();
       stopFrame();
+      canvas.classList.add('is-pointer-focused');
       canvas.focus({ preventScroll: true });
       canvas.setPointerCapture(event.pointerId);
       const rect = canvas.getBoundingClientRect();
@@ -247,9 +295,10 @@ export async function createPcbShowcase(host) {
     ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(type => listen(canvas, type, event => {
       if (pointer?.id === event.pointerId) releasePointer();
     }));
-    listen(canvas, 'blur', releasePointer);
+    listen(canvas, 'blur', () => { canvas.classList.remove('is-pointer-focused'); releasePointer(); });
     listen(window, 'blur', releasePointer);
     listen(canvas, 'keydown', event => {
+      canvas.classList.remove('is-pointer-focused');
       const rotations = { ArrowLeft: [0, 1, 0, -.15], ArrowRight: [0, 1, 0, .15], ArrowUp: [1, 0, 0, -.15], ArrowDown: [1, 0, 0, .15], q: [0, 0, 1, .15], e: [0, 0, 1, -.15] };
       const rotation = rotations[event.key];
       if (rotation) {
