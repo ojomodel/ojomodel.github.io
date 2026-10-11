@@ -25,6 +25,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css?v=20261005-native-prototypes">
+  <link rel="stylesheet" href="/assets/parts-costs.css?v=20261005">
   <link rel="stylesheet" href="/assets/prototype-viewer.css?v=20261004">
   <script src="/script.js?v=20261005-project-menu" defer></script>
   <script type="module" src="/assets/prototype-viewer.js?v=20261005-native-prototypes"></script>
@@ -52,7 +53,7 @@
     <a class="project-back" href="/#projects">← All projects</a>
     <article id="servo-arm" aria-labelledby="project-title">
       <header class="arm-intro">
-        <div class="arm-intro-copy"><span class="eyebrow">PERSONAL PROJECT / 2026</span><h1 id="project-title">4-DOF<br>Robotic Arm.</h1><p class="arm-deck">Built. Tested. Redesigned.</p><p>I built this robotic arm with four positioning joints and a servo gripper. The current design combines a slimmer printed structure, a wider base, embedded electronics, and a Unity control interface developed through testing and redesign.</p><p class="arm-role">My work: Fusion 360 design, 3D printing, assembly, electronics integration, testing, and the Unity control interface.</p><div class="arm-links"><a class="button button-primary" href="#arm-interactive">Move the model <span aria-hidden="true">↓</span></a><a class="button" href="https://github.com/ojomodel/robotic-arm" target="_blank" rel="noopener noreferrer">View Source on GitHub <span aria-hidden="true">↗</span></a><a class="text-link" href="#arm-redesign">See the redesign <span aria-hidden="true">↓</span></a></div></div>
+        <div class="arm-intro-copy"><span class="eyebrow">PERSONAL PROJECT / 2026</span><h1 id="project-title">4-DOF<br>Robotic Arm.</h1><p class="arm-deck">Built. Tested. Redesigned.</p><p>I built this robotic arm with four positioning joints and a servo gripper. The current design combines a slimmer printed structure, a wider base, embedded electronics, and a Unity control interface developed through testing and redesign.</p><p class="arm-role">My work: Fusion 360 design, 3D printing, assembly, electronics integration, testing, and the Unity control interface.</p><div class="arm-links"><a class="button button-primary" href="#arm-interactive">Move the model <span aria-hidden="true">↓</span></a><a class="button" href="https://github.com/ojomodel/robotic-arm" target="_blank" rel="noopener noreferrer">View Source on GitHub <span aria-hidden="true">↗</span></a><a class="text-link" href="#arm-redesign">See the redesign <span aria-hidden="true">↓</span></a><a class="text-link" href="#arm-parts">Parts &amp; costs <span aria-hidden="true">&#8595;</span></a></div></div>
         <div class="project-gallery arm-media" data-gallery>
           <div class="gallery-tabs" aria-label="Finished arm views"><button type="button" data-gallery-tab aria-controls="arm-demo">Demo</button><button type="button" data-gallery-tab aria-controls="arm-photo">Finished build</button><button type="button" data-gallery-tab aria-controls="arm-studio">Control studio</button></div>
           <figure id="arm-demo" data-gallery-panel><div class="arm-video-stage"><video controls playsinline preload="none" poster="/assets/arm-demo-poster.webp" width="1920" height="1080" aria-label="Robotic arm moving blocks beside its Unity control interface"><source src="/assets/servo-arm-demo-60fps.mp4" type="video/mp4"><p><a href="/assets/servo-arm-demo-60fps.mp4">Watch the demonstration.</a></p></video></div><figcaption><span>The physical build in action</span><span>1 min · 60 FPS · silent</span></figcaption></figure>
@@ -131,6 +132,31 @@
           <p class="cs-note reveal">CAD design comparison: the extra height creates more space for components and their connections.</p>
           <aside class="cs-debug-note reveal"><h3>A small usability issue during testing</h3><p>The ESP32 sometimes needed a manual reset when reconnecting the controls. It added friction during repeated tests, but did not prevent the arm from functioning. I did not conclusively identify one cause.</p></aside>
         </section>
+
+      <section id="arm-parts" class="arm-section parts-costs" aria-labelledby="parts-costs-title">
+        <div class="parts-costs-intro">
+          <h3 id="parts-costs-title">Parts &amp; costs.</h3>
+          <p>Components and supplies purchased along the way.</p>
+          <p class="parts-costs-total"><span>Listed parts total</span><strong>$100.58<small>USD</small></strong></p>
+        </div>
+        <div class="parts-costs-breakdown">
+          <table aria-describedby="parts-costs-note">
+            <thead><tr><th scope="col">Component</th><th scope="col">Quantity</th><th scope="col">Cost</th></tr></thead>
+            <tbody>
+                <tr><th scope="row">ESP32 development board<span>HiLetgo ESP-WROOM-32</span></th><td>1 board</td><td>$9.99</td></tr>
+                <tr><th scope="row">Solderless breadboards<span>830 tie points</span></th><td>3-pack</td><td>$6.99</td></tr>
+                <tr><th scope="row">PCA9685 servo driver<span>16-channel PWM</span></th><td>1 board</td><td>$3.33</td></tr>
+                <tr><th scope="row">MG996R servos<span>180° rotation</span></th><td>5-pack</td><td>$7.40</td></tr>
+                <tr><th scope="row">MG90S servos<span>180° rotation</span></th><td>5-pack</td><td>$8.35</td></tr>
+                <tr><th scope="row">Servo extension cables<span>100 mm</span></th><td>10-pack</td><td>$2.60</td></tr>
+                <tr><th scope="row">Silicone power cable<span>18 AWG · 2 conductors</span></th><td>5 m</td><td>$5.46</td></tr>
+                <tr><th scope="row">XY joystick modules<span>Dual-axis</span></th><td>2 modules</td><td>$4.46</td></tr>
+                <tr><th scope="row">3D printing filament<span>$13 per purchase</span></th><td>4 purchases</td><td>$52.00</td></tr>
+            </tbody>
+          </table>
+          <p class="parts-costs-note" id="parts-costs-note">Costs cover the quantities shown. ESP32 and breadboards use listed prices; filament reflects four purchases at $13 each. The remaining rows use order totals. Other unlisted materials are not included.</p>
+        </div>
+      </section>
 
       <section id="arm-prototypes" class="arm-section arm-notebook" aria-labelledby="notebook-title">
         <div class="arm-section-heading"><div><span class="eyebrow">EARLIER EXPLORATIONS</span><h2 id="notebook-title">Earlier prototypes.</h2></div></div>

@@ -1,5 +1,5 @@
 import * as THREE from './three.module.min.js';
-import { armTransforms } from './current-arm-viewer.js';
+import { GLTFLoader } from './vendor/three/GLTFLoader.js';
 
 // Project screen points onto a virtual sphere with a smooth hyperbolic rim.
 // Quaternion deltas avoid the poles and axis locks of an azimuth/elevation orbit.
@@ -49,29 +49,25 @@ function studioEnvironment(renderer) {
   return target;
 }
 
-export async function createArmShowcase(host) {
+export async function createPcbShowcase(host) {
   if (host.dataset.showcaseReady) return;
   host.dataset.showcaseReady = 'loading';
-  host.classList.add('arm-showcase');
+  host.classList.add('pcb-showcase');
   host.setAttribute('role', 'region');
-  host.setAttribute('aria-label', 'Rotating 3D robotic arm');
-  host.innerHTML = `<div class="arm-showcase-stage"><p class="arm-showcase-status" role="status">Loading the 3D model…</p></div>`;
-  const stage = host.querySelector('.arm-showcase-stage');
-  const status = host.querySelector('.arm-showcase-status');
+  host.setAttribute('aria-label', 'Rotating 3D PCB assembly');
+  host.innerHTML = `<div class="pcb-showcase-stage"><p class="pcb-showcase-status" role="status">Loading the 3D model…</p></div>`;
+  const stage = host.querySelector('.pcb-showcase-stage');
+  const status = host.querySelector('.pcb-showcase-status');
 
   let renderer, scene, camera, rig, environment;
   let ready = false, disposed = false, contextLost = false;
   let intersecting = false, pageVisible = !document.hidden;
   let frame = 0, lastTime = 0, frameCount = 0;
-  let pointer = null, modelRadius = .3, currentZoom = 1;
+  let pointer = null, modelRadius = .035, currentZoom = 1;
   let resizeObserver, intersectionObserver, panelObserver;
   const geometryResources = [], materialResources = [], cleanupListeners = [];
-  // Match the simulation's side view: gripper at left, 15 degrees above level.
-  const homeTheta = 2.85, homePhi = 1.31;
-  const homeEye = new THREE.Vector3(Math.sin(homeTheta) * Math.sin(homePhi), Math.cos(homePhi), Math.cos(homeTheta) * Math.sin(homePhi));
-  const homeOrientation = new THREE.Quaternion().setFromRotationMatrix(
-    new THREE.Matrix4().lookAt(homeEye, new THREE.Vector3(), new THREE.Vector3(0, 1, 0))
-  ).invert();
+  // Native KiCad GLB is Y-up, with components on +Y. Tilt the top toward the viewer.
+  const homeOrientation = new THREE.Quaternion().setFromEuler(new THREE.Euler(.95, .16, -.25));
   const idleAxis = new THREE.Vector3(.055, 1, .025).normalize();
   const idleRotation = new THREE.Quaternion();
   const listen = (target, event, handler, options) => {
@@ -96,7 +92,7 @@ export async function createArmShowcase(host) {
     const delta = lastTime ? Math.min((time - lastTime) / 1000, .05) : 0;
     lastTime = time;
     if (!pointer) {
-      idleRotation.setFromAxisAngle(idleAxis, delta * .24);
+      idleRotation.setFromAxisAngle(idleAxis, delta * .20);
       rig.quaternion.premultiply(idleRotation).normalize();
     }
     renderer.render(scene, camera);
@@ -171,75 +167,51 @@ export async function createArmShowcase(host) {
 
   host.dataset.autoRotate = 'true';
   try {
-    const url = new URL(host.dataset.armShowcase, document.baseURI);
-    const response = await fetch(url);
-    if (!response.ok) throw new Error('Model unavailable');
-    const model = await response.json();
-    if (model.format !== 'portfolio-articulated-arm-v1') throw new Error('Unsupported model');
-    const binary = await fetch(new URL(model.buffer, url));
-    if (!binary.ok) throw new Error('Geometry unavailable');
-    const buffer = await binary.arrayBuffer();
-    const angles = JSON.parse(host.dataset.armPose || '[90,30.3,5.5,70,-15.3]');
-    if (!Array.isArray(angles) || angles.length !== 5 || angles.some((angle, i) =>
-      !Number.isFinite(angle) || angle < model.joints[i].min || angle > model.joints[i].max)) {
-      throw new Error('Invalid presentation pose');
-    }
-    const { matrices, closureError } = armTransforms(model, angles);
+    const url = new URL(host.dataset.pcbShowcase, document.baseURI);
+    const gltf = await new GLTFLoader().loadAsync(url.href);
+    const assembly = gltf.scene;
     renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, powerPreference: 'low-power' });
     renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 1.75));
     renderer.setClearColor(0x000000, 0);
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.02;
+    renderer.toneMappingExposure = 1;
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(34, 1, .001, 10);
     rig = new THREE.Group();
     scene.add(rig);
-    const assembly = new THREE.Group();
     rig.add(assembly);
     environment = studioEnvironment(renderer);
     scene.environment = environment.texture;
-    const silver = new THREE.MeshStandardMaterial({ color: 0xaeb5bf, roughness: .39, metalness: .62, envMapIntensity: 1.0 });
-    const cover = new THREE.MeshStandardMaterial({ color: 0x8b949f, roughness: .43, metalness: .5, envMapIntensity: .95 });
-    const graphite = new THREE.MeshStandardMaterial({ color: 0x373f49, roughness: .38, metalness: .3, envMapIntensity: 1.1 });
-    const metal = new THREE.MeshStandardMaterial({ color: 0xd0d4db, roughness: .22, metalness: .86, envMapIntensity: 1.15 });
-    materialResources.push(silver, cover, graphite, metal);
-    const coverCodes = new Set(['40', '41', '42', '43', '39', '44', '07', '07B']);
-    const read = view => {
-      if (!Number.isInteger(view.byteOffset) || !Number.isInteger(view.count) || view.byteOffset < 0 || view.count < 0 ||
-          view.byteOffset % 4 || view.byteOffset + view.count * 4 > buffer.byteLength || !['uint32', 'float32'].includes(view.type)) {
-        throw new Error('Invalid geometry');
+    const geometries = new Set(), materials = new Set();
+    let meshCount = 0;
+    assembly.traverse(node => {
+      if (!node.isMesh) return;
+      meshCount++;
+      geometries.add(node.geometry);
+      for (const material of Array.isArray(node.material) ? node.material : [node.material]) {
+        materials.add(material);
       }
-      return view.type === 'uint32' ? new Uint32Array(buffer, view.byteOffset, view.count) : new Float32Array(buffer, view.byteOffset, view.count);
-    };
-    for (const row of model.meshes) {
-      const geometry = new THREE.BufferGeometry();
-      geometryResources.push(geometry);
-      geometry.setAttribute('position', new THREE.BufferAttribute(read(row.positions), 3));
-      geometry.setIndex(new THREE.BufferAttribute(read(row.indices), 1));
-      geometry.computeVertexNormals();
-      geometry.computeBoundingBox();
-      const material = row.kind === 'horn' ? metal : row.kind === 'servo' ? graphite : coverCodes.has(row.code) ? cover : silver;
-      const mesh = new THREE.Mesh(geometry, material);
-      mesh.name = row.name;
-      mesh.matrixAutoUpdate = false;
-      mesh.matrix.copy(matrices.get(row.code));
-      assembly.add(mesh);
-    }
+    });
+    geometryResources.push(...geometries);
+    materialResources.push(...materials);
     assembly.updateMatrixWorld(true);
     const bounds = new THREE.Box3().setFromObject(assembly);
     const center = bounds.getCenter(new THREE.Vector3());
-    assembly.position.copy(center).negate();
-    // Exact posed vertices keep the floating object large without clipping on spin.
-    modelRadius = 0;
     const point = new THREE.Vector3();
-    for (const mesh of assembly.children) {
-      const positions = mesh.geometry.attributes.position;
+    modelRadius = 0;
+    assembly.traverse(node => {
+      if (!node.isMesh) return;
+      const positions = node.geometry.attributes.position;
       for (let index = 0; index < positions.count; index++) {
-        point.fromBufferAttribute(positions, index).applyMatrix4(mesh.matrix).sub(center);
+        point.fromBufferAttribute(positions, index).applyMatrix4(node.matrixWorld).sub(center);
         modelRadius = Math.max(modelRadius, point.length());
       }
-    }
+    });
+    if (!Number.isFinite(modelRadius) || modelRadius <= 0) throw new Error('Empty PCB geometry');
+    assembly.position.sub(center);
+    host.dataset.meshCount = String(meshCount);
+    host.dataset.modelSource = 'Native KiCad assembly';
     rig.quaternion.copy(homeOrientation);
     scene.add(new THREE.HemisphereLight(0xecf3ff, 0x333641, 1.8));
     for (const [color, intensity, position] of [[0xffffff, 2.7, [-.5, .7, .6]], [0xccddff, 1.8, [.6, .2, -.5]], [0xffffff, 1.2, [-.4, -.1, -.6]]]) {
@@ -250,7 +222,7 @@ export async function createArmShowcase(host) {
     const canvas = renderer.domElement;
     canvas.tabIndex = 0;
     canvas.setAttribute('role', 'img');
-    canvas.setAttribute('aria-label', 'Continuously rotating three-dimensional robotic arm. Drag or use arrow keys to turn it; Q and E roll, Home restores the starting view. Automatic rotation resumes when you release it.');
+    canvas.setAttribute('aria-label', 'Continuously rotating three-dimensional PCB assembly. Drag or use arrow keys to turn it; Q and E roll, Home restores the starting view. Automatic rotation resumes when you release it.');
     canvas.style.touchAction = 'pan-y pinch-zoom';
     stage.append(canvas);
     listen(canvas, 'pointerdown', event => {
@@ -319,9 +291,6 @@ export async function createArmShowcase(host) {
     ready = true;
     host.dataset.showcaseReady = 'ready';
     host.dataset.modelLoaded = 'true';
-    host.dataset.meshCount = String(model.meshes.length);
-    host.dataset.jointAngles = JSON.stringify(angles);
-    host.dataset.linkageErrorMm = (closureError * 1000).toExponential(3);
     host.dataset.background = 'transparent';
     status.hidden = true;
     resizeObserver = new ResizeObserver(resize);
@@ -330,18 +299,18 @@ export async function createArmShowcase(host) {
     intersectionObserver.observe(host);
     resize();
   } catch (error) {
-    fail('The 3D model could not load. You can still explore the project and CAD images.');
-    console.warn('Arm showcase:', error.message);
+    fail('The 3D PCB could not load. Select Top layer or Bottom layer to inspect the board.');
+    console.warn('PCB showcase:', error.message);
   }
 }
 
-export function initArmShowcases(root = document) {
+export function initPcbShowcases(root = document) {
   const observer = new IntersectionObserver(entries => {
     for (const entry of entries) if (entry.isIntersecting) {
       observer.unobserve(entry.target);
-      createArmShowcase(entry.target);
+      createPcbShowcase(entry.target);
     }
   }, { rootMargin: '180px' });
-  root.querySelectorAll('[data-arm-showcase]').forEach(host => observer.observe(host));
+  root.querySelectorAll('[data-pcb-showcase]').forEach(host => observer.observe(host));
 }
-if (typeof document !== 'undefined') initArmShowcases();
+if (typeof document !== 'undefined') initPcbShowcases();

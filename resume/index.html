@@ -24,16 +24,17 @@
   <title>Resume Oluwaseun Omodele</title>
   <link rel="stylesheet" href="/assets/servo-case-study.css?v=20261005-final-first">
   <link rel="stylesheet" href="/assets/portfolio-pages.css?v=20261005-project-menu">
-  <link rel="stylesheet" href="/assets/arm-showcase.css?v=20261005">
-  <script type="module" src="/assets/arm-showcase.js?v=20261005-continuous"></script>
+  <link rel="stylesheet" href="/assets/arm-showcase.css?v=20261010-direct">
+  <script type="module" src="/assets/arm-showcase.js?v=20261010-direct"></script>
   <script src="/assets/portfolio-pages.js?v=20261005-clean-projects" defer></script>
   <link rel="stylesheet" href="/assets/ambient-status.css?v=20261005-houston">
   <script src="/assets/ambient-status.js?v=20261005-houston" defer></script>
   <script src="/assets/section-route.js?v=20261005-heading" defer></script>
   <link rel="stylesheet" href="/assets/resume-viewer.css?v=20261005-inline">
   <script type="module" src="/assets/resume-viewer.js?v=20261005-inline"></script>
-  <link rel="stylesheet" href="/assets/parts-costs.css?v=20261005">
-  <link rel="stylesheet" href="/assets/buck-converter.css?v=20261010-local">
+  <link rel="stylesheet" href="/assets/buck-converter.css?v=20261010-3d">
+  <link rel="stylesheet" href="/assets/pcb-showcase.css?v=20261010-direct">
+  <script type="module" src="/assets/pcb-showcase.js?v=20261010-direct"></script>
 </head>
 <body id="top" data-landing-section="resume">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -51,13 +52,15 @@
   <main id="main" class="page-shell">
     <section class="hero reveal" aria-labelledby="intro-title">
       <div class="hero-topline"><span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Electrical engineering</span><div class="ambient-status" data-ambient-status data-weather-state="loading"><span class="ambient-status__location">Houston, TX</span><span class="ambient-status__divider" aria-hidden="true"></span><span class="ambient-status__clock" title="Current time in Houston, Texas"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><time aria-label="Houston Central Time">--:--</time><span class="ambient-status__zone" data-clock-zone>CT</span></span><span class="ambient-status__divider ambient-status__divider--weather" aria-hidden="true"></span><a class="ambient-status__weather" href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer" data-weather-link title="Houston weather · Data by Open-Meteo" aria-label="Houston weather · Data by Open-Meteo"><svg viewBox="0 0 24 24" aria-hidden="true" data-weather-icon><path d="M7 18a4 4 0 0 1-.6-8A6 6 0 0 1 18 8.5 4.8 4.8 0 0 1 18 18Z"/></svg><span class="ambient-status__temperature" data-weather-temperature></span><span class="ambient-status__condition" data-weather-condition>Weather</span></a></div></div>
-      <div class="hero-layout">
-      <h1 id="intro-title">Oluwaseun<br><span>Omodele</span></h1>
-      <div class="hero-copy">
+      <div class="hero-pcb-layout">
+        <div class="hero-copy">
+          <h1 id="intro-title">Oluwaseun<br><span>Omodele</span></h1>
+
       <p class="hero-statement">Welcome to my portfolio</p>
       <p class="hero-description">I’m an electrical engineering student at the University of Houston, Class of 2029. I enjoy building things from the ground up, working with my hands, and figuring out how to make things work.</p>
       <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="/contact/">Let’s connect <span aria-hidden="true">↗</span></a></div>
-      </div>
+        </div>
+        <div class="hero-pcb"><div class="pcb-showcase" data-pcb-showcase="/assets/buck-converter/3d/assembly.glb"><noscript><img src="/assets/buck-converter/pcb/top-layer.png" width="2448" height="1542" alt="Buck converter PCB design"></noscript></div></div>
       </div>
       <div class="hero-footnote"><a class="hero-contact" href="mailto:seunomodelee@gmail.com">seunomodelee@gmail.com <span aria-hidden="true">↗</span></a><a class="scroll-link" href="/about/" aria-label="Scroll to about"><span aria-hidden="true">↓</span></a></div>
     </section>
@@ -110,10 +113,12 @@
             <ul class="tags" aria-label="Project tools"><li>KiCad</li><li>ngspice</li><li>Circuit analysis</li></ul>
             <a class="text-link buck-card-link" href="/projects/buck-converter/">Explore the project <span aria-hidden="true">↗</span></a>
           </div>
-          <a class="buck-card-media" href="/projects/buck-converter/" aria-label="Explore the 10W DC-DC Buck Converter project">
-            <img src="/assets/buck-converter/pcb/top-layer.png" width="2448" height="1542" loading="lazy" alt="KiCad top-layer export of the 54 by 34 millimeter buck converter PCB, showing copper, components, and routing">
-            <span class="buck-card-caption"><span>Native KiCad PCB export · Top layer</span><span>Explore 002 ↗</span></span>
-          </a>
+          <div class="project-gallery pcb-gallery" data-gallery>
+            <div class="gallery-tabs" aria-label="Buck converter project views"><button id="buck-tab-3d" type="button" data-gallery-tab aria-controls="buck-panel-3d" aria-label="002 Interactive 3D PCB">002</button><button id="buck-tab-top" type="button" data-gallery-tab aria-controls="buck-panel-top">Top layer</button><button id="buck-tab-bottom" type="button" data-gallery-tab aria-controls="buck-panel-bottom">Bottom layer</button></div>
+            <figure id="buck-panel-3d" data-gallery-panel data-pcb-panel><div class="pcb-showcase" data-pcb-showcase="/assets/buck-converter/3d/assembly.glb"><p>Loading the 3D PCB…</p><noscript><p>Enable JavaScript for 3D, or inspect the board in the Top layer and Bottom layer views.</p></noscript></div><figcaption><span>Native KiCad assembly · 3D CAD</span><a href="/projects/buck-converter/">Explore 002 ↗</a></figcaption></figure>
+            <figure id="buck-panel-top" data-gallery-panel><a class="buck-cad-stage" href="/projects/buck-converter/" aria-label="Explore the buck converter top-layer design"><img src="/assets/buck-converter/pcb/top-layer.png" width="2448" height="1542" loading="lazy" alt="Native KiCad top-layer export of the buck converter PCB"></a><figcaption><span>Native KiCad export · Top layer</span><a href="/projects/buck-converter/">Explore 002 ↗</a></figcaption></figure>
+            <figure id="buck-panel-bottom" data-gallery-panel><a class="buck-cad-stage" href="/projects/buck-converter/" aria-label="Explore the buck converter bottom-layer design"><img src="/assets/buck-converter/pcb/bottom-layer.png" width="2448" height="1542" loading="lazy" alt="Native KiCad bottom-layer export of the buck converter PCB"></a><figcaption><span>Native KiCad export · Bottom layer</span><a href="/projects/buck-converter/">Explore 002 ↗</a></figcaption></figure>
+          </div>
         </div>
       </article>
 
@@ -122,30 +127,6 @@
     <section class="section toolkit" aria-labelledby="toolkit-title">
       <div class="section-heading reveal"><span class="section-number">TECHNICAL SKILLS</span><h2 id="toolkit-title">Tools behind the work.</h2></div>
       <dl class="toolkit-list reveal"><div><dt>Embedded</dt><dd>ESP32 · C++ / Arduino · PCA9685</dd></div><div><dt>Software</dt><dd>Unity · C# · Git</dd></div><div><dt>Design</dt><dd>Fusion 360 · 3D printing</dd></div></dl>
-      <div class="parts-costs" aria-labelledby="parts-costs-title">
-        <div class="parts-costs-intro">
-          <h3 id="parts-costs-title">Parts &amp; costs.</h3>
-          <p>Components and supplies purchased along the way.</p>
-          <p class="parts-costs-total"><span>Listed parts total</span><strong>$100.58<small>USD</small></strong></p>
-        </div>
-        <div class="parts-costs-breakdown">
-          <table aria-describedby="parts-costs-note">
-            <thead><tr><th scope="col">Component</th><th scope="col">Quantity</th><th scope="col">Cost</th></tr></thead>
-            <tbody>
-                <tr><th scope="row">ESP32 development board<span>HiLetgo ESP-WROOM-32</span></th><td>1 board</td><td>$9.99</td></tr>
-                <tr><th scope="row">Solderless breadboards<span>830 tie points</span></th><td>3-pack</td><td>$6.99</td></tr>
-                <tr><th scope="row">PCA9685 servo driver<span>16-channel PWM</span></th><td>1 board</td><td>$3.33</td></tr>
-                <tr><th scope="row">MG996R servos<span>180° rotation</span></th><td>5-pack</td><td>$7.40</td></tr>
-                <tr><th scope="row">MG90S servos<span>180° rotation</span></th><td>5-pack</td><td>$8.35</td></tr>
-                <tr><th scope="row">Servo extension cables<span>100 mm</span></th><td>10-pack</td><td>$2.60</td></tr>
-                <tr><th scope="row">Silicone power cable<span>18 AWG · 2 conductors</span></th><td>5 m</td><td>$5.46</td></tr>
-                <tr><th scope="row">XY joystick modules<span>Dual-axis</span></th><td>2 modules</td><td>$4.46</td></tr>
-                <tr><th scope="row">3D printing filament<span>$13 per purchase</span></th><td>4 purchases</td><td>$52.00</td></tr>
-            </tbody>
-          </table>
-          <p class="parts-costs-note" id="parts-costs-note">Costs cover the quantities shown. ESP32 and breadboards use listed prices; filament reflects four purchases at $13 each. The remaining rows use order totals. Other unlisted materials are not included.</p>
-        </div>
-      </div>
     </section>
     <section id="resume" class="section resume-section" data-section aria-labelledby="resume-title">
       <div class="section-heading reveal"><span class="section-number">RESUME</span><h2 id="resume-title">My background, at a glance.</h2></div>
