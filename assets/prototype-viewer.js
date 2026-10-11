@@ -2,7 +2,6 @@ import * as THREE from './three.module.min.js';
 
 // Exact CAD mesh data is shared between instances; every card keeps its own view.
 const modelCache = new Map();
-let nextId = 0;
 async function getModel(url) {
   const absolute = new URL(url, document.baseURI).href;
   if (!modelCache.has(absolute)) modelCache.set(absolute, (async () => {
@@ -21,8 +20,6 @@ export function createPrototypeViewer(host) {
   if (host.dataset.viewerReady) return;
   host.dataset.viewerReady = 'true';
   const name = host.dataset.prototypeName || 'Prototype';
-  const touchUI=window.matchMedia('(pointer:coarse)').matches;
-  const id = 'prototype-viewer-' + ++nextId;
   host.classList.add('prototype-viewer');
   host.setAttribute('role','region');
   host.setAttribute('aria-label',name+' interactive 3D model');
@@ -32,19 +29,8 @@ export function createPrototypeViewer(host) {
   status.className='prototype-viewer-status';
   status.setAttribute('role','status');
   status.textContent='Loading 3D model…';
-  const hint = document.createElement('p');
-  hint.id=id+'-hint';
-  hint.className='prototype-viewer-hint';
-  hint.textContent=touchUI?'Tap Explore to rotate · swipe the page to scroll':'Drag to rotate · use + / − to zoom';
-  const controls=document.createElement('div');
-  controls.className='prototype-viewer-controls';
-  const makeButton=(text,label,handler)=>{
-    const button=document.createElement('button');
-    button.type='button';button.textContent=text;button.setAttribute('aria-label',label);
-    button.addEventListener('click',handler);controls.append(button);return button;
-  };
   let scene,renderer,camera,object,resizeObserver;
-  let visible=true,ready=false,disposed=false,focused=false,interacting=false;
+  let visible=true,ready=false,disposed=false;
   // Match the front/right isometric view used by these native Fusion documents.
   const homeTheta=Math.PI/4,homePhi=Math.acos(1/Math.sqrt(3));
   let theta=homeTheta,phi=homePhi,distance=3.8,fitDistance=3.8,radius=1;
@@ -53,18 +39,7 @@ export function createPrototypeViewer(host) {
   const pointers=new Map();
   let lastPinch=0;
   const angleStep=Math.PI/12;
-  const touchButton=makeButton('Explore','Enable touch rotation for '+name,()=>setInteracting(!interacting));
-  touchButton.className='prototype-viewer-explore';
-  touchButton.setAttribute('aria-pressed','false');
-  const leftButton=makeButton('←','Rotate '+name+' left',()=>orbit(-angleStep,0));
-  const rightButton=makeButton('→','Rotate '+name+' right',()=>orbit(angleStep,0));
-  const plusButton=makeButton('+','Zoom into '+name,()=>zoom(0.82));
-  const minusButton=makeButton('−','Zoom out from '+name,()=>zoom(1.22));
-  const resetButton=makeButton('Reset','Reset '+name+' view',reset);
-  resetButton.className='prototype-viewer-reset';
-  host.append(stage,controls,hint);stage.append(status);
-  [leftButton,rightButton,plusButton,minusButton,resetButton].forEach(button=>button.disabled=true);
-  touchButton.disabled=true;
+  host.append(stage);stage.append(status);
   function render(){
     if (!ready || disposed || !visible) return;
     host.dataset.viewTheta=theta.toFixed(6);host.dataset.viewPhi=phi.toFixed(6);host.dataset.viewDistance=distance.toFixed(6);
@@ -89,13 +64,9 @@ export function createPrototypeViewer(host) {
     return required+radius*0.025;
   }
   function reset(){theta=homeTheta;phi=homePhi;fitDistance=fitForView();distance=fitDistance;render();}
-  function setInteracting(value){
-    interacting=value;host.classList.toggle('is-exploring',value);
-    touchButton.textContent=value?'Done':'Explore';touchButton.setAttribute('aria-pressed',String(value));
-    touchButton.setAttribute('aria-label',(value?'Finish touch rotation for ':'Enable touch rotation for ')+name);
-    hint.textContent=value?'Drag to rotate · pinch or + / − to zoom · Done to scroll':touchUI?'Tap Explore to rotate · swipe the page to scroll':'Drag to rotate · use + / − to zoom';
+  function releasePointers(){
     pointers.clear();lastPinch=0;
-    if (renderer) renderer.domElement.style.touchAction=value?'none':'pan-y';
+    renderer?.domElement.classList.remove('is-dragging');
   }
   function resize(){
     if (!renderer) return;
@@ -160,14 +131,12 @@ export function createPrototypeViewer(host) {
       const fill=new THREE.DirectionalLight(0xffffff,0.25);fill.position.set(-3,-1,-2);scene.add(fill);
       const canvas=renderer.domElement;
       canvas.tabIndex=0;canvas.setAttribute('role','img');
-      canvas.setAttribute('aria-label',name+' 3D model. Arrow keys rotate; plus and minus zoom; Home resets; Escape exits touch rotation.');
-      canvas.setAttribute('aria-describedby',hint.id);canvas.style.touchAction='pan-y';
-      canvas.addEventListener('focus',()=>focused=true);
-      canvas.addEventListener('blur',()=>{focused=false;pointers.clear();});
+      canvas.setAttribute('aria-label',name+' 3D model. Arrow keys rotate; plus and minus zoom; Home resets; Escape releases rotation.');
+      canvas.style.touchAction='pan-y pinch-zoom';
+      canvas.addEventListener('blur',releasePointers);
       canvas.addEventListener('pointerdown',event=>{
-        if(event.pointerType==='touch'&&!interacting)return;
         if(event.button!==0)return;
-        event.preventDefault();canvas.focus({preventScroll:true});
+        if(event.pointerType!=='touch')event.preventDefault();canvas.focus({preventScroll:true});
         pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});canvas.setPointerCapture(event.pointerId);
         if(pointers.size===2){const [a,b]=[...pointers.values()];lastPinch=Math.hypot(a.x-b.x,a.y-b.y);}
         canvas.classList.add('is-dragging');
@@ -182,15 +151,12 @@ export function createPrototypeViewer(host) {
       });
       const release=event=>{pointers.delete(event.pointerId);lastPinch=0;if(!pointers.size)canvas.classList.remove('is-dragging');};
       ['pointerup','pointercancel','lostpointercapture'].forEach(type=>canvas.addEventListener(type,release));
-      // Wheel stays ordinary page scrolling unless the user explicitly enters Explore mode.
-      canvas.addEventListener('wheel',event=>{if(interacting&&focused){event.preventDefault();zoom(Math.exp(event.deltaY*0.0012));}},{passive:false});
       canvas.addEventListener('keydown',event=>{
-        const actions={ArrowLeft:()=>orbit(-angleStep,0),ArrowRight:()=>orbit(angleStep,0),ArrowUp:()=>orbit(0,-angleStep),ArrowDown:()=>orbit(0,angleStep),'+':()=>zoom(0.82),'=':()=>zoom(0.82),'-':()=>zoom(1.22),Home:reset,Escape:()=>setInteracting(false)};
+        const actions={ArrowLeft:()=>orbit(-angleStep,0),ArrowRight:()=>orbit(angleStep,0),ArrowUp:()=>orbit(0,-angleStep),ArrowDown:()=>orbit(0,angleStep),'+':()=>zoom(0.82),'=':()=>zoom(0.82),'-':()=>zoom(1.22),Home:reset,Escape:releasePointers};
         if(actions[event.key]){event.preventDefault();actions[event.key]();}
       });
       canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();status.textContent='3D view paused. Reload the page to restore it.';status.hidden=false;ready=false;});
       stage.append(canvas);status.hidden=true;ready=true;
-      [touchButton,leftButton,rightButton,plusButton,minusButton,resetButton].forEach(button=>button.disabled=false);
       resizeObserver=new ResizeObserver(resize);resizeObserver.observe(stage);resize();reset();
       host.dataset.modelLoaded='true';
       host.dispatchEvent(new CustomEvent('prototype3dready',{detail:{name,meshCount:model.meshes.length}}));

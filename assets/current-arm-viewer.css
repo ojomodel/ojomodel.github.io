@@ -6,13 +6,10 @@
 .current-arm-stage canvas.is-dragging{cursor:grabbing}
 .current-arm-status{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:30px;color:#b9c0cb;font:13px/1.6 var(--sans,sans-serif);text-align:center}
 .current-arm-status[hidden]{display:none}
-.current-arm-toolbar{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;padding:0 16px 10px}
 .current-arm-viewer button{appearance:none;min-width:38px;min-height:38px;display:inline-flex;justify-content:center;align-items:center;border:1px solid #3b424d;border-radius:4px;background:#1d2229;color:#e0e5ec;padding:7px 11px;font:11px/1.2 var(--mono,monospace);cursor:pointer;transition:background .15s,border-color .15s}
 .current-arm-viewer button:hover{background:#2c343f;border-color:#8392a7}
 .current-arm-viewer :focus-visible{outline:2px solid #c5e8ff;outline-offset:3px}
 .current-arm-viewer button:disabled{opacity:.35;cursor:wait}
-.current-arm-toolbar .current-arm-explore{display:none}
-.current-arm-hint{margin:0!important;padding:0 12px 18px!important;text-align:center;font:10px/1.5 var(--mono,monospace)!important;color:#aab3c1!important}
 .current-arm-controls{align-self:center;padding:28px;min-width:0}
 .current-arm-control-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:28px;font:13px/1.5 var(--mono,monospace)}
 .current-arm-control-heading button{white-space:nowrap;font-size:10px}
@@ -22,9 +19,8 @@
 .current-arm-slider output{color:#a4adbb;font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap}
 .current-arm-slider input{display:block;accent-color:#cdd7e4;width:100%;height:26px;margin:6px 0 0;cursor:ew-resize;touch-action:pan-y}
 .current-arm-note{margin:25px 0 0!important;font:10px/1.7 var(--mono,monospace)!important;color:#949dab!important}
-.current-arm-viewer.is-exploring{border-color:#9dbece}
 .current-arm-viewer [hidden]{display:none!important}
-@media(pointer:coarse){.current-arm-toolbar .current-arm-explore{display:inline-flex;min-width:75px}.current-arm-viewer button{min-height:44px;min-width:44px}.current-arm-slider input{height:34px}}
 @media(max-width:760px){.current-arm-viewer{grid-template-columns:minmax(0,1fr)}.current-arm-visual{border-right:0;border-bottom:1px solid #303339}.current-arm-stage{height:360px}.current-arm-controls{padding:24px}.current-arm-sliders{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px}.current-arm-control-heading{margin-bottom:20px}.current-arm-note{margin-top:20px!important}}
-@media(max-width:440px){.current-arm-stage{height:330px}.current-arm-controls{padding:20px}.current-arm-sliders{grid-template-columns:1fr;gap:13px}.current-arm-hint{font-size:9px!important}.current-arm-toolbar{gap:6px;padding-inline:10px}.current-arm-toolbar button{padding-inline:9px}.current-arm-control-heading{margin-bottom:16px}}
+@media(max-width:440px){.current-arm-stage{height:330px}.current-arm-controls{padding:20px}.current-arm-sliders{grid-template-columns:1fr;gap:13px}.current-arm-control-heading{margin-bottom:16px}}
 @media(prefers-reduced-motion:reduce){.current-arm-viewer button{transition:none}}
+@media(pointer:coarse){.current-arm-viewer button{min-height:44px;min-width:44px}.current-arm-slider input{height:34px}}

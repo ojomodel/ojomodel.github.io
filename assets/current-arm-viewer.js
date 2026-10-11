@@ -61,17 +61,14 @@ export async function createCurrentArmViewer(host) {
   host.setAttribute('role','region');
   host.setAttribute('aria-label','Interactive robotic arm CAD model');
   const id = 'current-arm-' + ++nextViewer;
-  const touchUI = matchMedia('(pointer: coarse)').matches;
-  host.innerHTML = `<div class="current-arm-visual"><div class="current-arm-stage"><p class="current-arm-status" role="status">Loading the CAD model…</p></div><div class="current-arm-toolbar"><button type="button" class="current-arm-explore" aria-pressed="false">Explore</button><button type="button" data-action="left" aria-label="Rotate model left">←</button><button type="button" data-action="right" aria-label="Rotate model right">→</button><button type="button" data-action="in" aria-label="Zoom in">+</button><button type="button" data-action="out" aria-label="Zoom out">−</button><button type="button" data-action="fit">Fit view</button></div><p class="current-arm-hint" id="${id}-hint"></p></div><div class="current-arm-controls"><div class="current-arm-control-heading"><span>Try the joints</span><button type="button" data-action="reset">Reset pose</button></div><div class="current-arm-sliders"></div><p class="current-arm-note">CAD exploration · four positioning joints + gripper</p></div>`;
+  host.innerHTML = `<div class="current-arm-visual"><div class="current-arm-stage"><p class="current-arm-status" role="status">Loading the CAD model…</p></div></div><div class="current-arm-controls"><div class="current-arm-control-heading"><span>Try the joints</span><button type="button" data-action="reset">Reset pose</button></div><div class="current-arm-sliders"></div><p class="current-arm-note">CAD exploration · four positioning joints + gripper</p></div>`;
   const stage = host.querySelector('.current-arm-stage');
   const status = host.querySelector('.current-arm-status');
-  const hint = host.querySelector('.current-arm-hint');
   const sliderHost = host.querySelector('.current-arm-sliders');
-  const explore = host.querySelector('.current-arm-explore');
   const buttons = [...host.querySelectorAll('button')];
   buttons.forEach(button => button.disabled = true);
   let renderer, scene, camera, model, angles, meshes, resizeObserver;
-  let ready = false, visible = true, exploring = false, pendingFrame = 0;
+  let ready = false, visible = true, pendingFrame = 0;
   const homeTheta = -1.18, homePhi = 1.23;
   let theta = homeTheta, phi = homePhi, distance = .85, fittedDistance = .85;
   const target = new THREE.Vector3();
@@ -79,10 +76,6 @@ export async function createCurrentArmViewer(host) {
   const pointers = new Map();
   const sliders = [];
   let pinchDistance = 0;
-  function updateHint() {
-    hint.textContent = exploring ? 'Drag to rotate · pinch to zoom · Done to scroll' : touchUI ? 'Tap Explore to rotate · swipe to scroll' : 'Drag to rotate · use + / − to zoom';
-  }
-  updateHint();
   function render() {
     pendingFrame = 0;
     if (!ready || !visible) return;
@@ -133,13 +126,9 @@ export async function createCurrentArmViewer(host) {
     host.dataset.linkageErrorMm=(closureError*1000).toExponential(3);
     requestRender();
   }
-  function setExploring(value) {
-    exploring=value;
-    host.classList.toggle('is-exploring',value);
-    explore.textContent=value?'Done':'Explore';explore.setAttribute('aria-pressed',String(value));
+  function releasePointers() {
     pointers.clear();pinchDistance=0;
-    if (renderer) renderer.domElement.style.touchAction=value?'none':'pan-y';
-    updateHint();
+    renderer?.domElement.classList.remove('is-dragging');
   }
   function resize() {
     if (!ready || !stage.clientWidth || !stage.clientHeight) return;
@@ -176,7 +165,7 @@ export async function createCurrentArmViewer(host) {
       const light=new THREE.DirectionalLight(color,intensity);light.position.set(...position);scene.add(light);
     }
     const grid=new THREE.GridHelper(.66,12,0x353b44,0x22262d);grid.position.y=-.002;grid.material.transparent=true;grid.material.opacity=.5;scene.add(grid);
-    const canvas=renderer.domElement;canvas.tabIndex=0;canvas.setAttribute('role','img');canvas.setAttribute('aria-label','Robot arm CAD model. Arrow keys rotate, plus and minus zoom, Home fits the view.');canvas.setAttribute('aria-describedby',hint.id);canvas.style.touchAction='pan-y';stage.append(canvas);
+    const canvas=renderer.domElement;canvas.tabIndex=0;canvas.setAttribute('role','img');canvas.setAttribute('aria-label','Robot arm CAD model. Arrow keys rotate, plus and minus zoom, Home fits the view.');canvas.style.touchAction='pan-y pinch-zoom';stage.append(canvas);
     model.joints.forEach((joint,i) => {
       const row=document.createElement('label');row.className='current-arm-slider';
       const heading=document.createElement('span');heading.className='current-arm-slider-heading';
@@ -187,8 +176,8 @@ export async function createCurrentArmViewer(host) {
       heading.append(name,output);row.append(heading,input);sliderHost.append(row);sliders.push({input,output});
     });
     canvas.addEventListener('pointerdown',event => {
-      if (event.pointerType==='touch'&&!exploring || event.button!==0) return;
-      event.preventDefault();canvas.focus({preventScroll:true});canvas.setPointerCapture(event.pointerId);pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});canvas.classList.add('is-dragging');
+      if (event.button!==0) return;
+      if(event.pointerType!=='touch')event.preventDefault();canvas.focus({preventScroll:true});canvas.setPointerCapture(event.pointerId);pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});canvas.classList.add('is-dragging');
       if(pointers.size===2){const [a,b]=pointers.values();pinchDistance=Math.hypot(a.x-b.x,a.y-b.y);}
     });
     canvas.addEventListener('pointermove',event => {
@@ -200,21 +189,19 @@ export async function createCurrentArmViewer(host) {
     ['pointerup','pointercancel','lostpointercapture'].forEach(type=>canvas.addEventListener(type,release));
     canvas.addEventListener('blur',()=>{pointers.clear();pinchDistance=0;canvas.classList.remove('is-dragging');});
     canvas.addEventListener('keydown',event=>{
-      const actions={ArrowLeft:()=>orbit(-.15,0),ArrowRight:()=>orbit(.15,0),ArrowUp:()=>orbit(0,-.15),ArrowDown:()=>orbit(0,.15),'+':()=>zoom(.85),'=':()=>zoom(.85),'-':()=>zoom(1.18),Home:()=>fit(true),Escape:()=>setExploring(false)};
+      const actions={ArrowLeft:()=>orbit(-.15,0),ArrowRight:()=>orbit(.15,0),ArrowUp:()=>orbit(0,-.15),ArrowDown:()=>orbit(0,.15),'+':()=>zoom(.85),'=':()=>zoom(.85),'-':()=>zoom(1.18),Home:()=>fit(true),Escape:releasePointers};
       if(actions[event.key]){event.preventDefault();actions[event.key]();}
     });
-    const actions={left:()=>orbit(-.22,0),right:()=>orbit(.22,0),in:()=>zoom(.85),out:()=>zoom(1.18),fit:()=>fit(),reset:()=>{angles=[...model.presentationPose];updatePose();fit(true);}};
+    const actions={reset:()=>{angles=[...model.presentationPose];updatePose();fit(true);}};
     host.querySelectorAll('[data-action]').forEach(button=>button.addEventListener('click',actions[button.dataset.action]));
-    explore.addEventListener('click',()=>setExploring(!exploring));
     ready=true;angles=[...model.presentationPose];updatePose();status.hidden=true;buttons.forEach(button=>button.disabled=false);host.dataset.modelLoaded='true';host.dataset.meshCount=String(meshes.size);
     resizeObserver=new ResizeObserver(resize);resizeObserver.observe(stage);resize();
-    const visibilityObserver=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible)requestRender();else setExploring(false);});visibilityObserver.observe(host);
+    const visibilityObserver=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible)requestRender();else releasePointers();});visibilityObserver.observe(host);
     canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();ready=false;status.hidden=false;status.textContent='The 3D view was paused by your browser. Reload the page to try again.';buttons.forEach(button=>button.disabled=true);});
   } catch(error) {
     host.dataset.modelLoaded='false';
     status.textContent='The interactive view could not load. You can still explore the build photos below.';
     host.querySelector('.current-arm-controls').hidden=true;
-    host.querySelector('.current-arm-toolbar').hidden=true;hint.hidden=true;
     if(renderer)renderer.dispose();if(resizeObserver)resizeObserver.disconnect();
     console.warn('Arm CAD viewer:',error.message);
   }
