@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="The files.">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/files.css?v=20261020">
+  <script src="/assets/files.js?v=20261020" defer></script>
+  <title>The files. — Oluwaseun Omodele</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="files-header">
+    <a href="/" class="back-link"><span aria-hidden="true">↖</span> Portfolio</a>
+    <button class="lock-button" id="lock-files" type="button" hidden>Lock</button>
+  </header>
+  <main id="main" class="files-main">
+    <section class="entry" id="entry" aria-labelledby="files-title">
+      <h1 id="files-title" tabindex="-1">The files.</h1>
+      <form id="unlock-form" class="unlock-form">
+        <label class="input-label" for="passcode">Passcode</label>
+        <div class="passcode-field">
+          <input id="passcode" name="passcode" type="password" inputmode="numeric" autocomplete="off" aria-describedby="unlock-message" required>
+          <button class="unlock-button" type="submit" aria-label="Unlock the files"><span aria-hidden="true">→</span></button>
+        </div>
+        <p class="form-message" id="unlock-message" role="status" aria-live="polite"></p>
+      </form>
+      <noscript><p class="noscript-message">Enable JavaScript to unlock and listen to the files.</p></noscript>
+    </section>
+    <section id="files-list" class="files-list" aria-label="Recordings and transcripts" hidden></section>
+  </main>
+</body>
+</html>

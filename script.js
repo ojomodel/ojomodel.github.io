@@ -133,19 +133,33 @@
   const header = document.querySelector(".site-header");
   const menuToggle = document.getElementById("menu-toggle");
   const nav = document.getElementById("site-nav");
-  const projectMenu = nav?.querySelector(".nav-projects");
+  const navDropdowns = [...(nav?.querySelectorAll(".nav-projects") || [])];
 
-  function closeProjects(returnFocus = false) {
-    if (!projectMenu?.open) return;
-    projectMenu.open = false;
-    if (returnFocus) projectMenu.querySelector("summary").focus({ preventScroll: true });
+  function closeDropdown(dropdown, returnFocus = false) {
+    if (!dropdown.open) return;
+    dropdown.open = false;
+    if (returnFocus) dropdown.querySelector("summary").focus({ preventScroll: true });
+  }
+
+  function closeDropdowns(returnFocus = false) {
+    const openDropdowns = navDropdowns.filter((dropdown) => dropdown.open);
+    openDropdowns.forEach((dropdown, index) => closeDropdown(dropdown, returnFocus && index === 0));
   }
 
   document.addEventListener("click", (event) => {
-    if (projectMenu?.open && !projectMenu.contains(event.target)) closeProjects();
+    navDropdowns.forEach((dropdown) => {
+      if (!dropdown.contains(event.target)) closeDropdown(dropdown);
+    });
   });
-  projectMenu?.addEventListener("focusout", (event) => {
-    if (event.relatedTarget && !projectMenu.contains(event.relatedTarget)) closeProjects();
+  navDropdowns.forEach((dropdown) => {
+    dropdown.addEventListener("focusout", (event) => {
+      if (event.relatedTarget && !dropdown.contains(event.relatedTarget)) closeDropdown(dropdown);
+    });
+    dropdown.addEventListener("toggle", () => {
+      if (dropdown.open) navDropdowns.forEach((other) => {
+        if (other !== dropdown) closeDropdown(other);
+      });
+    });
   });
 
   function localTarget(link) {
@@ -164,7 +178,7 @@
     header.classList.add("nav-enhanced");
 
     function closeMenu(returnFocus = false) {
-      closeProjects();
+      closeDropdowns();
       if (returnFocus) menuToggle.focus({ preventScroll: true });
       header.classList.remove("menu-open");
       menuToggle.setAttribute("aria-expanded", "false");
@@ -173,7 +187,7 @@
 
     menuToggle.addEventListener("click", () => {
       const open = menuToggle.getAttribute("aria-expanded") !== "true";
-      if (!open) closeProjects();
+      if (!open) closeDropdowns();
       menuToggle.setAttribute("aria-expanded", String(open));
       menuToggle.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
       header.classList.toggle("menu-open", open);
@@ -181,9 +195,9 @@
     header.querySelector(".site-brand")?.addEventListener("click", () => closeMenu());
     document.addEventListener("keydown", (event) => {
       if (event.key !== "Escape") return;
-      if (projectMenu?.open) {
+      if (navDropdowns.some((dropdown) => dropdown.open)) {
         event.preventDefault();
-        closeProjects(true);
+        closeDropdowns(true);
       } else if (menuToggle.getAttribute("aria-expanded") === "true") {
         event.preventDefault();
         closeMenu(true);
