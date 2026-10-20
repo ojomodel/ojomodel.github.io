@@ -251,6 +251,36 @@
     status.setAttribute('aria-live', 'polite');
     timeline.append(seek, time);
     player.append(number, heading, audio, controls, timeline, status);
+    const featuredButtons = [];
+    const featuredPassages = Array.isArray(part.featuredPassages)
+      ? part.featuredPassages.filter(passage => passage && typeof passage.label === 'string' && passage.label.trim()
+        && Number.isFinite(passage.start) && passage.start >= 0
+        && Number.isFinite(passage.end) && passage.end > passage.start
+        && Number.isFinite(part.duration) && passage.end <= part.duration) : [];
+    if (featuredPassages.length) {
+      const passageLinks = document.createElement('div');
+      passageLinks.className = 'passage-links';
+      const label = document.createElement('p');
+      label.className = 'passage-heading';
+      label.textContent = 'Featured passage';
+      passageLinks.append(label);
+      featuredPassages.forEach(passage => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'passage-link';
+        button.setAttribute('aria-label', `Play ${passage.label} in ${partName} from ${formatTime(passage.start)}`);
+        const text = document.createElement('span');
+        text.textContent = passage.label;
+        const timestamp = document.createElement('span');
+        timestamp.className = 'passage-time';
+        timestamp.textContent = `${formatTime(passage.start)} ↗`;
+        button.append(text, timestamp);
+        button.addEventListener('click', () => startPlayback(passage.start));
+        featuredButtons.push(button);
+        passageLinks.append(button);
+      });
+      player.append(passageLinks);
+    }
     const transcript = document.createElement('div');
     transcript.className = 'file-transcript';
     const transcriptLabel = document.createElement('p');
@@ -573,6 +603,7 @@
         status.classList.remove('is-error');
         status.textContent = 'Loading audio…';
         play.disabled = true;
+        featuredButtons.forEach(button => { button.disabled = true; });
         const key = decryptionKey;
         if (!key) throw new Error('Locked');
         const data = await decrypt(part.audio, key);
@@ -610,20 +641,20 @@
         throw error;
       } finally {
         loadPromise = null;
-        if (session === activeSession) play.disabled = false;
+        if (session === activeSession) {
+          play.disabled = false;
+          featuredButtons.forEach(button => { button.disabled = false; });
+        }
       }
     }
 
-    play.addEventListener('click', async () => {
+    async function startPlayback(position = null) {
       const thisPlayback = ++playbackRequest;
-      if (!audio.paused) {
-        audio.pause();
-        return;
-      }
       players.forEach(other => { if (other !== record) other.audio.pause(); });
       try {
         await ensureAudio();
         if (session !== activeSession || thisPlayback !== playbackRequest) return;
+        if (Number.isFinite(position)) setPosition(position);
         await audio.play();
         status.textContent = '';
         status.classList.remove('is-error');
@@ -635,6 +666,15 @@
         status.classList.add('is-error');
         updateButton();
       }
+    }
+
+    play.addEventListener('click', () => {
+      if (!audio.paused) {
+        playbackRequest += 1;
+        audio.pause();
+        return;
+      }
+      return startPlayback();
     });
     restart.addEventListener('click', () => setPosition(0));
     back10.addEventListener('click', () => setPosition(audio.currentTime - 10));
