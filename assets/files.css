@@ -95,6 +95,13 @@ body.is-unlocked {
 body.is-unlocked .files-header { padding-top: 20px; padding-bottom: 8px; }
 body.is-unlocked .entry { min-height: auto; display: block; padding: 18px 0 40px; }
 body.is-unlocked .entry h1 { padding: 0; font-size: clamp(30px, 3.5vw, 46px); font-weight: 650; letter-spacing: -.05em; text-align: left; }
+.files-introduction {
+  max-width: 760px;
+  margin: 20px 0 0;
+  color: #d0bdc6;
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.7;
+}
 .files-list { padding-bottom: 64px; }
 .file-part {
   padding: 28px 0 72px;

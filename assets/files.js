@@ -10,6 +10,7 @@
   const list = document.querySelector('#files-list');
   const lockButton = document.querySelector('#lock-files');
   const title = document.querySelector('#files-title');
+  const introduction = document.querySelector('#files-introduction');
   const players = new Set();
   const requests = new Set();
   let session = 0;
@@ -685,6 +686,8 @@
     players.forEach(player => player.dispose());
     players.clear();
     list.replaceChildren();
+    introduction.textContent = '';
+    introduction.hidden = true;
     list.hidden = true;
     lockButton.hidden = true;
     form.hidden = false;
@@ -747,6 +750,8 @@
       decryptionKey = key;
       list.replaceChildren();
       catalog.parts.forEach((part, index) => addPart(part, index, activeSession));
+      introduction.textContent = typeof catalog.introduction === 'string' ? catalog.introduction : '';
+      introduction.hidden = !introduction.textContent.trim();
       input.value = '';
       form.hidden = true;
       lockButton.hidden = false;
@@ -758,6 +763,8 @@
     } catch (error) {
       if (session !== activeSession || error.name === 'AbortError') return;
       decryptionKey = null;
+      introduction.textContent = '';
+      introduction.hidden = true;
       input.value = '';
       const knownError = /^(Incorrect passcode|Too many attempts|Unable to unlock|The files are unavailable)/.test(error.message);
       showMessage(knownError ? error.message : 'Unable to load the files. Please try again.', true);
