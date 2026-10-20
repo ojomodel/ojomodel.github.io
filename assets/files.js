@@ -45,6 +45,74 @@
     return -1;
   }
 
+  function validTextRange(range, text) {
+    if (!range || !Number.isInteger(range.charStart) || !Number.isInteger(range.charEnd)
+      || range.charStart < 0 || range.charEnd <= range.charStart || range.charEnd > text.length) return false;
+    // Offsets are UTF-16 indices, like String.slice. Never split a surrogate pair.
+    const splitsPair = index => index > 0 && index < text.length
+      && /[\uD800-\uDBFF]/.test(text[index - 1]) && /[\uDC00-\uDFFF]/.test(text[index]);
+    return !splitsPair(range.charStart) && !splitsPair(range.charEnd);
+  }
+
+  function transcriptVersions(part) {
+    if (!Array.isArray(part.transcriptVersions)) return [];
+    const usedIds = new Set();
+    return part.transcriptVersions.filter(version => {
+      if (!version || !['original', 'clarified'].includes(version.id)
+        || usedIds.has(version.id) || typeof version.text !== 'string' || !version.text.trim()) return false;
+      usedIds.add(version.id);
+      return true;
+    }).map(version => {
+      const passages = Array.isArray(version.passages)
+        ? version.passages.filter(passage => validTextRange(passage, version.text)) : [];
+      let lastEnd = 0;
+      const words = (Array.isArray(version.words) ? version.words : [])
+        .filter(word => validTextRange(word, version.text)
+          && Number.isFinite(word.start) && word.start >= 0
+          && Number.isFinite(word.end) && word.end > word.start)
+        .slice().sort((first, second) => first.charStart - second.charStart)
+        .filter(word => {
+          if (word.charStart < lastEnd) return false;
+          lastEnd = word.charEnd;
+          return true;
+        }).map(word => ({
+          ...word,
+          emphasized: passages.some(passage => word.charStart < passage.charEnd && word.charEnd > passage.charStart)
+        }));
+      return {
+        id: version.id,
+        label: typeof version.label === 'string' && version.label.trim()
+          ? version.label : version.id === 'original' ? 'Original' : 'Clarified',
+        description: typeof version.description === 'string' ? version.description : '',
+        text: version.text,
+        words
+      };
+    });
+  }
+
+  function wordProgress(word, seconds) {
+    if (!Number.isFinite(seconds) || seconds < word.start) return 0;
+    if (seconds >= word.end) return 1;
+    return Math.max(0, Math.min(1, (seconds - word.start) / (word.end - word.start)));
+  }
+
+  function appendTimedText(container, version) {
+    const wordElements = [];
+    let offset = 0;
+    version.words.forEach(word => {
+      container.append(document.createTextNode(version.text.slice(offset, word.charStart)));
+      const span = document.createElement('span');
+      span.className = 'transcript-word';
+      if (word.emphasized) span.classList.add('is-key-word');
+      span.textContent = version.text.slice(word.charStart, word.charEnd);
+      container.append(span);
+      wordElements.push({ word, span, progress: -1, current: false, emphasized: false });
+      offset = word.charEnd;
+    });
+    container.append(document.createTextNode(version.text.slice(offset)));
+    return wordElements;
+  }
+
   async function request(url, options = {}, format = 'json') {
     const controller = new AbortController();
     requests.add(controller);
@@ -150,24 +218,11 @@
     transcriptLabel.className = 'transcript-label';
     transcriptLabel.textContent = typeof part.transcriptSource === 'string' && part.transcriptSource.trim()
       ? part.transcriptSource : 'Transcript';
-    const cues = transcriptCues(part);
+    const versions = transcriptVersions(part);
+    const cues = versions.length ? [] : transcriptCues(part);
     const cueElements = [];
-    const text = document.createElement(cues.length ? 'div' : 'p');
-    text.className = 'transcript-text';
-    const hasTranscript = typeof part.transcript === 'string' && part.transcript.trim().length > 0;
-    if (cues.length) {
-      text.classList.add('transcript-cues');
-      cues.forEach(cue => {
-        const line = document.createElement('p');
-        line.className = 'transcript-cue';
-        line.textContent = cue.text;
-        text.append(line);
-        cueElements.push(line);
-      });
-    } else {
-      text.textContent = hasTranscript ? part.transcript : 'Exact Voice Memos transcript not added yet.';
-      text.classList.toggle('transcript-empty', !hasTranscript);
-    }
+    const wordElements = [];
+    let removeComparisonListener = () => {};
     transcript.append(transcriptLabel);
     if (typeof part.transcriptSource === 'string' && /automatic|working draft/i.test(part.transcriptSource)) {
       const notice = document.createElement('p');
@@ -175,7 +230,122 @@
       notice.textContent = 'Wording and speaker attribution may be uncertain. Check against the audio.';
       transcript.append(notice);
     }
-    transcript.append(text);
+    const notes = Array.isArray(part.transcriptNotes)
+      ? part.transcriptNotes.filter(note => typeof note === 'string' && note.trim()) : [];
+    if (notes.length) {
+      const details = document.createElement('details');
+      details.className = 'transcript-notes';
+      const summary = document.createElement('summary');
+      summary.textContent = 'Transcript notes';
+      const noteList = document.createElement('ul');
+      notes.forEach(note => {
+        const item = document.createElement('li');
+        item.textContent = note;
+        noteList.append(item);
+      });
+      details.append(summary, noteList);
+      transcript.append(details);
+    }
+    if (versions.length) {
+      article.classList.add('has-transcript-versions');
+      const comparison = document.createElement('div');
+      comparison.className = 'transcript-comparison';
+      const tabs = document.createElement('div');
+      tabs.className = 'transcript-tabs';
+      tabs.setAttribute('role', 'tablist');
+      tabs.setAttribute('aria-label', `${partName} transcript version`);
+      const panels = [];
+      const tabButtons = [];
+      let selectedVersion = 0;
+      const comparisonMedia = window.matchMedia('(max-width: 1179px)');
+      versions.forEach((version, versionIndex) => {
+        const id = `part-${index + 1}-${version.id}`;
+        const tab = document.createElement('button');
+        tab.type = 'button';
+        tab.id = `${id}-tab`;
+        tab.className = 'transcript-tab';
+        tab.textContent = version.label;
+        tab.setAttribute('role', 'tab');
+        tab.setAttribute('aria-controls', `${id}-panel`);
+        tab.addEventListener('click', () => {
+          selectedVersion = versionIndex;
+          updateComparison();
+        });
+        tab.addEventListener('keydown', event => {
+          let next = selectedVersion;
+          if (event.key === 'ArrowRight') next = (next + 1) % versions.length;
+          else if (event.key === 'ArrowLeft') next = (next + versions.length - 1) % versions.length;
+          else if (event.key === 'Home') next = 0;
+          else if (event.key === 'End') next = versions.length - 1;
+          else return;
+          event.preventDefault();
+          selectedVersion = next;
+          updateComparison();
+          tabButtons[next].focus();
+        });
+        tabs.append(tab);
+        tabButtons.push(tab);
+        const panel = document.createElement('section');
+        panel.className = 'transcript-version';
+        panel.id = `${id}-panel`;
+        const versionHeading = document.createElement('h3');
+        versionHeading.className = 'transcript-version-title';
+        versionHeading.id = `${id}-heading`;
+        versionHeading.textContent = version.label;
+        panel.append(versionHeading);
+        if (version.description) {
+          const description = document.createElement('p');
+          description.className = 'transcript-version-description';
+          description.textContent = version.description;
+          panel.append(description);
+        }
+        const versionText = document.createElement('p');
+        versionText.className = 'transcript-text transcript-version-text';
+        wordElements.push(...appendTimedText(versionText, version));
+        panel.append(versionText);
+        panels.push({ panel, heading: versionHeading });
+        comparison.append(panel);
+      });
+      function updateComparison() {
+        const useTabs = comparisonMedia.matches && versions.length > 1;
+        tabs.hidden = !useTabs;
+        comparison.classList.toggle('uses-tabs', useTabs);
+        panels.forEach(({ panel, heading: versionHeading }, panelIndex) => {
+          const selected = panelIndex === selectedVersion;
+          const tab = tabButtons[panelIndex];
+          tab.setAttribute('aria-selected', String(selected));
+          tab.tabIndex = selected ? 0 : -1;
+          panel.hidden = useTabs && !selected;
+          panel.setAttribute('role', useTabs ? 'tabpanel' : 'region');
+          panel.setAttribute('aria-labelledby', useTabs ? tab.id : versionHeading.id);
+          versionHeading.hidden = useTabs;
+          if (useTabs) panel.tabIndex = 0;
+          else panel.removeAttribute('tabindex');
+        });
+      }
+      comparisonMedia.addEventListener('change', updateComparison);
+      removeComparisonListener = () => comparisonMedia.removeEventListener('change', updateComparison);
+      updateComparison();
+      transcript.append(tabs, comparison);
+    } else {
+      const text = document.createElement(cues.length ? 'div' : 'p');
+      text.className = 'transcript-text';
+      const hasTranscript = typeof part.transcript === 'string' && part.transcript.trim().length > 0;
+      if (cues.length) {
+        text.classList.add('transcript-cues');
+        cues.forEach(cue => {
+          const line = document.createElement('p');
+          line.className = 'transcript-cue';
+          line.textContent = cue.text;
+          text.append(line);
+          cueElements.push(line);
+        });
+      } else {
+        text.textContent = hasTranscript ? part.transcript : 'Exact Voice Memos transcript not added yet.';
+        text.classList.toggle('transcript-empty', !hasTranscript);
+      }
+      transcript.append(text);
+    }
     article.append(player, transcript);
     list.append(article);
 
@@ -184,9 +354,14 @@
     let cancelLoad = null;
     let ready = false;
     let highlightedCue = -1;
+    let animationFrame = 0;
+    let disposed = false;
     const record = {
       audio,
       dispose() {
+        disposed = true;
+        stopTranscriptAnimation();
+        removeComparisonListener();
         if (cancelLoad) cancelLoad();
         audio.pause();
         audio.removeAttribute('src');
@@ -204,16 +379,55 @@
 
     function updateTranscript() {
       const next = ready && !audio.ended ? activeCueIndex(cues, audio.currentTime) : -1;
-      if (next === highlightedCue) return;
-      if (highlightedCue >= 0) {
-        cueElements[highlightedCue].classList.remove('is-current');
-        cueElements[highlightedCue].removeAttribute('aria-current');
+      if (next !== highlightedCue) {
+        if (highlightedCue >= 0) {
+          cueElements[highlightedCue].classList.remove('is-current');
+          cueElements[highlightedCue].removeAttribute('aria-current');
+        }
+        if (next >= 0) {
+          cueElements[next].classList.add('is-current');
+          cueElements[next].setAttribute('aria-current', 'true');
+        }
+        highlightedCue = next;
       }
-      if (next >= 0) {
-        cueElements[next].classList.add('is-current');
-        cueElements[next].setAttribute('aria-current', 'true');
+      const seconds = ready ? audio.currentTime : -1;
+      wordElements.forEach(record => {
+        const progress = wordProgress(record.word, seconds);
+        const current = ready && !audio.ended && seconds >= record.word.start && seconds < record.word.end;
+        const emphasized = current && !audio.paused && record.word.emphasized;
+        if (progress !== record.progress) {
+          record.span.style.setProperty('--word-fill', `${(progress * 100).toFixed(3)}%`);
+          record.progress = progress;
+        }
+        if (current !== record.current) {
+          record.span.classList.toggle('is-current-word', current);
+          if (current) record.span.setAttribute('aria-current', 'true');
+          else record.span.removeAttribute('aria-current');
+          record.current = current;
+        }
+        if (emphasized !== record.emphasized) {
+          record.span.classList.toggle('is-key-active', emphasized);
+          record.emphasized = emphasized;
+        }
+      });
+    }
+
+    function stopTranscriptAnimation() {
+      if (animationFrame) cancelAnimationFrame(animationFrame);
+      animationFrame = 0;
+    }
+
+    function animateTranscript() {
+      animationFrame = 0;
+      if (disposed || session !== activeSession) return;
+      updateTranscript();
+      if (ready && !audio.paused && !audio.ended) animationFrame = requestAnimationFrame(animateTranscript);
+    }
+
+    function startTranscriptAnimation() {
+      if (wordElements.length && !animationFrame && !disposed && !audio.paused && !audio.ended) {
+        animationFrame = requestAnimationFrame(animateTranscript);
       }
-      highlightedCue = next;
     }
 
     function updatePosition() {
@@ -310,10 +524,12 @@
     audio.addEventListener('seeking', updatePosition);
     audio.addEventListener('seeked', updatePosition);
     audio.addEventListener('pause', () => {
+      stopTranscriptAnimation();
       updateButton();
       updateTranscript();
     });
     audio.addEventListener('ended', () => {
+      stopTranscriptAnimation();
       updateButton();
       updateTranscript();
     });
@@ -321,10 +537,12 @@
       players.forEach(other => { if (other !== record) other.audio.pause(); });
       updateButton();
       updateTranscript();
+      startTranscriptAnimation();
     });
     audio.addEventListener('error', () => {
       if (!ready || session !== activeSession) return;
       ready = false;
+      stopTranscriptAnimation();
       seek.disabled = true;
       seekButtons.forEach(button => { button.disabled = true; });
       status.textContent = 'Playback failed. Press play to load the audio again.';
