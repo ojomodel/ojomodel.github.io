@@ -148,3 +148,16 @@
 
 .personal-reactor{align-self:center}@media(max-width:999px){.personal-reactor{margin-top:42px}}
 .about-copy .about-belief{color:var(--text)}
+
+/* The personal files remain one level inside About, including on mobile. */
+#site-nav .nav-about>.nav-projects-list{min-width:220px}
+#site-nav .nav-submenu>summary{justify-content:space-between;min-height:44px;padding:10px;white-space:nowrap}
+#site-nav .nav-submenu>summary:hover{background:#ffffff08;color:var(--text)}
+#site-nav .nav-submenu>.nav-projects-list{position:static;min-width:0;margin:0 10px 8px;padding:0 0 0 10px;border:0;border-left:1px solid var(--line);background:none;box-shadow:none}
+#site-nav .nav-submenu:not([open])>summary>.nav-projects-chevron{transform:none}
+#site-nav .nav-submenu[open]>summary>.nav-projects-chevron{transform:rotate(180deg)}
+@media(max-width:999px){
+  #site-nav .nav-about>.nav-projects-list{min-width:0}
+  #site-nav .nav-submenu>summary{font:400 15px/1.5 var(--sans);white-space:normal}
+  #site-nav .nav-submenu>.nav-projects-list{margin-right:0}
+}

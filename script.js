@@ -136,14 +136,17 @@
   const navDropdowns = [...(nav?.querySelectorAll(".nav-projects") || [])];
 
   function closeDropdown(dropdown, returnFocus = false) {
-    if (!dropdown.open) return;
+    dropdown.querySelectorAll(".nav-projects").forEach((child) => { child.open = false; });
     dropdown.open = false;
-    if (returnFocus) dropdown.querySelector("summary").focus({ preventScroll: true });
+    if (returnFocus) dropdown.querySelector(":scope > summary").focus({ preventScroll: true });
   }
 
-  function closeDropdowns(returnFocus = false) {
-    const openDropdowns = navDropdowns.filter((dropdown) => dropdown.open);
-    openDropdowns.forEach((dropdown, index) => closeDropdown(dropdown, returnFocus && index === 0));
+  function closeDropdowns() {
+    navDropdowns.forEach((dropdown) => closeDropdown(dropdown));
+  }
+
+  function dropdownParent(dropdown) {
+    return dropdown.parentElement.closest(".nav-projects") || nav;
   }
 
   document.addEventListener("click", (event) => {
@@ -156,8 +159,12 @@
       if (event.relatedTarget && !dropdown.contains(event.relatedTarget)) closeDropdown(dropdown);
     });
     dropdown.addEventListener("toggle", () => {
-      if (dropdown.open) navDropdowns.forEach((other) => {
-        if (other !== dropdown) closeDropdown(other);
+      if (!dropdown.open) {
+        dropdown.querySelectorAll(".nav-projects").forEach((child) => { child.open = false; });
+        return;
+      }
+      navDropdowns.forEach((other) => {
+        if (other !== dropdown && dropdownParent(other) === dropdownParent(dropdown)) closeDropdown(other);
       });
     });
   });
@@ -195,9 +202,12 @@
     header.querySelector(".site-brand")?.addEventListener("click", () => closeMenu());
     document.addEventListener("keydown", (event) => {
       if (event.key !== "Escape") return;
-      if (navDropdowns.some((dropdown) => dropdown.open)) {
+      const openDropdowns = navDropdowns.filter((dropdown) => dropdown.open);
+      const focusedBranch = openDropdowns.filter((dropdown) => dropdown.contains(event.target));
+      const dropdown = focusedBranch.at(-1) || openDropdowns.at(-1);
+      if (dropdown) {
         event.preventDefault();
-        closeDropdowns(true);
+        closeDropdown(dropdown, true);
       } else if (menuToggle.getAttribute("aria-expanded") === "true") {
         event.preventDefault();
         closeMenu(true);

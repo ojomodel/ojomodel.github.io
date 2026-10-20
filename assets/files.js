@@ -28,6 +28,23 @@
     return `${Math.floor(value / 60)}:${String(value % 60).padStart(2, '0')}`;
   }
 
+  function transcriptCues(part) {
+    if (!Array.isArray(part.cues)) return [];
+    return part.cues.filter(cue => cue
+      && Number.isFinite(cue.start) && cue.start >= 0
+      && Number.isFinite(cue.end) && cue.end > cue.start
+      && typeof cue.text === 'string' && cue.text.trim())
+      .slice().sort((first, second) => first.start - second.start);
+  }
+
+  function activeCueIndex(cues, seconds) {
+    if (!Number.isFinite(seconds)) return -1;
+    for (let index = cues.length - 1; index >= 0; index -= 1) {
+      if (cues[index].start <= seconds && seconds < cues[index].end) return index;
+    }
+    return -1;
+  }
+
   async function request(url, options = {}, format = 'json') {
     const controller = new AbortController();
     requests.add(controller);
@@ -133,11 +150,24 @@
     transcriptLabel.className = 'transcript-label';
     transcriptLabel.textContent = typeof part.transcriptSource === 'string' && part.transcriptSource.trim()
       ? part.transcriptSource : 'Transcript';
-    const text = document.createElement('p');
+    const cues = transcriptCues(part);
+    const cueElements = [];
+    const text = document.createElement(cues.length ? 'div' : 'p');
     text.className = 'transcript-text';
     const hasTranscript = typeof part.transcript === 'string' && part.transcript.trim().length > 0;
-    text.textContent = hasTranscript ? part.transcript : 'Exact Voice Memos transcript not added yet.';
-    text.classList.toggle('transcript-empty', !hasTranscript);
+    if (cues.length) {
+      text.classList.add('transcript-cues');
+      cues.forEach(cue => {
+        const line = document.createElement('p');
+        line.className = 'transcript-cue';
+        line.textContent = cue.text;
+        text.append(line);
+        cueElements.push(line);
+      });
+    } else {
+      text.textContent = hasTranscript ? part.transcript : 'Exact Voice Memos transcript not added yet.';
+      text.classList.toggle('transcript-empty', !hasTranscript);
+    }
     transcript.append(transcriptLabel);
     if (typeof part.transcriptSource === 'string' && /automatic|working draft/i.test(part.transcriptSource)) {
       const notice = document.createElement('p');
@@ -153,6 +183,7 @@
     let loadPromise = null;
     let cancelLoad = null;
     let ready = false;
+    let highlightedCue = -1;
     const record = {
       audio,
       dispose() {
@@ -171,11 +202,26 @@
       play.setAttribute('aria-label', `${audio.paused ? 'Play' : 'Pause'} ${partName}`);
     }
 
+    function updateTranscript() {
+      const next = ready && !audio.ended ? activeCueIndex(cues, audio.currentTime) : -1;
+      if (next === highlightedCue) return;
+      if (highlightedCue >= 0) {
+        cueElements[highlightedCue].classList.remove('is-current');
+        cueElements[highlightedCue].removeAttribute('aria-current');
+      }
+      if (next >= 0) {
+        cueElements[next].classList.add('is-current');
+        cueElements[next].setAttribute('aria-current', 'true');
+      }
+      highlightedCue = next;
+    }
+
     function updatePosition() {
       const current = audio.currentTime || 0;
       seek.value = String(current);
       elapsed.textContent = formatTime(current);
       seek.setAttribute('aria-valuetext', `${formatTime(current)} of ${formatTime(audio.duration)}`);
+      updateTranscript();
     }
 
     function setPosition(position) {
@@ -261,11 +307,20 @@
     ahead10.addEventListener('click', () => setPosition(audio.currentTime + 10));
     seek.addEventListener('input', () => setPosition(Number(seek.value)));
     audio.addEventListener('timeupdate', updatePosition);
-    audio.addEventListener('pause', updateButton);
-    audio.addEventListener('ended', updateButton);
+    audio.addEventListener('seeking', updatePosition);
+    audio.addEventListener('seeked', updatePosition);
+    audio.addEventListener('pause', () => {
+      updateButton();
+      updateTranscript();
+    });
+    audio.addEventListener('ended', () => {
+      updateButton();
+      updateTranscript();
+    });
     audio.addEventListener('play', () => {
       players.forEach(other => { if (other !== record) other.audio.pause(); });
       updateButton();
+      updateTranscript();
     });
     audio.addEventListener('error', () => {
       if (!ready || session !== activeSession) return;
@@ -277,6 +332,7 @@
       if (objectUrl) URL.revokeObjectURL(objectUrl);
       objectUrl = null;
       updateButton();
+      updateTranscript();
     });
   }
 
