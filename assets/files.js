@@ -283,6 +283,13 @@
     }
     const transcript = document.createElement('div');
     transcript.className = 'file-transcript';
+    const partSummary = typeof part.summary === 'string' && part.summary.trim()
+      ? document.createElement('p') : null;
+    if (partSummary) {
+      partSummary.className = 'part-summary';
+      partSummary.textContent = part.summary;
+      partSummary.setAttribute('aria-label', 'Recording summary');
+    }
     const transcriptLabel = document.createElement('p');
     transcriptLabel.className = 'transcript-label';
     transcriptLabel.textContent = typeof part.transcriptSource === 'string' && part.transcriptSource.trim()
@@ -440,7 +447,9 @@
         });
       }
       updateComparison();
-      transcript.append(tabs, comparison);
+      transcript.append(tabs);
+      if (partSummary) transcript.append(partSummary);
+      transcript.append(comparison);
     } else {
       const text = document.createElement(cues.length ? 'div' : 'p');
       text.className = 'transcript-text';
@@ -458,6 +467,7 @@
         text.textContent = hasTranscript ? part.transcript : 'Exact Voice Memos transcript not added yet.';
         text.classList.toggle('transcript-empty', !hasTranscript);
       }
+      if (partSummary) transcript.append(partSummary);
       transcript.append(text);
     }
     transcript.append(...transcriptMetadata);
