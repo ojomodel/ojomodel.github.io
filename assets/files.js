@@ -96,20 +96,58 @@
     return Math.max(0, Math.min(1, (seconds - word.start) / (word.end - word.start)));
   }
 
-  function appendTimedText(container, version) {
-    const wordElements = [];
-    let offset = 0;
-    version.words.forEach(word => {
-      container.append(document.createTextNode(version.text.slice(offset, word.charStart)));
-      const span = document.createElement('span');
-      span.className = 'transcript-word';
-      if (word.emphasized) span.classList.add('is-key-word');
-      span.textContent = version.text.slice(word.charStart, word.charEnd);
-      container.append(span);
-      wordElements.push({ word, span, progress: -1, current: false, emphasized: false });
-      offset = word.charEnd;
+  function groupTranscriptPhrases(version, referenceVersion = version) {
+    if (!version.words.length) return [];
+    const reference = referenceVersion.words.length === version.words.length ? referenceVersion : version;
+    const phrases = [];
+    let first = 0;
+    let charStart = 0;
+    reference.words.forEach((word, index) => {
+      const count = index - first + 1;
+      const next = reference.words[index + 1];
+      const gap = next ? next.start - word.end : 0;
+      const text = reference.text.slice(word.charStart, word.charEnd);
+      const terminal = /[.?!…]["'”’)]*$/.test(text);
+      const softBreak = /[,;:]["'”’)]*$/.test(text);
+      if (!next || count >= 14 || (terminal && (count >= 4 || gap >= .7))
+        || (gap >= .7 && count >= 3) || (softBreak && count >= 8)) {
+        const charEnd = version.words[index + 1]?.charStart ?? version.text.length;
+        phrases.push({
+          charStart,
+          charEnd,
+          wordIndices: Array.from({ length: count }, (_, offset) => first + offset),
+          start: version.words[first].start,
+          end: version.words[index].end
+        });
+        first = index + 1;
+        charStart = charEnd;
+      }
     });
-    container.append(document.createTextNode(version.text.slice(offset)));
+    return phrases;
+  }
+
+  function appendTimedText(container, version, referenceVersion = version) {
+    const wordElements = [];
+    const phrases = groupTranscriptPhrases(version, referenceVersion);
+    if (!phrases.length) container.append(document.createTextNode(version.text));
+    phrases.forEach(phrase => {
+      const line = document.createElement('span');
+      line.className = 'lyrics-line';
+      let offset = phrase.charStart;
+      phrase.wordIndices.forEach(wordIndex => {
+        const word = version.words[wordIndex];
+        line.append(document.createTextNode(version.text.slice(offset, word.charStart)));
+        const span = document.createElement('span');
+        span.className = 'transcript-word';
+        if (word.emphasized) span.classList.add('is-key-word');
+        span.textContent = version.text.slice(word.charStart, word.charEnd);
+        line.append(span);
+        wordElements.push({ word, span, line, progress: -1, current: false, emphasized: false });
+        offset = word.charEnd;
+      });
+      line.append(document.createTextNode(version.text.slice(offset, phrase.charEnd)));
+      container.append(line);
+    });
     return wordElements;
   }
 
@@ -222,13 +260,15 @@
     const cues = versions.length ? [] : transcriptCues(part);
     const cueElements = [];
     const wordElements = [];
-    let removeComparisonListener = () => {};
-    transcript.append(transcriptLabel);
+    const lyricViews = [];
+    const lyricCleanup = [];
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const transcriptMetadata = [transcriptLabel];
     if (typeof part.transcriptSource === 'string' && /automatic|working draft/i.test(part.transcriptSource)) {
       const notice = document.createElement('p');
       notice.className = 'transcript-notice';
       notice.textContent = 'Wording and speaker attribution may be uncertain. Check against the audio.';
-      transcript.append(notice);
+      transcriptMetadata.push(notice);
     }
     const notes = Array.isArray(part.transcriptNotes)
       ? part.transcriptNotes.filter(note => typeof note === 'string' && note.trim()) : [];
@@ -244,7 +284,7 @@
         noteList.append(item);
       });
       details.append(summary, noteList);
-      transcript.append(details);
+      transcriptMetadata.push(details);
     }
     if (versions.length) {
       article.classList.add('has-transcript-versions');
@@ -257,7 +297,7 @@
       const panels = [];
       const tabButtons = [];
       let selectedVersion = 0;
-      const comparisonMedia = window.matchMedia('(max-width: 1179px)');
+      const referenceVersion = versions.find(version => version.id === 'original') || versions[0];
       versions.forEach((version, versionIndex) => {
         const id = `part-${index + 1}-${version.id}`;
         const tab = document.createElement('button');
@@ -270,6 +310,8 @@
         tab.addEventListener('click', () => {
           selectedVersion = versionIndex;
           updateComparison();
+          updateTranscript();
+          centerLyrics(lyricViews[versionIndex], true);
         });
         tab.addEventListener('keydown', event => {
           let next = selectedVersion;
@@ -282,6 +324,8 @@
           selectedVersion = next;
           updateComparison();
           tabButtons[next].focus();
+          updateTranscript();
+          centerLyrics(lyricViews[next], true);
         });
         tabs.append(tab);
         tabButtons.push(tab);
@@ -301,13 +345,56 @@
         }
         const versionText = document.createElement('p');
         versionText.className = 'transcript-text transcript-version-text';
-        wordElements.push(...appendTimedText(versionText, version));
-        panel.append(versionText);
+        const records = appendTimedText(versionText, version, referenceVersion);
+        wordElements.push(...records);
+        const viewport = document.createElement('div');
+        viewport.className = 'lyrics-viewport';
+        viewport.tabIndex = 0;
+        viewport.setAttribute('role', 'region');
+        viewport.setAttribute('aria-label', `${version.label} lyrics for ${partName}`);
+        viewport.append(versionText);
+        const follow = document.createElement('button');
+        follow.type = 'button';
+        follow.className = 'lyrics-follow';
+        follow.textContent = 'Follow audio';
+        follow.setAttribute('aria-label', `Follow audio in ${version.label.toLowerCase()} lyrics for ${partName}`);
+        follow.hidden = true;
+        const view = { panel, viewport, records, follow, following: true, currentLine: null, centeredLine: null };
+        lyricViews.push(view);
+        function stopFollowing() {
+          view.following = false;
+          follow.hidden = false;
+          // Cancel an in-flight smooth scroll before the user's own gesture.
+          viewport.scrollTo({ top: viewport.scrollTop, behavior: 'instant' });
+        }
+        function scrollKey(event) {
+          if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' '].includes(event.key)) stopFollowing();
+        }
+        function pointerScroll(event) {
+          if (event.target === viewport) stopFollowing();
+        }
+        viewport.addEventListener('wheel', stopFollowing, { passive: true });
+        viewport.addEventListener('touchstart', stopFollowing, { passive: true });
+        viewport.addEventListener('pointerdown', pointerScroll);
+        viewport.addEventListener('keydown', scrollKey);
+        follow.addEventListener('click', () => {
+          view.following = true;
+          follow.hidden = true;
+          viewport.focus({ preventScroll: true });
+          centerLyrics(view, true);
+        });
+        lyricCleanup.push(() => {
+          viewport.removeEventListener('wheel', stopFollowing);
+          viewport.removeEventListener('touchstart', stopFollowing);
+          viewport.removeEventListener('pointerdown', pointerScroll);
+          viewport.removeEventListener('keydown', scrollKey);
+        });
+        panel.append(viewport, follow);
         panels.push({ panel, heading: versionHeading });
         comparison.append(panel);
       });
       function updateComparison() {
-        const useTabs = comparisonMedia.matches && versions.length > 1;
+        const useTabs = versions.length > 1;
         tabs.hidden = !useTabs;
         comparison.classList.toggle('uses-tabs', useTabs);
         panels.forEach(({ panel, heading: versionHeading }, panelIndex) => {
@@ -319,12 +406,8 @@
           panel.setAttribute('role', useTabs ? 'tabpanel' : 'region');
           panel.setAttribute('aria-labelledby', useTabs ? tab.id : versionHeading.id);
           versionHeading.hidden = useTabs;
-          if (useTabs) panel.tabIndex = 0;
-          else panel.removeAttribute('tabindex');
         });
       }
-      comparisonMedia.addEventListener('change', updateComparison);
-      removeComparisonListener = () => comparisonMedia.removeEventListener('change', updateComparison);
       updateComparison();
       transcript.append(tabs, comparison);
     } else {
@@ -346,6 +429,7 @@
       }
       transcript.append(text);
     }
+    transcript.append(...transcriptMetadata);
     article.append(player, transcript);
     list.append(article);
 
@@ -361,7 +445,7 @@
       dispose() {
         disposed = true;
         stopTranscriptAnimation();
-        removeComparisonListener();
+        lyricCleanup.forEach(cleanup => cleanup());
         if (cancelLoad) cancelLoad();
         audio.pause();
         audio.removeAttribute('src');
@@ -375,6 +459,33 @@
     function updateButton() {
       play.innerHTML = icon(audio.paused);
       play.setAttribute('aria-label', `${audio.paused ? 'Play' : 'Pause'} ${partName}`);
+    }
+
+    function centerLyrics(view, force = false) {
+      if (!ready || disposed || view.panel.hidden || !view.following) return;
+      let line = view.currentLine;
+      if (!line && force) {
+        const prior = view.records.filter(item => item.word.start <= audio.currentTime);
+        line = (prior[prior.length - 1] || view.records[0])?.line;
+      }
+      if (!line || (!force && view.centeredLine === line)) return;
+      const lineBounds = line.getBoundingClientRect();
+      const viewportBounds = view.viewport.getBoundingClientRect();
+      const center = view.viewport.scrollTop + lineBounds.top - viewportBounds.top + lineBounds.height / 2;
+      const maxScroll = Math.max(0, view.viewport.scrollHeight - view.viewport.clientHeight);
+      view.viewport.scrollTo({
+        top: Math.max(0, Math.min(maxScroll, center - view.viewport.clientHeight / 2)),
+        behavior: reducedMotion.matches ? 'instant' : 'smooth'
+      });
+      view.centeredLine = line;
+    }
+
+    function resumeFollowing() {
+      lyricViews.forEach(view => {
+        view.following = true;
+        view.follow.hidden = true;
+        centerLyrics(view, true);
+      });
     }
 
     function updateTranscript() {
@@ -410,6 +521,15 @@
           record.emphasized = emphasized;
         }
       });
+      lyricViews.forEach(view => {
+        const line = view.records.find(item => item.current)?.line || null;
+        if (view.currentLine !== line) {
+          view.currentLine?.classList.remove('is-active-line');
+          line?.classList.add('is-active-line');
+          view.currentLine = line;
+        }
+        if (!audio.paused && !audio.ended) centerLyrics(view);
+      });
     }
 
     function stopTranscriptAnimation() {
@@ -442,6 +562,7 @@
       if (!ready) return;
       audio.currentTime = Math.max(0, Math.min(audio.duration || 0, position));
       updatePosition();
+      resumeFollowing();
     }
 
     async function ensureAudio() {
@@ -537,6 +658,7 @@
       players.forEach(other => { if (other !== record) other.audio.pause(); });
       updateButton();
       updateTranscript();
+      resumeFollowing();
       startTranscriptAnimation();
     });
     audio.addEventListener('error', () => {
