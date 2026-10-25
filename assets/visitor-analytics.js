@@ -66,6 +66,10 @@
         if (['/resume.pdf', '/assets/oluwaseun-omodele-resume.pdf'].includes(link.pathname) && anchor.hasAttribute('download')) target = 'resume-download';
         else if (['/projects/', '/robotic-arm.html'].includes(link.pathname)) target = 'robotic-arm';
         else if (link.pathname === '/projects/buck-converter/') target = 'buck-converter';
+        else if (link.pathname === '/' && !link.hash) target = 'home';
+        else if (link.pathname === '/about/') target = 'about';
+        else if (link.pathname === '/resume/') target = 'resume';
+        else if (link.pathname === '/contact/') target = 'contact';
       }
     }
     if (!target || (lastClick.target === target && Date.now() - lastClick.at < 750)) return;
