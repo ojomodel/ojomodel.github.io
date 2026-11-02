@@ -26,7 +26,9 @@
         ]
       ],
       "image": "/birthday/images/korean-skincare.png",
-      "checkedDate": "2026-11-01"
+      "checkedDate": "2026-11-01",
+      "photoSource": "https://www.ulta.com/p/pdrn-hyaluronic-acid-100-moisturizing-cream-pimprod2053248?sku=2646983",
+      "imageStyle": "cutout"
     },
     {
       "id": "canon-g7x",
@@ -50,12 +52,14 @@
           "https://www.beachcamera.com/collections/digital-cameras-20-mp/products/canon-powershot-g7-x-mark-iii-20-1mp-4-2x-optical-zoom-digital-camera-black3637c001"
         ]
       ],
-      "image": "/birthday/images/canon-g7x.webp",
-      "checkedDate": "2026-11-01"
+      "image": "/birthday/images/canon-g7x-editorial.png",
+      "checkedDate": "2026-11-01",
+      "photoSource": "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii",
+      "imageStyle": "cutout"
     },
     {
       "id": "canon-sx740-hs",
-      "image": "/birthday/images/canon-sx740-hs.jpg",
+      "image": "/birthday/images/canon-sx740-hs-editorial.png",
       "brand": "Canon",
       "name": "PowerShot SX740 HS digital camera",
       "price": "$829",
@@ -78,7 +82,9 @@
           "https://www.beachcamera.com/products/canon-powershot-sx740-hs-20-3mp-40xoptical-zoom-with-4k-video-recording-silver?variant=39775916851383"
         ]
       ],
-      "checkedDate": "2026-11-01"
+      "checkedDate": "2026-11-01",
+      "photoSource": "https://www.usa.canon.com/shop/p/powershot-sx740-hs",
+      "imageStyle": "cutout"
     },
     {
       "id": "macbook-pro",
@@ -92,7 +98,7 @@
         "Newest announced model"
       ],
       "note": "PROLED XDR model. Currently on preorder; available starting November 6. The listed price is for M5 Pro, 24GB memory and 1TB storage; configuration can be changed.",
-      "caption": "16-inch · Space Black",
+      "caption": "Apple product photo · Space Black",
       "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr/16-inch-space-black-standard-display-apple-m5-pro-chip-18-core-cpu-20-core-gpu-24gb-memory-1tb-storage",
       "actions": [
         [
@@ -104,8 +110,10 @@
           "https://www.apple.com/retail/firstcolonymall/"
         ]
       ],
-      "image": "/birthday/images/macbook-pro-dark-16.jpg",
-      "checkedDate": "2026-11-01"
+      "image": "/birthday/images/macbook-pro-dark-16-editorial.jpg",
+      "checkedDate": "2026-11-01",
+      "photoSource": "https://www.apple.com/macbook-pro/proled-xdr-display/",
+      "imageStyle": "landscape"
     },
     {
       "id": "window-tint",
@@ -126,7 +134,8 @@
         ]
       ],
       "image": "/birthday/images/window-tint.jpg",
-      "checkedDate": "2026-11-01"
+      "checkedDate": "2026-11-01",
+      "imageStyle": "landscape"
     },
     {
       "id": "carhartt-double-knee",
@@ -137,7 +146,7 @@
         "30 × 30"
       ],
       "note": "B01 double-front work pants in 30 × 30. Check Academy Cinco Ranch pickup; black is pictured.",
-      "caption": "B01 · black example",
+      "caption": "Styling photo · worn B01",
       "url": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant",
       "actions": [
         [
@@ -149,8 +158,10 @@
           "https://www.academy.com/storelocator/texas/richmond/store-0165"
         ]
       ],
-      "image": "/birthday/images/carhartt-double-knee.jpg",
-      "checkedDate": "2026-11-01"
+      "image": "/birthday/images/carhartt-b01-editorial.jpg",
+      "checkedDate": "2026-11-01",
+      "photoSource": "https://shop.mavazi.jp/items/109109797",
+      "imageStyle": "landscape"
     },
     {
       "id": "lululemon-keychain",
@@ -174,8 +185,10 @@
           "https://shop.lululemon.com/stores/us/katy/lacenterra-at-cinco-ranch"
         ]
       ],
-      "image": "/birthday/images/lululemon-keychain.jpg",
-      "checkedDate": "2026-11-01"
+      "image": "/birthday/images/lululemon-keychain-editorial.jpg",
+      "checkedDate": "2026-11-01",
+      "photoSource": "https://shop.lululemon.com/p/never-lost-key-chain/m5bu3uhqze?color=73321&locale=en_US",
+      "imageStyle": "portrait"
     },
     {
       "id": "lululemon-pace-breaker-jacket",
@@ -201,7 +214,9 @@
         ]
       ],
       "image": "/birthday/images/lululemon-pace-breaker-jacket.jpg",
-      "checkedDate": "2026-11-01"
+      "checkedDate": "2026-11-01",
+      "photoSource": "https://shop.lululemon.com/p/pace-breaker-jacket/okckgak95v?color=0001",
+      "imageStyle": "portrait"
     },
     {
       "id": "lululemon-backpack-30l",
@@ -227,7 +242,9 @@
       ],
       "image": "/birthday/images/lululemon-backpack-30l.jpg",
       "checkedDate": "2026-11-01",
-      "priceNote": ""
+      "priceNote": "",
+      "photoSource": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
+      "imageStyle": "portrait"
     },
     {
       "id": "arcteryx-beta-jacket",
@@ -256,8 +273,10 @@
           "https://www.rei.com/stores/houston-galleria"
         ]
       ],
-      "image": "/birthday/images/arcteryx-beta-jacket.jpg",
-      "checkedDate": "2026-11-01"
+      "image": "/birthday/images/arcteryx-beta-editorial.jpg",
+      "checkedDate": "2026-11-01",
+      "photoSource": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868",
+      "imageStyle": "portrait"
     },
     {
       "id": "adidas-evo-sl",
@@ -285,8 +304,10 @@
           "https://www.academy.com/storelocator/texas/richmond/store-0165"
         ]
       ],
-      "image": "/birthday/images/adidas-evo-sl.jpg",
-      "checkedDate": "2026-11-01"
+      "image": "/birthday/images/adidas-evo-sl-editorial.webp",
+      "checkedDate": "2026-11-01",
+      "photoSource": "https://www.adidas.com/ng",
+      "imageStyle": "portrait"
     },
     {
       "number": 1,
@@ -337,7 +358,7 @@
     {
       "number": 3,
       "id": "shaka-long-sleeve",
-      "image": "/birthday/images/shaka-long-sleeve-black.webp",
+      "image": "/birthday/images/shaka-long-sleeve-black-editorial.jpg",
       "brand": "Shaka Wear",
       "name": "Oversized long-sleeve tee",
       "price": "$17.09",
@@ -347,10 +368,10 @@
         "White & black"
       ],
       "note": "White and black, Small. Check the current price on my TikTok Shop listing.",
-      "caption": "Matching black long sleeve",
+      "caption": "Black · Shaka Wear photo",
       "alternate": {
         "label": "View white",
-        "image": "/birthday/images/shaka-long-sleeve-white.webp"
+        "image": "/birthday/images/shaka-long-sleeve-white-editorial.jpg"
       },
       "url": "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889",
       "actions": [
@@ -359,12 +380,14 @@
           "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889"
         ]
       ],
-      "checkedDate": "2026-11-01"
+      "checkedDate": "2026-11-01",
+      "imageStyle": "portrait",
+      "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve"
     },
     {
       "number": 4,
       "id": "shaka-oversized-tee",
-      "image": "/birthday/images/shaka-oversized-tee-burgundy.webp",
+      "image": "/birthday/images/shaka-oversized-tee-burgundy-editorial.jpg",
       "brand": "Shaka Wear",
       "name": "Oversized short-sleeve tee",
       "price": "Check current Medium price",
@@ -374,10 +397,10 @@
         "Deep Burgundy & Dark Navy"
       ],
       "note": "Deep Burgundy and Dark Navy, Medium. The saved $11.89 promotion was for Small; check today’s Medium price on TikTok Shop.",
-      "caption": "Matching burgundy tee",
+      "caption": "Deep Burgundy · Shaka Wear photo",
       "alternate": {
         "label": "View navy",
-        "image": "/birthday/images/shaka-oversized-tee-navy.webp"
+        "image": "/birthday/images/shaka-oversized-tee-navy-editorial.jpg"
       },
       "url": "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105",
       "actions": [
@@ -387,7 +410,9 @@
         ]
       ],
       "checkedDate": "2026-11-01",
-      "unverified": true
+      "unverified": true,
+      "imageStyle": "portrait",
+      "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee"
     },
     {
       "id": "canon-vixia-hf-w11",
@@ -407,8 +432,10 @@
           "https://www.bhphotovideo.com/c/product/1451711-REG/canon_3908c001_vixia_hf_w11_waterproof.html"
         ]
       ],
-      "image": "/birthday/images/canon-vixia-hf-w11.jpg",
-      "checkedDate": "2026-11-01"
+      "image": "/birthday/images/canon-vixia-hf-w11-editorial.png",
+      "checkedDate": "2026-11-01",
+      "photoSource": "https://www.usa.canon.com/support/p/vixia-hf-w11",
+      "imageStyle": "cutout"
     },
     {
       "id": "braces",
@@ -428,7 +455,8 @@
         ]
       ],
       "image": "/birthday/images/braces.jpg",
-      "checkedDate": "2026-11-01"
+      "checkedDate": "2026-11-01",
+      "imageStyle": "landscape"
     }
   ]
 }

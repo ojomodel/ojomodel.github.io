@@ -109,8 +109,8 @@
   min-width: 0;
   width: 100%;
   margin: 0;
-  background: #f7f7f5;
-  color: #333;
+  background: transparent;
+  color: var(--muted);
 }
 .birthday-shell .gift-image > a { display: block; }
 .birthday-shell .gift-image img {
@@ -118,14 +118,14 @@
   width: 100%;
   height: auto;
   aspect-ratio: 1;
-  padding: 15px;
+  padding: 0;
   object-fit: contain;
-  background: #f7f7f5;
+  background: transparent;
 }
 .birthday-shell .gift-image figcaption {
-  padding: 9px 12px;
-  border-top: 1px solid #00000012;
-  color: #646464;
+  padding: 12px 0 0;
+  border: 0;
+  color: var(--muted);
   font: 400 9px/1.6 var(--mono);
   text-align: center;
 }
@@ -273,9 +273,12 @@
 .birthday-footnote p + p { margin-top: 9px; }
 .birthday-footnote a { text-decoration: underline; text-underline-offset: 4px; }
 .pending-heading { margin-top: 48px; }
-.gift-other-photo { border-top: 1px solid #0002; }
+.birthday-shell .gift-image.is-portrait img { aspect-ratio: 4 / 5; object-fit: cover; }
+.birthday-shell .gift-image.is-landscape img { aspect-ratio: auto; object-fit: contain; }
+.birthday-shell .gift-image.is-cutout img { object-fit: contain; }
+.gift-other-photo { margin-top: 8px; border: 0; }
 .gift-other-photo summary { cursor: pointer; padding: 12px; font: 400 10px/1.6 var(--mono); }
-.gift-other-photo summary:focus-visible { outline: 2px solid #111; outline-offset: -3px; }
+.gift-other-photo summary:focus-visible { outline: 2px solid var(--text); outline-offset: -3px; }
 .saved-wish { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); }
 .saved-wish h3 { font: 500 17px/1.5 var(--sans); color: var(--text); }
 .saved-wish p { margin-top: 6px; font: 400 11px/1.7 var(--mono); color: var(--muted); }
@@ -312,8 +315,8 @@
   .birthday-shell .gift-set-heading h2,
   .birthday-shell .gift-set-title { font-size: 17px; }
   .birthday-shell .gift-row { grid-template-columns: 112px minmax(0, 1fr); column-gap: 20px; padding-block: 25px; }
-  .birthday-shell .gift-image img { padding: 8px; }
-  .birthday-shell .gift-image figcaption { padding: 7px 5px; font-size: 8px; }
+  .birthday-shell .gift-image img { padding: 0; }
+  .birthday-shell .gift-image figcaption { padding: 9px 0 0; font-size: 8px; }
   .birthday-shell .gift-placeholder { gap: 8px; padding: 11px; font-size: 9px; }
   .birthday-shell .gift-placeholder strong,
   .birthday-shell .gift-placeholder .gift-monogram { font-size: 26px; }
