@@ -208,6 +208,15 @@
   font-size: 14px;
   letter-spacing: 0;
 }
+.birthday-shell .gift-price > a { color: inherit; }
+.birthday-shell .gift-price > a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.birthday-shell .gift-reference-price {
+  margin-top: 4px;
+  color: var(--muted);
+  font: 400 12px/1.65 var(--sans);
+  overflow-wrap: anywhere;
+}
+.birthday-shell .gift-reference-price a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .birthday-shell .gift-note {
   max-width: 600px;
   margin-top: 10px;

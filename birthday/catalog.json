@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-01",
+  "lastReviewed": "2026-11-02",
   "pickupZip": "77406",
   "pickupNote": "If it’s pickup, I’ll go pick it up myself—just text me.",
   "items": [
@@ -26,16 +26,21 @@
         ]
       ],
       "image": "/birthday/images/korean-skincare.png",
-      "checkedDate": "2026-11-01",
+      "checkedDate": "2026-11-02",
       "photoSource": "https://www.ulta.com/p/pdrn-hyaluronic-acid-100-moisturizing-cream-pimprod2053248?sku=2646983",
-      "imageStyle": "cutout"
+      "imageStyle": "cutout",
+      "priceSourceUrl": "https://www.ulta.com/p/pdrn-hyaluronic-acid-100-moisturizing-cream-pimprod2053248?sku=2646983",
+      "priceNote": "Ulta · one-time purchase",
+      "referencePrice": "$24",
+      "referenceLabel": "Ulta list price",
+      "referenceUrl": "https://www.ulta.com/p/pdrn-hyaluronic-acid-100-moisturizing-cream-pimprod2053248?sku=2646983"
     },
     {
       "id": "black-pla-filament",
       "brand": "SUNLU",
       "name": "Black PLA filament · 5 spools",
       "price": "$62.95 for 5",
-      "priceNote": "$12.59 each · Amazon",
+      "priceNote": "Amazon · $12.59 each",
       "specs": [
         "Quantity: 5",
         "Black",
@@ -55,7 +60,11 @@
       "imageStyle": "cutout",
       "checkedDate": "2026-11-02",
       "quantity": 5,
-      "unitPriceUSD": 12.59
+      "unitPriceUSD": 12.59,
+      "priceSourceUrl": "https://www.amazon.com/dp/B07XG3RM58",
+      "referencePrice": "$69.95 for 5",
+      "referenceLabel": "Amazon typical price · $13.99 each",
+      "referenceUrl": "https://www.amazon.com/dp/B07XG3RM58"
     },
     {
       "id": "rk-r75-keyboard",
@@ -82,53 +91,61 @@
       "image": "/birthday/images/rk-r75-keyboard.jpg",
       "imageStyle": "landscape",
       "photoSource": "https://www.amazon.com/dp/B0CWGR5KM9",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-02",
+      "priceSourceUrl": "https://www.amazon.com/dp/B0CWGR5KM9",
+      "referencePrice": "$59.99",
+      "referenceLabel": "Amazon list price",
+      "referenceUrl": "https://www.amazon.com/dp/B0CWGR5KM9"
     },
     {
       "id": "canon-g7x",
       "brand": "Canon",
       "name": "Canon PowerShot G7 X",
-      "price": "$929.99",
-      "priceNote": "Mark III list price",
+      "price": "$1,689",
+      "priceNote": "Beach Camera · new Black Mark III",
       "specs": [
         "Generation to confirm"
       ],
-      "note": "Mark III is pictured. Canon’s $929.99 listing is unavailable. Beach Camera currently offers a new Black model for $1,689 with delivery; no local pickup is confirmed.",
+      "note": "This offer is the Mark III in Black. Available for delivery from Beach Camera; pickup near 77406 has not been confirmed. Canon’s lower-priced listing is unavailable.",
       "caption": "Mark III pictured",
-      "url": "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii?color=Black&type=New",
+      "url": "https://www.beachcamera.com/collections/digital-cameras-20-mp/products/canon-powershot-g7-x-mark-iii-20-1mp-4-2x-optical-zoom-digital-camera-black3637c001",
       "actions": [
-        [
-          "Check Canon stock",
-          "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii?color=Black&type=New"
-        ],
         [
           "Delivery · Beach Camera · $1,689",
           "https://www.beachcamera.com/collections/digital-cameras-20-mp/products/canon-powershot-g7-x-mark-iii-20-1mp-4-2x-optical-zoom-digital-camera-black3637c001"
+        ],
+        [
+          "Check Canon stock · $929.99 listed",
+          "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii?color=Black&type=New"
         ]
       ],
       "image": "/birthday/images/canon-g7x-editorial.png",
-      "checkedDate": "2026-11-01",
+      "checkedDate": "2026-11-02",
       "photoSource": "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii",
-      "imageStyle": "cutout"
+      "imageStyle": "cutout",
+      "priceSourceUrl": "https://www.beachcamera.com/collections/digital-cameras-20-mp/products/canon-powershot-g7-x-mark-iii-20-1mp-4-2x-optical-zoom-digital-camera-black3637c001",
+      "referencePrice": "$929.99",
+      "referenceLabel": "Canon listed price · unavailable",
+      "referenceUrl": "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii?color=Black&type=New"
     },
     {
       "id": "canon-sx740-hs",
       "image": "/birthday/images/canon-sx740-hs-black.png",
       "brand": "Canon",
       "name": "PowerShot SX740 HS digital camera",
-      "price": "$879",
-      "priceNote": "Black listing · currently unavailable",
+      "price": "$599.99",
+      "priceNote": "Best Buy · listed, currently unavailable",
       "specs": [
         "Black",
         "40× optical zoom",
         "4K video"
       ],
-      "note": "Black model. Check pickup around 77406 first. Best Buy and Beach Camera are currently unavailable; check stock before buying.",
+      "note": "Black model. Best Buy currently has no pickup or shipping availability. Beach Camera is also sold out and no longer displays a price. Check these links for stock.",
       "caption": "SX740 HS · Black",
-      "url": "https://www.beachcamera.com/products/canon-powershot-sx740-hs-20-3mp-40x-optical-zoom-with-4k-video-recording-black",
+      "url": "https://www.bestbuy.com/product/canon-powershot-sx740-hs-20-3-megapixel-digital-camera-black/6287924",
       "actions": [
         [
-          "Check local pickup · Best Buy",
+          "Check pickup · Best Buy · $599.99 listed",
           "https://www.bestbuy.com/product/canon-powershot-sx740-hs-20-3-megapixel-digital-camera-black/6287924"
         ],
         [
@@ -138,14 +155,55 @@
       ],
       "checkedDate": "2026-11-02",
       "photoSource": "https://www.usa.canon.com/shop/p/powershot-sx740-hs?color=Black&type=New",
-      "imageStyle": "cutout"
+      "imageStyle": "cutout",
+      "priceSourceUrl": "https://www.bestbuy.com/product/canon-powershot-sx740-hs-20-3-megapixel-digital-camera-black/6287924",
+      "referencePrice": "$549.99",
+      "referenceLabel": "Canon listed price · unavailable",
+      "referenceUrl": "https://www.usa.canon.com/shop/digital-cameras/point-and-shoot-cameras"
+    },
+    {
+      "id": "birkenstock-boston",
+      "brand": "Birkenstock",
+      "name": "Boston Soft Footbed clogs",
+      "price": "$169.95",
+      "priceNote": "Birkenstock · in stock",
+      "priceSourceUrl": "https://www.birkenstock.com/us/boston-soft-footbed-suede-leather/boston-suede-suedeleather-softfootbed-eva-u_49.html",
+      "referencePrice": "$169.95",
+      "referenceLabel": "Birkenstock retail price",
+      "referenceUrl": "https://www.birkenstock.com/us/boston-soft-footbed-suede-leather/boston-suede-suedeleather-softfootbed-eva-u_49.html",
+      "specs": [
+        "Black suede",
+        "Regular / Wide",
+        "Men’s US 7–7.5 / EU 40"
+      ],
+      "note": "My men’s size 7 is Birkenstock’s 7–7.5 / EU 40. Choose Regular/Wide in Black. This exact selection is available for delivery; local pickup has not been confirmed.",
+      "caption": "Black suede detail · official Birkenstock photo",
+      "url": "https://www.birkenstock.com/us/boston-soft-footbed-suede-leather/boston-suede-suedeleather-softfootbed-eva-u_49.html",
+      "actions": [
+        [
+          "Shop · Birkenstock",
+          "https://www.birkenstock.com/us/boston-soft-footbed-suede-leather/boston-suede-suedeleather-softfootbed-eva-u_49.html"
+        ],
+        [
+          "Official size guide",
+          "https://www.birkenstock.com/us/us-service-fittingguide.html"
+        ]
+      ],
+      "image": "/birthday/images/boston-black-official-material.jpg",
+      "imageStyle": "landscape",
+      "photoSource": "https://www.birkenstock.com/us/boston-soft-footbed-suede-leather/boston-suede-suedeleather-softfootbed-eva-u_49.html",
+      "alternate": {
+        "label": "View the whole shoe",
+        "image": "/birthday/images/boston-black-official-product.jpg"
+      },
+      "checkedDate": "2026-11-02"
     },
     {
       "id": "macbook-pro",
       "brand": "Apple",
       "name": "16-inch MacBook Pro",
-      "price": "From $3,399",
-      "priceNote": "starting configuration",
+      "price": "$3,399",
+      "priceNote": "Apple · selected configuration",
       "specs": [
         "16-inch",
         "Space Black",
@@ -165,9 +223,13 @@
         ]
       ],
       "image": "/birthday/images/macbook-pro-dark-16-editorial.jpg",
-      "checkedDate": "2026-11-01",
+      "checkedDate": "2026-11-02",
       "photoSource": "https://www.apple.com/macbook-pro/proled-xdr-display/",
-      "imageStyle": "landscape"
+      "imageStyle": "landscape",
+      "priceSourceUrl": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr/16-inch-space-black-standard-display-apple-m5-pro-chip-18-core-cpu-20-core-gpu-24gb-memory-1tb-storage",
+      "referencePrice": "$3,399",
+      "referenceLabel": "Apple retail price · same configuration",
+      "referenceUrl": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr/16-inch-space-black-standard-display-apple-m5-pro-chip-18-core-cpu-20-core-gpu-24gb-memory-1tb-storage"
     },
     {
       "id": "window-tint",
@@ -188,8 +250,10 @@
         ]
       ],
       "image": "/birthday/images/window-tint.jpg",
-      "checkedDate": "2026-11-01",
-      "imageStyle": "landscape"
+      "checkedDate": "2026-11-02",
+      "imageStyle": "landscape",
+      "priceSourceUrl": "https://www.nixmobiledetail.com/window-tint-richmond-tx",
+      "priceNote": "Nix Mobile Detail · starting package"
     },
     {
       "id": "carhartt-double-knee",
@@ -199,7 +263,7 @@
       "specs": [
         "30 × 30"
       ],
-      "note": "B01 double-front work pants in 30 × 30. Check Academy Cinco Ranch pickup; black is pictured.",
+      "note": "B01 double-front work pants in 30 × 30. Check Academy Cinco Ranch pickup and the selected size’s final price; Academy also advertises an in-cart price. Black is pictured.",
       "caption": "Styling photo · worn B01",
       "url": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant",
       "actions": [
@@ -213,9 +277,11 @@
         ]
       ],
       "image": "/birthday/images/carhartt-b01-editorial.jpg",
-      "checkedDate": "2026-11-01",
+      "checkedDate": "2026-11-02",
       "photoSource": "https://shop.mavazi.jp/items/109109797",
-      "imageStyle": "landscape"
+      "imageStyle": "landscape",
+      "priceNote": "Academy · displayed price",
+      "priceSourceUrl": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant"
     },
     {
       "id": "lululemon-keychain",
@@ -240,16 +306,21 @@
         ]
       ],
       "image": "/birthday/images/lululemon-keychain-editorial.jpg",
-      "checkedDate": "2026-11-01",
+      "checkedDate": "2026-11-02",
       "photoSource": "https://shop.lululemon.com/p/never-lost-key-chain/m5bu3uhqze?color=73321&locale=en_US",
-      "imageStyle": "portrait"
+      "imageStyle": "portrait",
+      "priceNote": "lululemon",
+      "priceSourceUrl": "https://shop.lululemon.com/p/never-lost-key-chain/m5bu3uhqze?color=73321&locale=en_US",
+      "referencePrice": "$20",
+      "referenceLabel": "Regular price",
+      "referenceUrl": "https://shop.lululemon.com/p/never-lost-key-chain/m5bu3uhqze?color=73321&locale=en_US"
     },
     {
       "id": "lululemon-pace-breaker-jacket",
       "brand": "lululemon",
       "name": "Men's Pace Breaker Jacket",
       "price": "$168",
-      "priceNote": "",
+      "priceNote": "lululemon",
       "specs": [
         "Medium",
         "Black pictured"
@@ -268,9 +339,13 @@
         ]
       ],
       "image": "/birthday/images/lululemon-pace-breaker-jacket.jpg",
-      "checkedDate": "2026-11-01",
+      "checkedDate": "2026-11-02",
       "photoSource": "https://shop.lululemon.com/p/pace-breaker-jacket/okckgak95v?color=0001",
-      "imageStyle": "portrait"
+      "imageStyle": "portrait",
+      "priceSourceUrl": "https://shop.lululemon.com/p/pace-breaker-jacket/okckgak95v?color=0001",
+      "referencePrice": "$168",
+      "referenceLabel": "Regular price",
+      "referenceUrl": "https://shop.lululemon.com/p/pace-breaker-jacket/okckgak95v?color=0001"
     },
     {
       "id": "lululemon-backpack-30l",
@@ -295,24 +370,28 @@
         ]
       ],
       "image": "/birthday/images/lululemon-backpack-30l.jpg",
-      "checkedDate": "2026-11-01",
-      "priceNote": "",
+      "checkedDate": "2026-11-02",
+      "priceNote": "lululemon",
       "photoSource": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
-      "imageStyle": "portrait"
+      "imageStyle": "portrait",
+      "priceSourceUrl": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
+      "referencePrice": "$128",
+      "referenceLabel": "Regular price",
+      "referenceUrl": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646"
     },
     {
       "id": "arcteryx-beta-jacket",
       "brand": "Arc’teryx",
       "name": "Beta Jacket",
       "price": "$400",
-      "priceNote": "Arc’teryx listed price",
+      "priceNote": "REI",
       "specs": [
         "Medium",
         "Black"
       ],
       "note": "Waterproof GORE-TEX shell with a water-repellent finish. Select Black / Medium and check REI pickup first; local stock needs confirmation.",
       "caption": "Beta Jacket · Black",
-      "url": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868",
+      "url": "https://www.rei.com/product/228617/arcteryx-beta-jacket-mens",
       "actions": [
         [
           "Check pickup · REI",
@@ -328,29 +407,33 @@
         ]
       ],
       "image": "/birthday/images/arcteryx-beta-editorial.jpg",
-      "checkedDate": "2026-11-01",
+      "checkedDate": "2026-11-02",
       "photoSource": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868",
-      "imageStyle": "portrait"
+      "imageStyle": "portrait",
+      "priceSourceUrl": "https://www.rei.com/product/228617/arcteryx-beta-jacket-mens",
+      "referencePrice": "$400",
+      "referenceLabel": "Arc’teryx retail price",
+      "referenceUrl": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868"
     },
     {
       "id": "adidas-evo-sl",
       "brand": "adidas",
       "name": "Adizero EVO SL running shoes",
       "price": "$120",
-      "priceNote": "adidas sale · $150 regular",
+      "priceNote": "adidas · White / Black",
       "specs": [
         "Size 7"
       ],
-      "note": "Size 7. White/black, men’s US sizing. Academy lists this shoe at $149.99, with online size 7 unavailable; select Cinco Ranch to check local pickup. The linked adidas offer is $120.",
+      "note": "Men’s US size 7. Check pickup near 77406 first. Academy lists $149.99, with size 7 unavailable online; local pickup and adidas size 7 stock need confirmation.",
       "caption": "White / black example",
       "url": "https://www.adidas.com/us/adizero-evo-sl-shoes/JH6206.html",
       "actions": [
         [
-          "Check pickup · Academy",
+          "Check pickup · Academy · $149.99",
           "https://www.academy.com/p/adidas-mens-adizero-evo-sl-running-shoes"
         ],
         [
-          "Shop delivery · adidas",
+          "Delivery · adidas · $120",
           "https://www.adidas.com/us/adizero-evo-sl-shoes/JH6206.html"
         ],
         [
@@ -359,9 +442,13 @@
         ]
       ],
       "image": "/birthday/images/adidas-evo-sl-editorial.webp",
-      "checkedDate": "2026-11-01",
+      "checkedDate": "2026-11-02",
       "photoSource": "https://www.adidas.com/ng",
-      "imageStyle": "portrait"
+      "imageStyle": "portrait",
+      "priceSourceUrl": "https://www.adidas.com/us/adizero-evo-sl-shoes/JH6206.html",
+      "referencePrice": "$150",
+      "referenceLabel": "Original price",
+      "referenceUrl": "https://www.adidas.com/us/adizero-evo-sl-shoes/JH6206.html"
     },
     {
       "number": 1,
@@ -369,13 +456,13 @@
       "image": "/birthday/images/tiktok-camo-jorts.webp",
       "brand": "FDR",
       "name": "Camo & yellow 3/4 jorts",
-      "price": "$40.99",
-      "priceNote": "saved cart · Camo / M",
+      "price": "Check current price",
+      "priceNote": "TikTok Shop",
       "specs": [
         "Medium",
         "Camo & yellow"
       ],
-      "note": "Camo and yellow, Medium. This is my original TikTok Shop product. Check the selected color’s current price and stock.",
+      "note": "Camo and yellow, Medium. My original TikTok Shop product. Current price and stock could not be verified; check the selected color.",
       "caption": "Matching camo pair",
       "url": "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726",
       "actions": [
@@ -384,7 +471,11 @@
           "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726"
         ]
       ],
-      "checkedDate": "2026-11-01"
+      "checkedDate": "2026-11-02",
+      "priceSourceUrl": "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726",
+      "unverified": true,
+      "referencePrice": "$40.99",
+      "referenceLabel": "Saved cart · Camo / M · not current"
     },
     {
       "number": 2,
@@ -392,7 +483,7 @@
       "image": "/birthday/images/tiktok-fb-shorts.webp",
       "brand": "FB County",
       "name": "Heavyweight Basketball Mesh Shorts",
-      "price": "$29.99",
+      "price": "Check current Medium price",
       "specs": [
         "Medium",
         "All colors"
@@ -406,8 +497,13 @@
           "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089"
         ]
       ],
-      "checkedDate": "2026-11-01",
-      "priceNote": "saved cart · Black / Medium"
+      "checkedDate": "2026-11-02",
+      "priceNote": "TikTok Shop",
+      "priceSourceUrl": "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089",
+      "referencePrice": "$29.99",
+      "referenceLabel": "FB County website price",
+      "referenceUrl": "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts",
+      "unverified": true
     },
     {
       "number": 3,
@@ -415,8 +511,8 @@
       "image": "/birthday/images/shaka-long-sleeve-black-editorial.jpg",
       "brand": "Shaka Wear",
       "name": "Oversized long-sleeve tee",
-      "price": "$17.09",
-      "priceNote": "saved cart · each",
+      "price": "Check current price",
+      "priceNote": "TikTok Shop",
       "specs": [
         "Small",
         "White & black"
@@ -434,9 +530,14 @@
           "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889"
         ]
       ],
-      "checkedDate": "2026-11-01",
+      "checkedDate": "2026-11-02",
       "imageStyle": "portrait",
-      "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve"
+      "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve",
+      "priceSourceUrl": "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889",
+      "referencePrice": "$17.90",
+      "referenceLabel": "Shaka Wear retail price",
+      "referenceUrl": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve",
+      "unverified": true
     },
     {
       "number": 4,
@@ -445,12 +546,12 @@
       "brand": "Shaka Wear",
       "name": "Oversized short-sleeve tee",
       "price": "Check current Medium price",
-      "priceNote": "",
+      "priceNote": "TikTok Shop",
       "specs": [
         "Medium",
         "Deep Burgundy & Dark Navy"
       ],
-      "note": "Deep Burgundy and Dark Navy, Medium. The saved $11.89 promotion was for Small; check today’s Medium price on TikTok Shop.",
+      "note": "Deep Burgundy and Dark Navy, Medium. Check the current Medium price on my TikTok Shop listing; the brand’s reference price varies by selection.",
       "caption": "Deep Burgundy · Shaka Wear photo",
       "alternate": {
         "label": "View navy",
@@ -463,10 +564,14 @@
           "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105"
         ]
       ],
-      "checkedDate": "2026-11-01",
+      "checkedDate": "2026-11-02",
       "unverified": true,
       "imageStyle": "portrait",
-      "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee"
+      "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee",
+      "priceSourceUrl": "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105",
+      "referencePrice": "From $13.90",
+      "referenceLabel": "Shaka Wear retail price",
+      "referenceUrl": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee"
     },
     {
       "id": "canon-vixia-hf-w11",
@@ -487,9 +592,11 @@
         ]
       ],
       "image": "/birthday/images/canon-vixia-hf-w11-editorial.png",
-      "checkedDate": "2026-11-01",
+      "checkedDate": "2026-11-02",
       "photoSource": "https://www.usa.canon.com/support/p/vixia-hf-w11",
-      "imageStyle": "cutout"
+      "imageStyle": "cutout",
+      "priceNote": "B&H · no longer available",
+      "priceSourceUrl": "https://www.bhphotovideo.com/c/product/1451711-REG/canon_3908c001_vixia_hf_w11_waterproof.html"
     },
     {
       "id": "braces",
@@ -509,8 +616,10 @@
         ]
       ],
       "image": "/birthday/images/braces.jpg",
-      "checkedDate": "2026-11-01",
-      "imageStyle": "landscape"
+      "checkedDate": "2026-11-02",
+      "imageStyle": "landscape",
+      "priceSourceUrl": "https://www.smilestudioortho.com/request-your-appointment/",
+      "priceNote": "Smile Studio Orthodontics"
     }
   ],
   "alternativeGroups": [
