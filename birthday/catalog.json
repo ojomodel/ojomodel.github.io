@@ -58,6 +58,33 @@
       "unitPriceUSD": 12.59
     },
     {
+      "id": "rk-r75-keyboard",
+      "brand": "RK Royal Kludge",
+      "name": "R75 mechanical keyboard",
+      "price": "$49.99",
+      "priceNote": "Amazon · Black",
+      "specs": [
+        "Black",
+        "75% layout",
+        "Wired USB-C",
+        "Silver switches"
+      ],
+      "note": "The exact keyboard from my Amazon link. Volume knob, hot-swappable switches and RGB lighting. Choose Black; price checked November 2.",
+      "caption": "R75 · Black",
+      "url": "https://www.amazon.com/dp/B0CWGR5KM9",
+      "originalUrl": "https://a.co/d/06gyTYCF",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B0CWGR5KM9"
+        ]
+      ],
+      "image": "/birthday/images/rk-r75-keyboard.jpg",
+      "imageStyle": "landscape",
+      "photoSource": "https://www.amazon.com/dp/B0CWGR5KM9",
+      "checkedDate": "2026-11-02"
+    },
+    {
       "id": "canon-g7x",
       "brand": "Canon",
       "name": "Canon PowerShot G7 X",
