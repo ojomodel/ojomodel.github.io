@@ -163,6 +163,38 @@
       "referenceUrl": "https://www.usa.canon.com/shop/digital-cameras/point-and-shoot-cameras"
     },
     {
+      "id": "adidas-evo-sl",
+      "brand": "adidas",
+      "name": "Adizero EVO SL running shoes",
+      "price": "$150",
+      "priceNote": "Nordstrom · Black · men’s US 7",
+      "specs": [
+        "Men’s US 7",
+        "Core Black / Cloud White / Carbon"
+      ],
+      "note": "Size 7 available for pickup after shipment to Nordstrom Rack Market at Town Center in Sugar Land; November 7 arrival shown when checked. This is ship-to-store, not same-day shelf stock. adidas also lists $120, but its size 7 stock needs confirmation.",
+      "caption": "Black JR4728 · official adidas photo",
+      "url": "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090",
+      "actions": [
+        [
+          "Check pickup · Nordstrom · $150",
+          "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090"
+        ],
+        [
+          "Check size 7 · adidas · $120 listed",
+          "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html"
+        ]
+      ],
+      "image": "/birthday/images/adidas-evo-sl-black.jpg",
+      "checkedDate": "2026-11-02",
+      "photoSource": "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html",
+      "imageStyle": "cutout",
+      "priceSourceUrl": "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090",
+      "referencePrice": "$150",
+      "referenceLabel": "adidas original price",
+      "referenceUrl": "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html"
+    },
+    {
       "id": "birkenstock-boston",
       "brand": "Birkenstock",
       "name": "Boston Soft Footbed clogs",
@@ -267,88 +299,408 @@
       "checkedDate": "2026-11-02"
     },
     {
-      "id": "window-tint",
-      "brand": "Nix Mobile Detail",
-      "name": "Window tint",
-      "price": "From $245",
-      "specs": [
-        "Local appointment"
-      ],
-      "note": "Starting package price. Confirm vehicle, windows included and film with the shop.",
-      "caption": "Tint example · Motorsport Film and Restoration",
-      "photoSource": "https://www.motorsportfilmandrestoration.com/projects-7",
-      "url": "https://www.nixmobiledetail.com/window-tint-richmond-tx",
-      "actions": [
-        [
-          "Get a local quote",
-          "https://www.nixmobiledetail.com/window-tint-richmond-tx"
-        ]
-      ],
-      "image": "/birthday/images/window-tint.jpg",
-      "checkedDate": "2026-11-02",
-      "imageStyle": "landscape",
-      "priceSourceUrl": "https://www.nixmobiledetail.com/window-tint-richmond-tx",
-      "priceNote": "Nix Mobile Detail · starting package"
-    },
-    {
-      "id": "carhartt-double-knee",
-      "brand": "Carhartt",
-      "name": "Double-knee carpenter pants",
-      "price": "$59.99",
-      "specs": [
-        "30 × 30"
-      ],
-      "note": "B01 double-front work pants in 30 × 30. Check Academy Cinco Ranch pickup and the selected size’s final price; Academy also advertises an in-cart price. Black is pictured.",
-      "caption": "Styling photo · worn B01",
-      "url": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant",
-      "actions": [
-        [
-          "Check pickup · Academy",
-          "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant"
-        ],
-        [
-          "Cinco Ranch store",
-          "https://www.academy.com/storelocator/texas/richmond/store-0165"
-        ]
-      ],
-      "image": "/birthday/images/carhartt-b01-editorial.jpg",
-      "checkedDate": "2026-11-02",
-      "photoSource": "https://shop.mavazi.jp/items/109109797",
-      "imageStyle": "landscape",
-      "priceNote": "Academy · displayed price",
-      "priceSourceUrl": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant"
-    },
-    {
-      "id": "lululemon-keychain",
-      "brand": "lululemon",
-      "name": "Black keychain strap",
-      "price": "$20",
+      "id": "yihua-soldering-station",
+      "brand": "YIHUA",
+      "name": "926LED-III soldering station",
+      "price": "$44.99",
+      "priceNote": "Amazon · sold by YIHUA OFFICIAL STORE",
+      "priceSourceUrl": "https://www.amazon.com/dp/B082F1WKP9",
       "specs": [
         "Black",
-        "One size"
+        "US plug",
+        "90–480°C"
       ],
-      "note": "Never Lost Keychain shown in Black/White/Gold. Confirm the trim before buying.",
-      "caption": "Never Lost example",
-      "url": "https://shop.lululemon.com/p/never-lost-key-chain/m5bu3uhqze?color=73321&locale=en_US",
+      "note": "Adjustable station with two helping hands, six spare tips, solder sucker, tweezers and 35 g of lead-free solder.",
+      "caption": "Black station in use · original listing photo",
+      "url": "https://www.amazon.com/dp/B082F1WKP9",
       "actions": [
         [
-          "Check pickup · lululemon",
-          "https://shop.lululemon.com/p/never-lost-key-chain/m5bu3uhqze?color=73321&locale=en_US"
-        ],
-        [
-          "LaCenterra store",
-          "https://shop.lululemon.com/stores/us/katy/lacenterra-at-cinco-ranch"
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B082F1WKP9"
         ]
       ],
-      "image": "/birthday/images/lululemon-keychain-editorial.jpg",
+      "image": "/birthday/images/yihua-soldering-station.jpg",
+      "imageStyle": "lifestyle",
+      "photoSource": "https://www.amazon.com/dp/B082F1WKP9",
       "checkedDate": "2026-11-02",
-      "photoSource": "https://shop.lululemon.com/p/never-lost-key-chain/m5bu3uhqze?color=73321&locale=en_US",
-      "imageStyle": "portrait",
-      "priceNote": "lululemon",
-      "priceSourceUrl": "https://shop.lululemon.com/p/never-lost-key-chain/m5bu3uhqze?color=73321&locale=en_US",
-      "referencePrice": "$20",
-      "referenceLabel": "Regular price",
-      "referenceUrl": "https://shop.lululemon.com/p/never-lost-key-chain/m5bu3uhqze?color=73321&locale=en_US"
+      "referencePrice": "$49.99",
+      "referenceLabel": "Amazon List Price",
+      "referenceUrl": "https://www.amazon.com/dp/B082F1WKP9"
+    },
+    {
+      "id": "electronics-solder-wire",
+      "brand": "Kester",
+      "name": "44 rosin-core solder wire",
+      "price": "$15.93",
+      "priceNote": "Amazon · sold by CML Supply",
+      "priceSourceUrl": "https://www.amazon.com/dp/B00AVLM4SO",
+      "specs": [
+        "63/37 tin/lead",
+        "0.031 in / 0.8 mm",
+        "1 oz tube"
+      ],
+      "note": "Extra electronics solder in a small tube. This selection contains lead.",
+      "caption": "Exact 1 oz solder tube",
+      "url": "https://www.amazon.com/dp/B00AVLM4SO",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B00AVLM4SO"
+        ]
+      ],
+      "image": "/birthday/images/electronics-solder-wire.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.cmlsupply.com/kester-44-solder-wire-63-37-0-031-rma-rosin-1oz-tube/",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "electronics-flux-pen",
+      "brand": "SRA",
+      "name": "#312 no-clean flux pen",
+      "price": "$9.49",
+      "priceNote": "Amazon · sold by SRA Soldering Products",
+      "priceSourceUrl": "https://www.amazon.com/dp/B008OC0E5M",
+      "specs": [
+        "10 mL",
+        "Refillable",
+        "Electronics flux"
+      ],
+      "note": "For circuit-board soldering and rework; compatible with leaded and lead-free solder.",
+      "caption": "Exact #312 flux pen",
+      "url": "https://www.amazon.com/dp/B008OC0E5M",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B008OC0E5M"
+        ]
+      ],
+      "image": "/birthday/images/electronics-flux-pen.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.amazon.com/dp/B008OC0E5M",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "wire-strippers",
+      "brand": "IRWIN",
+      "name": "VISE-GRIP wire stripper / cutter",
+      "price": "$12.99",
+      "priceNote": "Amazon · sold by Amazon.com",
+      "priceSourceUrl": "https://www.amazon.com/dp/B000JNNWQ2",
+      "specs": [
+        "2078309",
+        "8 in",
+        "10–22 AWG"
+      ],
+      "note": "Wire stripper, cutter and terminal crimper with a pliers nose. Select the 10–22 AWG model.",
+      "caption": "Exact 2078309 tool",
+      "url": "https://www.amazon.com/dp/B000JNNWQ2",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B000JNNWQ2"
+        ]
+      ],
+      "image": "/birthday/images/wire-strippers.jpg",
+      "imageStyle": "lifestyle",
+      "photoSource": "https://www.amazon.com/dp/B000JNNWQ2",
+      "checkedDate": "2026-11-02",
+      "referencePrice": "$23.76",
+      "referenceLabel": "Amazon List Price",
+      "referenceUrl": "https://www.amazon.com/dp/B000JNNWQ2"
+    },
+    {
+      "id": "heat-set-threaded-inserts",
+      "brand": "ruthex",
+      "name": "M3 heat-set threaded inserts",
+      "price": "Check current price",
+      "priceNote": "Amazon",
+      "priceSourceUrl": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
+      "specs": [
+        "100 pieces",
+        "Brass",
+        "M3 × 5.7 mm"
+      ],
+      "note": "Choose RX-M3x5.7, 100 pieces in the Amazon results. The listing opened a different thread size during the check, so this M3 price still needs confirmation. Design printed holes for the chosen insert.",
+      "caption": "Exact RX-M3x5.7 inserts",
+      "url": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
+      "actions": [
+        [
+          "Select M3 and check price · Amazon",
+          "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
+        ]
+      ],
+      "image": "/birthday/images/heat-set-threaded-inserts.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.3djake.de/ruthex/gewindeeinsatz-m3-100-stueck",
+      "checkedDate": "2026-11-02",
+      "unverified": true
+    },
+    {
+      "id": "bench-power-supply",
+      "brand": "HANMATEK",
+      "name": "HM310 adjustable bench power supply",
+      "price": "$79.99",
+      "priceNote": "Amazon · sold by Keytape Direct-AU",
+      "priceSourceUrl": "https://www.amazon.com/dp/B0852JZQZR",
+      "specs": [
+        "0–30 V DC",
+        "0–10 A",
+        "US 110 V input"
+      ],
+      "note": "Adjustable voltage and current with an output on/off button, USB charging port and included test leads.",
+      "caption": "Exact HM310 power supply",
+      "url": "https://www.amazon.com/dp/B0852JZQZR",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B0852JZQZR"
+        ]
+      ],
+      "image": "/birthday/images/bench-power-supply.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.amazon.com/dp/B0852JZQZR",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "esp32-cam-kit",
+      "brand": "Aideepen",
+      "name": "ESP32-CAM + MB programmer kit",
+      "price": "$27.99",
+      "priceNote": "Amazon · sold by Aideepen",
+      "priceSourceUrl": "https://www.amazon.com/dp/B0948ZFTQZ",
+      "specs": [
+        "2-pack",
+        "OV2640 2 MP cameras",
+        "Micro-USB / CH340G"
+      ],
+      "note": "Two camera boards with ESP32-CAM-MB USB programmer bases. Select 2PCS ESP32-CAM-MB.",
+      "caption": "Two camera boards and programmer bases",
+      "url": "https://www.amazon.com/dp/B0948ZFTQZ",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B0948ZFTQZ"
+        ]
+      ],
+      "image": "/birthday/images/esp32-cam-kit.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.amazon.com/dp/B0948ZFTQZ",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "connecting-wires",
+      "brand": "ELEGOO",
+      "name": "Breadboard jumper-wire kit",
+      "price": "$6.98",
+      "priceNote": "Amazon · sold by ELEGOO Official US",
+      "priceSourceUrl": "https://www.amazon.com/dp/B01EV70C78",
+      "specs": [
+        "120 wires",
+        "M–F / M–M / F–F"
+      ],
+      "note": "40 wires of each connector type for breadboards and signal connections; use separate suitable wiring for motor power.",
+      "caption": "Exact 120-wire assortment",
+      "url": "https://www.amazon.com/dp/B01EV70C78",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B01EV70C78"
+        ]
+      ],
+      "image": "/birthday/images/connecting-wires.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.amazon.com/dp/B01EV70C78",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "nema17-closed-loop-kit",
+      "brand": "STEPPERONLINE",
+      "name": "NEMA 17 closed-loop stepper kit",
+      "price": "$68.00",
+      "priceNote": "Amazon · sold by StepperOnline",
+      "priceSourceUrl": "https://www.amazon.com/dp/B0CWSR77Q9",
+      "specs": [
+        "52 Ncm",
+        "Motor + encoder + driver",
+        "CL42T V4.1"
+      ],
+      "note": "Complete motor, encoder and driver set with an RS232 setup cable. A suitable 24–48 V DC supply and motion controller are separate.",
+      "caption": "Exact motor and driver kit",
+      "url": "https://www.amazon.com/dp/B0CWSR77Q9",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B0CWSR77Q9"
+        ]
+      ],
+      "image": "/birthday/images/nema17-closed-loop-kit.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.amazon.com/dp/B0CWSR77Q9",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "budget-nema17-stepper",
+      "brand": "STEPPERONLINE",
+      "name": "Budget NEMA 17 stepper motor",
+      "price": "$10.99",
+      "priceNote": "Amazon · sold by StepperOnline",
+      "priceSourceUrl": "https://www.amazon.com/dp/B0B38GX54H",
+      "specs": [
+        "1 motor",
+        "42 Ncm",
+        "1.5 A",
+        "42 × 42 × 38 mm"
+      ],
+      "note": "Open-loop motor with a 1 m cable. The stepper driver and power supply are separate.",
+      "caption": "Exact single motor",
+      "url": "https://www.amazon.com/dp/B0B38GX54H",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B0B38GX54H"
+        ]
+      ],
+      "image": "/birthday/images/budget-nema17-stepper.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.omc-stepperonline.com/e-series-nema-17-bipolar-42ncm-59-49oz-in-1-5a-42x42x38mm-4-wires-w-1m-cable-connector-17he15-1504s",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "6806zz-radial-bearing",
+      "brand": "uxcell",
+      "name": "6806ZZ radial bearings",
+      "price": "$13.86",
+      "priceNote": "Amazon · sold by uxcell",
+      "priceSourceUrl": "https://www.amazon.com/dp/B082PY8F6G",
+      "specs": [
+        "6806ZZ",
+        "30 × 42 × 7 mm",
+        "10-pack"
+      ],
+      "note": "Metal-shielded thin-section radial bearings. Match the 30 mm shaft and 42 mm housing dimensions.",
+      "caption": "Exact 6806ZZ bearing selection",
+      "url": "https://www.amazon.com/dp/B082PY8F6G",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B082PY8F6G"
+        ]
+      ],
+      "image": "/birthday/images/6806zz-radial-bearing.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.amazon.com/dp/B082PY8F6G",
+      "checkedDate": "2026-11-02",
+      "referencePrice": "$14.59",
+      "referenceLabel": "Amazon Typical price",
+      "referenceUrl": "https://www.amazon.com/dp/B082PY8F6G"
+    },
+    {
+      "id": "51110-thrust-bearing",
+      "brand": "uxcell",
+      "name": "51110 thrust bearing",
+      "price": "$12.82",
+      "priceNote": "Amazon · sold by uxcell",
+      "priceSourceUrl": "https://www.amazon.com/dp/B07G83D98C",
+      "specs": [
+        "51110",
+        "50 × 70 × 14 mm",
+        "2-pack"
+      ],
+      "note": "Single-direction thrust bearing for axial loads. Match the dimensions to the assembly.",
+      "caption": "Exact 51110 bearing selection",
+      "url": "https://www.amazon.com/dp/B07G83D98C",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B07G83D98C"
+        ]
+      ],
+      "image": "/birthday/images/51110-thrust-bearing.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.amazon.com/dp/B07G83D98C",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "small-radial-bearings",
+      "brand": "NaiveBlue",
+      "name": "Small radial bearings",
+      "price": "$6.79",
+      "priceNote": "Amazon · sold by NAIVE BLUE",
+      "priceSourceUrl": "https://www.amazon.com/dp/B07H83VV6B",
+      "specs": [
+        "608ZZ",
+        "8 × 22 × 7 mm",
+        "10-pack"
+      ],
+      "note": "A general-purpose small-bearing option. Check this size against the shaft and mounting space in the project.",
+      "caption": "Exact 608ZZ bearing pack",
+      "url": "https://www.amazon.com/dp/B07H83VV6B",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B07H83VV6B"
+        ]
+      ],
+      "image": "/birthday/images/small-radial-bearings.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.amazon.com/dp/B07H83VV6B",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "gridded-workbench-mat",
+      "brand": "Dahle",
+      "name": "Gridded workbench cutting mat",
+      "price": "See price in Amazon cart",
+      "priceNote": "Amazon · sold by Dahle North America, Inc.",
+      "priceSourceUrl": "https://www.amazon.com/dp/B0027ROZ9G",
+      "specs": [
+        "10672",
+        "Black",
+        "18 × 24 in"
+      ],
+      "note": "Self-healing cutting and assembly surface with inch, metric and angle guides. Use a separate heat-resistant surface for soldering.",
+      "caption": "Exact black gridded mat",
+      "url": "https://www.amazon.com/dp/B0027ROZ9G",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B0027ROZ9G"
+        ]
+      ],
+      "image": "/birthday/images/gridded-workbench-mat.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.amazon.com/dp/B0027ROZ9G",
+      "checkedDate": "2026-11-02",
+      "unverified": true,
+      "referencePrice": "$53.99",
+      "referenceLabel": "Manufacturer MSRP",
+      "referenceUrl": "https://www.dahle.com/cutting-mat/item/10672"
+    },
+    {
+      "id": "robotics-assembly-supplies",
+      "brand": "EEEEE",
+      "name": "Robotics mounting hardware assortment",
+      "price": "$34.99",
+      "priceNote": "Amazon · sold by eeeee_shop",
+      "priceSourceUrl": "https://www.amazon.com/dp/B0B57DQZHF",
+      "specs": [
+        "572 pieces",
+        "M2 / M2.5 / M3 / M4",
+        "Brass standoffs"
+      ],
+      "note": "Standoffs, screws and nuts for circuit-board mounting and general workshop assembly.",
+      "caption": "Exact mounting-hardware assortment",
+      "url": "https://www.amazon.com/dp/B0B57DQZHF",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B0B57DQZHF"
+        ]
+      ],
+      "image": "/birthday/images/robotics-assembly-supplies.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.amazon.com/dp/B0B57DQZHF",
+      "checkedDate": "2026-11-02"
     },
     {
       "id": "lululemon-pace-breaker-jacket",
@@ -415,6 +767,58 @@
       "referenceUrl": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646"
     },
     {
+      "id": "window-tint",
+      "brand": "Nix Mobile Detail",
+      "name": "Window tint",
+      "price": "From $245",
+      "specs": [
+        "Local appointment"
+      ],
+      "note": "Starting package price. Confirm vehicle, windows included and film with the shop.",
+      "caption": "Tint example · Motorsport Film and Restoration",
+      "photoSource": "https://www.motorsportfilmandrestoration.com/projects-7",
+      "url": "https://www.nixmobiledetail.com/window-tint-richmond-tx",
+      "actions": [
+        [
+          "Get a local quote",
+          "https://www.nixmobiledetail.com/window-tint-richmond-tx"
+        ]
+      ],
+      "image": "/birthday/images/window-tint.jpg",
+      "checkedDate": "2026-11-02",
+      "imageStyle": "landscape",
+      "priceSourceUrl": "https://www.nixmobiledetail.com/window-tint-richmond-tx",
+      "priceNote": "Nix Mobile Detail · starting package"
+    },
+    {
+      "id": "carhartt-double-knee",
+      "brand": "Carhartt",
+      "name": "Double-knee carpenter pants",
+      "price": "$59.99",
+      "specs": [
+        "30 × 30"
+      ],
+      "note": "B01 double-front work pants in 30 × 30. Check Academy Cinco Ranch pickup and the selected size’s final price; Academy also advertises an in-cart price. Black is pictured.",
+      "caption": "Styling photo · worn B01",
+      "url": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant",
+      "actions": [
+        [
+          "Check pickup · Academy",
+          "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant"
+        ],
+        [
+          "Cinco Ranch store",
+          "https://www.academy.com/storelocator/texas/richmond/store-0165"
+        ]
+      ],
+      "image": "/birthday/images/carhartt-b01-editorial.jpg",
+      "checkedDate": "2026-11-02",
+      "photoSource": "https://shop.mavazi.jp/items/109109797",
+      "imageStyle": "landscape",
+      "priceNote": "Academy · displayed price",
+      "priceSourceUrl": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant"
+    },
+    {
       "id": "arcteryx-beta-jacket",
       "brand": "Arc’teryx",
       "name": "Beta Jacket",
@@ -449,41 +853,6 @@
       "referencePrice": "$400",
       "referenceLabel": "Arc’teryx retail price",
       "referenceUrl": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868"
-    },
-    {
-      "id": "adidas-evo-sl",
-      "brand": "adidas",
-      "name": "Adizero EVO SL running shoes",
-      "price": "$120",
-      "priceNote": "adidas · White / Black",
-      "specs": [
-        "Size 7"
-      ],
-      "note": "Men’s US size 7. Check pickup near 77406 first. Academy lists $149.99, with size 7 unavailable online; local pickup and adidas size 7 stock need confirmation.",
-      "caption": "White / black example",
-      "url": "https://www.adidas.com/us/adizero-evo-sl-shoes/JH6206.html",
-      "actions": [
-        [
-          "Check pickup · Academy · $149.99",
-          "https://www.academy.com/p/adidas-mens-adizero-evo-sl-running-shoes"
-        ],
-        [
-          "Delivery · adidas · $120",
-          "https://www.adidas.com/us/adizero-evo-sl-shoes/JH6206.html"
-        ],
-        [
-          "Cinco Ranch · 77406",
-          "https://www.academy.com/storelocator/texas/richmond/store-0165"
-        ]
-      ],
-      "image": "/birthday/images/adidas-evo-sl-editorial.webp",
-      "checkedDate": "2026-11-02",
-      "photoSource": "https://www.adidas.com/ng",
-      "imageStyle": "portrait",
-      "priceSourceUrl": "https://www.adidas.com/us/adizero-evo-sl-shoes/JH6206.html",
-      "referencePrice": "$150",
-      "referenceLabel": "Original price",
-      "referenceUrl": "https://www.adidas.com/us/adizero-evo-sl-shoes/JH6206.html"
     },
     {
       "number": 1,
