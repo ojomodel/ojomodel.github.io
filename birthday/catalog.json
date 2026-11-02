@@ -233,6 +233,40 @@
       "referenceUrl": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr/16-inch-space-black-standard-display-apple-m5-pro-chip-18-core-cpu-20-core-gpu-24gb-memory-1tb-storage"
     },
     {
+      "id": "pc-speakers",
+      "brand": "Cyber Acoustics",
+      "name": "CA-3090 PC speakers with subwoofer",
+      "price": "$37.99",
+      "priceNote": "Amazon · sold by Cyber Acoustics",
+      "priceSourceUrl": "https://www.amazon.com/dp/B00006B9W1",
+      "referencePrice": "$39.99",
+      "referenceLabel": "Amazon list price",
+      "referenceUrl": "https://www.amazon.com/dp/B00006B9W1",
+      "specs": [
+        "Black & silver",
+        "2.1 speaker set",
+        "4-inch subwoofer",
+        "Adjustable bass"
+      ],
+      "note": "Two desktop speakers and a separate subwoofer with a bass dial. Wired 3.5 mm audio; AC power adapter included. A compact budget bass option, not a room-shaking system. In stock with free shipping to 77406 when checked; ships from Amazon.",
+      "caption": "Official CA-3090 desk setup",
+      "url": "https://www.amazon.com/dp/B00006B9W1",
+      "actions": [
+        [
+          "Delivery · Amazon · $37.99",
+          "https://www.amazon.com/dp/B00006B9W1"
+        ]
+      ],
+      "image": "/birthday/images/pc-speakers-ca3090-desk.jpg",
+      "imageStyle": "lifestyle",
+      "alternate": {
+        "label": "See the full speaker set",
+        "image": "/birthday/images/pc-speakers-ca3090-product.jpg"
+      },
+      "photoSource": "https://www.cyberacoustics.com/ca-3090",
+      "checkedDate": "2026-11-02"
+    },
+    {
       "id": "window-tint",
       "brand": "Nix Mobile Detail",
       "name": "Window tint",
