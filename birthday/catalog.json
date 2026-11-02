@@ -86,31 +86,31 @@
     },
     {
       "id": "canon-sx740-hs",
-      "image": "/birthday/images/canon-sx740-hs-editorial.png",
+      "image": "/birthday/images/canon-sx740-hs-black.png",
       "brand": "Canon",
       "name": "PowerShot SX740 HS digital camera",
-      "price": "$829",
-      "priceNote": "new Silver · Beach Camera",
+      "price": "$879",
+      "priceNote": "Black listing · currently unavailable",
       "specs": [
+        "Black",
         "40× optical zoom",
-        "4K video",
-        "Silver offer"
+        "4K video"
       ],
-      "note": "New Silver model available for delivery. Local pickup has not been found; Best Buy’s listing was unavailable at this check.",
-      "caption": "SX740 HS · Silver",
-      "url": "https://www.beachcamera.com/products/canon-powershot-sx740-hs-20-3mp-40xoptical-zoom-with-4k-video-recording-silver?variant=39775916851383",
+      "note": "Black model. Check pickup around 77406 first. Best Buy and Beach Camera are currently unavailable; check stock before buying.",
+      "caption": "SX740 HS · Black",
+      "url": "https://www.beachcamera.com/products/canon-powershot-sx740-hs-20-3mp-40x-optical-zoom-with-4k-video-recording-black",
       "actions": [
         [
           "Check local pickup · Best Buy",
           "https://www.bestbuy.com/product/canon-powershot-sx740-hs-20-3-megapixel-digital-camera-black/6287924"
         ],
         [
-          "Shop delivery · Beach Camera",
-          "https://www.beachcamera.com/products/canon-powershot-sx740-hs-20-3mp-40xoptical-zoom-with-4k-video-recording-silver?variant=39775916851383"
+          "Check Black stock · Beach Camera",
+          "https://www.beachcamera.com/products/canon-powershot-sx740-hs-20-3mp-40x-optical-zoom-with-4k-video-recording-black"
         ]
       ],
-      "checkedDate": "2026-11-01",
-      "photoSource": "https://www.usa.canon.com/shop/p/powershot-sx740-hs",
+      "checkedDate": "2026-11-02",
+      "photoSource": "https://www.usa.canon.com/shop/p/powershot-sx740-hs?color=Black&type=New",
       "imageStyle": "cutout"
     },
     {
@@ -484,6 +484,16 @@
       "image": "/birthday/images/braces.jpg",
       "checkedDate": "2026-11-01",
       "imageStyle": "landscape"
+    }
+  ],
+  "alternativeGroups": [
+    {
+      "id": "camera-options",
+      "label": "Choose one camera",
+      "itemIds": [
+        "canon-g7x",
+        "canon-sx740-hs"
+      ]
     }
   ]
 }

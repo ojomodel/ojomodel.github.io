@@ -256,6 +256,22 @@
 .birthday-shell .gift-or::before,
 .birthday-shell .gift-or::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 .birthday-shell .gift-or span { flex: none; }
+.birthday-shell .gift-choice {
+  border-top: 1px solid var(--line);
+  padding-top: 27px;
+  scroll-margin-top: 100px;
+}
+.birthday-shell .gift-choice-title {
+  color: var(--muted);
+  font: 400 12px/1.6 var(--mono);
+}
+.birthday-shell .gift-choice > .gift-row { border: 0; }
+.birthday-shell .gift-choice > .gift-or {
+  margin-block: 0;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 17px;
+}
 .birthday-shell .birthday-empty {
   padding: 26px 0;
   border-block: 1px solid var(--line);
