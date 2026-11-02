@@ -163,6 +163,65 @@
       "referenceUrl": "https://www.usa.canon.com/shop/digital-cameras/point-and-shoot-cameras"
     },
     {
+      "id": "sony-zv-e10-kit",
+      "brand": "Sony",
+      "name": "ZV-E10 camera + 16–50mm lens",
+      "price": "$699.95",
+      "priceNote": "B&H · used · 8+ Moderate wear",
+      "specs": [
+        "Black",
+        "16–50mm lens included",
+        "Original ZV-E10"
+      ],
+      "note": "The camera and lens kit from my screenshot. In stock at B&H when checked; delivery offered, with a 90-day used warranty. Memory card not included.",
+      "caption": "ZV-E10 kit · representative retailer photo",
+      "url": "https://www.bhphotovideo.com/c/product/803569167-USE/sony_ilczv_e10l_b_zv_e10_mirrorless_camera_with.html",
+      "actions": [
+        [
+          "Buy used · B&H · $699.95",
+          "https://www.bhphotovideo.com/c/product/803569167-USE/sony_ilczv_e10l_b_zv_e10_mirrorless_camera_with.html"
+        ]
+      ],
+      "image": "/birthday/images/sony-zv-e10-kit.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.bhphotovideo.com/c/product/803569167-USE/sony_ilczv_e10l_b_zv_e10_mirrorless_camera_with.html",
+      "priceSourceUrl": "https://www.bhphotovideo.com/c/product/803569167-USE/sony_ilczv_e10l_b_zv_e10_mirrorless_camera_with.html",
+      "checkedDate": "2026-11-02",
+      "originalPhotoSHA256": "5c31d4c8c7fc67e1af5015a1243eb24a54232600cc1d06ddc1831e4fc39a7a9b",
+      "photoProcessing": "Edge-connected near-white background made transparent; original RGB pixels preserved, no AI editing.",
+      "displayPhotoSHA256": "8b6243c0d19326ae0e6deda382a8ea33ec42fc4f0fc857ca2a1f1a0993491f47"
+    },
+    {
+      "id": "sony-cyber-shot-rx100",
+      "brand": "Sony",
+      "name": "Cyber-shot RX100 digital camera",
+      "price": "$469",
+      "priceNote": "MPB · used · Good condition",
+      "specs": [
+        "Black",
+        "Original RX100",
+        "Under $500 before tax"
+      ],
+      "note": "Available from MPB with battery, USB charging cable and a 6-month warranty. This used unit has minor lens marks and permanent screen marks; MPB says they do not affect the photos or functionality. Delivery; local pickup not confirmed.",
+      "caption": "Original RX100 · representative product photo",
+      "url": "https://www.mpb.com/en-us/product/sony-cyber-shot-rx100/sku-4152619",
+      "actions": [
+        [
+          "Buy used · MPB · $469",
+          "https://www.mpb.com/en-us/product/sony-cyber-shot-rx100/sku-4152619"
+        ]
+      ],
+      "image": "/birthday/images/sony-cyber-shot-rx100.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.bhphotovideo.com/c/product/869238-REG/Sony_DSC_RX100_Digital_Camera.html",
+      "priceSourceUrl": "https://www.mpb.com/en-us/product/sony-cyber-shot-rx100/sku-4152619",
+      "checkedDate": "2026-11-02",
+      "budgetUSD": 500,
+      "originalPhotoSHA256": "ac7dd3144b8f83608f8375bcc092cdcce6a66a9c522d8aadbb8952ed2834551d",
+      "photoProcessing": "Edge-connected near-white background made transparent; original RGB pixels preserved, no AI editing.",
+      "displayPhotoSHA256": "02a4e6099c6b1f275972080e0912b989c53ace95878a99c9a4f50feb63c54550"
+    },
+    {
       "id": "adidas-evo-sl",
       "brand": "adidas",
       "name": "Adizero EVO SL running shoes",
@@ -1032,7 +1091,9 @@
       "label": "Choose one camera",
       "itemIds": [
         "canon-g7x",
-        "canon-sx740-hs"
+        "canon-sx740-hs",
+        "sony-zv-e10-kit",
+        "sony-cyber-shot-rx100"
       ],
       "message": "PLEASEEEEE I REALLY WANT ONE OF THESE CAMERAS PLEASEEEEEEE!!!!!!!!!!!"
     }
