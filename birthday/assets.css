@@ -262,8 +262,21 @@
   scroll-margin-top: 100px;
 }
 .birthday-shell .gift-choice-title {
-  color: var(--muted);
-  font: 400 12px/1.6 var(--mono);
+  color: var(--text);
+  font: 700 clamp(34px, 4.5vw, 54px)/1.08 var(--sans);
+  letter-spacing: -.04em;
+  overflow-wrap: anywhere;
+}
+.birthday-shell .gift-choice-heading { min-width: 0; padding-block: 7px 12px; }
+.birthday-shell .gift-choice-message {
+  max-width: 850px;
+  margin-top: 22px;
+  padding: clamp(18px, 2.8vw, 30px);
+  background: #f2f2ec;
+  color: #111;
+  font: 700 clamp(20px, 2.4vw, 28px)/1.35 var(--sans);
+  letter-spacing: -.015em;
+  overflow-wrap: anywhere;
 }
 .birthday-shell .gift-choice > .gift-row { border: 0; }
 .birthday-shell .gift-choice > .gift-or {
