@@ -31,6 +31,33 @@
       "imageStyle": "cutout"
     },
     {
+      "id": "black-pla-filament",
+      "brand": "SUNLU",
+      "name": "Black PLA filament · 5 spools",
+      "price": "$62.95 for 5",
+      "priceNote": "$12.59 each · Amazon",
+      "specs": [
+        "Quantity: 5",
+        "Black",
+        "1.75 mm",
+        "1 kg per spool"
+      ],
+      "note": "Five separate 1 kg spools (5 kg total). On Amazon, choose Black / 1 kg and set the quantity to 5. Price checked November 2; check the current total before buying.",
+      "caption": "Black PLA · 1 kg spool pictured",
+      "url": "https://www.amazon.com/dp/B07XG3RM58",
+      "actions": [
+        [
+          "Shop · Amazon",
+          "https://www.amazon.com/dp/B07XG3RM58"
+        ]
+      ],
+      "image": "/birthday/images/black-pla-filament.jpg",
+      "imageStyle": "cutout",
+      "checkedDate": "2026-11-02",
+      "quantity": 5,
+      "unitPriceUSD": 12.59
+    },
+    {
       "id": "canon-g7x",
       "brand": "Canon",
       "name": "Canon PowerShot G7 X",
