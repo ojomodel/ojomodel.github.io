@@ -1,0 +1,351 @@
+/* Birthday is a contained addition to the portfolio's existing visual system. */
+.birthday-shell {
+  width: min(1100px, calc(100% - 80px));
+  margin-inline: auto;
+  padding-bottom: 38px;
+}
+
+.birthday-shell *,
+.birthday-shell *::before,
+.birthday-shell *::after { box-sizing: border-box; }
+
+.birthday-hero { padding: 48px 0 28px; }
+.birthday-hero .eyebrow,
+.birthday-eyebrow {
+  display: block;
+  color: var(--accent);
+  font: 400 11px/1.7 var(--mono);
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.birthday-hero h1 {
+  margin-top: 23px;
+  font: 400 clamp(64px, 8vw, 90px)/1.04 var(--sans);
+  letter-spacing: -.065em;
+}
+.birthday-hero > p:not(.eyebrow):not(.birthday-eyebrow),
+.birthday-description {
+  max-width: 620px;
+  margin-top: 23px;
+  color: var(--muted);
+  font: 400 17px/1.8 var(--sans);
+}
+
+.birthday-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 30px;
+  padding: 17px 0;
+  border-block: 1px solid var(--line);
+}
+.birthday-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  color: var(--muted);
+  font: 400 11px/1.6 var(--mono);
+  transition: color .18s ease;
+}
+.birthday-nav a:hover { color: var(--text); }
+.birthday-nav a span { margin-left: 9px; color: var(--accent); }
+.birthday-section {
+  padding-top: 40px;
+  scroll-margin-top: 112px;
+}
+.birthday-section > .section-heading,
+.birthday-section-heading { margin-bottom: 34px; }
+.birthday-section > h2,
+.birthday-section > .section-heading h2,
+.birthday-section-heading h2 {
+  font: 400 clamp(26px, 3.3vw, 35px)/1.3 var(--mono);
+  letter-spacing: -.05em;
+}
+.birthday-section > p,
+.birthday-section > .section-heading > p,
+.birthday-section-heading > p {
+  max-width: 680px;
+  margin-top: 13px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.birthday-shell .gift-set { min-width: 0; }
+.birthday-shell .gift-set > header,
+.birthday-shell .gift-set-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 17px;
+  margin-bottom: 18px;
+}
+.birthday-shell .gift-set > header h3,
+.birthday-shell .gift-set > header h2,
+.birthday-shell .gift-set-heading h3,
+.birthday-shell .gift-set-heading h2,
+.birthday-shell .gift-set-title {
+  font: 400 19px/1.5 var(--sans);
+  letter-spacing: -.015em;
+}
+.birthday-shell .gift-set-number,
+.birthday-shell .gift-number {
+  flex: none;
+  color: var(--accent);
+  font: 400 10px/1.7 var(--mono);
+  letter-spacing: .04em;
+}
+.birthday-shell .gift-items { min-width: 0; }
+.birthday-shell .gift-row {
+  display: grid;
+  scroll-margin-top: 100px;
+  grid-template-columns: 220px minmax(0, 1fr);
+  align-items: start;
+  column-gap: clamp(28px, 5vw, 66px);
+  padding-block: 32px;
+  border-top: 1px solid var(--line);
+}
+.birthday-shell .gift-row:last-child { border-bottom: 1px solid var(--line); }
+.birthday-shell .gift-image {
+  position: relative;
+  min-width: 0;
+  width: 100%;
+  margin: 0;
+  background: #f7f7f5;
+  color: #333;
+}
+.birthday-shell .gift-image > a { display: block; }
+.birthday-shell .gift-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  padding: 15px;
+  object-fit: contain;
+  background: #f7f7f5;
+}
+.birthday-shell .gift-image figcaption {
+  padding: 9px 12px;
+  border-top: 1px solid #00000012;
+  color: #646464;
+  font: 400 9px/1.6 var(--mono);
+  text-align: center;
+}
+.birthday-shell .gift-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 0;
+  min-height: 0;
+  aspect-ratio: 1;
+  padding: 16px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--accent);
+  text-align: center;
+  font: 400 11px/1.6 var(--mono);
+}
+.birthday-shell .gift-placeholder strong,
+.birthday-shell .gift-placeholder .gift-monogram {
+  font: 400 clamp(25px, 4vw, 42px)/1.1 var(--sans);
+  letter-spacing: -.04em;
+  color: var(--muted);
+}
+.birthday-shell .gift-placeholder small {
+  max-width: 140px;
+  color: var(--muted);
+  font: 400 10px/1.6 var(--sans);
+}
+.birthday-shell .gift-info { min-width: 0; padding-top: 1px; }
+.birthday-shell .gift-brand {
+  color: var(--accent);
+  font: 400 10px/1.7 var(--mono);
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.birthday-shell .gift-title {
+  margin-top: 8px;
+  font: 500 clamp(21px, 2.5vw, 29px)/1.3 var(--sans);
+  letter-spacing: -.025em;
+  overflow-wrap: anywhere;
+}
+.birthday-shell .gift-title a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.birthday-shell .gift-spec {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin-top: 16px;
+  color: var(--muted);
+  font: 400 11px/1.6 var(--mono);
+}
+.birthday-shell .gift-spec > span,
+.birthday-shell .gift-spec > li {
+  display: inline-block;
+  max-width: 100%;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  overflow-wrap: anywhere;
+}
+.birthday-shell ul.gift-spec { padding-left: 0; list-style: none; }
+.birthday-shell .gift-price {
+  margin-top: 17px;
+  color: var(--text);
+  font: 400 21px/1.5 var(--sans);
+  letter-spacing: -.015em;
+}
+.birthday-shell .gift-price small,
+.birthday-shell .gift-price .price-note {
+  display: inline;
+  margin-left: 7px;
+  color: var(--muted);
+  font: 400 11px/1.6 var(--sans);
+  letter-spacing: 0;
+}
+.birthday-shell .gift-price.is-unverified {
+  color: var(--muted);
+  font-size: 14px;
+  letter-spacing: 0;
+}
+.birthday-shell .gift-note {
+  max-width: 600px;
+  margin-top: 10px;
+  color: var(--muted);
+  font: 400 13px/1.75 var(--sans);
+  overflow-wrap: anywhere;
+}
+.birthday-shell .gift-note + .gift-note { margin-top: 6px; }
+.birthday-shell .gift-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 21px;
+}
+.birthday-shell .gift-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font: 400 11px/1.6 var(--mono);
+  text-align: center;
+  overflow-wrap: anywhere;
+  transition: background .18s ease, color .18s ease, border-color .18s ease;
+}
+.birthday-shell .gift-link.primary { border-color: #454545; background: #202020; color: var(--text); }
+.birthday-shell .gift-link.primary:hover { border-color: #707070; background: #2b2b2b; }
+.birthday-shell .gift-link.secondary { background: transparent; }
+.birthday-shell .gift-link.secondary:hover { border-color: #454545; color: var(--text); }
+.birthday-shell .gift-link > span[aria-hidden] { flex: none; font-size: 15px; line-height: 1; }
+.birthday-shell .gift-or {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  max-width: 280px;
+  margin: 35px auto;
+  color: var(--accent);
+  font: 400 11px/1.8 var(--mono);
+  text-align: center;
+}
+.birthday-shell .gift-or::before,
+.birthday-shell .gift-or::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.birthday-shell .gift-or span { flex: none; }
+.birthday-shell .birthday-empty {
+  padding: 26px 0;
+  border-block: 1px solid var(--line);
+  color: var(--muted);
+  font: 400 14px/1.8 var(--sans);
+}
+.birthday-footnote {
+  margin-top: 64px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font: 400 11px/1.9 var(--mono);
+  overflow-wrap: anywhere;
+}
+.birthday-footnote p + p { margin-top: 9px; }
+.birthday-footnote a { text-decoration: underline; text-underline-offset: 4px; }
+.pending-heading { margin-top: 48px; }
+.gift-other-photo { border-top: 1px solid #0002; }
+.gift-other-photo summary { cursor: pointer; padding: 12px; font: 400 10px/1.6 var(--mono); }
+.gift-other-photo summary:focus-visible { outline: 2px solid #111; outline-offset: -3px; }
+.saved-wish { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); }
+.saved-wish h3 { font: 500 17px/1.5 var(--sans); color: var(--text); }
+.saved-wish p { margin-top: 6px; font: 400 11px/1.7 var(--mono); color: var(--muted); }
+.saved-wish .gift-link { flex-shrink: 0; }
+.birthday-shell a:focus-visible { outline: 2px solid var(--text); outline-offset: 5px; }
+
+@media (max-width: 780px) {
+  .birthday-shell { width: calc(100% - 48px); }
+  .birthday-hero { padding-top: 58px; }
+  .birthday-section { padding-top: 58px; scroll-margin-top: 102px; }
+  .birthday-shell .gift-row { grid-template-columns: 180px minmax(0, 1fr); column-gap: 28px; }
+  .birthday-shell .gift-title { font-size: 23px; }
+}
+
+@media (max-width: 560px) {
+  .birthday-shell { width: calc(100% - 40px); }
+  .birthday-hero { padding: 43px 0 30px; }
+  .birthday-hero h1 { margin-top: 20px; font-size: clamp(57px, 16vw, 83px); }
+  .birthday-hero > p:not(.eyebrow):not(.birthday-eyebrow),
+  .birthday-description { margin-top: 21px; font-size: 15px; line-height: 1.75; }
+  .birthday-nav { gap: 4px 24px; padding-block: 12px; }
+  .birthday-nav a { font-size: 10px; }
+  .birthday-section { padding-top: 46px; }
+  .birthday-section > .section-heading,
+  .birthday-section-heading { margin-bottom: 26px; }
+  .birthday-section > h2,
+  .birthday-section > .section-heading h2,
+  .birthday-section-heading h2 { font-size: 26px; }
+  .birthday-shell .gift-set > header,
+  .birthday-shell .gift-set-heading { gap: 12px; margin-bottom: 15px; }
+  .birthday-shell .gift-set > header h3,
+  .birthday-shell .gift-set > header h2,
+  .birthday-shell .gift-set-heading h3,
+  .birthday-shell .gift-set-heading h2,
+  .birthday-shell .gift-set-title { font-size: 17px; }
+  .birthday-shell .gift-row { grid-template-columns: 112px minmax(0, 1fr); column-gap: 20px; padding-block: 25px; }
+  .birthday-shell .gift-image img { padding: 8px; }
+  .birthday-shell .gift-image figcaption { padding: 7px 5px; font-size: 8px; }
+  .birthday-shell .gift-placeholder { gap: 8px; padding: 11px; font-size: 9px; }
+  .birthday-shell .gift-placeholder strong,
+  .birthday-shell .gift-placeholder .gift-monogram { font-size: 26px; }
+  .birthday-shell .gift-placeholder small { font-size: 9px; line-height: 1.45; }
+  .birthday-shell .gift-brand { font-size: 9px; letter-spacing: .07em; }
+  .birthday-shell .gift-title { margin-top: 6px; font-size: 20px; line-height: 1.3; }
+  .birthday-shell .gift-spec { margin-top: 12px; gap: 5px; font-size: 10px; }
+  .birthday-shell .gift-spec > span,
+  .birthday-shell .gift-spec > li { padding: 3px 7px; }
+  .birthday-shell .gift-price { margin-top: 13px; font-size: 19px; }
+  .birthday-shell .gift-price small,
+  .birthday-shell .gift-price .price-note { display: block; margin: 2px 0 0; font-size: 10px; }
+  .birthday-shell .gift-price.is-unverified { font-size: 12px; }
+  .birthday-shell .gift-note { margin-top: 9px; font-size: 12px; line-height: 1.7; }
+  .birthday-shell .gift-links { flex-direction: column; align-items: stretch; gap: 8px; margin-top: 16px; }
+  .birthday-shell .gift-link { width: 100%; min-height: 44px; padding: 10px 8px; gap: 8px; font-size: 10px; }
+  .birthday-shell .gift-or { max-width: 220px; margin-block: 29px; }
+  .birthday-footnote { margin-top: 48px; font-size: 10px; }
+  .saved-wish { flex-direction: column; align-items: stretch; gap: 12px; }
+}
+
+@media (max-width: 380px) {
+  .birthday-shell { width: calc(100% - 32px); }
+  .birthday-shell .gift-row { grid-template-columns: 96px minmax(0, 1fr); column-gap: 15px; }
+  .birthday-shell .gift-title { font-size: 18px; }
+  .birthday-shell .gift-spec { font-size: 9px; }
+  .birthday-shell .gift-spec > span,
+  .birthday-shell .gift-spec > li { padding-inline: 6px; }
+  .birthday-shell .gift-link { font-size: 9px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .birthday-nav a,
+  .birthday-shell .gift-link { transition: none; }
+}
