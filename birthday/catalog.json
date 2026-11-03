@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-02",
+  "lastReviewed": "2026-11-03",
   "pickupZip": "77406",
   "pickupNote": "If it’s pickup, I’ll go pick it up myself—just text me.",
   "items": [
@@ -26,7 +26,7 @@
         ]
       ],
       "image": "/birthday/images/korean-skincare.png",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "photoSource": "https://www.ulta.com/p/pdrn-hyaluronic-acid-100-moisturizing-cream-pimprod2053248?sku=2646983",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.ulta.com/p/pdrn-hyaluronic-acid-100-moisturizing-cream-pimprod2053248?sku=2646983",
@@ -39,15 +39,15 @@
       "id": "black-pla-filament",
       "brand": "SUNLU",
       "name": "Black PLA filament · 5 spools",
-      "price": "$62.95 for 5",
-      "priceNote": "Amazon · $12.59 each",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "specs": [
         "Quantity: 5",
         "Black",
         "1.75 mm",
         "1 kg per spool"
       ],
-      "note": "Five separate 1 kg spools (5 kg total). On Amazon, choose Black / 1 kg and set the quantity to 5. Price checked November 2; check the current total before buying.",
+      "note": "Five separate black 1 kg spools of 1.75 mm PLA (5 kg total). On Amazon, choose Black / 1 kg and set quantity to 5. Current price and availability could not be confirmed on November 3. The saved November 2 offer was $12.59 per spool, $62.95 for five before tax. The November 2 Amazon typical-price comparison was $13.99 each / $69.95 for five.",
       "caption": "Black PLA · 1 kg spool pictured",
       "url": "https://www.amazon.com/dp/B07XG3RM58",
       "actions": [
@@ -58,27 +58,28 @@
       ],
       "image": "/birthday/images/black-pla-filament.jpg",
       "imageStyle": "cutout",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "quantity": 5,
       "unitPriceUSD": 12.59,
       "priceSourceUrl": "https://www.amazon.com/dp/B07XG3RM58",
-      "referencePrice": "$69.95 for 5",
-      "referenceLabel": "Amazon typical price · $13.99 each",
-      "referenceUrl": "https://www.amazon.com/dp/B07XG3RM58"
+      "referencePrice": "$62.95 for 5",
+      "referenceLabel": "Amazon offer · November 2 · $12.59 per 1 kg spool",
+      "referenceUrl": "https://www.amazon.com/dp/B07XG3RM58",
+      "unverified": true
     },
     {
       "id": "rk-r75-keyboard",
       "brand": "RK Royal Kludge",
       "name": "R75 mechanical keyboard",
-      "price": "$49.99",
-      "priceNote": "Amazon · Black",
+      "price": "$59.99",
+      "priceNote": "Amazon · sold by CX Electronic",
       "specs": [
         "Black",
         "75% layout",
         "Wired USB-C",
         "Silver switches"
       ],
-      "note": "The exact keyboard from my Amazon link. Volume knob, hot-swappable switches and RGB lighting. Choose Black; price checked November 2.",
+      "note": "The exact Black R75 with Silver switches from my Amazon link. The public Amazon listing showed In Stock at $59.99 on November 3; fulfilled by Amazon. Confirm delivery to 77406 before buying.",
       "caption": "R75 · Black",
       "url": "https://www.amazon.com/dp/B0CWGR5KM9",
       "originalUrl": "https://a.co/d/06gyTYCF",
@@ -91,10 +92,10 @@
       "image": "/birthday/images/rk-r75-keyboard.jpg",
       "imageStyle": "landscape",
       "photoSource": "https://www.amazon.com/dp/B0CWGR5KM9",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "priceSourceUrl": "https://www.amazon.com/dp/B0CWGR5KM9",
       "referencePrice": "$59.99",
-      "referenceLabel": "Amazon list price",
+      "referenceLabel": "Amazon list price · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B0CWGR5KM9"
     },
     {
@@ -128,7 +129,7 @@
       "referencePrice": "$14",
       "referenceLabel": "Ulta list price",
       "referenceUrl": "https://www.ulta.com/p/heartleaf-quercetinol-pore-deep-cleansing-foam-pimprod2048920?sku=2634189",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03"
     },
     {
       "id": "anua-heartleaf-clear-pad",
@@ -160,7 +161,7 @@
       "referencePrice": "$22",
       "referenceLabel": "Ulta list price",
       "referenceUrl": "https://www.ulta.com/p/heartleaf-77-clear-pad-pimprod2048930?sku=2634909",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03"
     },
     {
       "id": "anua-rice-toner",
@@ -192,7 +193,7 @@
       "referencePrice": "$21",
       "referenceLabel": "Ulta list price",
       "referenceUrl": "https://www.ulta.com/p/rice-70-glow-milky-toner-pimprod2048932?sku=2634193",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03"
     },
     {
       "id": "anua-rice-barrier-serum",
@@ -224,7 +225,7 @@
       "referencePrice": "$22",
       "referenceLabel": "Ulta list price",
       "referenceUrl": "https://www.ulta.com/p/7-rice-ceramide-hydrating-barrier-serum-pimprod2048927?sku=2634624",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03"
     },
     {
       "id": "kisocare-azelaic-acid-15",
@@ -251,7 +252,7 @@
       "photoSource": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g",
       "originalPhotoSHA256": "9fd2f944b8687836dd3bf70d96ad6c53c955e7121a2391e94161940b569ecc0d",
       "priceSourceUrl": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "referencePrice": "$22.40",
       "referenceLabel": "KISOCARE regular price",
       "referenceUrl": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g"
@@ -284,7 +285,7 @@
       "photoSource": "https://arencia.us/products/arencia-fresh-green-mochi-cleanser?variant=45709564018841",
       "originalPhotoSHA256": "cbf4b47830a3c3ea2d1d1c8abb632a8e3d25550f34561116b97e53e581521f88",
       "priceSourceUrl": "https://arencia.us/products/arencia-fresh-green-mochi-cleanser?variant=45709564018841",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03"
     },
     {
       "id": "dr-althea-vitamin-c-serum",
@@ -313,7 +314,7 @@
       "photoSource": "https://www.ulta.com/p/vitamin-c-boosting-serum-pimprod2053609?sku=2647062",
       "originalPhotoSHA256": "bc478121305d1a7d35a774ef6159cbb32985cae418557b56dcf2861c1ac13203",
       "priceSourceUrl": "https://www.ulta.com/p/vitamin-c-boosting-serum-pimprod2053609?sku=2647062",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03"
     },
     {
       "id": "medicube-kojic-serum",
@@ -337,7 +338,7 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448",
       "priceSourceUrl": "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "originalPhotoSHA256": "f7307cca107ce94de1dc4c1ccde4f75525209cdf848d915599e68dd0b3f1c645"
     },
     {
@@ -376,52 +377,53 @@
       "image": "/birthday/images/canon-sx740-hs-black.png",
       "brand": "Canon",
       "name": "PowerShot SX740 HS digital camera",
-      "price": "$625.50",
-      "priceNote": "Walmart Marketplace · Web Offers · new",
+      "price": "Check current price",
+      "priceNote": "Walmart Marketplace · current offer unverified",
       "specs": [
         "Black",
         "International version",
         "40× optical zoom",
         "4K video"
       ],
-      "note": "Available with free shipping, sold and shipped by Web Offers. Pickup is unavailable for this listing. Confirm delivery to 77406 and the seller’s warranty before buying; this is an international version.",
+      "note": "Last verified November 2 at $625.50, sold and shipped by Web Offers, with free shipping and no pickup. The current price, seller and availability could not be verified. Choose the new Black international version and confirm delivery to 77406 and the seller’s warranty.",
       "caption": "SX740 HS · Black",
       "url": "https://www.walmart.com/ip/581034212",
       "actions": [
         [
-          "Shipping · Walmart · $625.50",
+          "Check price & shipping · Walmart",
           "https://www.walmart.com/ip/581034212"
         ],
         [
-          "Check Best Buy pickup · currently unavailable",
+          "Check Best Buy pickup · availability unverified",
           "https://www.bestbuy.com/product/canon-powershot-sx740-hs-20-3-megapixel-digital-camera-black/6287924"
         ]
       ],
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "photoSource": "https://www.usa.canon.com/shop/p/powershot-sx740-hs?color=Black&type=New",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.walmart.com/ip/581034212",
       "referencePrice": "$549.99",
       "referenceLabel": "Canon US listed price · unavailable",
-      "referenceUrl": "https://www.usa.canon.com/shop/digital-cameras/point-and-shoot-cameras"
+      "referenceUrl": "https://www.usa.canon.com/shop/digital-cameras/point-and-shoot-cameras",
+      "unverified": true
     },
     {
       "id": "sony-zv-e10-kit",
       "brand": "Sony",
       "name": "ZV-E10 camera + 16–50mm lens",
-      "price": "$699.95",
-      "priceNote": "B&H · used · 8+ Moderate wear",
+      "price": "Check current price",
+      "priceNote": "B&H · used listing · current offer unverified",
       "specs": [
         "Black",
         "16–50mm lens included",
         "Original ZV-E10"
       ],
-      "note": "The camera and lens kit from my screenshot. In stock at B&H when checked; delivery offered, with a 90-day used warranty. Memory card not included.",
+      "note": "Last verified November 2 at $699.95 for the original Black ZV-E10 with the original 16–50mm OSS kit lens, rated 8+ Moderate wear, with a 90-day used warranty. Current unit availability could not be verified. Memory card excluded.",
       "caption": "ZV-E10 kit · representative retailer photo",
       "url": "https://www.bhphotovideo.com/c/product/803569167-USE/sony_ilczv_e10l_b_zv_e10_mirrorless_camera_with.html",
       "actions": [
         [
-          "Buy used · B&H · $699.95",
+          "Check used kit · B&H",
           "https://www.bhphotovideo.com/c/product/803569167-USE/sony_ilczv_e10l_b_zv_e10_mirrorless_camera_with.html"
         ]
       ],
@@ -429,22 +431,23 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.bhphotovideo.com/c/product/803569167-USE/sony_ilczv_e10l_b_zv_e10_mirrorless_camera_with.html",
       "priceSourceUrl": "https://www.bhphotovideo.com/c/product/803569167-USE/sony_ilczv_e10l_b_zv_e10_mirrorless_camera_with.html",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "originalPhotoSHA256": "5c31d4c8c7fc67e1af5015a1243eb24a54232600cc1d06ddc1831e4fc39a7a9b",
       "photoProcessing": "Edge-connected near-white background made transparent; original RGB pixels preserved, no AI editing.",
-      "displayPhotoSHA256": "8b6243c0d19326ae0e6deda382a8ea33ec42fc4f0fc857ca2a1f1a0993491f47"
+      "displayPhotoSHA256": "8b6243c0d19326ae0e6deda382a8ea33ec42fc4f0fc857ca2a1f1a0993491f47",
+      "unverified": true
     },
     {
       "id": "adidas-evo-sl",
       "brand": "adidas",
       "name": "Adizero EVO SL running shoes",
       "price": "$150",
-      "priceNote": "Nordstrom · Black · men’s US 7",
+      "priceNote": "Nordstrom · Black · listed price",
       "specs": [
         "Men’s US 7",
         "Core Black / Cloud White / Carbon"
       ],
-      "note": "Size 7 available for pickup after shipment to Nordstrom Rack Market at Town Center in Sugar Land; November 7 arrival shown when checked. This is ship-to-store, not same-day shelf stock. adidas also lists $120, but its size 7 stock needs confirmation.",
+      "note": "Nordstrom lists Black at $150. Men’s US 7 stock and pickup need confirmation. A November 2 check offered ship-to-store pickup at Nordstrom Rack Market at Town Center in Sugar Land, with November 7 arrival shown. adidas lists $120, with size 7 availability unverified.",
       "caption": "Black JR4728 · official adidas photo",
       "url": "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090",
       "actions": [
@@ -458,7 +461,7 @@
         ]
       ],
       "image": "/birthday/images/adidas-evo-sl-black.jpg",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "photoSource": "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090",
@@ -501,7 +504,7 @@
         "label": "View the whole shoe",
         "image": "/birthday/images/boston-black-official-product.jpg"
       },
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03"
     },
     {
       "id": "macbook-pro",
@@ -528,7 +531,7 @@
         ]
       ],
       "image": "/birthday/images/macbook-pro-dark-16-editorial.jpg",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "photoSource": "https://www.apple.com/macbook-pro/proled-xdr-display/",
       "imageStyle": "landscape",
       "priceSourceUrl": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr/16-inch-space-black-standard-display-apple-m5-pro-chip-18-core-cpu-20-core-gpu-24gb-memory-1tb-storage",
@@ -540,11 +543,11 @@
       "id": "pc-speakers",
       "brand": "Cyber Acoustics",
       "name": "CA-3090 PC speakers with subwoofer",
-      "price": "$37.99",
-      "priceNote": "Amazon · sold by Cyber Acoustics",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B00006B9W1",
       "referencePrice": "$39.99",
-      "referenceLabel": "Amazon list price",
+      "referenceLabel": "Amazon list price · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B00006B9W1",
       "specs": [
         "Black & silver",
@@ -552,12 +555,12 @@
         "4-inch subwoofer",
         "Adjustable bass"
       ],
-      "note": "Two desktop speakers and a separate subwoofer with a bass dial. Wired 3.5 mm audio; AC power adapter included. A compact budget bass option, not a room-shaking system. In stock with free shipping to 77406 when checked; ships from Amazon.",
+      "note": "Two desktop speakers and a 4-inch subwoofer with adjustable bass; 9 W RMS total, wired 3.5 mm audio and AC adapter. Current price, seller and shipping to 77406 could not be confirmed on November 3. The saved November 2 offer was $37.99 sold by Cyber Acoustics and shipped by Amazon. Keep the item price under $50.",
       "caption": "Official CA-3090 desk setup",
       "url": "https://www.amazon.com/dp/B00006B9W1",
       "actions": [
         [
-          "Delivery · Amazon · $37.99",
+          "Check current price · Amazon · under $50 budget",
           "https://www.amazon.com/dp/B00006B9W1"
         ]
       ],
@@ -568,21 +571,22 @@
         "image": "/birthday/images/pc-speakers-ca3090-product.jpg"
       },
       "photoSource": "https://www.cyberacoustics.com/ca3090",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03",
+      "unverified": true
     },
     {
       "id": "yihua-soldering-station",
       "brand": "YIHUA",
       "name": "926LED-III soldering station",
-      "price": "$44.99",
-      "priceNote": "Amazon · sold by YIHUA OFFICIAL STORE",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B082F1WKP9",
       "specs": [
         "Black",
         "US plug",
         "90–480°C"
       ],
-      "note": "Adjustable station with two helping hands, six spare tips, solder sucker, tweezers and 35 g of lead-free solder.",
+      "note": "Adjustable station with two helping hands, six spare tips, solder sucker, tweezers and 35 g of lead-free solder. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Black station in use · original listing photo",
       "url": "https://www.amazon.com/dp/B082F1WKP9",
       "actions": [
@@ -594,24 +598,25 @@
       "image": "/birthday/images/yihua-soldering-station.jpg",
       "imageStyle": "lifestyle",
       "photoSource": "https://www.amazon.com/dp/B082F1WKP9",
-      "checkedDate": "2026-11-02",
-      "referencePrice": "$49.99",
-      "referenceLabel": "Amazon List Price",
-      "referenceUrl": "https://www.amazon.com/dp/B082F1WKP9"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$44.99",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B082F1WKP9",
+      "unverified": true
     },
     {
       "id": "electronics-solder-wire",
       "brand": "Kester",
       "name": "44 rosin-core solder wire",
-      "price": "$15.93",
-      "priceNote": "Amazon · sold by CML Supply",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B00AVLM4SO",
       "specs": [
         "63/37 tin/lead",
         "0.031 in / 0.8 mm",
         "1 oz tube"
       ],
-      "note": "Extra electronics solder in a small tube. This selection contains lead.",
+      "note": "Extra electronics solder in a small tube. This selection contains lead. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Exact 1 oz solder tube",
       "url": "https://www.amazon.com/dp/B00AVLM4SO",
       "actions": [
@@ -623,21 +628,25 @@
       "image": "/birthday/images/electronics-solder-wire.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.cmlsupply.com/kester-44-solder-wire-63-37-0-031-rma-rosin-1oz-tube/",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$15.93",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B00AVLM4SO",
+      "unverified": true
     },
     {
       "id": "electronics-flux-pen",
       "brand": "SRA",
       "name": "#312 no-clean flux pen",
-      "price": "$9.49",
-      "priceNote": "Amazon · sold by SRA Soldering Products",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B008OC0E5M",
       "specs": [
         "10 mL",
         "Refillable",
         "Electronics flux"
       ],
-      "note": "For circuit-board soldering and rework; compatible with leaded and lead-free solder.",
+      "note": "For circuit-board soldering and rework; compatible with leaded and lead-free solder. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Exact #312 flux pen",
       "url": "https://www.amazon.com/dp/B008OC0E5M",
       "actions": [
@@ -649,21 +658,25 @@
       "image": "/birthday/images/electronics-flux-pen.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B008OC0E5M",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$9.49",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B008OC0E5M",
+      "unverified": true
     },
     {
       "id": "wire-strippers",
       "brand": "IRWIN",
       "name": "VISE-GRIP wire stripper / cutter",
-      "price": "$12.99",
-      "priceNote": "Amazon · sold by Amazon.com",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B000JNNWQ2",
       "specs": [
         "2078309",
         "8 in",
         "10–22 AWG"
       ],
-      "note": "Wire stripper, cutter and terminal crimper with a pliers nose. Select the 10–22 AWG model.",
+      "note": "Wire stripper, cutter and terminal crimper with a pliers nose. Select the 10–22 AWG model. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Exact 2078309 tool",
       "url": "https://www.amazon.com/dp/B000JNNWQ2",
       "actions": [
@@ -675,24 +688,25 @@
       "image": "/birthday/images/wire-strippers.jpg",
       "imageStyle": "lifestyle",
       "photoSource": "https://www.amazon.com/dp/B000JNNWQ2",
-      "checkedDate": "2026-11-02",
-      "referencePrice": "$23.76",
-      "referenceLabel": "Amazon List Price",
-      "referenceUrl": "https://www.amazon.com/dp/B000JNNWQ2"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$12.99",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B000JNNWQ2",
+      "unverified": true
     },
     {
       "id": "heat-set-threaded-inserts",
       "brand": "ruthex",
       "name": "M3 heat-set threaded inserts",
       "price": "Check current price",
-      "priceNote": "Amazon",
+      "priceNote": "Amazon · exact M3 variant unverified",
       "priceSourceUrl": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
       "specs": [
         "100 pieces",
         "Brass",
         "M3 × 5.7 mm"
       ],
-      "note": "Choose RX-M3x5.7, 100 pieces in the Amazon results. The listing opened a different thread size during the check, so this M3 price still needs confirmation. Design printed holes for the chosen insert.",
+      "note": "Choose RX-M3x5.7, 100 pieces in the Amazon results. The exact M3 variant and current price could not be confirmed on November 3; a previous check opened a different thread size. Design printed holes for the chosen insert.",
       "caption": "Exact RX-M3x5.7 inserts",
       "url": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
       "actions": [
@@ -704,22 +718,22 @@
       "image": "/birthday/images/heat-set-threaded-inserts.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.3djake.de/ruthex/gewindeeinsatz-m3-100-stueck",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "unverified": true
     },
     {
       "id": "bench-power-supply",
       "brand": "HANMATEK",
       "name": "HM310 adjustable bench power supply",
-      "price": "$79.99",
-      "priceNote": "Amazon · sold by Keytape Direct-AU",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B0852JZQZR",
       "specs": [
         "0–30 V DC",
         "0–10 A",
         "US 110 V input"
       ],
-      "note": "Adjustable voltage and current with an output on/off button, USB charging port and included test leads.",
+      "note": "Adjustable voltage and current with an output on/off button, USB charging port and included test leads. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Exact HM310 power supply",
       "url": "https://www.amazon.com/dp/B0852JZQZR",
       "actions": [
@@ -731,21 +745,25 @@
       "image": "/birthday/images/bench-power-supply.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0852JZQZR",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$79.99",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B0852JZQZR",
+      "unverified": true
     },
     {
       "id": "esp32-cam-kit",
       "brand": "Aideepen",
       "name": "ESP32-CAM + MB programmer kit",
-      "price": "$27.99",
-      "priceNote": "Amazon · sold by Aideepen",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B0948ZFTQZ",
       "specs": [
         "2-pack",
         "OV2640 2 MP cameras",
         "Micro-USB / CH340G"
       ],
-      "note": "Two camera boards with ESP32-CAM-MB USB programmer bases. Select 2PCS ESP32-CAM-MB.",
+      "note": "Two camera boards with ESP32-CAM-MB USB programmer bases. Select 2PCS ESP32-CAM-MB. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Two camera boards and programmer bases",
       "url": "https://www.amazon.com/dp/B0948ZFTQZ",
       "actions": [
@@ -757,20 +775,24 @@
       "image": "/birthday/images/esp32-cam-kit.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0948ZFTQZ",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$27.99",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B0948ZFTQZ",
+      "unverified": true
     },
     {
       "id": "connecting-wires",
       "brand": "ELEGOO",
       "name": "Breadboard jumper-wire kit",
-      "price": "$6.98",
-      "priceNote": "Amazon · sold by ELEGOO Official US",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B01EV70C78",
       "specs": [
         "120 wires",
         "M–F / M–M / F–F"
       ],
-      "note": "40 wires of each connector type for breadboards and signal connections; use separate suitable wiring for motor power.",
+      "note": "40 wires of each connector type for breadboards and signal connections; use separate suitable wiring for motor power. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Exact 120-wire assortment",
       "url": "https://www.amazon.com/dp/B01EV70C78",
       "actions": [
@@ -782,21 +804,25 @@
       "image": "/birthday/images/connecting-wires.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B01EV70C78",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$6.98",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B01EV70C78",
+      "unverified": true
     },
     {
       "id": "nema17-closed-loop-kit",
       "brand": "STEPPERONLINE",
       "name": "NEMA 17 closed-loop stepper kit",
-      "price": "$68.00",
-      "priceNote": "Amazon · sold by StepperOnline",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B0CWSR77Q9",
       "specs": [
         "52 Ncm",
         "Motor + encoder + driver",
         "CL42T V4.1"
       ],
-      "note": "Complete motor, encoder and driver set with an RS232 setup cable. A suitable 24–48 V DC supply and motion controller are separate.",
+      "note": "Complete motor, encoder and driver set with an RS232 setup cable. A suitable 24–48 V DC supply and motion controller are separate. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Exact motor and driver kit",
       "url": "https://www.amazon.com/dp/B0CWSR77Q9",
       "actions": [
@@ -808,14 +834,18 @@
       "image": "/birthday/images/nema17-closed-loop-kit.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0CWSR77Q9",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$68.00",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B0CWSR77Q9",
+      "unverified": true
     },
     {
       "id": "budget-nema17-stepper",
       "brand": "STEPPERONLINE",
       "name": "Budget NEMA 17 stepper motor",
-      "price": "$10.99",
-      "priceNote": "Amazon · sold by StepperOnline",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B0B38GX54H",
       "specs": [
         "1 motor",
@@ -823,7 +853,7 @@
         "1.5 A",
         "42 × 42 × 38 mm"
       ],
-      "note": "Open-loop motor with a 1 m cable. The stepper driver and power supply are separate.",
+      "note": "Open-loop motor with a 1 m cable. The stepper driver and power supply are separate. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Exact single motor",
       "url": "https://www.amazon.com/dp/B0B38GX54H",
       "actions": [
@@ -835,21 +865,25 @@
       "image": "/birthday/images/budget-nema17-stepper.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/e-series-nema-17-bipolar-42ncm-59-49oz-in-1-5a-42x42x38mm-4-wires-w-1m-cable-connector-17he15-1504s",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$10.99",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B0B38GX54H",
+      "unverified": true
     },
     {
       "id": "6806zz-radial-bearing",
       "brand": "uxcell",
       "name": "6806ZZ radial bearings",
-      "price": "$13.86",
-      "priceNote": "Amazon · sold by uxcell",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B082PY8F6G",
       "specs": [
         "6806ZZ",
         "30 × 42 × 7 mm",
         "10-pack"
       ],
-      "note": "Metal-shielded thin-section radial bearings. Match the 30 mm shaft and 42 mm housing dimensions.",
+      "note": "Metal-shielded thin-section radial bearings. Match the 30 mm shaft and 42 mm housing dimensions. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Exact 6806ZZ bearing selection",
       "url": "https://www.amazon.com/dp/B082PY8F6G",
       "actions": [
@@ -861,24 +895,25 @@
       "image": "/birthday/images/6806zz-radial-bearing.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B082PY8F6G",
-      "checkedDate": "2026-11-02",
-      "referencePrice": "$14.59",
-      "referenceLabel": "Amazon Typical price",
-      "referenceUrl": "https://www.amazon.com/dp/B082PY8F6G"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$13.86",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B082PY8F6G",
+      "unverified": true
     },
     {
       "id": "51110-thrust-bearing",
       "brand": "uxcell",
       "name": "51110 thrust bearing",
-      "price": "$12.82",
-      "priceNote": "Amazon · sold by uxcell",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B07G83D98C",
       "specs": [
         "51110",
         "50 × 70 × 14 mm",
         "2-pack"
       ],
-      "note": "Single-direction thrust bearing for axial loads. Match the dimensions to the assembly.",
+      "note": "Single-direction thrust bearing for axial loads. Match the dimensions to the assembly. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Exact 51110 bearing selection",
       "url": "https://www.amazon.com/dp/B07G83D98C",
       "actions": [
@@ -890,21 +925,25 @@
       "image": "/birthday/images/51110-thrust-bearing.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07G83D98C",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$12.82",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B07G83D98C",
+      "unverified": true
     },
     {
       "id": "small-radial-bearings",
       "brand": "NaiveBlue",
       "name": "Small radial bearings",
-      "price": "$6.79",
-      "priceNote": "Amazon · sold by NAIVE BLUE",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B07H83VV6B",
       "specs": [
         "608ZZ",
         "8 × 22 × 7 mm",
         "10-pack"
       ],
-      "note": "A general-purpose small-bearing option. Check this size against the shaft and mounting space in the project.",
+      "note": "A general-purpose small-bearing option. Check this size against the shaft and mounting space in the project. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Exact 608ZZ bearing pack",
       "url": "https://www.amazon.com/dp/B07H83VV6B",
       "actions": [
@@ -916,21 +955,25 @@
       "image": "/birthday/images/small-radial-bearings.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07H83VV6B",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$6.79",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B07H83VV6B",
+      "unverified": true
     },
     {
       "id": "gridded-workbench-mat",
       "brand": "Dahle",
       "name": "Gridded workbench cutting mat",
-      "price": "See price in Amazon cart",
-      "priceNote": "Amazon · sold by Dahle North America, Inc.",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B0027ROZ9G",
       "specs": [
         "10672",
         "Black",
         "18 × 24 in"
       ],
-      "note": "Self-healing cutting and assembly surface with inch, metric and angle guides. Use a separate heat-resistant surface for soldering.",
+      "note": "Black 10672, 18 × 24 in. Amazon last required adding this item to the cart to see its price; the current Amazon price and availability could not be confirmed on November 3. Use a separate heat-resistant surface for soldering.",
       "caption": "Exact black gridded mat",
       "url": "https://www.amazon.com/dp/B0027ROZ9G",
       "actions": [
@@ -942,7 +985,7 @@
       "image": "/birthday/images/gridded-workbench-mat.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0027ROZ9G",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "unverified": true,
       "referencePrice": "$53.99",
       "referenceLabel": "Manufacturer MSRP",
@@ -952,15 +995,15 @@
       "id": "robotics-assembly-supplies",
       "brand": "EEEEE",
       "name": "Robotics mounting hardware assortment",
-      "price": "$34.99",
-      "priceNote": "Amazon · sold by eeeee_shop",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B0B57DQZHF",
       "specs": [
         "572 pieces",
         "M2 / M2.5 / M3 / M4",
         "Brass standoffs"
       ],
-      "note": "Standoffs, screws and nuts for circuit-board mounting and general workshop assembly.",
+      "note": "Standoffs, screws and nuts for circuit-board mounting and general workshop assembly. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
       "caption": "Exact mounting-hardware assortment",
       "url": "https://www.amazon.com/dp/B0B57DQZHF",
       "actions": [
@@ -972,7 +1015,11 @@
       "image": "/birthday/images/robotics-assembly-supplies.jpg",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0B57DQZHF",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03",
+      "referencePrice": "$34.99",
+      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceUrl": "https://www.amazon.com/dp/B0B57DQZHF",
+      "unverified": true
     },
     {
       "id": "lululemon-pace-breaker-jacket",
@@ -998,7 +1045,7 @@
         ]
       ],
       "image": "/birthday/images/lululemon-pace-breaker-jacket.jpg",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "photoSource": "https://shop.lululemon.com/p/pace-breaker-jacket/okckgak95v?color=0001",
       "imageStyle": "portrait",
       "priceSourceUrl": "https://shop.lululemon.com/p/pace-breaker-jacket/okckgak95v?color=0001",
@@ -1029,7 +1076,7 @@
         ]
       ],
       "image": "/birthday/images/lululemon-backpack-30l.jpg",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "priceNote": "lululemon",
       "photoSource": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
       "imageStyle": "portrait",
@@ -1057,7 +1104,7 @@
         ]
       ],
       "image": "/birthday/images/window-tint.jpg",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "imageStyle": "landscape",
       "priceSourceUrl": "https://www.nixmobiledetail.com/window-tint-richmond-tx",
       "priceNote": "Nix Mobile Detail · starting package"
@@ -1066,11 +1113,11 @@
       "id": "carhartt-double-knee",
       "brand": "Carhartt",
       "name": "Double-knee carpenter pants",
-      "price": "$59.99",
+      "price": "Check current 30 × 30 price",
       "specs": [
         "30 × 30"
       ],
-      "note": "B01 double-front work pants in 30 × 30. Check Academy Cinco Ranch pickup and the selected size’s final price; Academy also advertises an in-cart price. Black is pictured.",
+      "note": "B01 double-front work pants in 30 × 30. Current price and stock for this size could not be reverified. Check Academy Cinco Ranch pickup and the selected size’s final price; in-cart offers may differ. Black is pictured.",
       "caption": "Styling photo · worn B01",
       "url": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant",
       "actions": [
@@ -1084,23 +1131,27 @@
         ]
       ],
       "image": "/birthday/images/carhartt-b01-editorial.jpg",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "photoSource": "https://shop.mavazi.jp/items/109109797",
       "imageStyle": "landscape",
-      "priceNote": "Academy · displayed price",
-      "priceSourceUrl": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant"
+      "priceNote": "Academy · exact-size price unverified",
+      "priceSourceUrl": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant",
+      "referencePrice": "$59.99",
+      "referenceLabel": "Academy displayed price · last verified Nov 2",
+      "referenceUrl": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant",
+      "unverified": true
     },
     {
       "id": "arcteryx-beta-jacket",
       "brand": "Arc’teryx",
       "name": "Beta Jacket",
-      "price": "$400",
-      "priceNote": "REI",
+      "price": "Check Black / Medium price",
+      "priceNote": "REI · selected variant needs confirmation",
       "specs": [
         "Medium",
         "Black"
       ],
-      "note": "Waterproof GORE-TEX shell with a water-repellent finish. Select Black / Medium and check REI pickup first; local stock needs confirmation.",
+      "note": "Waterproof GORE-TEX shell with a water-repellent finish. Select Black / Medium; Black Sapphire is a different color. Exact price and stock need confirmation. Check REI pickup near 77406 first.",
       "caption": "Beta Jacket · Black",
       "url": "https://www.rei.com/product/228617/arcteryx-beta-jacket-mens",
       "actions": [
@@ -1118,13 +1169,14 @@
         ]
       ],
       "image": "/birthday/images/arcteryx-beta-editorial.jpg",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "photoSource": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868",
       "imageStyle": "portrait",
       "priceSourceUrl": "https://www.rei.com/product/228617/arcteryx-beta-jacket-mens",
       "referencePrice": "$400",
-      "referenceLabel": "Arc’teryx retail price",
-      "referenceUrl": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868"
+      "referenceLabel": "Arc’teryx retail reference · verify Black / Medium",
+      "referenceUrl": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868",
+      "unverified": true
     },
     {
       "number": 1,
@@ -1147,7 +1199,7 @@
           "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726"
         ]
       ],
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726",
       "unverified": true,
       "referencePrice": "$40.99",
@@ -1173,7 +1225,7 @@
           "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089"
         ]
       ],
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "priceNote": "TikTok Shop",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089",
       "referencePrice": "$29.99",
@@ -1206,7 +1258,7 @@
           "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889"
         ]
       ],
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "imageStyle": "portrait",
       "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889",
@@ -1240,7 +1292,7 @@
           "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105"
         ]
       ],
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "unverified": true,
       "imageStyle": "portrait",
       "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee",
@@ -1268,7 +1320,7 @@
         ]
       ],
       "image": "/birthday/images/canon-vixia-hf-w11-editorial.png",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "photoSource": "https://www.usa.canon.com/support/p/vixia-hf-w11",
       "imageStyle": "cutout",
       "priceNote": "B&H · no longer available",
@@ -1292,7 +1344,7 @@
         ]
       ],
       "image": "/birthday/images/braces.jpg",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "imageStyle": "landscape",
       "priceSourceUrl": "https://www.smilestudioortho.com/request-your-appointment/",
       "priceNote": "Smile Studio Orthodontics"
@@ -1327,7 +1379,7 @@
       "referencePrice": "$22",
       "referenceLabel": "Ulta list price",
       "referenceUrl": "https://www.ulta.com/p/niacinamide-10-txa-4-serum-brightening-dark-spots-pimprod2048921?sku=2634191",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03"
     },
     {
       "id": "anua-ceramide-barrier-cream",
@@ -1359,7 +1411,7 @@
       "referencePrice": "$20",
       "referenceLabel": "Ulta list price",
       "referenceUrl": "https://www.ulta.com/p/3-ceramide-panthenol-moisture-barrier-cream-pimprod2052161?sku=2641341",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03"
     },
     {
       "id": "goodal-vitamin-c-serum",
@@ -1383,7 +1435,7 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
       "priceSourceUrl": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "originalPhotoSHA256": "c8ad94248c5a6bcc997c736429036216bd4f44f74be8e60f300c46673b81d8aa"
     },
     {
@@ -1412,7 +1464,7 @@
       "referencePrice": "$50.40",
       "referenceLabel": "DODOSKIN list price",
       "referenceUrl": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
-      "checkedDate": "2026-11-02"
+      "checkedDate": "2026-11-03"
     },
     {
       "id": "remedy-vitamin-c-serum",
@@ -1443,7 +1495,7 @@
       "referencePrice": "$28",
       "referenceLabel": "REMEDY one-time brand price",
       "referenceUrl": "https://remedyskin.com/products/daily-defense-vitamin-c?variant=51510278127912",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "originalPhotoSHA256": "e9ff397a8dc7f143eba958181917c6f7f587eb8999b207f959c65cc04ea20089"
     },
     {
@@ -1468,7 +1520,7 @@
       "imageStyle": "landscape",
       "photoSource": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum",
       "priceSourceUrl": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "originalPhotoSHA256": "0c2c8f081c9c544cf913ce1fed5630f43845b8844020bd35d714ab62345ef1c2"
     }
   ],
