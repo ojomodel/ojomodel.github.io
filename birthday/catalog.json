@@ -255,34 +255,6 @@
       "checkedDate": "2026-11-02"
     },
     {
-      "id": "anua-vita-c-mist",
-      "brand": "ANUA",
-      "name": "Vita C + Glutathione Brightening Capsule Mist",
-      "price": "$31.32",
-      "priceNote": "DODOSKIN · USD · one-time purchase",
-      "specs": [
-        "100 mL / 3.38 fl oz"
-      ],
-      "note": "Delivery from DODOSKIN. Shipping charges and delivery to 77406 are confirmed at checkout.",
-      "caption": "100 mL / 3.38 fl oz",
-      "url": "https://www.dodoskin.com/products/anua-vita-c-glutathione-brightening-capsule-mist-3-38-fl-oz",
-      "actions": [
-        [
-          "Shop delivery · DODOSKIN",
-          "https://www.dodoskin.com/products/anua-vita-c-glutathione-brightening-capsule-mist-3-38-fl-oz"
-        ]
-      ],
-      "image": "/birthday/images/anua-vita-c-mist-official.png",
-      "imageStyle": "cutout",
-      "photoSource": "https://anuashop.jp/products/vitamin-mist-100",
-      "originalPhotoSHA256": "050e6a6c1439ff14885b858c3352b68fe75e2f8ff23601f9e4d5dc30a43d1b21",
-      "priceSourceUrl": "https://www.dodoskin.com/products/anua-vita-c-glutathione-brightening-capsule-mist-3-38-fl-oz",
-      "referencePrice": "$40.02",
-      "referenceLabel": "DODOSKIN list price",
-      "referenceUrl": "https://www.dodoskin.com/products/anua-vita-c-glutathione-brightening-capsule-mist-3-38-fl-oz",
-      "checkedDate": "2026-11-02"
-    },
-    {
       "id": "kisocare-azelaic-acid-15",
       "brand": "KISOCARE",
       "name": "Azelaic Acid Cream 15",
@@ -311,39 +283,6 @@
       "referencePrice": "$22.40",
       "referenceLabel": "KISOCARE regular price",
       "referenceUrl": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g"
-    },
-    {
-      "id": "trader-joes-vitamin-c-serum",
-      "brand": "Trader Joe’s",
-      "name": "Vitamin C Serum",
-      "price": "Check current price",
-      "priceNote": "Trader Joe’s · confirm in store",
-      "specs": [
-        "1 fl oz / 29 mL"
-      ],
-      "note": "Shop in person at Trader Joe’s. The brand’s indexed catalog showed $9.99; current store price and stock need confirmation. Katy (Cinco Ranch) is a nearby store option.",
-      "caption": "1 fl oz bottle and box · retailer photo",
-      "url": "https://www.traderjoes.com/home/products/pdp/vitamin-c-serum-083750",
-      "actions": [
-        [
-          "Store details · Katy (Cinco Ranch)",
-          "https://locations.traderjoes.com/tx/katy/429/"
-        ],
-        [
-          "Product · Trader Joe’s",
-          "https://www.traderjoes.com/home/products/pdp/vitamin-c-serum-083750"
-        ]
-      ],
-      "image": "/birthday/images/trader-joes-vitamin-c.jpg",
-      "imageStyle": "cutout",
-      "photoSource": "https://www.ebay.com/itm/227347802238",
-      "originalPhotoSHA256": "f4d6a2655610d0eb0eba4e4736c367339051a8daaba96c8b2d4e2bbc0977709b",
-      "priceSourceUrl": "https://www.traderjoes.com/home/products/pdp/vitamin-c-serum-083750",
-      "checkedDate": "2026-11-02",
-      "referencePrice": "$9.99",
-      "referenceLabel": "Trader Joe’s indexed catalog price · confirm in store",
-      "referenceUrl": "https://www.traderjoes.com/home/products/category/everything-else-215?filters=%7B%22page%22%3A2%7D",
-      "unverified": true
     },
     {
       "id": "arencia-fresh-green-cleanser",
