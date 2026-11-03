@@ -1,0 +1,180 @@
+.birthday-reorder-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  padding-top: 24px;
+}
+
+.birthday-reorder-toolbar:has(> .birthday-reorder-open[hidden]):has(> .birthday-reorder-status:empty) { display: none; }
+.birthday-reorder-toolbar button,
+.birthday-reorder-editor button {
+  min-height: 44px;
+  border: 1px solid var(--line, #333);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--text, #f3f3f3);
+  cursor: pointer;
+  font: 400 12px/1.5 var(--mono, monospace);
+}
+
+.birthday-reorder-toolbar button:hover,
+.birthday-reorder-editor button:hover {
+  background: var(--surface, #181818);
+}
+
+.birthday-reorder-toolbar button:focus-visible,
+.birthday-reorder-editor button:focus-visible {
+  outline: 2px solid var(--text, #f3f3f3);
+  outline-offset: 3px;
+}
+
+.birthday-reorder-toolbar button[hidden],
+.birthday-reorder-editor[hidden],
+.birthday-reorder-marker[hidden],
+.birthday-reorder-recovery[hidden],
+.birthday-list[hidden] { display: none !important; }
+
+.birthday-reorder-open,
+.birthday-reorder-reload { padding: 10px 17px; }
+.birthday-reorder-status {
+  flex: 1 1 220px;
+  min-width: 0;
+  margin: 0;
+  color: var(--muted, #b5b5b5);
+  font: 400 12px/1.65 var(--sans, sans-serif);
+}
+
+.birthday-reorder-status:empty { display: none; }
+.birthday-reorder-editor {
+  padding-block: 28px 40px;
+  scroll-margin-top: 100px;
+}
+
+.birthday-reorder-header {
+  position: sticky;
+  top: 80px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 14px;
+  background: var(--bg, #0a0a0a);
+  border-bottom: 1px solid var(--line, #333);
+}
+
+.birthday-reorder-heading { min-width: 0; }
+.birthday-reorder-heading h2 {
+  margin: 0;
+  color: var(--text, #f3f3f3);
+  font: 500 clamp(22px, 3vw, 29px)/1.25 var(--sans, sans-serif);
+  letter-spacing: -.03em;
+}
+
+.birthday-reorder-heading p {
+  margin: 5px 0 0;
+  color: var(--muted, #b5b5b5);
+  font: 400 12px/1.5 var(--sans, sans-serif);
+}
+
+.birthday-reorder-editor .birthday-reorder-done {
+  min-width: 84px;
+  flex: none;
+  padding: 10px 18px;
+  background: var(--text, #f3f3f3);
+  color: var(--bg, #0a0a0a);
+}
+
+.birthday-reorder-editor .birthday-reorder-done:hover { opacity: .85; }
+.birthday-reorder-stage { position: relative; }
+.birthday-reorder-items { margin: 0; padding: 0; list-style: none; }
+.birthday-reorder-item {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 42px 52px minmax(0, 1fr) 25px 88px;
+  gap: 12px;
+  align-items: center;
+  min-height: 88px;
+  padding-block: 13px;
+  color: var(--text, #f3f3f3);
+  border-bottom: 1px solid var(--line, #333);
+  list-style: none;
+}
+
+.birthday-reorder-item > img {
+  display: block;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.birthday-reorder-item:not(:has(> img)) { grid-template-columns: 42px minmax(0, 1fr) 25px 88px; }
+.birthday-reorder-name {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font: 500 14px/1.45 var(--sans, sans-serif);
+}
+
+.birthday-reorder-number {
+  color: var(--muted, #b5b5b5);
+  text-align: center;
+  font: 400 10px/1.5 var(--mono, monospace);
+}
+
+.birthday-reorder-editor .birthday-reorder-handle {
+  width: 42px;
+  border-color: transparent;
+  font-size: 26px;
+  cursor: grab;
+  touch-action: none;
+}
+
+.birthday-reorder-moves { display: flex; gap: 4px; }
+.birthday-reorder-moves button { width: 42px; font-size: 19px; }
+.birthday-reorder-editor button:disabled { opacity: .3; cursor: default; }
+.birthday-reorder-origin { opacity: .25; }
+.birthday-reorder-marker {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--text, #f3f3f3);
+  pointer-events: none;
+}
+
+.birthday-reorder-ghost {
+  position: fixed;
+  z-index: 1000;
+  margin: 0;
+  padding-inline: 8px;
+  border: 1px solid var(--muted, #888);
+  border-radius: 3px;
+  background: var(--bg, #0a0a0a);
+  box-shadow: 0 8px 28px #0006;
+  pointer-events: none;
+}
+
+.birthday-reorder-ghost button { visibility: hidden; }
+.birthday-reordering { user-select: none; cursor: grabbing; }
+.birthday-reorder-recovery { padding-top: 18px; }
+
+@media (max-width: 600px) {
+  .birthday-reorder-toolbar { padding-top: 20px; }
+  .birthday-reorder-status { flex-basis: 100%; }
+  .birthday-reorder-header { top: 76px; }
+  .birthday-reorder-item {
+    grid-template-columns: 32px 42px minmax(0, 1fr) 76px;
+    gap: 7px;
+    min-height: 84px;
+  }
+  .birthday-reorder-item:not(:has(> img)) { grid-template-columns: 32px minmax(0, 1fr) 76px; }
+  .birthday-reorder-item > img { width: 42px; height: 48px; }
+  .birthday-reorder-item .birthday-reorder-number { display: none; }
+  .birthday-reorder-editor .birthday-reorder-handle { width: 32px; }
+  .birthday-reorder-moves { gap: 2px; }
+  .birthday-reorder-moves button { width: 37px; min-width: 0; }
+  .birthday-reorder-name { font-size: 12px; }
+}
