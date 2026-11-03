@@ -227,38 +227,6 @@
       "checkedDate": "2026-11-02"
     },
     {
-      "id": "anua-pdrn-serum",
-      "brand": "ANUA",
-      "name": "PDRN Hyaluronic Acid Capsule 100 Serum",
-      "price": "$28",
-      "priceNote": "Ulta · one-time purchase",
-      "specs": [
-        "30 mL / 1.01 fl oz"
-      ],
-      "note": "Check pickup at Shops at Bella Terra in Richmond, TX 77406. Local stock needs confirmation. Shipping is also offered.",
-      "caption": "30 mL / 1.01 fl oz",
-      "url": "https://www.ulta.com/p/pdrn-hyaluronic-acid-capsule-100-serum-pimprod2051435?sku=2640385",
-      "actions": [
-        [
-          "Check pickup · Ulta",
-          "https://www.ulta.com/p/pdrn-hyaluronic-acid-capsule-100-serum-pimprod2051435?sku=2640385"
-        ],
-        [
-          "Richmond store",
-          "https://www.ulta.com/stores/richmond-tx-567"
-        ]
-      ],
-      "image": "/birthday/images/anua-pdrn-serum.png",
-      "imageStyle": "cutout",
-      "photoSource": "https://www.ulta.com/p/pdrn-hyaluronic-acid-capsule-100-serum-pimprod2051435?sku=2640385",
-      "originalPhotoSHA256": "664dfdbc792de3a6386611eb9bd7cde6575933909eb556843b0461cb0760bc8c",
-      "priceSourceUrl": "https://www.ulta.com/p/pdrn-hyaluronic-acid-capsule-100-serum-pimprod2051435?sku=2640385",
-      "referencePrice": "$28",
-      "referenceLabel": "Ulta list price",
-      "referenceUrl": "https://www.ulta.com/p/pdrn-hyaluronic-acid-capsule-100-serum-pimprod2051435?sku=2640385",
-      "checkedDate": "2026-11-02"
-    },
-    {
       "id": "anua-rice-toner",
       "brand": "ANUA",
       "name": "Rice 70 Glow Milky Toner",
