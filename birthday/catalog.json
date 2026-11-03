@@ -315,32 +315,6 @@
       "checkedDate": "2026-11-02"
     },
     {
-      "id": "arencia-blue-hyssop-cleanser",
-      "brand": "Arencia",
-      "name": "Fresh Blue Hyssop Rice Mochi Cleanser",
-      "price": "$22",
-      "priceNote": "Arencia · 120 g",
-      "specs": [
-        "Blue Hyssop",
-        "120 g / 4.23 oz"
-      ],
-      "note": "Blue jar cleanser from my screenshot. Select the 120 g jar on Arencia’s store. Delivery is offered; pickup near 77406 has not been verified.",
-      "caption": "Blue Hyssop · 120 g",
-      "url": "https://arencia.us/products/arencia-blue-hyssop-rice-mochi-cleanser?variant=48005982060697",
-      "actions": [
-        [
-          "Shop delivery · Arencia",
-          "https://arencia.us/products/arencia-blue-hyssop-rice-mochi-cleanser?variant=48005982060697"
-        ]
-      ],
-      "image": "/birthday/images/arencia-blue-hyssop-cleanser.png",
-      "imageStyle": "cutout",
-      "photoSource": "https://arencia.us/products/arencia-blue-hyssop-rice-mochi-cleanser?variant=48005982060697",
-      "originalPhotoSHA256": "e852db04bee0b1d65d402b1117c11b1233890b0603108e43954525fc83c710b9",
-      "priceSourceUrl": "https://arencia.us/products/arencia-blue-hyssop-rice-mochi-cleanser?variant=48005982060697",
-      "checkedDate": "2026-11-02"
-    },
-    {
       "id": "dr-althea-vitamin-c-serum",
       "brand": "Dr. Althea",
       "name": "Vitamin C Boosting Serum",
