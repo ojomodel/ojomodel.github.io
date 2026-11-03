@@ -279,7 +279,7 @@
 .birthday-shell .gift-choice-heading { min-width: 0; padding-block: 7px 12px; }
 .birthday-shell .gift-choice-message {
   max-width: 850px;
-  margin-top: 12px;
+  margin: 0 0 12px;
   padding: 0;
   background: transparent;
   color: var(--muted);
