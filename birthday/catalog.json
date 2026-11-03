@@ -131,70 +131,6 @@
       "checkedDate": "2026-11-02"
     },
     {
-      "id": "anua-niacinamide-txa",
-      "brand": "ANUA",
-      "name": "Niacinamide 10 + TXA 4 Serum",
-      "price": "$22",
-      "priceNote": "Ulta · one-time purchase",
-      "specs": [
-        "30 mL / 1.01 fl oz"
-      ],
-      "note": "Check pickup at Shops at Bella Terra in Richmond, TX 77406. Local stock needs confirmation. Shipping is also offered.",
-      "caption": "30 mL / 1.01 fl oz",
-      "url": "https://www.ulta.com/p/niacinamide-10-txa-4-serum-brightening-dark-spots-pimprod2048921?sku=2634191",
-      "actions": [
-        [
-          "Check pickup · Ulta",
-          "https://www.ulta.com/p/niacinamide-10-txa-4-serum-brightening-dark-spots-pimprod2048921?sku=2634191"
-        ],
-        [
-          "Richmond store",
-          "https://www.ulta.com/stores/richmond-tx-567"
-        ]
-      ],
-      "image": "/birthday/images/anua-niacinamide-txa.png",
-      "imageStyle": "cutout",
-      "photoSource": "https://www.ulta.com/p/niacinamide-10-txa-4-serum-brightening-dark-spots-pimprod2048921?sku=2634191",
-      "originalPhotoSHA256": "564667cc0ae4f9ed7db6e354584ad49e9202b94d06f4a1abd1a8d3662bcb172e",
-      "priceSourceUrl": "https://www.ulta.com/p/niacinamide-10-txa-4-serum-brightening-dark-spots-pimprod2048921?sku=2634191",
-      "referencePrice": "$22",
-      "referenceLabel": "Ulta list price",
-      "referenceUrl": "https://www.ulta.com/p/niacinamide-10-txa-4-serum-brightening-dark-spots-pimprod2048921?sku=2634191",
-      "checkedDate": "2026-11-02"
-    },
-    {
-      "id": "anua-ceramide-barrier-cream",
-      "brand": "ANUA",
-      "name": "3 Ceramide Panthenol Moisture Barrier Cream",
-      "price": "$20",
-      "priceNote": "Ulta · one-time purchase",
-      "specs": [
-        "100 mL / 3.38 fl oz"
-      ],
-      "note": "Check pickup at Shops at Bella Terra in Richmond, TX 77406. Local stock needs confirmation. Shipping is also offered.",
-      "caption": "100 mL / 3.38 fl oz",
-      "url": "https://www.ulta.com/p/3-ceramide-panthenol-moisture-barrier-cream-pimprod2052161?sku=2641341",
-      "actions": [
-        [
-          "Check pickup · Ulta",
-          "https://www.ulta.com/p/3-ceramide-panthenol-moisture-barrier-cream-pimprod2052161?sku=2641341"
-        ],
-        [
-          "Richmond store",
-          "https://www.ulta.com/stores/richmond-tx-567"
-        ]
-      ],
-      "image": "/birthday/images/anua-ceramide-barrier-cream.png",
-      "imageStyle": "cutout",
-      "photoSource": "https://www.ulta.com/p/3-ceramide-panthenol-moisture-barrier-cream-pimprod2052161?sku=2641341",
-      "originalPhotoSHA256": "d856ac7a7a8026aa1e51488271faf0fe7b9d429f9939b6f33fbb1f752ec599f3",
-      "priceSourceUrl": "https://www.ulta.com/p/3-ceramide-panthenol-moisture-barrier-cream-pimprod2052161?sku=2641341",
-      "referencePrice": "$20",
-      "referenceLabel": "Ulta list price",
-      "referenceUrl": "https://www.ulta.com/p/3-ceramide-panthenol-moisture-barrier-cream-pimprod2052161?sku=2641341",
-      "checkedDate": "2026-11-02"
-    },
-    {
       "id": "anua-heartleaf-clear-pad",
       "brand": "ANUA",
       "name": "Heartleaf 77 Clear Pad",
@@ -1619,6 +1555,70 @@
       "imageStyle": "landscape",
       "priceSourceUrl": "https://www.smilestudioortho.com/request-your-appointment/",
       "priceNote": "Smile Studio Orthodontics"
+    },
+    {
+      "id": "anua-niacinamide-txa",
+      "brand": "ANUA",
+      "name": "Niacinamide 10 + TXA 4 Serum",
+      "price": "$22",
+      "priceNote": "Ulta · one-time purchase",
+      "specs": [
+        "30 mL / 1.01 fl oz"
+      ],
+      "note": "Check pickup at Shops at Bella Terra in Richmond, TX 77406. Local stock needs confirmation. Shipping is also offered.",
+      "caption": "30 mL / 1.01 fl oz",
+      "url": "https://www.ulta.com/p/niacinamide-10-txa-4-serum-brightening-dark-spots-pimprod2048921?sku=2634191",
+      "actions": [
+        [
+          "Check pickup · Ulta",
+          "https://www.ulta.com/p/niacinamide-10-txa-4-serum-brightening-dark-spots-pimprod2048921?sku=2634191"
+        ],
+        [
+          "Richmond store",
+          "https://www.ulta.com/stores/richmond-tx-567"
+        ]
+      ],
+      "image": "/birthday/images/anua-niacinamide-txa.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.ulta.com/p/niacinamide-10-txa-4-serum-brightening-dark-spots-pimprod2048921?sku=2634191",
+      "originalPhotoSHA256": "564667cc0ae4f9ed7db6e354584ad49e9202b94d06f4a1abd1a8d3662bcb172e",
+      "priceSourceUrl": "https://www.ulta.com/p/niacinamide-10-txa-4-serum-brightening-dark-spots-pimprod2048921?sku=2634191",
+      "referencePrice": "$22",
+      "referenceLabel": "Ulta list price",
+      "referenceUrl": "https://www.ulta.com/p/niacinamide-10-txa-4-serum-brightening-dark-spots-pimprod2048921?sku=2634191",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "anua-ceramide-barrier-cream",
+      "brand": "ANUA",
+      "name": "3 Ceramide Panthenol Moisture Barrier Cream",
+      "price": "$20",
+      "priceNote": "Ulta · one-time purchase",
+      "specs": [
+        "100 mL / 3.38 fl oz"
+      ],
+      "note": "Check pickup at Shops at Bella Terra in Richmond, TX 77406. Local stock needs confirmation. Shipping is also offered.",
+      "caption": "100 mL / 3.38 fl oz",
+      "url": "https://www.ulta.com/p/3-ceramide-panthenol-moisture-barrier-cream-pimprod2052161?sku=2641341",
+      "actions": [
+        [
+          "Check pickup · Ulta",
+          "https://www.ulta.com/p/3-ceramide-panthenol-moisture-barrier-cream-pimprod2052161?sku=2641341"
+        ],
+        [
+          "Richmond store",
+          "https://www.ulta.com/stores/richmond-tx-567"
+        ]
+      ],
+      "image": "/birthday/images/anua-ceramide-barrier-cream.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.ulta.com/p/3-ceramide-panthenol-moisture-barrier-cream-pimprod2052161?sku=2641341",
+      "originalPhotoSHA256": "d856ac7a7a8026aa1e51488271faf0fe7b9d429f9939b6f33fbb1f752ec599f3",
+      "priceSourceUrl": "https://www.ulta.com/p/3-ceramide-panthenol-moisture-barrier-cream-pimprod2052161?sku=2641341",
+      "referencePrice": "$20",
+      "referenceLabel": "Ulta list price",
+      "referenceUrl": "https://www.ulta.com/p/3-ceramide-panthenol-moisture-barrier-cream-pimprod2052161?sku=2641341",
+      "checkedDate": "2026-11-02"
     }
   ],
   "alternativeGroups": [
