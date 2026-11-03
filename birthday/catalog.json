@@ -98,6 +98,39 @@
       "referenceUrl": "https://www.amazon.com/dp/B0CWGR5KM9"
     },
     {
+      "id": "anua-cleanser",
+      "brand": "ANUA",
+      "name": "Heartleaf Quercetinol Pore Deep Cleansing Foam",
+      "price": "$14",
+      "priceNote": "Ulta · one-time purchase",
+      "specs": [
+        "Full size",
+        "150 mL / 5.07 fl oz"
+      ],
+      "note": "Check pickup at Shops at Bella Terra in Richmond, TX 77406. Local stock needs confirmation; Ulta also offers shipping.",
+      "caption": "Full-size cleansing foam",
+      "url": "https://www.ulta.com/p/heartleaf-quercetinol-pore-deep-cleansing-foam-pimprod2048920?sku=2634189",
+      "actions": [
+        [
+          "Check pickup · Ulta",
+          "https://www.ulta.com/p/heartleaf-quercetinol-pore-deep-cleansing-foam-pimprod2048920?sku=2634189"
+        ],
+        [
+          "Richmond store",
+          "https://www.ulta.com/stores/richmond-tx-567"
+        ]
+      ],
+      "image": "/birthday/images/anua-heartleaf-cleanser.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.ulta.com/p/heartleaf-quercetinol-pore-deep-cleansing-foam-pimprod2048920?sku=2634189",
+      "originalPhotoSHA256": "6218c3902d5def01c63e56c93e6ef022a1ec81c05e3854cbc594f8f8cd0b806c",
+      "priceSourceUrl": "https://www.ulta.com/p/heartleaf-quercetinol-pore-deep-cleansing-foam-pimprod2048920?sku=2634189",
+      "referencePrice": "$14",
+      "referenceLabel": "Ulta list price",
+      "referenceUrl": "https://www.ulta.com/p/heartleaf-quercetinol-pore-deep-cleansing-foam-pimprod2048920?sku=2634189",
+      "checkedDate": "2026-11-02"
+    },
+    {
       "id": "canon-g7x",
       "brand": "Canon",
       "name": "Canon PowerShot G7 X",
