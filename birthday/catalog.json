@@ -341,63 +341,6 @@
       "originalPhotoSHA256": "f7307cca107ce94de1dc4c1ccde4f75525209cdf848d915599e68dd0b3f1c645"
     },
     {
-      "id": "remedy-vitamin-c-serum",
-      "brand": "REMEDY",
-      "name": "For Daily Defense · 15% Vitamin C Complex Serum",
-      "price": "$27.99",
-      "priceNote": "Target · one-time purchase",
-      "specs": [
-        "30 mL / 1 fl oz"
-      ],
-      "note": "The amber bottle with the white pump from my screenshot. Check Target pickup around 77406 first; exact local stock needs confirmation.",
-      "caption": "For Daily Defense · official product photo",
-      "url": "https://www.target.com/p/-/A-94823365",
-      "actions": [
-        [
-          "Check pickup · Target",
-          "https://www.target.com/p/-/A-94823365"
-        ],
-        [
-          "Delivery · REMEDY · $28",
-          "https://remedyskin.com/products/daily-defense-vitamin-c?variant=51510278127912"
-        ]
-      ],
-      "image": "/birthday/images/remedy-vitamin-c-serum.jpg",
-      "imageStyle": "landscape",
-      "photoSource": "https://remedyskin.com/products/daily-defense-vitamin-c",
-      "priceSourceUrl": "https://www.target.com/p/-/A-94823365",
-      "referencePrice": "$28",
-      "referenceLabel": "REMEDY one-time brand price",
-      "referenceUrl": "https://remedyskin.com/products/daily-defense-vitamin-c?variant=51510278127912",
-      "checkedDate": "2026-11-02",
-      "originalPhotoSHA256": "e9ff397a8dc7f143eba958181917c6f7f587eb8999b207f959c65cc04ea20089"
-    },
-    {
-      "id": "rose-futurebright-serum",
-      "brand": "ROSE Ingleton MD",
-      "name": "FutureBright Dark Spot Vitamin C Serum",
-      "price": "$68",
-      "priceNote": "ROSE Ingleton MD · one-time purchase",
-      "specs": [
-        "30 mL / 1 fl oz"
-      ],
-      "note": "The pink pump bottle from my screenshot. Choose one-time purchase and confirm delivery availability at the store.",
-      "caption": "FutureBright · official product photo",
-      "url": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706",
-      "actions": [
-        [
-          "Shop · ROSE Ingleton MD",
-          "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706"
-        ]
-      ],
-      "image": "/birthday/images/rose-futurebright-serum.jpg",
-      "imageStyle": "landscape",
-      "photoSource": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum",
-      "priceSourceUrl": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706",
-      "checkedDate": "2026-11-02",
-      "originalPhotoSHA256": "0c2c8f081c9c544cf913ce1fed5630f43845b8844020bd35d714ab62345ef1c2"
-    },
-    {
       "id": "canon-g7x",
       "brand": "Canon",
       "name": "Canon PowerShot G7 X",
@@ -1500,6 +1443,63 @@
       "referenceLabel": "DODOSKIN list price",
       "referenceUrl": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
       "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "remedy-vitamin-c-serum",
+      "brand": "REMEDY",
+      "name": "For Daily Defense · 15% Vitamin C Complex Serum",
+      "price": "$27.99",
+      "priceNote": "Target · one-time purchase",
+      "specs": [
+        "30 mL / 1 fl oz"
+      ],
+      "note": "The amber bottle with the white pump from my screenshot. Check Target pickup around 77406 first; exact local stock needs confirmation.",
+      "caption": "For Daily Defense · official product photo",
+      "url": "https://www.target.com/p/-/A-94823365",
+      "actions": [
+        [
+          "Check pickup · Target",
+          "https://www.target.com/p/-/A-94823365"
+        ],
+        [
+          "Delivery · REMEDY · $28",
+          "https://remedyskin.com/products/daily-defense-vitamin-c?variant=51510278127912"
+        ]
+      ],
+      "image": "/birthday/images/remedy-vitamin-c-serum.jpg",
+      "imageStyle": "landscape",
+      "photoSource": "https://remedyskin.com/products/daily-defense-vitamin-c",
+      "priceSourceUrl": "https://www.target.com/p/-/A-94823365",
+      "referencePrice": "$28",
+      "referenceLabel": "REMEDY one-time brand price",
+      "referenceUrl": "https://remedyskin.com/products/daily-defense-vitamin-c?variant=51510278127912",
+      "checkedDate": "2026-11-02",
+      "originalPhotoSHA256": "e9ff397a8dc7f143eba958181917c6f7f587eb8999b207f959c65cc04ea20089"
+    },
+    {
+      "id": "rose-futurebright-serum",
+      "brand": "ROSE Ingleton MD",
+      "name": "FutureBright Dark Spot Vitamin C Serum",
+      "price": "$68",
+      "priceNote": "ROSE Ingleton MD · one-time purchase",
+      "specs": [
+        "30 mL / 1 fl oz"
+      ],
+      "note": "The pink pump bottle from my screenshot. Choose one-time purchase and confirm delivery availability at the store.",
+      "caption": "FutureBright · official product photo",
+      "url": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706",
+      "actions": [
+        [
+          "Shop · ROSE Ingleton MD",
+          "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706"
+        ]
+      ],
+      "image": "/birthday/images/rose-futurebright-serum.jpg",
+      "imageStyle": "landscape",
+      "photoSource": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum",
+      "priceSourceUrl": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706",
+      "checkedDate": "2026-11-02",
+      "originalPhotoSHA256": "0c2c8f081c9c544cf913ce1fed5630f43845b8844020bd35d714ab62345ef1c2"
     }
   ],
   "alternativeGroups": [
