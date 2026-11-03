@@ -344,18 +344,18 @@
       "id": "canon-g7x",
       "brand": "Canon",
       "name": "Canon PowerShot G7 X",
-      "price": "$1,689",
-      "priceNote": "Beach Camera · new Black Mark III",
+      "price": "$929.99 · unavailable",
+      "priceNote": "B&H · new Black Mark III · listed price",
       "specs": [
         "Generation to confirm"
       ],
-      "note": "This offer is the Mark III in Black. Available for delivery from Beach Camera; pickup near 77406 has not been confirmed. Canon’s lower-priced listing is unavailable.",
+      "note": "B&H’s regular-price listing is temporarily out of stock, with orders accepted by phone only and no confirmed delivery date. Canon also lists $929.99 but is unavailable. Pickup near 77406 has not been verified.",
       "caption": "Mark III pictured",
-      "url": "https://www.beachcamera.com/collections/digital-cameras-20-mp/products/canon-powershot-g7-x-mark-iii-20-1mp-4-2x-optical-zoom-digital-camera-black3637c001",
+      "url": "https://www.bhphotovideo.com/c/product/1490985-REG/canon_3637c001_powershot_g7_x_mark.html",
       "actions": [
         [
-          "Delivery · Beach Camera · $1,689",
-          "https://www.beachcamera.com/collections/digital-cameras-20-mp/products/canon-powershot-g7-x-mark-iii-20-1mp-4-2x-optical-zoom-digital-camera-black3637c001"
+          "Check B&H stock · $929.99 listed",
+          "https://www.bhphotovideo.com/c/product/1490985-REG/canon_3637c001_powershot_g7_x_mark.html"
         ],
         [
           "Check Canon stock · $929.99 listed",
@@ -363,10 +363,10 @@
         ]
       ],
       "image": "/birthday/images/canon-g7x-editorial.png",
-      "checkedDate": "2026-11-02",
+      "checkedDate": "2026-11-03",
       "photoSource": "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii",
       "imageStyle": "cutout",
-      "priceSourceUrl": "https://www.beachcamera.com/collections/digital-cameras-20-mp/products/canon-powershot-g7-x-mark-iii-20-1mp-4-2x-optical-zoom-digital-camera-black3637c001",
+      "priceSourceUrl": "https://www.bhphotovideo.com/c/product/1490985-REG/canon_3637c001_powershot_g7_x_mark.html",
       "referencePrice": "$929.99",
       "referenceLabel": "Canon listed price · unavailable",
       "referenceUrl": "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii?color=Black&type=New"
