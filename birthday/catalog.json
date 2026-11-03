@@ -355,6 +355,317 @@
       "checkedDate": "2026-11-02"
     },
     {
+      "id": "anua-vita-porestrix-serum",
+      "brand": "ANUA",
+      "name": "Vita 10 + Porestrix Brightening Serum",
+      "price": "$36.14",
+      "priceNote": "DODOSKIN · USD · one-time purchase",
+      "specs": [
+        "20 mL / 0.67 fl oz"
+      ],
+      "note": "Delivery from DODOSKIN. Shipping charges and delivery to 77406 are confirmed at checkout.",
+      "caption": "20 mL / 0.67 fl oz",
+      "url": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
+      "actions": [
+        [
+          "Shop delivery · DODOSKIN",
+          "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml"
+        ]
+      ],
+      "image": "/birthday/images/anua-vita-serum-official.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://anuashop.jp/products/vita_10",
+      "originalPhotoSHA256": "099ee927aa6d59ed7d75784247f3b6847b4be27979b46aa32406992e440ad265",
+      "priceSourceUrl": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
+      "referencePrice": "$50.40",
+      "referenceLabel": "DODOSKIN list price",
+      "referenceUrl": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "anua-vita-c-mist",
+      "brand": "ANUA",
+      "name": "Vita C + Glutathione Brightening Capsule Mist",
+      "price": "$31.32",
+      "priceNote": "DODOSKIN · USD · one-time purchase",
+      "specs": [
+        "100 mL / 3.38 fl oz"
+      ],
+      "note": "Delivery from DODOSKIN. Shipping charges and delivery to 77406 are confirmed at checkout.",
+      "caption": "100 mL / 3.38 fl oz",
+      "url": "https://www.dodoskin.com/products/anua-vita-c-glutathione-brightening-capsule-mist-3-38-fl-oz",
+      "actions": [
+        [
+          "Shop delivery · DODOSKIN",
+          "https://www.dodoskin.com/products/anua-vita-c-glutathione-brightening-capsule-mist-3-38-fl-oz"
+        ]
+      ],
+      "image": "/birthday/images/anua-vita-c-mist-official.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://anuashop.jp/products/vitamin-mist-100",
+      "originalPhotoSHA256": "050e6a6c1439ff14885b858c3352b68fe75e2f8ff23601f9e4d5dc30a43d1b21",
+      "priceSourceUrl": "https://www.dodoskin.com/products/anua-vita-c-glutathione-brightening-capsule-mist-3-38-fl-oz",
+      "referencePrice": "$40.02",
+      "referenceLabel": "DODOSKIN list price",
+      "referenceUrl": "https://www.dodoskin.com/products/anua-vita-c-glutathione-brightening-capsule-mist-3-38-fl-oz",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "kisocare-azelaic-acid-15",
+      "brand": "KISOCARE",
+      "name": "Azelaic Acid Cream 15",
+      "price": "$20.16",
+      "priceNote": "KISOCARE · one-time purchase",
+      "specs": [
+        "15%",
+        "20 g",
+        "No. 057"
+      ],
+      "note": "The 15% cream shown in my screenshot. Ships from Japan. The brand lists $20 shipping below $50; confirm the final delivery total.",
+      "caption": "15% cream · 20 g",
+      "url": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g",
+      "actions": [
+        [
+          "Shop delivery · KISOCARE",
+          "https://kisocare.com/products/15-azelaic-acid-face-cream-20g"
+        ]
+      ],
+      "image": "/birthday/images/kisocare-azelaic-acid-15.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g",
+      "originalPhotoSHA256": "9fd2f944b8687836dd3bf70d96ad6c53c955e7121a2391e94161940b569ecc0d",
+      "priceSourceUrl": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g",
+      "checkedDate": "2026-11-02",
+      "referencePrice": "$22.40",
+      "referenceLabel": "KISOCARE regular price",
+      "referenceUrl": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g"
+    },
+    {
+      "id": "trader-joes-vitamin-c-serum",
+      "brand": "Trader Joe’s",
+      "name": "Vitamin C Serum",
+      "price": "Check current price",
+      "priceNote": "Trader Joe’s · confirm in store",
+      "specs": [
+        "1 fl oz / 29 mL"
+      ],
+      "note": "Shop in person at Trader Joe’s. The brand’s indexed catalog showed $9.99; current store price and stock need confirmation. Katy (Cinco Ranch) is a nearby store option.",
+      "caption": "1 fl oz bottle and box · retailer photo",
+      "url": "https://www.traderjoes.com/home/products/pdp/vitamin-c-serum-083750",
+      "actions": [
+        [
+          "Store details · Katy (Cinco Ranch)",
+          "https://locations.traderjoes.com/tx/katy/429/"
+        ],
+        [
+          "Product · Trader Joe’s",
+          "https://www.traderjoes.com/home/products/pdp/vitamin-c-serum-083750"
+        ]
+      ],
+      "image": "/birthday/images/trader-joes-vitamin-c.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.ebay.com/itm/227347802238",
+      "originalPhotoSHA256": "f4d6a2655610d0eb0eba4e4736c367339051a8daaba96c8b2d4e2bbc0977709b",
+      "priceSourceUrl": "https://www.traderjoes.com/home/products/pdp/vitamin-c-serum-083750",
+      "checkedDate": "2026-11-02",
+      "referencePrice": "$9.99",
+      "referenceLabel": "Trader Joe’s indexed catalog price · confirm in store",
+      "referenceUrl": "https://www.traderjoes.com/home/products/category/everything-else-215?filters=%7B%22page%22%3A2%7D",
+      "unverified": true
+    },
+    {
+      "id": "arencia-fresh-green-cleanser",
+      "brand": "Arencia",
+      "name": "Fresh Green Rice Mochi Cleanser",
+      "price": "$21",
+      "priceNote": "Arencia · 120 g",
+      "specs": [
+        "Fresh Green",
+        "120 g / 4.23 oz"
+      ],
+      "note": "Green jar cleanser from my screenshot. Check Sephora pickup around 77406 first; exact local stock and Sephora price need confirmation. The displayed $21 belongs to Arencia’s linked 120 g offer.",
+      "caption": "Fresh Green · 120 g",
+      "url": "https://arencia.us/products/arencia-fresh-green-mochi-cleanser?variant=45709564018841",
+      "actions": [
+        [
+          "Check pickup · Sephora",
+          "https://www.sephora.com/product/arencia-fresh-green-rice-mochi-cleanser-P521617?skuId=3039732"
+        ],
+        [
+          "Shop delivery · Arencia · $21",
+          "https://arencia.us/products/arencia-fresh-green-mochi-cleanser?variant=45709564018841"
+        ]
+      ],
+      "image": "/birthday/images/arencia-fresh-green-cleanser.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://arencia.us/products/arencia-fresh-green-mochi-cleanser?variant=45709564018841",
+      "originalPhotoSHA256": "cbf4b47830a3c3ea2d1d1c8abb632a8e3d25550f34561116b97e53e581521f88",
+      "priceSourceUrl": "https://arencia.us/products/arencia-fresh-green-mochi-cleanser?variant=45709564018841",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "arencia-blue-hyssop-cleanser",
+      "brand": "Arencia",
+      "name": "Fresh Blue Hyssop Rice Mochi Cleanser",
+      "price": "$22",
+      "priceNote": "Arencia · 120 g",
+      "specs": [
+        "Blue Hyssop",
+        "120 g / 4.23 oz"
+      ],
+      "note": "Blue jar cleanser from my screenshot. Select the 120 g jar on Arencia’s store. Delivery is offered; pickup near 77406 has not been verified.",
+      "caption": "Blue Hyssop · 120 g",
+      "url": "https://arencia.us/products/arencia-blue-hyssop-rice-mochi-cleanser?variant=48005982060697",
+      "actions": [
+        [
+          "Shop delivery · Arencia",
+          "https://arencia.us/products/arencia-blue-hyssop-rice-mochi-cleanser?variant=48005982060697"
+        ]
+      ],
+      "image": "/birthday/images/arencia-blue-hyssop-cleanser.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://arencia.us/products/arencia-blue-hyssop-rice-mochi-cleanser?variant=48005982060697",
+      "originalPhotoSHA256": "e852db04bee0b1d65d402b1117c11b1233890b0603108e43954525fc83c710b9",
+      "priceSourceUrl": "https://arencia.us/products/arencia-blue-hyssop-rice-mochi-cleanser?variant=48005982060697",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "dr-althea-vitamin-c-serum",
+      "brand": "Dr. Althea",
+      "name": "Vitamin C Boosting Serum",
+      "price": "$23.90",
+      "priceNote": "Ulta · one-time purchase",
+      "specs": [
+        "30 mL / 1.01 fl oz"
+      ],
+      "note": "The amber dropper bottle from my screenshot. Check Ulta pickup around 77406 first. Exact local stock needs confirmation; shipping is also offered.",
+      "caption": "30 mL · amber dropper bottle",
+      "url": "https://www.ulta.com/p/vitamin-c-boosting-serum-pimprod2053609?sku=2647062",
+      "actions": [
+        [
+          "Check pickup · Ulta",
+          "https://www.ulta.com/p/vitamin-c-boosting-serum-pimprod2053609?sku=2647062"
+        ],
+        [
+          "Richmond store",
+          "https://www.ulta.com/stores/richmond-tx-567"
+        ]
+      ],
+      "image": "/birthday/images/dr-althea-vitamin-c-serum.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.ulta.com/p/vitamin-c-boosting-serum-pimprod2053609?sku=2647062",
+      "originalPhotoSHA256": "bc478121305d1a7d35a774ef6159cbb32985cae418557b56dcf2861c1ac13203",
+      "priceSourceUrl": "https://www.ulta.com/p/vitamin-c-boosting-serum-pimprod2053609?sku=2647062",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "goodal-vitamin-c-serum",
+      "brand": "goodal",
+      "name": "Green Tangerine Vita-C Dark Spot Care Serum",
+      "price": "$22.32",
+      "priceNote": "Vitacost · one-time purchase",
+      "specs": [
+        "40 mL / 1.35 fl oz"
+      ],
+      "note": "The original yellow-bottle Green Tangerine serum. Delivery listing; confirm shipping to 77406 at checkout.",
+      "caption": "Original Green Tangerine Vita-C serum",
+      "url": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
+      "actions": [
+        [
+          "Delivery · Vitacost",
+          "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030"
+        ]
+      ],
+      "image": "/birthday/images/goodal-vitamin-c-serum.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
+      "priceSourceUrl": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
+      "checkedDate": "2026-11-02",
+      "originalPhotoSHA256": "c8ad94248c5a6bcc997c736429036216bd4f44f74be8e60f300c46673b81d8aa"
+    },
+    {
+      "id": "medicube-kojic-serum",
+      "brand": "medicube",
+      "name": "Kojic Acid Turmeric Niacinamide Serum",
+      "price": "$21",
+      "priceNote": "Ulta · online only",
+      "specs": [
+        "30 mL / 1.01 fl oz"
+      ],
+      "note": "Current Ulta bottle pictured. The screenshot shows a pump bottle; confirm packaging before buying. Ulta currently offers this listing for delivery.",
+      "caption": "Current retailer bottle · dropper packaging",
+      "url": "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448",
+      "actions": [
+        [
+          "Delivery · Ulta",
+          "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448"
+        ]
+      ],
+      "image": "/birthday/images/medicube-kojic-serum.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448",
+      "priceSourceUrl": "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448",
+      "checkedDate": "2026-11-02",
+      "originalPhotoSHA256": "f7307cca107ce94de1dc4c1ccde4f75525209cdf848d915599e68dd0b3f1c645"
+    },
+    {
+      "id": "remedy-vitamin-c-serum",
+      "brand": "REMEDY",
+      "name": "For Daily Defense · 15% Vitamin C Complex Serum",
+      "price": "$27.99",
+      "priceNote": "Target · one-time purchase",
+      "specs": [
+        "30 mL / 1 fl oz"
+      ],
+      "note": "The amber bottle with the white pump from my screenshot. Check Target pickup around 77406 first; exact local stock needs confirmation.",
+      "caption": "For Daily Defense · official product photo",
+      "url": "https://www.target.com/p/-/A-94823365",
+      "actions": [
+        [
+          "Check pickup · Target",
+          "https://www.target.com/p/-/A-94823365"
+        ],
+        [
+          "Delivery · REMEDY · $28",
+          "https://remedyskin.com/products/daily-defense-vitamin-c?variant=51510278127912"
+        ]
+      ],
+      "image": "/birthday/images/remedy-vitamin-c-serum.jpg",
+      "imageStyle": "landscape",
+      "photoSource": "https://remedyskin.com/products/daily-defense-vitamin-c",
+      "priceSourceUrl": "https://www.target.com/p/-/A-94823365",
+      "referencePrice": "$28",
+      "referenceLabel": "REMEDY one-time brand price",
+      "referenceUrl": "https://remedyskin.com/products/daily-defense-vitamin-c?variant=51510278127912",
+      "checkedDate": "2026-11-02",
+      "originalPhotoSHA256": "e9ff397a8dc7f143eba958181917c6f7f587eb8999b207f959c65cc04ea20089"
+    },
+    {
+      "id": "rose-futurebright-serum",
+      "brand": "ROSE Ingleton MD",
+      "name": "FutureBright Dark Spot Vitamin C Serum",
+      "price": "$68",
+      "priceNote": "ROSE Ingleton MD · one-time purchase",
+      "specs": [
+        "30 mL / 1 fl oz"
+      ],
+      "note": "The pink pump bottle from my screenshot. Choose one-time purchase and confirm delivery availability at the store.",
+      "caption": "FutureBright · official product photo",
+      "url": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706",
+      "actions": [
+        [
+          "Shop · ROSE Ingleton MD",
+          "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706"
+        ]
+      ],
+      "image": "/birthday/images/rose-futurebright-serum.jpg",
+      "imageStyle": "landscape",
+      "photoSource": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum",
+      "priceSourceUrl": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706",
+      "checkedDate": "2026-11-02",
+      "originalPhotoSHA256": "0c2c8f081c9c544cf913ce1fed5630f43845b8844020bd35d714ab62345ef1c2"
+    },
+    {
       "id": "canon-g7x",
       "brand": "Canon",
       "name": "Canon PowerShot G7 X",
