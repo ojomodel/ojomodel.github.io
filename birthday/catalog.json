@@ -195,38 +195,6 @@
       "checkedDate": "2026-11-02"
     },
     {
-      "id": "anua-rice-milk",
-      "brand": "ANUA",
-      "name": "Rice 70 Intensive Moisturizing Milk",
-      "price": "$19",
-      "priceNote": "Ulta · one-time purchase",
-      "specs": [
-        "150 mL / 5.07 fl oz"
-      ],
-      "note": "Check pickup at Shops at Bella Terra in Richmond, TX 77406. Local stock needs confirmation. Shipping is also offered.",
-      "caption": "150 mL / 5.07 fl oz",
-      "url": "https://www.ulta.com/p/rice-70-intensive-moisturizing-milk-pimprod2052156?sku=2641339",
-      "actions": [
-        [
-          "Check pickup · Ulta",
-          "https://www.ulta.com/p/rice-70-intensive-moisturizing-milk-pimprod2052156?sku=2641339"
-        ],
-        [
-          "Richmond store",
-          "https://www.ulta.com/stores/richmond-tx-567"
-        ]
-      ],
-      "image": "/birthday/images/anua-rice-milk.png",
-      "imageStyle": "cutout",
-      "photoSource": "https://www.ulta.com/p/rice-70-intensive-moisturizing-milk-pimprod2052156?sku=2641339",
-      "originalPhotoSHA256": "58d95ded5af27a6a4714b608f89cc6d34f3a4514a37c7d00221cbe19962f7e30",
-      "priceSourceUrl": "https://www.ulta.com/p/rice-70-intensive-moisturizing-milk-pimprod2052156?sku=2641339",
-      "referencePrice": "$19",
-      "referenceLabel": "Ulta list price",
-      "referenceUrl": "https://www.ulta.com/p/rice-70-intensive-moisturizing-milk-pimprod2052156?sku=2641339",
-      "checkedDate": "2026-11-02"
-    },
-    {
       "id": "anua-rice-barrier-serum",
       "brand": "ANUA",
       "name": "7 Rice Ceramide Hydrating Barrier Serum",
