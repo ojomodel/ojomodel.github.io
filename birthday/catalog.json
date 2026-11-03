@@ -227,34 +227,6 @@
       "checkedDate": "2026-11-02"
     },
     {
-      "id": "anua-vita-porestrix-serum",
-      "brand": "ANUA",
-      "name": "Vita 10 + Porestrix Brightening Serum",
-      "price": "$36.14",
-      "priceNote": "DODOSKIN · USD · one-time purchase",
-      "specs": [
-        "20 mL / 0.67 fl oz"
-      ],
-      "note": "Delivery from DODOSKIN. Shipping charges and delivery to 77406 are confirmed at checkout.",
-      "caption": "20 mL / 0.67 fl oz",
-      "url": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
-      "actions": [
-        [
-          "Shop delivery · DODOSKIN",
-          "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml"
-        ]
-      ],
-      "image": "/birthday/images/anua-vita-serum-official.png",
-      "imageStyle": "cutout",
-      "photoSource": "https://anuashop.jp/products/vita_10",
-      "originalPhotoSHA256": "099ee927aa6d59ed7d75784247f3b6847b4be27979b46aa32406992e440ad265",
-      "priceSourceUrl": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
-      "referencePrice": "$50.40",
-      "referenceLabel": "DODOSKIN list price",
-      "referenceUrl": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
-      "checkedDate": "2026-11-02"
-    },
-    {
       "id": "kisocare-azelaic-acid-15",
       "brand": "KISOCARE",
       "name": "Azelaic Acid Cream 15",
@@ -342,31 +314,6 @@
       "originalPhotoSHA256": "bc478121305d1a7d35a774ef6159cbb32985cae418557b56dcf2861c1ac13203",
       "priceSourceUrl": "https://www.ulta.com/p/vitamin-c-boosting-serum-pimprod2053609?sku=2647062",
       "checkedDate": "2026-11-02"
-    },
-    {
-      "id": "goodal-vitamin-c-serum",
-      "brand": "goodal",
-      "name": "Green Tangerine Vita-C Dark Spot Care Serum",
-      "price": "$22.32",
-      "priceNote": "Vitacost · one-time purchase",
-      "specs": [
-        "40 mL / 1.35 fl oz"
-      ],
-      "note": "The original yellow-bottle Green Tangerine serum. Delivery listing; confirm shipping to 77406 at checkout.",
-      "caption": "Original Green Tangerine Vita-C serum",
-      "url": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
-      "actions": [
-        [
-          "Delivery · Vitacost",
-          "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030"
-        ]
-      ],
-      "image": "/birthday/images/goodal-vitamin-c-serum.jpg",
-      "imageStyle": "cutout",
-      "photoSource": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
-      "priceSourceUrl": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
-      "checkedDate": "2026-11-02",
-      "originalPhotoSHA256": "c8ad94248c5a6bcc997c736429036216bd4f44f74be8e60f300c46673b81d8aa"
     },
     {
       "id": "medicube-kojic-serum",
@@ -1499,6 +1446,59 @@
       "referencePrice": "$20",
       "referenceLabel": "Ulta list price",
       "referenceUrl": "https://www.ulta.com/p/3-ceramide-panthenol-moisture-barrier-cream-pimprod2052161?sku=2641341",
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "id": "goodal-vitamin-c-serum",
+      "brand": "goodal",
+      "name": "Green Tangerine Vita-C Dark Spot Care Serum",
+      "price": "$22.32",
+      "priceNote": "Vitacost · one-time purchase",
+      "specs": [
+        "40 mL / 1.35 fl oz"
+      ],
+      "note": "The original yellow-bottle Green Tangerine serum. Delivery listing; confirm shipping to 77406 at checkout.",
+      "caption": "Original Green Tangerine Vita-C serum",
+      "url": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
+      "actions": [
+        [
+          "Delivery · Vitacost",
+          "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030"
+        ]
+      ],
+      "image": "/birthday/images/goodal-vitamin-c-serum.jpg",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
+      "priceSourceUrl": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
+      "checkedDate": "2026-11-02",
+      "originalPhotoSHA256": "c8ad94248c5a6bcc997c736429036216bd4f44f74be8e60f300c46673b81d8aa"
+    },
+    {
+      "id": "anua-vita-porestrix-serum",
+      "brand": "ANUA",
+      "name": "Vita 10 + Porestrix Brightening Serum",
+      "price": "$36.14",
+      "priceNote": "DODOSKIN · USD · one-time purchase",
+      "specs": [
+        "20 mL / 0.67 fl oz"
+      ],
+      "note": "Delivery from DODOSKIN. Shipping charges and delivery to 77406 are confirmed at checkout.",
+      "caption": "20 mL / 0.67 fl oz",
+      "url": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
+      "actions": [
+        [
+          "Shop delivery · DODOSKIN",
+          "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml"
+        ]
+      ],
+      "image": "/birthday/images/anua-vita-serum-official.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://anuashop.jp/products/vita_10",
+      "originalPhotoSHA256": "099ee927aa6d59ed7d75784247f3b6847b4be27979b46aa32406992e440ad265",
+      "priceSourceUrl": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
+      "referencePrice": "$50.40",
+      "referenceLabel": "DODOSKIN list price",
+      "referenceUrl": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
       "checkedDate": "2026-11-02"
     }
   ],
