@@ -1,0 +1,126 @@
+.birthday-messages {
+  max-width: 720px;
+  margin-block: 8px 34px;
+  color: var(--text, #f3f3f3);
+}
+
+.birthday-messages-heading {
+  margin: 0;
+  font: 500 clamp(23px, 3vw, 31px)/1.3 var(--sans, sans-serif);
+  letter-spacing: -.025em;
+}
+
+.birthday-messages-privacy {
+  margin: 9px 0 16px;
+  color: var(--muted, #b5b5b5);
+  font: 400 12px/1.7 var(--sans, sans-serif);
+}
+
+.birthday-message-input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 124px;
+  max-height: 380px;
+  resize: vertical;
+  border: 1px solid var(--line, #333);
+  border-radius: 2px;
+  padding: 14px 15px;
+  background: var(--surface, #141414);
+  color: var(--text, #f3f3f3);
+  font: 400 16px/1.7 var(--sans, sans-serif);
+}
+
+.birthday-message-input::placeholder { color: var(--muted, #b5b5b5); opacity: 1; }
+.birthday-message-input[aria-invalid="true"] { border-color: #f0abab; }
+.birthday-message-controls,
+.birthday-message-inbox-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-top: 12px;
+}
+
+.birthday-messages button {
+  min-height: 44px;
+  max-width: 100%;
+  border: 1px solid var(--line, #333);
+  border-radius: 2px;
+  padding: 10px 19px;
+  background: transparent;
+  color: var(--text, #f3f3f3);
+  cursor: pointer;
+  font: 400 12px/1.6 var(--mono, monospace);
+}
+
+.birthday-messages .birthday-message-send {
+  min-width: 150px;
+  border-color: var(--text, #f3f3f3);
+  background: var(--text, #f3f3f3);
+  color: var(--bg, #0a0a0a);
+}
+
+.birthday-messages button:hover:not(:disabled) { opacity: .83; }
+.birthday-messages button:disabled { cursor: default; opacity: .6; }
+.birthday-messages button:focus-visible,
+.birthday-message-input:focus-visible,
+.birthday-message-inbox-summary:focus-visible {
+  outline: 2px solid var(--text, #f3f3f3);
+  outline-offset: 3px;
+}
+
+.birthday-message-counter {
+  margin-left: auto;
+  color: var(--muted, #b5b5b5);
+  font: 400 11px/1.7 var(--mono, monospace);
+}
+
+.birthday-message-counter[data-over-limit="true"],
+.birthday-message-form[data-status="error"] .birthday-message-status { color: #f0abab; }
+.birthday-message-status,
+.birthday-message-inbox-status,
+.birthday-message-empty {
+  margin: 10px 0 0;
+  color: var(--muted, #b5b5b5);
+  font: 400 12px/1.7 var(--sans, sans-serif);
+  overflow-wrap: anywhere;
+}
+
+.birthday-message-status:empty,
+.birthday-message-inbox-status:empty { display: none; }
+.birthday-message-form[data-status="success"] .birthday-message-status { color: var(--text, #f3f3f3); }
+.birthday-message-inbox {
+  margin-top: 26px;
+  border-top: 1px solid var(--line, #333);
+}
+
+.birthday-message-inbox-summary {
+  min-height: 44px;
+  padding-block: 13px;
+  cursor: pointer;
+  font: 400 13px/1.6 var(--sans, sans-serif);
+}
+
+.birthday-message-loaded-count,
+.birthday-message-date {
+  color: var(--muted, #b5b5b5);
+  font: 400 11px/1.7 var(--mono, monospace);
+}
+
+.birthday-message-inbox-controls { margin-top: 1px; }
+.birthday-message-notes { margin: 19px 0 0; padding: 0; list-style: none; }
+.birthday-message-note { margin: 0; padding-block: 16px; border-top: 1px solid var(--line, #333); }
+.birthday-message-note-text {
+  margin: 7px 0 0;
+  color: var(--text, #f3f3f3);
+  font: 400 14px/1.75 var(--sans, sans-serif);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.birthday-messages [hidden] { display: none !important; }
+@media (max-width: 380px) {
+  .birthday-message-controls { gap: 10px; }
+  .birthday-messages .birthday-message-send { min-width: 138px; padding-inline: 13px; }
+}

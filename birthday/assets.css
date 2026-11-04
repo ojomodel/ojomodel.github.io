@@ -10,6 +10,17 @@
 .birthday-shell *::after { box-sizing: border-box; }
 
 .birthday-hero { padding: 48px 0 28px; }
+.birthday-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 410px); align-items: start; gap: clamp(30px, 6vw, 76px); }
+.birthday-intro-copy { min-width: 0; }
+.birthday-hero .birthday-priority-note { max-width: 34ch; margin-top: 24px; color: var(--text); font: 400 clamp(18px, 2.1vw, 23px)/1.45 var(--sans); letter-spacing: -.025em; }
+.birthday-pickup { margin-top: 24px; color: var(--muted); font: 400 14px/1.8 var(--sans); }
+.birthday-pickup strong { color: var(--text); font-weight: 500; }
+.birthday-pickup p + p { margin-top: 5px; }
+.birthday-contact { display: flex; flex-wrap: wrap; gap: 15px 30px; margin-top: 24px; font-style: normal; }
+.birthday-contact a { display: flex; flex-direction: column; justify-content: center; min-height: 44px; max-width: 100%; gap: 3px; }
+.birthday-contact span { color: var(--muted); font: 400 10px/1.6 var(--mono); }
+.birthday-contact strong { color: var(--text); font: 400 14px/1.6 var(--sans); overflow-wrap: anywhere; }
+.birthday-contact a:hover strong { text-decoration: underline; text-underline-offset: 4px; }
 .birthday-hero .eyebrow,
 .birthday-eyebrow {
   display: block;
@@ -326,6 +337,8 @@
 @media (max-width: 780px) {
   .birthday-shell { width: calc(100% - 48px); }
   .birthday-hero { padding-top: 58px; }
+  .birthday-intro { grid-template-columns: minmax(0, 1fr); gap: 34px; }
+  .birthday-contact { gap: 12px 28px; }
   .birthday-section { padding-top: 58px; scroll-margin-top: 102px; }
   .birthday-shell .gift-row { grid-template-columns: 180px minmax(0, 1fr); column-gap: 28px; }
   .birthday-shell .gift-title { font-size: 23px; }
