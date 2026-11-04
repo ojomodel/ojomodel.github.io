@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-03",
+  "lastReviewed": "2026-11-04",
   "pickupZip": "77406",
   "pickupNote": "If it’s pickup, I’ll go pick it up myself—just text me.",
   "items": [
@@ -441,18 +441,18 @@
       "id": "adidas-evo-sl",
       "brand": "adidas",
       "name": "Adizero EVO SL running shoes",
-      "price": "$150",
-      "priceNote": "Nordstrom · Black · listed price",
+      "price": "Check US 7 price & stock",
+      "priceNote": "Nordstrom · Black listing $112.50",
       "specs": [
         "Men’s US 7",
         "Core Black / Cloud White / Carbon"
       ],
-      "note": "Nordstrom lists Black at $150. Men’s US 7 stock and pickup need confirmation. A November 2 check offered ship-to-store pickup at Nordstrom Rack Market at Town Center in Sugar Land, with November 7 arrival shown. adidas lists $120, with size 7 availability unverified.",
+      "note": "Nordstrom’s Black listing shows $112.50, down from $150 (25% off). Confirm the price, stock and pickup options for men’s US 7. A November 2 check offered ship-to-store pickup at Nordstrom Rack Market at Town Center in Sugar Land, with November 7 arrival shown. adidas lists $120, with size 7 availability unverified.",
       "caption": "Black JR4728 · official adidas photo",
       "url": "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090",
       "actions": [
         [
-          "Check pickup · Nordstrom · $150",
+          "Check size 7 & pickup · Nordstrom",
           "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090"
         ],
         [
@@ -461,13 +461,14 @@
         ]
       ],
       "image": "/birthday/images/adidas-evo-sl-black.jpg",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-04",
       "photoSource": "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090",
       "referencePrice": "$150",
       "referenceLabel": "adidas original price",
-      "referenceUrl": "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html"
+      "referenceUrl": "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html",
+      "unverified": true
     },
     {
       "id": "birkenstock-boston",
