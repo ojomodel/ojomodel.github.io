@@ -1,0 +1,92 @@
+.birthday-claims-notice {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 24px;
+  color: var(--muted, #b5b5b5);
+  font: 400 12px/1.7 var(--sans, sans-serif);
+}
+
+.birthday-claims-status { flex: 1 1 260px; min-width: 0; margin: 0; }
+.birthday-claim {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: center;
+  gap: 8px 16px;
+  margin-top: 20px;
+  min-width: 0;
+  color: var(--text, #f3f3f3);
+}
+
+.birthday-claim button,
+.birthday-claims-notice button {
+  min-height: 44px;
+  max-width: 100%;
+  border: 1px solid var(--line, #333);
+  border-radius: 2px;
+  padding: 9px 13px;
+  background: transparent;
+  color: var(--text, #f3f3f3);
+  cursor: pointer;
+  font: 400 12px/1.5 var(--mono, monospace);
+}
+
+.birthday-claim .birthday-claim-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  min-height: 46px;
+  padding: 8px 13px 8px 9px;
+  text-align: left;
+}
+
+.birthday-claim-check {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--muted, #b5b5b5);
+  color: transparent;
+  font: 600 18px/1 var(--sans, sans-serif);
+}
+
+.birthday-claim-toggle[aria-pressed="true"] .birthday-claim-check {
+  background: var(--text, #f3f3f3);
+  border-color: var(--text, #f3f3f3);
+  color: var(--bg, #0a0a0a);
+}
+
+.birthday-claim button:hover:not(:disabled),
+.birthday-claims-notice button:hover:not(:disabled) { background: var(--surface, #181818); }
+.birthday-claim button:focus-visible,
+.birthday-claims-notice button:focus-visible {
+  outline: 2px solid var(--text, #f3f3f3);
+  outline-offset: 3px;
+}
+
+.birthday-claim button:disabled,
+.birthday-claims-notice button:disabled { cursor: default; color: var(--muted, #b5b5b5); }
+.birthday-claim-toggle[aria-busy="true"] { opacity: .7; }
+.birthday-claim-detail { min-width: 0; font: 400 12px/1.7 var(--sans, sans-serif); }
+.birthday-claim-count { display: block; color: var(--muted, #b5b5b5); overflow-wrap: anywhere; }
+.birthday-claim-self { display: block; color: var(--text, #f3f3f3); }
+.birthday-claim-message {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--muted, #b5b5b5);
+  font: 400 12px/1.7 var(--sans, sans-serif);
+  overflow-wrap: anywhere;
+}
+
+.birthday-claim[data-claim-state="error"] .birthday-claim-message { color: #f0abab; }
+.birthday-claim .birthday-claim-retry { justify-self: start; }
+.birthday-claim [hidden],
+.birthday-claims-notice [hidden] { display: none !important; }
+
+@media (max-width: 520px) {
+  .birthday-claim { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .birthday-claim .birthday-claim-toggle { justify-self: start; }
+}
