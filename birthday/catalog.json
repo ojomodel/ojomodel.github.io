@@ -48,7 +48,7 @@
         "1 kg per spool"
       ],
       "note": "Five separate black 1 kg spools of 1.75 mm PLA (5 kg total). On Amazon, choose Black / 1 kg and set quantity to 5. Current price and availability could not be confirmed on November 3. The saved November 2 offer was $12.59 per spool, $62.95 for five before tax. The November 2 Amazon typical-price comparison was $13.99 each / $69.95 for five.",
-      "caption": "Black PLA · 1 kg spool pictured",
+      "caption": "Black PLA · one 1 kg spool pictured",
       "url": "https://www.amazon.com/dp/B07XG3RM58",
       "actions": [
         [
@@ -56,7 +56,7 @@
           "https://www.amazon.com/dp/B07XG3RM58"
         ]
       ],
-      "image": "/birthday/images/black-pla-filament.jpg",
+      "image": "/birthday/images/black-pla-filament-product-only.png",
       "imageStyle": "cutout",
       "checkedDate": "2026-11-03",
       "quantity": 5,
@@ -65,7 +65,8 @@
       "referencePrice": "$62.95 for 5",
       "referenceLabel": "Amazon offer · November 2 · $12.59 per 1 kg spool",
       "referenceUrl": "https://www.amazon.com/dp/B07XG3RM58",
-      "unverified": true
+      "unverified": true,
+      "photoSource": "https://www.3dfoxshop.de/sunlu-pla-filament-schwarz-1-75-mm-1-kg/"
     },
     {
       "id": "rk-r75-keyboard",
@@ -247,7 +248,7 @@
           "https://kisocare.com/products/15-azelaic-acid-face-cream-20g"
         ]
       ],
-      "image": "/birthday/images/kisocare-azelaic-acid-15.jpg",
+      "image": "/birthday/images/kisocare-azelaic-acid-15-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g",
       "originalPhotoSHA256": "9fd2f944b8687836dd3bf70d96ad6c53c955e7121a2391e94161940b569ecc0d",
@@ -448,7 +449,7 @@
         "Core Black / Cloud White / Carbon"
       ],
       "note": "Nordstrom’s Black listing shows $112.50, down from $150 (25% off). Confirm the price, stock and pickup options for men’s US 7. A November 2 check offered ship-to-store pickup at Nordstrom Rack Market at Town Center in Sugar Land, with November 7 arrival shown. adidas lists $120, with size 7 availability unverified.",
-      "caption": "Black JR4728 · official adidas photo",
+      "caption": "Black JR4728 · official adidas product photo",
       "url": "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090",
       "actions": [
         [
@@ -460,7 +461,7 @@
           "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html"
         ]
       ],
-      "image": "/birthday/images/adidas-evo-sl-black.jpg",
+      "image": "/birthday/images/adidas-evo-sl-product.png",
       "checkedDate": "2026-11-04",
       "photoSource": "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html",
       "imageStyle": "cutout",
@@ -486,7 +487,7 @@
         "Men’s US 7–7.5 / EU 40"
       ],
       "note": "My men’s size 7 is Birkenstock’s 7–7.5 / EU 40. Choose Regular/Wide in Black. This exact selection is available for delivery; local pickup has not been confirmed.",
-      "caption": "Black suede detail · official Birkenstock photo",
+      "caption": "Black suede · official Birkenstock product photo",
       "url": "https://www.birkenstock.com/us/boston-soft-footbed-suede-leather/boston-suede-suedeleather-softfootbed-eva-u_49.html",
       "actions": [
         [
@@ -498,12 +499,12 @@
           "https://www.birkenstock.com/us/us-service-fittingguide.html"
         ]
       ],
-      "image": "/birthday/images/boston-black-official-material.jpg",
-      "imageStyle": "landscape",
+      "image": "/birthday/images/boston-black-product.png",
+      "imageStyle": "cutout",
       "photoSource": "https://www.birkenstock.com/us/boston-soft-footbed-suede-leather/boston-suede-suedeleather-softfootbed-eva-u_49.html",
       "alternate": {
-        "label": "View the whole shoe",
-        "image": "/birthday/images/boston-black-official-product.jpg"
+        "label": "View suede detail",
+        "image": "/birthday/images/boston-black-detail.png"
       },
       "checkedDate": "2026-11-03"
     },
@@ -519,7 +520,7 @@
         "Newest announced model"
       ],
       "note": "PROLED XDR model. Currently on preorder; available starting November 6. The listed price is for M5 Pro, 24GB memory and 1TB storage; configuration can be changed.",
-      "caption": "Apple product photo · Space Black",
+      "caption": "16-inch · Space Black · Apple product photo",
       "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr/16-inch-space-black-standard-display-apple-m5-pro-chip-18-core-cpu-20-core-gpu-24gb-memory-1tb-storage",
       "actions": [
         [
@@ -531,10 +532,10 @@
           "https://www.apple.com/retail/firstcolonymall/"
         ]
       ],
-      "image": "/birthday/images/macbook-pro-dark-16-editorial.jpg",
+      "image": "/birthday/images/macbook-pro-product-only.png",
       "checkedDate": "2026-11-03",
-      "photoSource": "https://www.apple.com/macbook-pro/proled-xdr-display/",
-      "imageStyle": "landscape",
+      "photoSource": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr/16-inch-space-black-standard-display-apple-m5-pro-chip-18-core-cpu-20-core-gpu-24gb-memory-1tb-storage",
+      "imageStyle": "cutout",
       "priceSourceUrl": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr/16-inch-space-black-standard-display-apple-m5-pro-chip-18-core-cpu-20-core-gpu-24gb-memory-1tb-storage",
       "referencePrice": "$3,399",
       "referenceLabel": "Apple retail price · same configuration",
@@ -557,7 +558,7 @@
         "Adjustable bass"
       ],
       "note": "Two desktop speakers and a 4-inch subwoofer with adjustable bass; 9 W RMS total, wired 3.5 mm audio and AC adapter. Current price, seller and shipping to 77406 could not be confirmed on November 3. The saved November 2 offer was $37.99 sold by Cyber Acoustics and shipped by Amazon. Keep the item price under $50.",
-      "caption": "Official CA-3090 desk setup",
+      "caption": "CA-3090 · full speaker set",
       "url": "https://www.amazon.com/dp/B00006B9W1",
       "actions": [
         [
@@ -565,12 +566,8 @@
           "https://www.amazon.com/dp/B00006B9W1"
         ]
       ],
-      "image": "/birthday/images/pc-speakers-ca3090-desk.jpg",
-      "imageStyle": "lifestyle",
-      "alternate": {
-        "label": "See the full speaker set",
-        "image": "/birthday/images/pc-speakers-ca3090-product.jpg"
-      },
+      "image": "/birthday/images/pc-speakers-product-only.png",
+      "imageStyle": "cutout",
       "photoSource": "https://www.cyberacoustics.com/ca3090",
       "checkedDate": "2026-11-03",
       "unverified": true
@@ -588,7 +585,7 @@
         "90–480°C"
       ],
       "note": "Adjustable station with two helping hands, six spare tips, solder sucker, tweezers and 35 g of lead-free solder. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
-      "caption": "Black station in use · original listing photo",
+      "caption": "926LED-III · Black station and included kit",
       "url": "https://www.amazon.com/dp/B082F1WKP9",
       "actions": [
         [
@@ -596,8 +593,8 @@
           "https://www.amazon.com/dp/B082F1WKP9"
         ]
       ],
-      "image": "/birthday/images/yihua-soldering-station.jpg",
-      "imageStyle": "lifestyle",
+      "image": "/birthday/images/yihua-soldering-station-product-only.png",
+      "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B082F1WKP9",
       "checkedDate": "2026-11-03",
       "referencePrice": "$44.99",
@@ -626,7 +623,7 @@
           "https://www.amazon.com/dp/B00AVLM4SO"
         ]
       ],
-      "image": "/birthday/images/electronics-solder-wire.jpg",
+      "image": "/birthday/images/electronics-solder-wire-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.cmlsupply.com/kester-44-solder-wire-63-37-0-031-rma-rosin-1oz-tube/",
       "checkedDate": "2026-11-03",
@@ -656,7 +653,7 @@
           "https://www.amazon.com/dp/B008OC0E5M"
         ]
       ],
-      "image": "/birthday/images/electronics-flux-pen.jpg",
+      "image": "/birthday/images/electronics-flux-pen-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B008OC0E5M",
       "checkedDate": "2026-11-03",
@@ -678,7 +675,7 @@
         "10–22 AWG"
       ],
       "note": "Wire stripper, cutter and terminal crimper with a pliers nose. Select the 10–22 AWG model. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
-      "caption": "Exact 2078309 tool",
+      "caption": "IRWIN 2078309 · exact tool",
       "url": "https://www.amazon.com/dp/B000JNNWQ2",
       "actions": [
         [
@@ -686,8 +683,8 @@
           "https://www.amazon.com/dp/B000JNNWQ2"
         ]
       ],
-      "image": "/birthday/images/wire-strippers.jpg",
-      "imageStyle": "lifestyle",
+      "image": "/birthday/images/wire-strippers-product-only.png",
+      "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B000JNNWQ2",
       "checkedDate": "2026-11-03",
       "referencePrice": "$12.99",
@@ -708,7 +705,7 @@
         "M3 × 5.7 mm"
       ],
       "note": "Choose RX-M3x5.7, 100 pieces in the Amazon results. The exact M3 variant and current price could not be confirmed on November 3; a previous check opened a different thread size. Design printed holes for the chosen insert.",
-      "caption": "Exact RX-M3x5.7 inserts",
+      "caption": "RX-M3x5.7 insert detail · 100 pieces requested",
       "url": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
       "actions": [
         [
@@ -716,7 +713,7 @@
           "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
         ]
       ],
-      "image": "/birthday/images/heat-set-threaded-inserts.jpg",
+      "image": "/birthday/images/heat-set-threaded-inserts-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.3djake.de/ruthex/gewindeeinsatz-m3-100-stueck",
       "checkedDate": "2026-11-03",
@@ -743,7 +740,7 @@
           "https://www.amazon.com/dp/B0852JZQZR"
         ]
       ],
-      "image": "/birthday/images/bench-power-supply.jpg",
+      "image": "/birthday/images/bench-power-supply-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0852JZQZR",
       "checkedDate": "2026-11-03",
@@ -773,7 +770,7 @@
           "https://www.amazon.com/dp/B0948ZFTQZ"
         ]
       ],
-      "image": "/birthday/images/esp32-cam-kit.jpg",
+      "image": "/birthday/images/esp32-cam-kit-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0948ZFTQZ",
       "checkedDate": "2026-11-03",
@@ -802,7 +799,7 @@
           "https://www.amazon.com/dp/B01EV70C78"
         ]
       ],
-      "image": "/birthday/images/connecting-wires.jpg",
+      "image": "/birthday/images/connecting-wires-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B01EV70C78",
       "checkedDate": "2026-11-03",
@@ -832,7 +829,7 @@
           "https://www.amazon.com/dp/B0CWSR77Q9"
         ]
       ],
-      "image": "/birthday/images/nema17-closed-loop-kit.jpg",
+      "image": "/birthday/images/nema17-closed-loop-kit-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0CWSR77Q9",
       "checkedDate": "2026-11-03",
@@ -863,7 +860,7 @@
           "https://www.amazon.com/dp/B0B38GX54H"
         ]
       ],
-      "image": "/birthday/images/budget-nema17-stepper.jpg",
+      "image": "/birthday/images/budget-nema17-stepper-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/e-series-nema-17-bipolar-42ncm-59-49oz-in-1-5a-42x42x38mm-4-wires-w-1m-cable-connector-17he15-1504s",
       "checkedDate": "2026-11-03",
@@ -893,7 +890,7 @@
           "https://www.amazon.com/dp/B082PY8F6G"
         ]
       ],
-      "image": "/birthday/images/6806zz-radial-bearing.jpg",
+      "image": "/birthday/images/6806zz-radial-bearing-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B082PY8F6G",
       "checkedDate": "2026-11-03",
@@ -923,7 +920,7 @@
           "https://www.amazon.com/dp/B07G83D98C"
         ]
       ],
-      "image": "/birthday/images/51110-thrust-bearing.jpg",
+      "image": "/birthday/images/51110-thrust-bearing-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07G83D98C",
       "checkedDate": "2026-11-03",
@@ -953,7 +950,7 @@
           "https://www.amazon.com/dp/B07H83VV6B"
         ]
       ],
-      "image": "/birthday/images/small-radial-bearings.jpg",
+      "image": "/birthday/images/small-radial-bearings-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07H83VV6B",
       "checkedDate": "2026-11-03",
@@ -983,8 +980,8 @@
           "https://www.amazon.com/dp/B0027ROZ9G"
         ]
       ],
-      "image": "/birthday/images/gridded-workbench-mat.jpg",
-      "imageStyle": "cutout",
+      "image": "/birthday/images/gridded-workbench-mat-product-only.png",
+      "imageStyle": "landscape",
       "photoSource": "https://www.amazon.com/dp/B0027ROZ9G",
       "checkedDate": "2026-11-03",
       "unverified": true,
@@ -1013,7 +1010,7 @@
           "https://www.amazon.com/dp/B0B57DQZHF"
         ]
       ],
-      "image": "/birthday/images/robotics-assembly-supplies.jpg",
+      "image": "/birthday/images/robotics-assembly-supplies-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0B57DQZHF",
       "checkedDate": "2026-11-03",
@@ -1033,7 +1030,7 @@
         "Black pictured"
       ],
       "note": "Pace Breaker Jacket in Medium. Check pickup near 77406 first.",
-      "caption": "Pace Breaker · Black",
+      "caption": "Pace Breaker Jacket · Black · product photo",
       "url": "https://shop.lululemon.com/p/pace-breaker-jacket/okckgak95v?color=0001",
       "actions": [
         [
@@ -1045,10 +1042,10 @@
           "https://shop.lululemon.com/stores/us/katy/lacenterra-at-cinco-ranch"
         ]
       ],
-      "image": "/birthday/images/lululemon-pace-breaker-jacket.jpg",
+      "image": "/birthday/images/lululemon-pace-breaker-black-product.png",
       "checkedDate": "2026-11-03",
       "photoSource": "https://shop.lululemon.com/p/pace-breaker-jacket/okckgak95v?color=0001",
-      "imageStyle": "portrait",
+      "imageStyle": "cutout",
       "priceSourceUrl": "https://shop.lululemon.com/p/pace-breaker-jacket/okckgak95v?color=0001",
       "referencePrice": "$168",
       "referenceLabel": "Regular price",
@@ -1064,7 +1061,7 @@
         "Black / Graphite Grey"
       ],
       "note": "The exact New Crew Backpack Large 30L from my link. Check pickup near 77406 first.",
-      "caption": "Exact 30L backpack",
+      "caption": "New Crew 30L Â· Black / Graphite Grey",
       "url": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
       "actions": [
         [
@@ -1076,11 +1073,11 @@
           "https://shop.lululemon.com/stores/us/katy/lacenterra-at-cinco-ranch"
         ]
       ],
-      "image": "/birthday/images/lululemon-backpack-30l.jpg",
+      "image": "/birthday/images/lululemon-backpack-30l-product.png",
       "checkedDate": "2026-11-03",
       "priceNote": "lululemon",
       "photoSource": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
-      "imageStyle": "portrait",
+      "imageStyle": "cutout",
       "priceSourceUrl": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
       "referencePrice": "$128",
       "referenceLabel": "Regular price",
@@ -1095,8 +1092,8 @@
         "Local appointment"
       ],
       "note": "Starting package price. Confirm vehicle, windows included and film with the shop.",
-      "caption": "Tint example · Motorsport Film and Restoration",
-      "photoSource": "https://www.motorsportfilmandrestoration.com/projects-7",
+      "caption": "Window film example",
+      "photoSource": "https://vvividshop.com/products/vvivid-dark-black-transparent-window-tint",
       "url": "https://www.nixmobiledetail.com/window-tint-richmond-tx",
       "actions": [
         [
@@ -1104,9 +1101,9 @@
           "https://www.nixmobiledetail.com/window-tint-richmond-tx"
         ]
       ],
-      "image": "/birthday/images/window-tint.jpg",
+      "image": "/birthday/images/window-tint-product.png",
       "checkedDate": "2026-11-03",
-      "imageStyle": "landscape",
+      "imageStyle": "cutout",
       "priceSourceUrl": "https://www.nixmobiledetail.com/window-tint-richmond-tx",
       "priceNote": "Nix Mobile Detail · starting package"
     },
@@ -1119,7 +1116,7 @@
         "30 × 30"
       ],
       "note": "B01 double-front work pants in 30 × 30. Current price and stock for this size could not be reverified. Check Academy Cinco Ranch pickup and the selected size’s final price; in-cart offers may differ. Black is pictured.",
-      "caption": "Styling photo · worn B01",
+      "caption": "B01 Â· Black Â· product photo",
       "url": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant",
       "actions": [
         [
@@ -1131,10 +1128,10 @@
           "https://www.academy.com/storelocator/texas/richmond/store-0165"
         ]
       ],
-      "image": "/birthday/images/carhartt-b01-editorial.jpg",
+      "image": "/birthday/images/carhartt-b01-black-product.png",
       "checkedDate": "2026-11-03",
-      "photoSource": "https://shop.mavazi.jp/items/109109797",
-      "imageStyle": "landscape",
+      "photoSource": "https://item.rakuten.co.jp/crossface/10000357/",
+      "imageStyle": "cutout",
       "priceNote": "Academy · exact-size price unverified",
       "priceSourceUrl": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant",
       "referencePrice": "$59.99",
@@ -1153,7 +1150,7 @@
         "Black"
       ],
       "note": "Waterproof GORE-TEX shell with a water-repellent finish. Select Black / Medium; Black Sapphire is a different color. Exact price and stock need confirmation. Check REI pickup near 77406 first.",
-      "caption": "Beta Jacket · Black",
+      "caption": "Beta Jacket Â· Black Â· official product photo",
       "url": "https://www.rei.com/product/228617/arcteryx-beta-jacket-mens",
       "actions": [
         [
@@ -1169,10 +1166,10 @@
           "https://www.rei.com/stores/houston-galleria"
         ]
       ],
-      "image": "/birthday/images/arcteryx-beta-editorial.jpg",
+      "image": "/birthday/images/arcteryx-beta-black-product.png",
       "checkedDate": "2026-11-03",
       "photoSource": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868",
-      "imageStyle": "portrait",
+      "imageStyle": "cutout",
       "priceSourceUrl": "https://www.rei.com/product/228617/arcteryx-beta-jacket-mens",
       "referencePrice": "$400",
       "referenceLabel": "Arc’teryx retail reference · verify Black / Medium",
@@ -1182,7 +1179,7 @@
     {
       "number": 1,
       "id": "tiktok-camo-jorts",
-      "image": "/birthday/images/tiktok-camo-jorts.webp",
+      "image": "/birthday/images/fdr-camo-jorts-product.png",
       "brand": "FDR",
       "name": "Camo & yellow 3/4 jorts",
       "price": "Check current price",
@@ -1192,7 +1189,7 @@
         "Camo & yellow"
       ],
       "note": "Camo and yellow, Medium. My original TikTok Shop product. Current price and stock could not be verified; check the selected color.",
-      "caption": "Matching camo pair",
+      "caption": "Camo jorts Â· original product photo",
       "url": "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726",
       "actions": [
         [
@@ -1204,12 +1201,14 @@
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726",
       "unverified": true,
       "referencePrice": "$40.99",
-      "referenceLabel": "Saved cart · Camo / M · not current"
+      "referenceLabel": "Saved cart · Camo / M · not current",
+      "photoSource": "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726",
+      "imageStyle": "cutout"
     },
     {
       "number": 2,
       "id": "tiktok-fb-shorts",
-      "image": "/birthday/images/tiktok-fb-shorts.webp",
+      "image": "/birthday/images/tiktok-fb-shorts-product-only.png",
       "brand": "FB County",
       "name": "Heavyweight Basketball Mesh Shorts",
       "price": "Check current Medium price",
@@ -1218,7 +1217,7 @@
         "All colors"
       ],
       "note": "Medium, all colors. Black is pictured. Check the current TikTok Shop price for the color you select.",
-      "caption": "Matching black shorts",
+      "caption": "Black · retailer product photo",
       "url": "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089",
       "actions": [
         [
@@ -1232,12 +1231,14 @@
       "referencePrice": "$29.99",
       "referenceLabel": "FB County website price",
       "referenceUrl": "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts",
-      "unverified": true
+      "unverified": true,
+      "photoSource": "https://lapuerta-japan.com/?pid=187543162",
+      "imageStyle": "cutout"
     },
     {
       "number": 3,
       "id": "shaka-long-sleeve",
-      "image": "/birthday/images/shaka-long-sleeve-black-editorial.jpg",
+      "image": "/birthday/images/shaka-long-sleeve-black-product.png",
       "brand": "Shaka Wear",
       "name": "Oversized long-sleeve tee",
       "price": "Check current price",
@@ -1247,10 +1248,10 @@
         "White & black"
       ],
       "note": "White and black, Small. Check the current price on my TikTok Shop listing.",
-      "caption": "Black · Shaka Wear photo",
+      "caption": "Black · product photo",
       "alternate": {
-        "label": "View white",
-        "image": "/birthday/images/shaka-long-sleeve-white-editorial.jpg"
+        "label": "View White",
+        "image": "/birthday/images/shaka-long-sleeve-white-product.png"
       },
       "url": "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889",
       "actions": [
@@ -1260,8 +1261,8 @@
         ]
       ],
       "checkedDate": "2026-11-03",
-      "imageStyle": "portrait",
-      "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve",
+      "imageStyle": "cutout",
+      "photoSource": "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889",
       "referencePrice": "$17.90",
       "referenceLabel": "Shaka Wear retail price",
@@ -1271,7 +1272,7 @@
     {
       "number": 4,
       "id": "shaka-oversized-tee",
-      "image": "/birthday/images/shaka-oversized-tee-burgundy-editorial.jpg",
+      "image": "/birthday/images/shaka-oversized-tee-burgundy-product.png",
       "brand": "Shaka Wear",
       "name": "Oversized short-sleeve tee",
       "price": "Check current Medium price",
@@ -1281,10 +1282,10 @@
         "Deep Burgundy & Dark Navy"
       ],
       "note": "Deep Burgundy and Dark Navy, Medium. Check the current Medium price on my TikTok Shop listing; the brand’s reference price varies by selection.",
-      "caption": "Deep Burgundy · Shaka Wear photo",
+      "caption": "Deep Burgundy · product photo",
       "alternate": {
         "label": "View navy",
-        "image": "/birthday/images/shaka-oversized-tee-navy-editorial.jpg"
+        "image": "/birthday/images/shaka-oversized-tee-navy-product.png"
       },
       "url": "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105",
       "actions": [
@@ -1295,8 +1296,8 @@
       ],
       "checkedDate": "2026-11-03",
       "unverified": true,
-      "imageStyle": "portrait",
-      "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee",
+      "imageStyle": "cutout",
+      "photoSource": "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105",
       "referencePrice": "From $13.90",
       "referenceLabel": "Shaka Wear retail price",
@@ -1336,7 +1337,7 @@
         "Richmond, TX"
       ],
       "note": "Free initial consultation. Treatment price is quoted after an assessment.",
-      "caption": "Service photo",
+      "caption": "Braces demonstration model · treatment example",
       "url": "https://www.smilestudioortho.com/request-your-appointment/",
       "actions": [
         [
@@ -1344,11 +1345,12 @@
           "https://www.smilestudioortho.com/request-your-appointment/"
         ]
       ],
-      "image": "/birthday/images/braces.jpg",
+      "image": "/birthday/images/braces-model-product.png",
       "checkedDate": "2026-11-03",
-      "imageStyle": "landscape",
+      "imageStyle": "cutout",
       "priceSourceUrl": "https://www.smilestudioortho.com/request-your-appointment/",
-      "priceNote": "Smile Studio Orthodontics"
+      "priceNote": "Smile Studio Orthodontics",
+      "photoSource": "https://www.jnjortho.com/product-page/orthodontic-model-with-metal-brackets"
     },
     {
       "id": "anua-niacinamide-txa",
@@ -1432,7 +1434,7 @@
           "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030"
         ]
       ],
-      "image": "/birthday/images/goodal-vitamin-c-serum.jpg",
+      "image": "/birthday/images/goodal-vitamin-c-serum-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
       "priceSourceUrl": "https://www.vitacost.com/products/goodal-vita-c-dark-spot-care-serum-1-35-fl-oz-40-ml-153030",
@@ -1457,7 +1459,7 @@
           "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml"
         ]
       ],
-      "image": "/birthday/images/anua-vita-serum-official.png",
+      "image": "/birthday/images/anua-vita-porestrix-serum-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://anuashop.jp/products/vita_10",
       "originalPhotoSHA256": "099ee927aa6d59ed7d75784247f3b6847b4be27979b46aa32406992e440ad265",
@@ -1477,7 +1479,7 @@
         "30 mL / 1 fl oz"
       ],
       "note": "The amber bottle with the white pump from my screenshot. Check Target pickup around 77406 first; exact local stock needs confirmation.",
-      "caption": "For Daily Defense · official product photo",
+      "caption": "30 mL · Target product photo",
       "url": "https://www.target.com/p/-/A-94823365",
       "actions": [
         [
@@ -1489,9 +1491,9 @@
           "https://remedyskin.com/products/daily-defense-vitamin-c?variant=51510278127912"
         ]
       ],
-      "image": "/birthday/images/remedy-vitamin-c-serum.jpg",
-      "imageStyle": "landscape",
-      "photoSource": "https://remedyskin.com/products/daily-defense-vitamin-c",
+      "image": "/birthday/images/remedy-vitamin-c-serum-product-only.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.target.com/p/-/A-94823365",
       "priceSourceUrl": "https://www.target.com/p/-/A-94823365",
       "referencePrice": "$28",
       "referenceLabel": "REMEDY one-time brand price",
@@ -1509,7 +1511,7 @@
         "30 mL / 1 fl oz"
       ],
       "note": "The pink pump bottle from my screenshot. Choose one-time purchase and confirm delivery availability at the store.",
-      "caption": "FutureBright · official product photo",
+      "caption": "30 mL · official product photo",
       "url": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706",
       "actions": [
         [
@@ -1517,8 +1519,8 @@
           "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706"
         ]
       ],
-      "image": "/birthday/images/rose-futurebright-serum.jpg",
-      "imageStyle": "landscape",
+      "image": "/birthday/images/rose-futurebright-serum-product-only.png",
+      "imageStyle": "cutout",
       "photoSource": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum",
       "priceSourceUrl": "https://rosemdskin.com/products/futurebright-dark-spot-vitamin-c-serum?variant=40956280176706",
       "checkedDate": "2026-11-03",
