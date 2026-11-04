@@ -24,6 +24,78 @@
   }
   if (!keyPattern.test(ownerKey)) ownerKey = '';
 
+  const idPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+  const validId = id => typeof id === 'string' && id.length <= 128 && idPattern.test(id);
+  let visibleIds;
+  let apiIdsByVisible;
+  let visibleIdByApi;
+  try {
+    const units = [...list.children].filter(node => node.matches('.gift-row[id], .gift-choice[id]'));
+    visibleIds = units.map(unit => unit.id);
+    if (!visibleIds.length || visibleIds.length > 150 || visibleIds.some(id => !validId(id)) ||
+        new Set(visibleIds).size !== visibleIds.length) throw new Error('Invalid visible units.');
+    apiIdsByVisible = new Map();
+    visibleIdByApi = new Map();
+    for (const unit of units) {
+      const declaration = unit.getAttribute('data-priority-ids');
+      let members = [unit.id];
+      if (declaration !== null) {
+        if (!unit.classList.contains('gift-bundle') || declaration.length > 32768) throw new Error('Invalid bundle.');
+        members = JSON.parse(declaration);
+        if (!Array.isArray(members) || !members.length || members.length > 150 ||
+            members.some(id => !validId(id) || id === unit.id) || new Set(members).size !== members.length) {
+          throw new Error('Invalid bundle members.');
+        }
+        for (const id of members) {
+          const matches = list.querySelectorAll('[id="' + id + '"]');
+          if (matches.length !== 1 || !unit.contains(matches[0])) throw new Error('Missing bundle member.');
+        }
+      } else if (unit.classList.contains('gift-bundle')) {
+        throw new Error('Missing bundle declaration.');
+      }
+      apiIdsByVisible.set(unit.id, members.slice());
+      for (const id of members) {
+        if (visibleIdByApi.has(id)) throw new Error('Duplicate API unit.');
+        visibleIdByApi.set(id, unit.id);
+      }
+    }
+    if (visibleIdByApi.size > 150) throw new Error('Too many API units.');
+  } catch (_) {
+    const status = document.createElement('p');
+    status.className = 'birthday-reorder-status';
+    status.setAttribute('role', 'alert');
+    status.textContent = 'Birthday priority grouping could not be read. Refresh to try again.';
+    list.before(status);
+    return;
+  }
+
+  function validateOrderDocument(data) {
+    if (!data || typeof data !== 'object' || Array.isArray(data) ||
+        !Array.isArray(data.order) || !Number.isSafeInteger(data.revision) || data.revision < 0 ||
+        data.order.length > 150 || data.order.some(id => !validId(id)) || new Set(data.order).size !== data.order.length) {
+      throw new Error('The saved order could not be read.');
+    }
+    return data;
+  }
+
+  function collapseOrder(apiOrder) {
+    // Iteration keeps a bundle at its earliest saved member rank, even when members were interleaved.
+    const collapsed = [...new Set(apiOrder.filter(id => visibleIdByApi.has(id)).map(id => visibleIdByApi.get(id)))];
+    return window.BirthdayReorder.mergeOrder(visibleIds, collapsed);
+  }
+
+  function expandOrder(visibleOrder) {
+    if (!Array.isArray(visibleOrder) || visibleOrder.length > 150 || visibleOrder.some(id => !validId(id)) ||
+        new Set(visibleOrder).size !== visibleOrder.length) throw new Error('The birthday order could not be saved.');
+    // New visible units are merged exactly as before; every original member ID is emitted once.
+    return window.BirthdayReorder.mergeOrder(visibleIds, visibleOrder).flatMap(id => apiIdsByVisible.get(id));
+  }
+
+  function visibleDocument(data) {
+    validateOrderDocument(data);
+    return { ...data, order: collapseOrder(data.order) };
+  }
+
   async function request(method, body) {
     const abort = new AbortController();
     const timeout = setTimeout(() => abort.abort(), 12000);
@@ -37,19 +109,16 @@
       });
       const data = await response.json();
       if (!response.ok) {
-        const error = new Error(data.message || 'Could not save the shared order.');
+        const error = new Error(typeof data?.message === 'string' ? data.message : 'Could not save the shared order.');
         if (response.status === 409) {
+          const latest = visibleDocument(data);
           error.code = 'conflict';
-          error.latestOrder = data.order;
-          error.latestRevision = data.revision;
+          error.latestOrder = latest.order;
+          error.latestRevision = latest.revision;
         }
         throw error;
       }
-      if (!Array.isArray(data.order) || !Number.isSafeInteger(data.revision) || data.revision < 0 ||
-          data.order.length > 150 || data.order.some(id => typeof id !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id))) {
-        throw new Error('The saved order could not be read.');
-      }
-      return data;
+      return visibleDocument(data);
     } finally {
       clearTimeout(timeout);
     }
@@ -64,7 +133,7 @@
       return data;
     },
     async save(order, { revision }) {
-      const result = await request('PUT', { order, revision });
+      const result = await request('PUT', { order: expandOrder(order), revision });
       lastRefresh = Date.now();
       return result;
     }

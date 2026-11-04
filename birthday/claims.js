@@ -101,7 +101,7 @@
 
     hosts.forEach((host, index) => {
       const id = ids[index];
-      const title = host.closest('.gift-row')?.querySelector('.gift-title')?.textContent.trim() || id;
+      const title = host.closest('.gift-bundle-item, .gift-row')?.querySelector('.gift-bundle-item-title, .gift-title')?.textContent.trim() || id;
       const toggle = button('birthday-claim-toggle');
       toggle.setAttribute('aria-pressed', 'false');
       toggle.setAttribute('aria-label', 'I got this — ' + title);

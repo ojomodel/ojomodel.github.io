@@ -1548,5 +1548,21 @@
     "phone": "832-269-1648",
     "phoneHref": "+18322691648",
     "email": "seunomodelee@gmail.com"
-  }
+  },
+  "bundles": [
+    {
+      "id": "skincare-bundle",
+      "label": "Skincare bundle",
+      "message": "Preferably all at once",
+      "image": "/birthday/images/skincare-bundle-six.png",
+      "itemIds": [
+        "anua-cleanser",
+        "anua-heartleaf-clear-pad",
+        "kisocare-azelaic-acid-15",
+        "arencia-fresh-green-cleanser",
+        "anua-rice-toner",
+        "medicube-kojic-serum"
+      ]
+    }
+  ]
 }
