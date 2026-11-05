@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-04",
+  "lastReviewed": "2026-11-05",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -72,15 +72,15 @@
       "id": "rk-r75-keyboard",
       "brand": "RK Royal Kludge",
       "name": "R75 mechanical keyboard",
-      "price": "$59.99",
-      "priceNote": "Amazon · sold by CX Electronic",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "specs": [
         "Black",
         "75% layout",
         "Wired USB-C",
         "Silver switches"
       ],
-      "note": "The exact Black R75 with Silver switches from my Amazon link. The public Amazon listing showed In Stock at $59.99 on November 3; fulfilled by Amazon. Confirm delivery to 77406 before buying.",
+      "note": "The exact Black R75 with Silver switches from my Amazon link. The last verified November 3 offer was $59.99, sold by CX Electronic and fulfilled by Amazon. Current price and availability could not be reverified on November 5. Confirm delivery to 77204 or 77406 before buying.",
       "caption": "R75 · Black",
       "url": "https://www.amazon.com/dp/B0CWGR5KM9",
       "originalUrl": "https://a.co/d/06gyTYCF",
@@ -93,11 +93,12 @@
       "image": "/birthday/images/rk-r75-keyboard-cutout.png",
       "imageStyle": "landscape",
       "photoSource": "https://www.amazon.com/dp/B0CWGR5KM9",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-05",
       "priceSourceUrl": "https://www.amazon.com/dp/B0CWGR5KM9",
       "referencePrice": "$59.99",
       "referenceLabel": "Amazon list price · last verified November 2, 2026",
-      "referenceUrl": "https://www.amazon.com/dp/B0CWGR5KM9"
+      "referenceUrl": "https://www.amazon.com/dp/B0CWGR5KM9",
+      "unverified": true
     },
     {
       "id": "anua-cleanser",
@@ -347,15 +348,15 @@
       "image": "/birthday/images/canon-sx740-hs-black.png",
       "brand": "Canon",
       "name": "PowerShot SX740 HS digital camera",
-      "price": "Check current price",
-      "priceNote": "Walmart Marketplace · current offer unverified",
+      "price": "$625.50",
+      "priceNote": "Walmart Marketplace · sold and shipped by Web Offers",
       "specs": [
         "Black",
         "International version",
         "40× optical zoom",
         "4K video"
       ],
-      "note": "Last verified November 2 at $625.50, sold and shipped by Web Offers, with free shipping and no pickup. The current price, seller and availability could not be verified. Choose the new Black international version and confirm delivery to 77406 and the seller’s warranty.",
+      "note": "New Black international version. Walmart’s public listing showed $625.50 and In Stock on November 5, sold and shipped by Web Offers. Confirm shipping to 77204 or 77406 and the seller’s warranty before buying; local pickup has not been verified.",
       "caption": "SX740 HS · Black",
       "url": "https://www.walmart.com/ip/581034212",
       "actions": [
@@ -368,14 +369,14 @@
           "https://www.bestbuy.com/product/canon-powershot-sx740-hs-20-3-megapixel-digital-camera-black/6287924"
         ]
       ],
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-05",
       "photoSource": "https://www.usa.canon.com/shop/p/powershot-sx740-hs?color=Black&type=New",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.walmart.com/ip/581034212",
       "referencePrice": "$549.99",
       "referenceLabel": "Canon US listed price · unavailable",
       "referenceUrl": "https://www.usa.canon.com/shop/digital-cameras/point-and-shoot-cameras",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "canon-g7x",
@@ -412,31 +413,31 @@
       "id": "sony-zv-e10-kit",
       "brand": "Sony",
       "name": "ZV-E10 camera + 16–50mm lens",
-      "price": "Check current price",
-      "priceNote": "B&H · used listing · current offer unverified",
+      "price": "$699",
+      "priceNote": "District Camera · used Excellent+ kit · SN-281685",
       "specs": [
         "Black",
         "16–50mm lens included",
         "Original ZV-E10"
       ],
-      "note": "Last verified November 2 at $699.95 for the original Black ZV-E10 with the original 16–50mm OSS kit lens, rated 8+ Moderate wear, with a 90-day used warranty. Current unit availability could not be verified. Memory card excluded.",
+      "note": "Original Black ZV-E10 with the 16–50mm kit lens (ILCZVE10L/B). District Camera lists this used unit as Excellent+, with a shutter count of 200 and a 100-day used warranty. Battery, charging cable and front cap are included; no memory card is listed. In stock at the November 5 check. Confirm shipping to 77204 or 77406 before buying; the retailer’s pickup location is in Washington, DC, not local Texas pickup. The photo represents the model, not this exact used unit.",
       "caption": "ZV-E10 kit · representative retailer photo",
-      "url": "https://www.bhphotovideo.com/c/product/803569167-USE/sony_ilczv_e10l_b_zv_e10_mirrorless_camera_with.html",
+      "url": "https://www.districtcamera.com/products/used-sony-alpha-zv-e10-camera-with-16-50mm-lens-kit-black-5",
       "actions": [
         [
-          "Check used kit · B&H",
-          "https://www.bhphotovideo.com/c/product/803569167-USE/sony_ilczv_e10l_b_zv_e10_mirrorless_camera_with.html"
+          "Buy used kit · District Camera",
+          "https://www.districtcamera.com/products/used-sony-alpha-zv-e10-camera-with-16-50mm-lens-kit-black-5"
         ]
       ],
       "image": "/birthday/images/sony-zv-e10-kit.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.bhphotovideo.com/c/product/803569167-USE/sony_ilczv_e10l_b_zv_e10_mirrorless_camera_with.html",
-      "priceSourceUrl": "https://www.bhphotovideo.com/c/product/803569167-USE/sony_ilczv_e10l_b_zv_e10_mirrorless_camera_with.html",
-      "checkedDate": "2026-11-03",
+      "priceSourceUrl": "https://www.districtcamera.com/products/used-sony-alpha-zv-e10-camera-with-16-50mm-lens-kit-black-5",
+      "checkedDate": "2026-11-05",
       "originalPhotoSHA256": "5c31d4c8c7fc67e1af5015a1243eb24a54232600cc1d06ddc1831e4fc39a7a9b",
       "photoProcessing": "Edge-connected near-white background made transparent; original RGB pixels preserved, no AI editing.",
       "displayPhotoSHA256": "8b6243c0d19326ae0e6deda382a8ea33ec42fc4f0fc857ca2a1f1a0993491f47",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "adidas-evo-sl",
@@ -671,15 +672,15 @@
       "id": "electronics-flux-pen",
       "brand": "SRA",
       "name": "#312 no-clean flux pen",
-      "price": "$9.49",
-      "priceNote": "Amazon · SRA Soldering Products · one-time purchase",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B008OC0E5M",
       "specs": [
         "10 mL",
         "Refillable",
         "Electronics flux"
       ],
-      "note": "SRA #312 filled 10 mL no-clean flux pen for electronics soldering and rework. The one-time Amazon price is $9.49; the lower subscription price is excluded. Confirm shipping to 77406.",
+      "note": "SRA #312 filled 10 mL no-clean flux pen for electronics soldering and rework. The saved offer is a one-time purchase, not the lower subscription price. Last verified November 4 at $9.49 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
       "caption": "Exact #312 flux pen",
       "url": "https://www.amazon.com/dp/B008OC0E5M",
       "actions": [
@@ -695,11 +696,11 @@
       "image": "/birthday/images/electronics-flux-pen-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B008OC0E5M",
-      "checkedDate": "2026-11-04",
+      "checkedDate": "2026-11-05",
       "referencePrice": "$9.49",
-      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B008OC0E5M",
-      "unverified": false
+      "unverified": true
     },
     {
       "id": "wire-strippers",
@@ -859,15 +860,15 @@
       "id": "nema17-closed-loop-kit",
       "brand": "STEPPERONLINE",
       "name": "NEMA 17 closed-loop stepper kit",
-      "price": "$68.00",
-      "priceNote": "Amazon - sold by StepperOnline, shipped by Amazon",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B0CWSR77Q9",
       "specs": [
         "52 Ncm",
         "Motor + encoder + driver",
         "CL42T V4.1"
       ],
-      "note": "Exact Amazon kit includes 17HS19-2004D-E1K motor (52 Ncm, 42 x 42 x 68 mm body, 5 mm D-shaft, 24 mm shaft length), CL42T-V41 closed-loop driver and CABLE-PC-1 RS232 debugging cable. Current $68.00 item offer is In Stock, sold by StepperOnline and shipped by Amazon for public Houston 77204 location; confirm delivery fees for your address. The driver requires 24-48 VDC; a power supply and controller are separate. The manufacturer kit page lists exact motor/driver STEP files (sign-in required) and dimensions/manual links. Do not use older 17HS19-2004D-E1000 (59 Ncm, 72 mm body) CAD.",
+      "note": "Exact Amazon kit includes 17HS19-2004D-E1K motor (52 Ncm, 42 x 42 x 68 mm body, 5 mm D-shaft, 24 mm shaft length), CL42T-V41 closed-loop driver and CABLE-PC-1 RS232 debugging cable. The driver requires 24-48 VDC; a power supply and controller are separate. The manufacturer kit page lists exact motor/driver STEP files (sign-in required) and dimensions/manual links. Do not use older 17HS19-2004D-E1000 (59 Ncm, 72 mm body) CAD. Last verified November 4 at $68.00 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
       "caption": "Exact motor and driver kit",
       "url": "https://www.amazon.com/dp/B0CWSR77Q9",
       "actions": [
@@ -883,11 +884,11 @@
       "image": "/birthday/images/nema17-closed-loop-kit-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0CWSR77Q9",
-      "checkedDate": "2026-11-04",
+      "checkedDate": "2026-11-05",
       "referencePrice": "$68.00",
-      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B0CWSR77Q9",
-      "unverified": false,
+      "unverified": true,
       "model": "1-CL42T-S05-V41 / 17HS19-2004D-E1K / CL42T-V41",
       "technicalLinks": [
         [
@@ -900,8 +901,8 @@
       "id": "budget-nema17-stepper",
       "brand": "STEPPERONLINE",
       "name": "Budget NEMA 17 stepper motor",
-      "price": "$10.99",
-      "priceNote": "Amazon - sold by StepperOnline, shipped by Amazon",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B0B38GX54H",
       "specs": [
         "1 motor",
@@ -909,7 +910,7 @@
         "1.5 A",
         "42 × 42 × 38 mm"
       ],
-      "note": "Exact 17HE15-1504S single motor: 42 x 42 x 38 mm body, 5 mm D-shaft, 23.5 mm shaft length, 1 m cable and connector. Current Amazon item price is $10.99, In Stock, sold by StepperOnline and shipped by Amazon for public Houston 77204 location. Confirm delivery and fees for your address. The manufacturer page lists exact 17HE15-1504S.STEP (sign-in required) and 17HE15-1504S_Full_Datasheet.pdf; do not use 17HS15 dimensions or generic 38/39 mm CAD.",
+      "note": "Exact 17HE15-1504S single motor: 42 x 42 x 38 mm body, 5 mm D-shaft, 23.5 mm shaft length, 1 m cable and connector. The manufacturer page lists exact 17HE15-1504S.STEP (sign-in required) and 17HE15-1504S_Full_Datasheet.pdf; do not use 17HS15 dimensions or generic 38/39 mm CAD. Last verified November 4 at $10.99 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
       "caption": "Exact single motor",
       "url": "https://www.amazon.com/dp/B0B38GX54H",
       "actions": [
@@ -925,11 +926,11 @@
       "image": "/birthday/images/budget-nema17-stepper-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/e-series-nema-17-bipolar-42ncm-59-49oz-in-1-5a-42x42x38mm-4-wires-w-1m-cable-connector-17he15-1504s",
-      "checkedDate": "2026-11-04",
+      "checkedDate": "2026-11-05",
       "referencePrice": "$10.99",
-      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B0B38GX54H",
-      "unverified": false,
+      "unverified": true,
       "model": "17HE15-1504S",
       "technicalLinks": [
         [
@@ -1247,15 +1248,15 @@
       "id": "6806zz-radial-bearing",
       "brand": "uxcell",
       "name": "6806ZZ radial bearings",
-      "price": "$13.86",
-      "priceNote": "Amazon · sold by uxcell",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B082PY8F6G",
       "specs": [
         "6806ZZ",
         "30 × 42 × 7 mm",
         "10-pack"
       ],
-      "note": "Ten metal-shielded 6806ZZ radial bearings, 30 × 42 × 7 mm. Match the shaft and housing dimensions to your design; project fit is not verified. Exact Amazon pack and one-time price verified November 4; shipping is calculated for the destination and may require Prime or a qualifying basket.",
+      "note": "Ten metal-shielded 6806ZZ radial bearings, 30 × 42 × 7 mm. Match the shaft and housing dimensions to your design; project fit is not verified. Shipping depends on the destination and may require Prime or a qualifying basket. Last verified November 4 at $13.86 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
       "caption": "Exact 6806ZZ bearing selection",
       "url": "https://www.amazon.com/dp/B082PY8F6G",
       "actions": [
@@ -1271,25 +1272,25 @@
       "image": "/birthday/images/6806zz-radial-bearing-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B082PY8F6G",
-      "checkedDate": "2026-11-04",
+      "checkedDate": "2026-11-05",
       "referencePrice": "$13.86",
-      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B082PY8F6G",
-      "unverified": false
+      "unverified": true
     },
     {
       "id": "51110-thrust-bearing",
       "brand": "uxcell",
       "name": "51110 thrust bearing",
-      "price": "$12.82",
-      "priceNote": "Amazon · sold by uxcell",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B07G83D98C",
       "specs": [
         "51110",
         "50 × 70 × 14 mm",
         "2-pack"
       ],
-      "note": "Two single-direction 51110 thrust bearings, 50 × 70 × 14 mm, for axial loads. Confirm these dimensions against your assembly. Exact Amazon pack and one-time price verified November 4; shipping is calculated for the destination and may require Prime or a qualifying basket.",
+      "note": "Two single-direction 51110 thrust bearings, 50 × 70 × 14 mm, for axial loads. Confirm these dimensions against your assembly. Shipping depends on the destination and may require Prime or a qualifying basket. Last verified November 4 at $12.82 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
       "caption": "Exact 51110 bearing selection",
       "url": "https://www.amazon.com/dp/B07G83D98C",
       "actions": [
@@ -1305,25 +1306,25 @@
       "image": "/birthday/images/51110-thrust-bearing-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07G83D98C",
-      "checkedDate": "2026-11-04",
+      "checkedDate": "2026-11-05",
       "referencePrice": "$12.82",
-      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B07G83D98C",
-      "unverified": false
+      "unverified": true
     },
     {
       "id": "small-radial-bearings",
       "brand": "NaiveBlue",
       "name": "Small radial bearings",
-      "price": "$6.79",
-      "priceNote": "Amazon · sold by NAIVE BLUE",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B07H83VV6B",
       "specs": [
         "608ZZ",
         "8 × 22 × 7 mm",
         "10-pack"
       ],
-      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm the shaft and mounting dimensions before buying. Exact Amazon pack and one-time price verified November 4; shipping is calculated for the destination and may require Prime or a qualifying basket.",
+      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm the shaft and mounting dimensions before buying. Shipping depends on the destination and may require Prime or a qualifying basket. Last verified November 4 at $6.79 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
       "caption": "Exact 608ZZ bearing pack",
       "url": "https://www.amazon.com/dp/B07H83VV6B",
       "actions": [
@@ -1339,11 +1340,11 @@
       "image": "/birthday/images/small-radial-bearings-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07H83VV6B",
-      "checkedDate": "2026-11-04",
+      "checkedDate": "2026-11-05",
       "referencePrice": "$6.79",
-      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B07H83VV6B",
-      "unverified": false
+      "unverified": true
     },
     {
       "id": "gridded-workbench-mat",
@@ -1379,15 +1380,15 @@
       "id": "robotics-assembly-supplies",
       "brand": "EEEEE",
       "name": "Robotics mounting hardware assortment",
-      "price": "$34.99",
-      "priceNote": "Amazon · sold by eeeee_shop",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B0B57DQZHF",
       "specs": [
         "572 pieces",
         "M2 / M2.5 / M3 / M4",
         "Brass standoffs"
       ],
-      "note": "572-piece M2 / M2.5 / M3 / M4 assortment of brass standoffs, screws and nuts for circuit-board mounting. Exact Amazon pack and one-time price verified November 4; shipping is calculated for the destination and may require Prime or a qualifying basket.",
+      "note": "572-piece M2 / M2.5 / M3 / M4 assortment of brass standoffs, screws and nuts for circuit-board mounting. Shipping depends on the destination and may require Prime or a qualifying basket. Last verified November 4 at $34.99 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
       "caption": "Exact mounting-hardware assortment",
       "url": "https://www.amazon.com/dp/B0B57DQZHF",
       "actions": [
@@ -1403,11 +1404,11 @@
       "image": "/birthday/images/robotics-assembly-supplies-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0B57DQZHF",
-      "checkedDate": "2026-11-04",
+      "checkedDate": "2026-11-05",
       "referencePrice": "$34.99",
-      "referenceLabel": "Amazon offer · last verified November 2, 2026",
+      "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B0B57DQZHF",
-      "unverified": false
+      "unverified": true
     },
     {
       "id": "solder-wick",
