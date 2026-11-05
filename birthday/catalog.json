@@ -832,38 +832,49 @@
       "id": "nema17-closed-loop-kit",
       "brand": "STEPPERONLINE",
       "name": "NEMA 17 closed-loop stepper kit",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$68.00",
+      "priceNote": "Amazon - sold by StepperOnline, shipped by Amazon",
       "priceSourceUrl": "https://www.amazon.com/dp/B0CWSR77Q9",
       "specs": [
         "52 Ncm",
         "Motor + encoder + driver",
         "CL42T V4.1"
       ],
-      "note": "Complete motor, encoder and driver set with an RS232 setup cable. A suitable 24–48 V DC supply and motion controller are separate. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
+      "note": "Exact Amazon kit includes 17HS19-2004D-E1K motor (52 Ncm, 42 x 42 x 68 mm body, 5 mm D-shaft, 24 mm shaft length), CL42T-V41 closed-loop driver and CABLE-PC-1 RS232 debugging cable. Current $68.00 item offer is In Stock, sold by StepperOnline and shipped by Amazon for public Houston 77204 location; confirm delivery fees for your address. The driver requires 24-48 VDC; a power supply and controller are separate. The manufacturer kit page lists exact motor/driver STEP files (sign-in required) and dimensions/manual links. Do not use older 17HS19-2004D-E1000 (59 Ncm, 72 mm body) CAD.",
       "caption": "Exact motor and driver kit",
       "url": "https://www.amazon.com/dp/B0CWSR77Q9",
       "actions": [
         [
           "Shop · Amazon",
           "https://www.amazon.com/dp/B0CWSR77Q9"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-STEPPERONLINE-1-CL42T-S05-V41-%2F-17HS19-2004D-E1K-%2F-CL42T-V41-NEMA-17-closed-loop-stepper-kit.html"
         ]
       ],
       "image": "/birthday/images/nema17-closed-loop-kit-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0CWSR77Q9",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-04",
       "referencePrice": "$68.00",
       "referenceLabel": "Amazon offer · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B0CWSR77Q9",
-      "unverified": true
+      "unverified": false,
+      "model": "1-CL42T-S05-V41 / 17HS19-2004D-E1K / CL42T-V41",
+      "technicalLinks": [
+        [
+          "Exact motor and driver CAD/docs",
+          "https://www.omc-stepperonline.com/1-axis-closed-loop-stepper-cnc-kit-52ncm-73-64oz-in-nema-17-motor-driver-1-cl42t-s05-v41"
+        ]
+      ]
     },
     {
       "id": "budget-nema17-stepper",
       "brand": "STEPPERONLINE",
       "name": "Budget NEMA 17 stepper motor",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$10.99",
+      "priceNote": "Amazon - sold by StepperOnline, shipped by Amazon",
       "priceSourceUrl": "https://www.amazon.com/dp/B0B38GX54H",
       "specs": [
         "1 motor",
@@ -871,23 +882,339 @@
         "1.5 A",
         "42 × 42 × 38 mm"
       ],
-      "note": "Open-loop motor with a 1 m cable. The stepper driver and power supply are separate. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
+      "note": "Exact 17HE15-1504S single motor: 42 x 42 x 38 mm body, 5 mm D-shaft, 23.5 mm shaft length, 1 m cable and connector. Current Amazon item price is $10.99, In Stock, sold by StepperOnline and shipped by Amazon for public Houston 77204 location. Confirm delivery and fees for your address. The manufacturer page lists exact 17HE15-1504S.STEP (sign-in required) and 17HE15-1504S_Full_Datasheet.pdf; do not use 17HS15 dimensions or generic 38/39 mm CAD.",
       "caption": "Exact single motor",
       "url": "https://www.amazon.com/dp/B0B38GX54H",
       "actions": [
         [
           "Shop · Amazon",
           "https://www.amazon.com/dp/B0B38GX54H"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-STEPPERONLINE-17HE15-1504S-Budget-NEMA-17-stepper-motor.html"
         ]
       ],
       "image": "/birthday/images/budget-nema17-stepper-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/e-series-nema-17-bipolar-42ncm-59-49oz-in-1-5a-42x42x38mm-4-wires-w-1m-cable-connector-17he15-1504s",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-04",
       "referencePrice": "$10.99",
       "referenceLabel": "Amazon offer · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B0B38GX54H",
-      "unverified": true
+      "unverified": false,
+      "model": "17HE15-1504S",
+      "technicalLinks": [
+        [
+          "Exact-model CAD and dimensions",
+          "https://www.omc-stepperonline.com/e-series-nema-17-bipolar-42ncm-59-49oz-in-1-5a-42x42x38mm-4-wires-w-1m-cable-connector-17he15-1504s"
+        ]
+      ]
+    },
+    {
+      "id": "nema17-long-body-motor",
+      "brand": "STEPPERONLINE",
+      "name": "Long-body NEMA 17 stepper motor",
+      "model": "17HS24-2104S",
+      "specs": [
+        "1 motor",
+        "42 x 42 x 60 mm body",
+        "5 mm D-shaft; 24 mm shaft length",
+        "2.1 A/phase; 76 Ncm holding torque"
+      ],
+      "price": "$13.24",
+      "priceNote": "STEPPERONLINE - China warehouse, quantity 1",
+      "priceSourceUrl": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s",
+      "url": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s",
+      "actions": [
+        [
+          "Delivery · STEPPERONLINE",
+          "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-STEPPERONLINE-17HS24-2104S-Long-body-NEMA-17-stepper-motor.html"
+        ]
+      ],
+      "technicalLinks": [
+        [
+          "STEP - manufacturer sign-in required",
+          "https://www.omc-stepperonline.com/index.php?route=extension/stepperonline/product_a/login&product_id=113&key=17HS24-2104S.STEP"
+        ],
+        [
+          "Dimensions PDF",
+          "https://www.omc-stepperonline.com/download/17HS24-2104S.pdf"
+        ]
+      ],
+      "note": "17HS24-2104S has a 60 mm body and weighs 500 g. The current manufacturer page lists 76 Ncm; its older URL and dimension drawing use 65 Ncm. Quantity 1 from China is $13.24; the US warehouse option adds $4.27 ($17.51 item price). Both warehouses list stock; shipping and tax are extra, and local pickup is unverified. Motor only: a separate suitable current-limited stepper driver, DC power supply and controller are required. Exact-model STEP is offered with manufacturer sign-in. CAD availability does not confirm fit or sufficient torque for a particular robot arm.",
+      "caption": "17HS24-2104S - official motor photo",
+      "image": "/birthday/images/nema17-long-body-motor.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s",
+      "checkedDate": "2026-11-04"
+    },
+    {
+      "id": "nema17-planetary-geared-motor",
+      "brand": "STEPPERONLINE",
+      "name": "NEMA 17 planetary geared stepper motor",
+      "price": "$28.86",
+      "priceNote": "STEPPERONLINE · one unit · China warehouse",
+      "specs": [
+        "17HS19-1684S-PG5",
+        "42 × 42 mm frame",
+        "75.3 mm motor + gearbox body",
+        "5.18:1 planetary gearbox",
+        "8 mm shaft · 1.68 A/phase"
+      ],
+      "note": "One motor with integrated 5.18:1 planetary gearbox: 48 mm motor plus 27.3 mm gearbox, excluding the 20 mm output shaft. A stepper driver, suitable power supply and controller are separate. The displayed price is for one unit from China stock; the US warehouse adds $7.10 before shipping and was in stock at this check. Confirm the final warehouse price, shipping and delivery to 77406. The current page and older drawing differ in gearbox torque/backlash ratings, so confirm the current revision before load calculations. STEP download requires manufacturer sign-in; public dimension drawings are linked separately.",
+      "caption": "17HS19-1684S-PG5 · motor and planetary gearbox",
+      "url": "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-48mm-w-gear-ratio-5-1-planetary-gearbox-17hs19-1684s-pg5",
+      "actions": [
+        [
+          "Delivery · STEPPERONLINE",
+          "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-48mm-w-gear-ratio-5-1-planetary-gearbox-17hs19-1684s-pg5"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-STEPPERONLINE-17HS19-1684S-PG5-NEMA-17-planetary-geared-stepper-motor.html"
+        ]
+      ],
+      "technicalLinks": [
+        [
+          "Dimensions PDF · public drawing",
+          "https://www.omc-stepperonline.com/download/17HS19-1684S-PG5.pdf"
+        ],
+        [
+          "Current datasheet PDF",
+          "https://files.omc-stepperonline.com/17HS19-1684S-PG5_Full_Datasheet.pdf"
+        ],
+        [
+          "STEP · manufacturer sign-in required",
+          "https://www.omc-stepperonline.com/index.php?route=extension/stepperonline/product_a/login&product_id=183&key=17HS19-1684S-PG5.STEP"
+        ]
+      ],
+      "image": "/birthday/images/nema17-planetary-geared-motor-product-only.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-48mm-w-gear-ratio-5-1-planetary-gearbox-17hs19-1684s-pg5",
+      "priceSourceUrl": "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-48mm-w-gear-ratio-5-1-planetary-gearbox-17hs19-1684s-pg5",
+      "checkedDate": "2026-11-04"
+    },
+    {
+      "id": "nema23-open-loop-motor",
+      "brand": "STEPPERONLINE",
+      "name": "NEMA 23 open-loop stepper motor",
+      "price": "$18.26",
+      "priceNote": "STEPPERONLINE · one unit · China warehouse",
+      "specs": [
+        "23HS30-2804S",
+        "57 × 57 mm frame",
+        "76.5 mm body · 21 mm shaft extension",
+        "6.35 mm D shaft",
+        "2.8 A/phase · one motor only"
+      ],
+      "note": "One full-size bipolar stepper motor. The current manufacturer page rates holding torque at 2.00 Nm; this is holding torque, not guaranteed torque while moving. Driver, power supply and controller are separate. The displayed one-unit price is from China stock; US warehouse stock was on backorder. Confirm shipping and the final delivered total to 77406. The older public drawing lists 1.90 Nm and earlier electrical values; use the current linked datasheet for the latest revision. STEP download requires manufacturer sign-in.",
+      "caption": "23HS30-2804S · one NEMA 23 motor",
+      "url": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
+      "actions": [
+        [
+          "Delivery · STEPPERONLINE",
+          "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-STEPPERONLINE-23HS30-2804S-NEMA-23-open-loop-stepper-motor.html"
+        ]
+      ],
+      "technicalLinks": [
+        [
+          "Dimensions PDF · public drawing",
+          "https://www.omc-stepperonline.com/download/23HS30-2804S.pdf"
+        ],
+        [
+          "Current datasheet PDF",
+          "https://files.omc-stepperonline.com/23HS30-2804S_Full_Datasheet.pdf"
+        ],
+        [
+          "STEP · manufacturer sign-in required",
+          "https://www.omc-stepperonline.com/index.php?route=extension/stepperonline/product_a/login&product_id=132&key=23HS30-2804S.STEP"
+        ]
+      ],
+      "image": "/birthday/images/nema23-open-loop-motor-product-only.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
+      "priceSourceUrl": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
+      "checkedDate": "2026-11-04"
+    },
+    {
+      "id": "nema23-closed-loop-kit",
+      "brand": "STEPPERONLINE",
+      "name": "NEMA 23 closed-loop motor and driver kit",
+      "price": "$58.66",
+      "priceNote": "STEPPERONLINE · one unit · China warehouse",
+      "specs": [
+        "1-CL57T-S20-V41",
+        "57 mm NEMA 23 frame",
+        "2.00 Nm holding torque · 1000 PPR encoder",
+        "CL57T-V4.1 driver + extension cables",
+        "24–48 V DC supply required separately"
+      ],
+      "note": "Includes one 23HS30-5004D-E1000 motor, CL57T-V4.1 driver, CABLE-PC-1 RS232 debugging cable, CE2M encoder extension and CM2M-20 motor extension. DC power supply and motion controller are not included. The current motor drawing specifies a 98 mm body and 21 mm output shaft; the product table/older drawing says 101 mm, so confirm the supplied revision before designing mounts. The displayed one-kit price is from China stock; US warehouse stock was on backorder. Confirm shipping and delivered total to 77406. STEP download requires manufacturer sign-in.",
+      "caption": "NEMA 23 motor · driver and included cables",
+      "url": "https://www.omc-stepperonline.com/ts-series-2-0-nm-283-28oz-in-1-axis-closed-loop-stepper-cnc-kit-nema-23-motor-driver-1-cl57t-s20-v41",
+      "actions": [
+        [
+          "Delivery · STEPPERONLINE",
+          "https://www.omc-stepperonline.com/ts-series-2-0-nm-283-28oz-in-1-axis-closed-loop-stepper-cnc-kit-nema-23-motor-driver-1-cl57t-s20-v41"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-STEPPERONLINE-1-CL57T-S20-V41-NEMA-23-closed-loop-motor-and-driver-kit.html"
+        ]
+      ],
+      "technicalLinks": [
+        [
+          "Dimensions PDF · public drawing",
+          "https://www.omc-stepperonline.com/download/23HS30-5004D-E1000.pdf"
+        ],
+        [
+          "Current datasheet PDF",
+          "https://files.omc-stepperonline.com/23HS30-5004D-E1000_Full_Datasheet.pdf"
+        ],
+        [
+          "STEP · manufacturer sign-in required",
+          "https://www.omc-stepperonline.com/index.php?route=extension/stepperonline/product_a/login&product_id=3127&key=23HS30-5004D-E1000.STEP"
+        ]
+      ],
+      "image": "/birthday/images/nema23-closed-loop-kit-product-only.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.omc-stepperonline.com/ts-series-2-0-nm-283-28oz-in-1-axis-closed-loop-stepper-cnc-kit-nema-23-motor-driver-1-cl57t-s20-v41",
+      "priceSourceUrl": "https://www.omc-stepperonline.com/ts-series-2-0-nm-283-28oz-in-1-axis-closed-loop-stepper-cnc-kit-nema-23-motor-driver-1-cl57t-s20-v41",
+      "checkedDate": "2026-11-04"
+    },
+    {
+      "id": "pololu-37d-12v-encoder-motor",
+      "brand": "Pololu",
+      "name": "70:1 brushed DC gearmotor with encoder",
+      "model": "4754",
+      "specs": [
+        "1 motor",
+        "37 mm diameter x 70 mm body",
+        "12 V; 70:1 metal gearbox",
+        "64 CPR motor encoder; 4480 CPR output",
+        "6 mm D-shaft; 16 mm shaft length"
+      ],
+      "price": "$60.95",
+      "priceNote": "Pololu - listed quantity 1 price; confirm stock",
+      "priceSourceUrl": "https://www.pololu.com/product/4754",
+      "url": "https://www.pololu.com/product/4754",
+      "actions": [
+        [
+          "Delivery · Pololu",
+          "https://www.pololu.com/product/4754"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-Pololu-4754-70%3A1-brushed-DC-gearmotor-with-encoder.html"
+        ]
+      ],
+      "technicalLinks": [
+        [
+          "Download STEP models",
+          "https://www.pololu.com/file/0J1868/37d-gearmotor-3d-models.zip"
+        ],
+        [
+          "Dimensions PDF",
+          "https://www.pololu.com/file/0J1735/37d-metal-gearmotors-dimension-diagram.pdf"
+        ]
+      ],
+      "note": "Pololu 4754 is a brushed DC gearmotor, not a stepper or hobby servo. It has a 70 mm body plus a 16 mm output shaft; encoder wiring is included. A suitable bidirectional DC motor driver/controller and 12 V supply are separate. The primary page lists $60.95 and permits ordering/backorders but gives no explicit unit stock count; confirm stock before buying. US free shipping requires an eligible order over $100; this motor alone does not reach that threshold. The manufacturer STEP ZIP includes the exact 50:1/70:1 encoder-body model. This is a dimensional planning option; robot-arm fit and load capacity have not been verified.",
+      "caption": "Pololu 4754 - genuine manufacturer photo",
+      "image": "/birthday/images/pololu-37d-12v-encoder-motor.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.pololu.com/product/4754",
+      "checkedDate": "2026-11-04"
+    },
+    {
+      "id": "gobilda-torque-servo",
+      "brand": "goBILDA",
+      "name": "2000 Series Dual Mode Servo — Torque",
+      "price": "$36.99",
+      "priceNote": "goBILDA · one new servo",
+      "specs": [
+        "2000-0025-0002",
+        "Standard size",
+        "40.3 × 20 × 39.9 mm case",
+        "25T spline · 4.8–7.4 V"
+      ],
+      "note": "Full-size servo with steel gears and default 300° position control. Manufacturer STEP model and dimension drawing are available for CAD. Dimensions exclude the protruding spline and mounting ears; check the drawing before designing a mount. goBILDA lists the exact servo in stock. Delivery listing; confirm shipping to 77406.",
+      "caption": "2000-0025-0002 · official manufacturer product view",
+      "url": "https://www.gobilda.com/2000-series-dual-mode-servo-25-2-torque/",
+      "actions": [
+        [
+          "Delivery · goBILDA",
+          "https://www.gobilda.com/2000-series-dual-mode-servo-25-2-torque/"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-goBILDA-2000-0025-0002-2000-Series-Dual-Mode-Servo-%E2%80%94-Torque.html"
+        ]
+      ],
+      "image": "/birthday/images/gobilda-torque-servo-product-only.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.gobilda.com/2000-series-dual-mode-servo-25-2-torque/",
+      "priceSourceUrl": "https://www.gobilda.com/2000-series-dual-mode-servo-25-2-torque/",
+      "checkedDate": "2026-11-04",
+      "technicalLinks": [
+        [
+          "Manufacturer STEP · ZIP",
+          "https://www.gobilda.com/content/step_files/2000-0025-0002.zip"
+        ],
+        [
+          "Dimension drawing",
+          "https://cdn11.bigcommerce.com/s-x56mtydx1w/images/stencil/original/products/1190/5967/2000-0025-0002-goBILDA-Schematic__94019__02696.1701992705.png?c=1"
+        ]
+      ]
+    },
+    {
+      "id": "hitec-hs805mg-servo",
+      "brand": "Hitec",
+      "name": "HS-805MG giant metal-gear servo",
+      "price": "$72.99",
+      "priceNote": "Hitec USA · one new servo",
+      "specs": [
+        "HS-805MG · 32805S",
+        "Giant /1⁄5 scale",
+        "66.3 × 30.3 × 57.6 mm",
+        "15T /8 mm spline · 4.8–6 V"
+      ],
+      "note": "A substantially larger body than a standard-size servo, with dual ball bearings. Exact manufacturer STEP and a dimensioned datasheet are available for CAD. Detailed manufacturer dimensions are 66.3 × 30.3 × 57.6 mm; the US storefront rounds length/width to 66 × 30 mm. Hitec USA lists this exact servo in stock. Delivery listing; confirm shipping to 77406.",
+      "caption": "HS-805MG · genuine Hitec photograph",
+      "url": "https://hitecrcd.com/hs-805mg-mega-giant-scale-metal-gear-servo/",
+      "actions": [
+        [
+          "Delivery · Hitec",
+          "https://hitecrcd.com/hs-805mg-mega-giant-scale-metal-gear-servo/"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-Hitec-HS-805MG-%C2%B7-32805S-HS-805MG-giant-metal-gear-servo.html"
+        ]
+      ],
+      "image": "/birthday/images/hitec-hs805mg-servo-product-only.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.hiteccs.com/actuators/product-details/HS-805MG",
+      "priceSourceUrl": "https://hitecrcd.com/hs-805mg-mega-giant-scale-metal-gear-servo/",
+      "checkedDate": "2026-11-04",
+      "technicalLinks": [
+        [
+          "Manufacturer STEP · ZIP",
+          "https://shop.multiplex-rc.de/module/dcshop/webforms/download_file.php?file=20829"
+        ],
+        [
+          "Dimensioned datasheet",
+          "https://www.hiteccs.com/public/uploads/data_sheet/HCS_HS-805MG_Specsheetv2.2_1-1729894776.pdf"
+        ]
+      ]
     },
     {
       "id": "6806zz-radial-bearing",
@@ -1134,7 +1461,7 @@
         "Black pictured"
       ],
       "note": "Pace Breaker Jacket in Medium. Check pickup near 77406 first.",
-      "caption": "Pace Breaker Jacket · Black · product photo",
+      "caption": "Pace Breaker · Black",
       "url": "https://shop.lululemon.com/p/pace-breaker-jacket/okckgak95v?color=0001",
       "actions": [
         [
@@ -1146,10 +1473,10 @@
           "https://shop.lululemon.com/stores/us/katy/lacenterra-at-cinco-ranch"
         ]
       ],
-      "image": "/birthday/images/lululemon-pace-breaker-black-product.png",
+      "image": "/birthday/images/lululemon-pace-breaker-jacket.jpg",
       "checkedDate": "2026-11-03",
       "photoSource": "https://shop.lululemon.com/p/pace-breaker-jacket/okckgak95v?color=0001",
-      "imageStyle": "cutout",
+      "imageStyle": "portrait",
       "priceSourceUrl": "https://shop.lululemon.com/p/pace-breaker-jacket/okckgak95v?color=0001",
       "referencePrice": "$168",
       "referenceLabel": "Regular price",
@@ -1220,7 +1547,7 @@
         "30 × 30"
       ],
       "note": "B01 double-front work pants in 30 × 30. Current price and stock for this size could not be reverified. Check Academy Cinco Ranch pickup and the selected size’s final price; in-cart offers may differ. Black is pictured.",
-      "caption": "B01 Â· Black Â· product photo",
+      "caption": "Styling photo - worn B01 example",
       "url": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant",
       "actions": [
         [
@@ -1232,10 +1559,10 @@
           "https://www.academy.com/storelocator/texas/richmond/store-0165"
         ]
       ],
-      "image": "/birthday/images/carhartt-b01-black-product.png",
+      "image": "/birthday/images/carhartt-b01-editorial.jpg",
       "checkedDate": "2026-11-03",
-      "photoSource": "https://item.rakuten.co.jp/crossface/10000357/",
-      "imageStyle": "cutout",
+      "photoSource": "https://shop.mavazi.jp/items/109109797",
+      "imageStyle": "landscape",
       "priceNote": "Academy · exact-size price unverified",
       "priceSourceUrl": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant",
       "referencePrice": "$59.99",
@@ -1254,7 +1581,7 @@
         "Black"
       ],
       "note": "Waterproof GORE-TEX shell with a water-repellent finish. Select Black / Medium; Black Sapphire is a different color. Exact price and stock need confirmation. Check REI pickup near 77406 first.",
-      "caption": "Beta Jacket Â· Black Â· official product photo",
+      "caption": "Beta Jacket · Black",
       "url": "https://www.rei.com/product/228617/arcteryx-beta-jacket-mens",
       "actions": [
         [
@@ -1270,10 +1597,10 @@
           "https://www.rei.com/stores/houston-galleria"
         ]
       ],
-      "image": "/birthday/images/arcteryx-beta-black-product.png",
+      "image": "/birthday/images/arcteryx-beta-editorial.jpg",
       "checkedDate": "2026-11-03",
       "photoSource": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868",
-      "imageStyle": "cutout",
+      "imageStyle": "portrait",
       "priceSourceUrl": "https://www.rei.com/product/228617/arcteryx-beta-jacket-mens",
       "referencePrice": "$400",
       "referenceLabel": "Arc’teryx retail reference · verify Black / Medium",
@@ -1283,7 +1610,7 @@
     {
       "number": 1,
       "id": "tiktok-camo-jorts",
-      "image": "/birthday/images/fdr-camo-jorts-product.png",
+      "image": "/birthday/images/tiktok-camo-jorts.webp",
       "brand": "FDR",
       "name": "Camo & yellow 3/4 jorts",
       "price": "Check current price",
@@ -1293,7 +1620,7 @@
         "Camo & yellow"
       ],
       "note": "Camo and yellow, Medium. My original TikTok Shop product. Current price and stock could not be verified; check the selected color.",
-      "caption": "Camo jorts Â· original product photo",
+      "caption": "Original camo product photo",
       "url": "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726",
       "actions": [
         [
@@ -1307,12 +1634,12 @@
       "referencePrice": "$40.99",
       "referenceLabel": "Saved cart · Camo / M · not current",
       "photoSource": "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726",
-      "imageStyle": "cutout"
+      "imageStyle": "landscape"
     },
     {
       "number": 2,
       "id": "tiktok-fb-shorts",
-      "image": "/birthday/images/tiktok-fb-shorts-product-only.png",
+      "image": "/birthday/images/tiktok-fb-shorts.webp",
       "brand": "FB County",
       "name": "Heavyweight Basketball Mesh Shorts",
       "price": "Check current Medium price",
@@ -1321,7 +1648,7 @@
         "All colors"
       ],
       "note": "Medium, all colors. Black is pictured. Check the current TikTok Shop price for the color you select.",
-      "caption": "Black · retailer product photo",
+      "caption": "Black - FB County model photo",
       "url": "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089",
       "actions": [
         [
@@ -1336,13 +1663,13 @@
       "referenceLabel": "FB County website price",
       "referenceUrl": "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts",
       "unverified": true,
-      "photoSource": "https://lapuerta-japan.com/?pid=187543162",
-      "imageStyle": "cutout"
+      "photoSource": "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts",
+      "imageStyle": "landscape"
     },
     {
       "number": 3,
       "id": "shaka-long-sleeve",
-      "image": "/birthday/images/shaka-long-sleeve-black-product.png",
+      "image": "/birthday/images/shaka-long-sleeve-black-editorial.jpg",
       "brand": "Shaka Wear",
       "name": "Oversized long-sleeve tee",
       "price": "Check current price",
@@ -1352,10 +1679,10 @@
         "White & black"
       ],
       "note": "White and black, Small. Check the current price on my TikTok Shop listing.",
-      "caption": "Black · product photo",
+      "caption": "Black · Shaka Wear photo",
       "alternate": {
-        "label": "View White",
-        "image": "/birthday/images/shaka-long-sleeve-white-product.png"
+        "label": "View white",
+        "image": "/birthday/images/shaka-long-sleeve-white-editorial.jpg"
       },
       "url": "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889",
       "actions": [
@@ -1365,8 +1692,8 @@
         ]
       ],
       "checkedDate": "2026-11-03",
-      "imageStyle": "cutout",
-      "photoSource": "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889",
+      "imageStyle": "portrait",
+      "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889",
       "referencePrice": "$17.90",
       "referenceLabel": "Shaka Wear retail price",
@@ -1376,7 +1703,7 @@
     {
       "number": 4,
       "id": "shaka-oversized-tee",
-      "image": "/birthday/images/shaka-oversized-tee-burgundy-product.png",
+      "image": "/birthday/images/shaka-oversized-tee-burgundy-editorial.jpg",
       "brand": "Shaka Wear",
       "name": "Oversized short-sleeve tee",
       "price": "Check current Medium price",
@@ -1386,10 +1713,10 @@
         "Deep Burgundy & Dark Navy"
       ],
       "note": "Deep Burgundy and Dark Navy, Medium. Check the current Medium price on my TikTok Shop listing; the brand’s reference price varies by selection.",
-      "caption": "Deep Burgundy · product photo",
+      "caption": "Deep Burgundy · Shaka Wear photo",
       "alternate": {
         "label": "View navy",
-        "image": "/birthday/images/shaka-oversized-tee-navy-product.png"
+        "image": "/birthday/images/shaka-oversized-tee-navy-editorial.jpg"
       },
       "url": "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105",
       "actions": [
@@ -1400,8 +1727,8 @@
       ],
       "checkedDate": "2026-11-03",
       "unverified": true,
-      "imageStyle": "cutout",
-      "photoSource": "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105",
+      "imageStyle": "portrait",
+      "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105",
       "referencePrice": "From $13.90",
       "referenceLabel": "Shaka Wear retail price",
@@ -1688,6 +2015,28 @@
         "heat-shrink-tubing"
       ],
       "note": "AliExpress links are for comparison. Matching variants, quantities, shipping and current prices still need confirmation."
+    },
+    {
+      "id": "motor-options",
+      "label": "Motor options",
+      "eyebrow": "Motors & actuators",
+      "message": "Standard-size and larger",
+      "selection": "options",
+      "image": "/birthday/images/motor-options-nine.png",
+      "imageWidth": 1800,
+      "imageHeight": 1800,
+      "itemIds": [
+        "nema17-closed-loop-kit",
+        "budget-nema17-stepper",
+        "nema17-long-body-motor",
+        "nema17-planetary-geared-motor",
+        "nema23-open-loop-motor",
+        "nema23-closed-loop-kit",
+        "pololu-37d-12v-encoder-motor",
+        "gobilda-torque-servo",
+        "hitec-hs805mg-servo"
+      ],
+      "note": "Dimensions and CAD links inside. STEPPERONLINE STEP downloads require manufacturer sign-in."
     }
   ]
 }
