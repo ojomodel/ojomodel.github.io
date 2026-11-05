@@ -2037,6 +2037,20 @@
         "hitec-hs805mg-servo"
       ],
       "note": "Dimensions and CAD links inside. STEPPERONLINE STEP downloads require manufacturer sign-in."
+    },
+    {
+      "id": "desk-setup-bundle",
+      "label": "Desk setup bundle",
+      "eyebrow": "Desk & workspace",
+      "message": "Preferably all at once",
+      "image": "/birthday/images/desk-setup-bundle-two.png",
+      "imageWidth": 1800,
+      "imageHeight": 1100,
+      "itemIds": [
+        "pc-speakers",
+        "gridded-workbench-mat"
+      ],
+      "note": "Two separate purchases. Check the current prices inside; keep the speakers under $50."
     }
   ]
 }
