@@ -343,37 +343,6 @@
       "originalPhotoSHA256": "f7307cca107ce94de1dc4c1ccde4f75525209cdf848d915599e68dd0b3f1c645"
     },
     {
-      "id": "canon-g7x",
-      "brand": "Canon",
-      "name": "Canon PowerShot G7 X",
-      "price": "$929.99 · unavailable",
-      "priceNote": "B&H · new Black Mark III · listed price",
-      "specs": [
-        "Generation to confirm"
-      ],
-      "note": "B&H’s regular-price listing is temporarily out of stock, with orders accepted by phone only and no confirmed delivery date. Canon also lists $929.99 but is unavailable. Pickup near 77406 has not been verified.",
-      "caption": "Mark III pictured",
-      "url": "https://www.bhphotovideo.com/c/product/1490985-REG/canon_3637c001_powershot_g7_x_mark.html",
-      "actions": [
-        [
-          "Check B&H stock · $929.99 listed",
-          "https://www.bhphotovideo.com/c/product/1490985-REG/canon_3637c001_powershot_g7_x_mark.html"
-        ],
-        [
-          "Check Canon stock · $929.99 listed",
-          "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii?color=Black&type=New"
-        ]
-      ],
-      "image": "/birthday/images/canon-g7x-editorial.png",
-      "checkedDate": "2026-11-03",
-      "photoSource": "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii",
-      "imageStyle": "cutout",
-      "priceSourceUrl": "https://www.bhphotovideo.com/c/product/1490985-REG/canon_3637c001_powershot_g7_x_mark.html",
-      "referencePrice": "$929.99",
-      "referenceLabel": "Canon listed price · unavailable",
-      "referenceUrl": "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii?color=Black&type=New"
-    },
-    {
       "id": "canon-sx740-hs",
       "image": "/birthday/images/canon-sx740-hs-black.png",
       "brand": "Canon",
@@ -407,6 +376,37 @@
       "referenceLabel": "Canon US listed price · unavailable",
       "referenceUrl": "https://www.usa.canon.com/shop/digital-cameras/point-and-shoot-cameras",
       "unverified": true
+    },
+    {
+      "id": "canon-g7x",
+      "brand": "Canon",
+      "name": "Canon PowerShot G7 X",
+      "price": "$929.99 · unavailable",
+      "priceNote": "B&H · new Black Mark III · listed price",
+      "specs": [
+        "Generation to confirm"
+      ],
+      "note": "B&H’s regular-price listing is temporarily out of stock, with orders accepted by phone only and no confirmed delivery date. Canon also lists $929.99 but is unavailable. Pickup near 77406 has not been verified.",
+      "caption": "Mark III pictured",
+      "url": "https://www.bhphotovideo.com/c/product/1490985-REG/canon_3637c001_powershot_g7_x_mark.html",
+      "actions": [
+        [
+          "Check B&H stock · $929.99 listed",
+          "https://www.bhphotovideo.com/c/product/1490985-REG/canon_3637c001_powershot_g7_x_mark.html"
+        ],
+        [
+          "Check Canon stock · $929.99 listed",
+          "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii?color=Black&type=New"
+        ]
+      ],
+      "image": "/birthday/images/canon-g7x-editorial.png",
+      "checkedDate": "2026-11-03",
+      "photoSource": "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii",
+      "imageStyle": "cutout",
+      "priceSourceUrl": "https://www.bhphotovideo.com/c/product/1490985-REG/canon_3637c001_powershot_g7_x_mark.html",
+      "referencePrice": "$929.99",
+      "referenceLabel": "Canon listed price · unavailable",
+      "referenceUrl": "https://www.usa.canon.com/shop/p/powershot-g7-x-mark-iii?color=Black&type=New"
     },
     {
       "id": "sony-zv-e10-kit",
@@ -1963,11 +1963,15 @@
       "id": "camera-options",
       "label": "Choose one camera",
       "itemIds": [
-        "canon-g7x",
         "canon-sx740-hs",
+        "canon-g7x",
         "sony-zv-e10-kit"
       ],
-      "message": "PLEASEEEEE I REALLY WANT ONE OF THESE CAMERAS PLEASEEEEEEE!!!!!!!!!!!"
+      "message": "PLEASEEEEE I REALLY WANT ONE OF THESE CAMERAS PLEASEEEEEEE!!!!!!!!!!!",
+      "presentation": "bundle",
+      "image": "/birthday/images/camera-options-three.png",
+      "imageWidth": 1800,
+      "imageHeight": 1000
     }
   ],
   "priorityNote": "From what I want the most to what I want the least",

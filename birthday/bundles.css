@@ -1,18 +1,18 @@
 /* Bundle presentation is scoped to the birthday bundle and its contents. */
 .birthday-shell #motor-options { scroll-margin-top: 0; }
-.birthday-shell .gift-row.gift-bundle {
+.birthday-shell .gift-row:is(.gift-bundle, .gift-choice-bundle) {
   grid-template-columns: minmax(280px, .9fr) minmax(0, 1.3fr);
   column-gap: clamp(30px, 5vw, 66px);
   align-items: start;
   padding-block: 38px;
 }
 
-.birthday-shell .gift-bundle .gift-image.is-bundle {
+.birthday-shell :is(.gift-bundle, .gift-choice-bundle) .gift-image.is-bundle {
   align-self: start;
   min-width: 0;
 }
 
-.birthday-shell .gift-bundle .gift-image.is-bundle img {
+.birthday-shell :is(.gift-bundle, .gift-choice-bundle) .gift-image.is-bundle img {
   width: 100%;
   height: auto;
   aspect-ratio: auto;
@@ -21,8 +21,8 @@
   padding: 0;
 }
 
-.birthday-shell .gift-bundle .gift-info { min-width: 0; }
-.birthday-shell .gift-bundle .gift-title {
+.birthday-shell :is(.gift-bundle, .gift-choice-bundle) .gift-info { min-width: 0; }
+.birthday-shell :is(.gift-bundle, .gift-choice-bundle) .gift-title {
   font-size: clamp(26px, 3vw, 34px);
   line-height: 1.2;
 }
@@ -35,7 +35,7 @@
   overflow-wrap: anywhere;
 }
 
-.birthday-shell .gift-bundle .gift-note {
+.birthday-shell :is(.gift-bundle, .gift-choice-bundle) .gift-note {
   max-width: 48ch;
   margin-top: 10px;
 }
@@ -172,19 +172,19 @@
 .birthday-shell .gift-bundle-item .birthday-claim { margin-top: 14px; }
 
 @media (max-width: 700px) {
-  .birthday-shell .gift-row.gift-bundle {
+  .birthday-shell .gift-row:is(.gift-bundle, .gift-choice-bundle) {
     grid-template-columns: minmax(0, 1fr);
     gap: 28px;
     padding-block: 30px;
   }
-  .birthday-shell .gift-bundle .gift-image.is-bundle {
+  .birthday-shell :is(.gift-bundle, .gift-choice-bundle) .gift-image.is-bundle {
     width: min(100%, 520px);
     justify-self: center;
   }
-  .birthday-shell .gift-bundle .gift-title { font-size: 28px; }
+  .birthday-shell :is(.gift-bundle, .gift-choice-bundle) .gift-title { font-size: 28px; }
   .birthday-shell .gift-bundle-preference { margin-top: 12px; font-size: 17px; }
   .birthday-shell .gift-bundle-products { margin-top: 22px; }
-  .birthday-shell .gift-bundle .gift-note { max-width: none; }
+  .birthday-shell :is(.gift-bundle, .gift-choice-bundle) .gift-note { max-width: none; }
 }
 
 @media (max-width: 560px) {
