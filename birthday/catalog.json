@@ -606,61 +606,73 @@
       "id": "electronics-solder-wire",
       "brand": "Kester",
       "name": "44 rosin-core solder wire",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
-      "priceSourceUrl": "https://www.amazon.com/dp/B00AVLM4SO",
+      "price": "$7.93",
+      "priceNote": "CML Supply · one 1 oz tube",
+      "priceSourceUrl": "https://www.cmlsupply.com/kester-44-solder-wire-63-37-0-031-rma-rosin-1oz-tube/",
       "specs": [
         "63/37 tin/lead",
         "0.031 in / 0.8 mm",
         "1 oz tube"
       ],
-      "note": "Extra electronics solder in a small tube. This selection contains lead. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
+      "note": "Kester 44 rosin-core Sn63Pb37 solder, 0.031 in / 0.8 mm, one 1 oz tube. Contains lead. CML Supply repackages the wire and states this repackaging is not endorsed by Kester. In stock at the November 4 check; shipping is calculated at checkout.",
       "caption": "Exact 1 oz solder tube",
-      "url": "https://www.amazon.com/dp/B00AVLM4SO",
+      "url": "https://www.cmlsupply.com/kester-44-solder-wire-63-37-0-031-rma-rosin-1oz-tube/",
       "actions": [
         [
-          "Shop · Amazon",
+          "Delivery · CML Supply",
+          "https://www.cmlsupply.com/kester-44-solder-wire-63-37-0-031-rma-rosin-1oz-tube/"
+        ],
+        [
+          "Compare · Amazon",
           "https://www.amazon.com/dp/B00AVLM4SO"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-Kester-44-63-37-0.8mm-solder-1oz.html"
         ]
       ],
       "image": "/birthday/images/electronics-solder-wire-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.cmlsupply.com/kester-44-solder-wire-63-37-0-031-rma-rosin-1oz-tube/",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-04",
       "referencePrice": "$15.93",
       "referenceLabel": "Amazon offer · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B00AVLM4SO",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "electronics-flux-pen",
       "brand": "SRA",
       "name": "#312 no-clean flux pen",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$9.49",
+      "priceNote": "Amazon · SRA Soldering Products · one-time purchase",
       "priceSourceUrl": "https://www.amazon.com/dp/B008OC0E5M",
       "specs": [
         "10 mL",
         "Refillable",
         "Electronics flux"
       ],
-      "note": "For circuit-board soldering and rework; compatible with leaded and lead-free solder. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
+      "note": "SRA #312 filled 10 mL no-clean flux pen for electronics soldering and rework. The one-time Amazon price is $9.49; the lower subscription price is excluded. Confirm shipping to 77406.",
       "caption": "Exact #312 flux pen",
       "url": "https://www.amazon.com/dp/B008OC0E5M",
       "actions": [
         [
           "Shop · Amazon",
           "https://www.amazon.com/dp/B008OC0E5M"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-SRA-312-no-clean-flux-pen-10ml.html"
         ]
       ],
       "image": "/birthday/images/electronics-flux-pen-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B008OC0E5M",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-04",
       "referencePrice": "$9.49",
       "referenceLabel": "Amazon offer · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B008OC0E5M",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "wire-strippers",
@@ -704,19 +716,27 @@
         "Brass",
         "M3 × 5.7 mm"
       ],
-      "note": "Choose RX-M3x5.7, 100 pieces in the Amazon results. The exact M3 variant and current price could not be confirmed on November 3; a previous check opened a different thread size. Design printed holes for the chosen insert.",
+      "note": "Choose ruthex RX-M3x5.7, 100 pieces. The exact Amazon variant price remains unverified. The linked 3DJake 100-pack is $8.44 USD, but US shipping starts at $32.22, excluding applicable tax; compare the delivered total before choosing it. A previous Amazon check selected a different thread size. Printed holes must match the chosen insert.",
       "caption": "RX-M3x5.7 insert detail · 100 pieces requested",
       "url": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
       "actions": [
         [
           "Select M3 and check price · Amazon",
           "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
+        ],
+        [
+          "Optional 100-pack · 3DJake · shipping from $32.22",
+          "https://www.3djake.com/ruthex/threaded-insert-m3-100-pieces"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-ruthex-RX-M3x5.7-100-heat-set-inserts.html"
         ]
       ],
       "image": "/birthday/images/heat-set-threaded-inserts-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.3djake.de/ruthex/gewindeeinsatz-m3-100-stueck",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-04",
       "unverified": true
     },
     {
@@ -873,91 +893,103 @@
       "id": "6806zz-radial-bearing",
       "brand": "uxcell",
       "name": "6806ZZ radial bearings",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$13.86",
+      "priceNote": "Amazon · sold by uxcell",
       "priceSourceUrl": "https://www.amazon.com/dp/B082PY8F6G",
       "specs": [
         "6806ZZ",
         "30 × 42 × 7 mm",
         "10-pack"
       ],
-      "note": "Metal-shielded thin-section radial bearings. Match the 30 mm shaft and 42 mm housing dimensions. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
+      "note": "Ten metal-shielded 6806ZZ radial bearings, 30 × 42 × 7 mm. Match the shaft and housing dimensions to your design; project fit is not verified. Exact Amazon pack and one-time price verified November 4; shipping is calculated for the destination and may require Prime or a qualifying basket.",
       "caption": "Exact 6806ZZ bearing selection",
       "url": "https://www.amazon.com/dp/B082PY8F6G",
       "actions": [
         [
           "Shop · Amazon",
           "https://www.amazon.com/dp/B082PY8F6G"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-6806ZZ-30x42x7-10pcs-bearings.html"
         ]
       ],
       "image": "/birthday/images/6806zz-radial-bearing-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B082PY8F6G",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-04",
       "referencePrice": "$13.86",
       "referenceLabel": "Amazon offer · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B082PY8F6G",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "51110-thrust-bearing",
       "brand": "uxcell",
       "name": "51110 thrust bearing",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$12.82",
+      "priceNote": "Amazon · sold by uxcell",
       "priceSourceUrl": "https://www.amazon.com/dp/B07G83D98C",
       "specs": [
         "51110",
         "50 × 70 × 14 mm",
         "2-pack"
       ],
-      "note": "Single-direction thrust bearing for axial loads. Match the dimensions to the assembly. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
+      "note": "Two single-direction 51110 thrust bearings, 50 × 70 × 14 mm, for axial loads. Confirm these dimensions against your assembly. Exact Amazon pack and one-time price verified November 4; shipping is calculated for the destination and may require Prime or a qualifying basket.",
       "caption": "Exact 51110 bearing selection",
       "url": "https://www.amazon.com/dp/B07G83D98C",
       "actions": [
         [
           "Shop · Amazon",
           "https://www.amazon.com/dp/B07G83D98C"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-51110-50x70x14-2pcs-thrust-bearings.html"
         ]
       ],
       "image": "/birthday/images/51110-thrust-bearing-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07G83D98C",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-04",
       "referencePrice": "$12.82",
       "referenceLabel": "Amazon offer · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B07G83D98C",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "small-radial-bearings",
       "brand": "NaiveBlue",
       "name": "Small radial bearings",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$6.79",
+      "priceNote": "Amazon · sold by NAIVE BLUE",
       "priceSourceUrl": "https://www.amazon.com/dp/B07H83VV6B",
       "specs": [
         "608ZZ",
         "8 × 22 × 7 mm",
         "10-pack"
       ],
-      "note": "A general-purpose small-bearing option. Check this size against the shaft and mounting space in the project. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
+      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm the shaft and mounting dimensions before buying. Exact Amazon pack and one-time price verified November 4; shipping is calculated for the destination and may require Prime or a qualifying basket.",
       "caption": "Exact 608ZZ bearing pack",
       "url": "https://www.amazon.com/dp/B07H83VV6B",
       "actions": [
         [
           "Shop · Amazon",
           "https://www.amazon.com/dp/B07H83VV6B"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-608ZZ-8x22x7-10pcs-bearings.html"
         ]
       ],
       "image": "/birthday/images/small-radial-bearings-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07H83VV6B",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-04",
       "referencePrice": "$6.79",
       "referenceLabel": "Amazon offer · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B07H83VV6B",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "gridded-workbench-mat",
@@ -993,31 +1025,103 @@
       "id": "robotics-assembly-supplies",
       "brand": "EEEEE",
       "name": "Robotics mounting hardware assortment",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$34.99",
+      "priceNote": "Amazon · sold by eeeee_shop",
       "priceSourceUrl": "https://www.amazon.com/dp/B0B57DQZHF",
       "specs": [
         "572 pieces",
         "M2 / M2.5 / M3 / M4",
         "Brass standoffs"
       ],
-      "note": "Standoffs, screws and nuts for circuit-board mounting and general workshop assembly. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
+      "note": "572-piece M2 / M2.5 / M3 / M4 assortment of brass standoffs, screws and nuts for circuit-board mounting. Exact Amazon pack and one-time price verified November 4; shipping is calculated for the destination and may require Prime or a qualifying basket.",
       "caption": "Exact mounting-hardware assortment",
       "url": "https://www.amazon.com/dp/B0B57DQZHF",
       "actions": [
         [
           "Shop · Amazon",
           "https://www.amazon.com/dp/B0B57DQZHF"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-572pcs-M2-M2.5-M3-M4-brass-standoff-kit.html"
         ]
       ],
       "image": "/birthday/images/robotics-assembly-supplies-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0B57DQZHF",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-04",
       "referencePrice": "$34.99",
       "referenceLabel": "Amazon offer · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B0B57DQZHF",
-      "unverified": true
+      "unverified": false
+    },
+    {
+      "id": "solder-wick",
+      "brand": "Techspray",
+      "name": "#2 Yellow desoldering wick",
+      "price": "$10.95",
+      "priceNote": "SparkFun · one-time purchase",
+      "specs": [
+        "1 spool",
+        "1.4 mm / 0.055 in",
+        "5 ft / 1.524 m",
+        "TOL-29531"
+      ],
+      "note": "Pre-fluxed copper braid for removing excess solder and bridges during PCB rework. SparkFun lists this exact Techspray size #2 wick in stock. Delivery listing; confirm shipping and final total to 77406.",
+      "caption": "Techspray #2 · one 5 ft spool",
+      "url": "https://www.sparkfun.com/solder-wick-2-5ft-techspray.html",
+      "actions": [
+        [
+          "Delivery · SparkFun",
+          "https://www.sparkfun.com/solder-wick-2-5ft-techspray.html"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-Techspray-size-2-1.4mm-5ft-solder-wick.html"
+        ]
+      ],
+      "image": "/birthday/images/solder-wick-product-only.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.sparkfun.com/solder-wick-2-5ft-techspray.html",
+      "priceSourceUrl": "https://www.sparkfun.com/solder-wick-2-5ft-techspray.html",
+      "referencePrice": "$10.95",
+      "referenceLabel": "SparkFun retail price",
+      "referenceUrl": "https://www.sparkfun.com/solder-wick-2-5ft-techspray.html",
+      "checkedDate": "2026-11-04"
+    },
+    {
+      "id": "heat-shrink-tubing",
+      "brand": "SparkFun",
+      "name": "Heat-shrink tubing assortment",
+      "price": "$10.95",
+      "priceNote": "SparkFun · one-time purchase",
+      "specs": [
+        "95 pieces",
+        "10 cm per piece",
+        "Assorted 1.5–9.5 mm sizes",
+        "PRT-09353"
+      ],
+      "note": "Assorted tubing for insulating exposed solder joints and adding support to wiring. Includes multiple colors and sizes; only some black pieces are adhesive-lined. SparkFun lists the kit in stock. Delivery listing; confirm shipping and final total to 77406.",
+      "caption": "PRT-09353 · assorted tubing only",
+      "url": "https://www.sparkfun.com/heat-shrink-kit.html",
+      "actions": [
+        [
+          "Delivery · SparkFun",
+          "https://www.sparkfun.com/heat-shrink-kit.html"
+        ],
+        [
+          "Compare · AliExpress · price unverified",
+          "https://www.aliexpress.com/w/wholesale-95-piece-heat-shrink-tubing-kit-1.5mm-3.7mm-6.5mm-9.5mm.html"
+        ]
+      ],
+      "image": "/birthday/images/heat-shrink-tubing-product-only.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://www.sparkfun.com/heat-shrink-kit.html",
+      "priceSourceUrl": "https://www.sparkfun.com/heat-shrink-kit.html",
+      "referencePrice": "$10.95",
+      "referenceLabel": "SparkFun retail price",
+      "referenceUrl": "https://www.sparkfun.com/heat-shrink-kit.html",
+      "checkedDate": "2026-11-04"
     },
     {
       "id": "lululemon-pace-breaker-jacket",
@@ -1563,6 +1667,27 @@
         "anua-rice-toner",
         "medicube-kojic-serum"
       ]
+    },
+    {
+      "id": "robotics-bundle",
+      "label": "Robotics essentials",
+      "eyebrow": "Tools & robotics",
+      "message": "Preferably all at once",
+      "image": "/birthday/images/robotics-bundle-nine.png",
+      "imageWidth": 1800,
+      "imageHeight": 1800,
+      "itemIds": [
+        "electronics-solder-wire",
+        "electronics-flux-pen",
+        "heat-set-threaded-inserts",
+        "6806zz-radial-bearing",
+        "51110-thrust-bearing",
+        "small-radial-bearings",
+        "robotics-assembly-supplies",
+        "solder-wick",
+        "heat-shrink-tubing"
+      ],
+      "note": "AliExpress links are for comparison. Matching variants, quantities, shipping and current prices still need confirmation."
     }
   ]
 }

@@ -14,7 +14,7 @@
 .birthday-shell .gift-bundle .gift-image.is-bundle img {
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: auto;
   object-fit: contain;
   object-position: center;
   padding: 0;
