@@ -509,6 +509,33 @@
       "checkedDate": "2026-11-03"
     },
     {
+      "id": "apple-desktop",
+      "brand": "Apple",
+      "name": "iMac desktop",
+      "price": "$500 budget",
+      "priceNote": "Target budget · used offer needs confirmation",
+      "specs": [
+        "Around $500",
+        "All-in-one desktop",
+        "2021 M1 model pictured"
+      ],
+      "note": "An iMac with a built-in screen, around $500 before tax and shipping. Buya lists a used / Good M1 unit at $499.99; confirm exact memory, storage, availability and included accessories before buying. Shipping to 77204 or 77406 needs confirmation. The seller’s pickup location is in Michigan; nearby pickup has not been verified.",
+      "caption": "2021 M1 · representative Silver model photo",
+      "url": "https://www.buya.com/Item/Details/APPLE-IMAC-A2439-M1/64539ab19dbe4ceba8011e98d017ba1a",
+      "actions": [
+        [
+          "Check used M1 offer · Buya · $499.99 listed",
+          "https://www.buya.com/Item/Details/APPLE-IMAC-A2439-M1/64539ab19dbe4ceba8011e98d017ba1a"
+        ]
+      ],
+      "image": "/birthday/images/apple-imac-m1.png",
+      "imageStyle": "cutout",
+      "photoSource": "https://focuscamera.com/products/apple-mgpc3lla-crb-computers-tablets-desktop-computers",
+      "checkedDate": "2026-11-04",
+      "unverified": true,
+      "budget": 500
+    },
+    {
       "id": "macbook-pro",
       "brand": "Apple",
       "name": "16-inch MacBook Pro",
