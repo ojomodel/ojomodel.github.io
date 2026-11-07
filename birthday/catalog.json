@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-06",
+  "lastReviewed": "2026-11-07",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -744,7 +744,7 @@
         "Brass",
         "M3 × 5.7 mm"
       ],
-      "note": "Choose ruthex RX-M3x5.7, 100 pieces. The exact Amazon variant price remains unverified. The linked 3DJake 100-pack is $8.41 USD, but US shipping starts at $32.10, excluding applicable tax; compare the delivered total before choosing it. A previous Amazon check selected a different thread size. Printed holes must match the chosen insert.",
+      "note": "Choose ruthex RX-M3x5.7, 100 pieces. The exact Amazon variant price remains unverified. The linked 3DJake 100-pack is $8.36 USD, but US shipping starts at $31.93, excluding applicable tax; compare the delivered total before choosing it. A previous Amazon check selected a different thread size. Printed holes must match the chosen insert.",
       "caption": "RX-M3x5.7 insert detail · 100 pieces requested",
       "url": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
       "actions": [
@@ -753,7 +753,7 @@
           "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
         ],
         [
-          "Optional 100-pack · 3DJake · shipping from $32.10",
+          "Optional 100-pack · 3DJake · shipping from $31.93",
           "https://www.3djake.com/ruthex/threaded-insert-m3-100-pieces"
         ],
         [
@@ -764,7 +764,7 @@
       "image": "/birthday/images/heat-set-threaded-inserts-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.3djake.de/ruthex/gewindeeinsatz-m3-100-stueck",
-      "checkedDate": "2026-11-06",
+      "checkedDate": "2026-11-07",
       "unverified": true
     },
     {
@@ -1031,8 +1031,8 @@
       "id": "nema23-open-loop-motor",
       "brand": "STEPPERONLINE",
       "name": "NEMA 23 open-loop stepper motor",
-      "price": "$18.26",
-      "priceNote": "STEPPERONLINE · one unit · China warehouse",
+      "price": "Check current price",
+      "priceNote": "STEPPERONLINE · current warehouse offers unverified",
       "specs": [
         "23HS30-2804S",
         "57 × 57 mm frame",
@@ -1040,7 +1040,7 @@
         "6.35 mm D shaft",
         "2.8 A/phase · one motor only"
       ],
-      "note": "One full-size bipolar stepper motor. The current manufacturer page rates holding torque at 2.00 Nm; this is holding torque, not guaranteed torque while moving. Driver, power supply and controller are separate. The displayed $18.26 one-unit price is from China stock. At the November 6 check, the US warehouse had one unit with a $5.41 surcharge ($23.67 item price before shipping and tax). This is warehouse shipping availability, not local pickup. Confirm stock, destination shipping and the final delivered total to 77204 or 77406. The older public drawing lists 1.90 Nm and earlier electrical values; use the current linked datasheet for the latest revision. STEP download requires manufacturer sign-in.",
+      "note": "One full-size bipolar stepper motor. The current manufacturer page rates holding torque at 2.00 Nm; this is holding torque, not guaranteed torque while moving. Driver, power supply and controller are separate. The last verified November 6 China-warehouse one-unit price was $18.26. At the November 6 check, the US warehouse had one unit with a $5.41 surcharge ($23.67 item price before shipping and tax). This is warehouse shipping availability, not local pickup. Current warehouse prices and stock could not be reverified on November 7. Confirm stock, destination shipping and the final delivered total to 77204 or 77406. The older public drawing lists 1.90 Nm and earlier electrical values; use the current linked datasheet for the latest revision. STEP download requires manufacturer sign-in.",
       "caption": "23HS30-2804S · one NEMA 23 motor",
       "url": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
       "actions": [
@@ -1071,7 +1071,11 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
       "priceSourceUrl": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
-      "checkedDate": "2026-11-06"
+      "checkedDate": "2026-11-07",
+      "unverified": true,
+      "referencePrice": "$18.26",
+      "referenceLabel": "STEPPERONLINE China-warehouse offer · last verified November 6, 2026",
+      "referenceUrl": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s"
     },
     {
       "id": "nema23-closed-loop-kit",
@@ -1248,15 +1252,15 @@
       "id": "6806zz-radial-bearing",
       "brand": "uxcell",
       "name": "6806ZZ radial bearings",
-      "price": "$13.86",
-      "priceNote": "Amazon · sold by uxcell · one-time purchase",
+      "price": "Check current price",
+      "priceNote": "Amazon · current offer unverified",
       "priceSourceUrl": "https://www.amazon.com/dp/B082PY8F6G",
       "specs": [
         "6806ZZ",
         "30 × 42 × 7 mm",
         "10-pack"
       ],
-      "note": "Ten metal-shielded 6806ZZ radial bearings, 30 × 42 × 7 mm. Match the shaft and housing dimensions to your design; project fit is not verified. The exact one-time $13.86 Amazon offer was in stock on November 6, sold by uxcell and shipped by Amazon. Confirm shipping to 77204 or 77406; destination, Prime and basket conditions may affect delivery.",
+      "note": "Ten metal-shielded 6806ZZ radial bearings, 30 × 42 × 7 mm. Match the shaft and housing dimensions to your design; project fit is not verified. Last verified November 6 at $13.86, sold by uxcell and shipped by Amazon. Current price and availability could not be reverified on November 7. Confirm destination shipping to 77204 or 77406; Prime and basket conditions may affect delivery.",
       "caption": "Exact 6806ZZ bearing selection",
       "url": "https://www.amazon.com/dp/B082PY8F6G",
       "actions": [
@@ -1272,11 +1276,11 @@
       "image": "/birthday/images/6806zz-radial-bearing-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B082PY8F6G",
-      "checkedDate": "2026-11-06",
+      "checkedDate": "2026-11-07",
       "referencePrice": "$13.86",
-      "referenceLabel": "Amazon offer · last verified November 4, 2026",
+      "referenceLabel": "Amazon offer · last verified November 6, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B082PY8F6G",
-      "unverified": false
+      "unverified": true
     },
     {
       "id": "51110-thrust-bearing",
@@ -1514,12 +1518,12 @@
       "id": "lululemon-backpack-30l",
       "brand": "lululemon",
       "name": "New Crew Backpack Large 30L",
-      "price": "$128",
+      "price": "Check current price",
       "specs": [
         "30 L",
         "Black / Graphite Grey"
       ],
-      "note": "The exact New Crew Backpack Large 30L from my link. Check pickup near 77406 first.",
+      "note": "The exact New Crew Backpack Large 30L in Black/Graphite Grey from my link. Last verified November 6 at $128. The current exact offer and stock could not be reverified on November 7. Check pickup around 77204 or 77406 first; local stock is unconfirmed.",
       "caption": "New Crew 30L Â· Black / Graphite Grey",
       "url": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
       "actions": [
@@ -1533,14 +1537,15 @@
         ]
       ],
       "image": "/birthday/images/lululemon-backpack-30l-product.png",
-      "checkedDate": "2026-11-03",
-      "priceNote": "lululemon",
+      "checkedDate": "2026-11-07",
+      "priceNote": "lululemon · current exact offer unverified",
       "photoSource": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
       "referencePrice": "$128",
-      "referenceLabel": "Regular price",
-      "referenceUrl": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646"
+      "referenceLabel": "lululemon listed price · last verified November 6, 2026",
+      "referenceUrl": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
+      "unverified": true
     },
     {
       "id": "window-tint",
@@ -1904,12 +1909,12 @@
       "id": "anua-vita-porestrix-serum",
       "brand": "ANUA",
       "name": "Vita 10 + Porestrix Brightening Serum",
-      "price": "$36.14",
-      "priceNote": "DODOSKIN · USD · one-time purchase",
+      "price": "Check current price",
+      "priceNote": "DODOSKIN · current one-time offer unverified",
       "specs": [
         "20 mL / 0.67 fl oz"
       ],
-      "note": "Delivery from DODOSKIN. Shipping charges and delivery to 77406 are confirmed at checkout.",
+      "note": "The selected 20 mL ANUA Vita 10+ Porestrix serum. The last verified November 6 one-time DODOSKIN price was $36.14 USD. Current price and stock could not be reverified on November 7. Confirm shipping charges and delivery to 77204 or 77406 at checkout.",
       "caption": "20 mL / 0.67 fl oz",
       "url": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
       "actions": [
@@ -1924,9 +1929,10 @@
       "originalPhotoSHA256": "099ee927aa6d59ed7d75784247f3b6847b4be27979b46aa32406992e440ad265",
       "priceSourceUrl": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
       "referencePrice": "$50.40",
-      "referenceLabel": "DODOSKIN list price",
+      "referenceLabel": "Historical DODOSKIN list price",
       "referenceUrl": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
-      "checkedDate": "2026-11-03"
+      "checkedDate": "2026-11-07",
+      "unverified": true
     },
     {
       "id": "remedy-vitamin-c-serum",
