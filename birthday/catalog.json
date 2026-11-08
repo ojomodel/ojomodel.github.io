@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-07",
+  "lastReviewed": "2026-11-08",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -39,15 +39,15 @@
       "id": "black-pla-filament",
       "brand": "SUNLU",
       "name": "Black PLA filament · 5 spools",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$62.95",
+      "priceNote": "Amazon · five 1 kg spools at $12.59 each",
       "specs": [
         "Quantity: 5",
         "Black",
         "1.75 mm",
         "1 kg per spool"
       ],
-      "note": "Five separate black 1 kg spools of 1.75 mm PLA (5 kg total). On Amazon, choose Black / 1 kg and set quantity to 5. Current price and availability could not be confirmed on November 3. The saved November 2 offer was $12.59 per spool, $62.95 for five before tax. The November 2 Amazon typical-price comparison was $13.99 each / $69.95 for five.",
+      "note": "Five separate black 1 kg spools of 1.75 mm PLA (5 kg total). Choose Black / 1 kg and set quantity to 5. Amazon’s one-time offer is $12.59 per spool, $62.95 for five before tax and shipping, sold by SUNLU Industry and shipped by Amazon. In stock at the November 8 check; the public page showed delivery to 77406. Confirm the final delivery date and charges for 77204 or 77406 at checkout; Prime and order-value conditions may apply.",
       "caption": "Black PLA · one 1 kg spool pictured",
       "url": "https://www.amazon.com/dp/B07XG3RM58",
       "actions": [
@@ -58,14 +58,14 @@
       ],
       "image": "/birthday/images/black-pla-filament-product-only.png",
       "imageStyle": "cutout",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-08",
       "quantity": 5,
       "unitPriceUSD": 12.59,
       "priceSourceUrl": "https://www.amazon.com/dp/B07XG3RM58",
-      "referencePrice": "$62.95 for 5",
-      "referenceLabel": "Amazon offer · November 2 · $12.59 per 1 kg spool",
+      "referencePrice": "$13.99 each / $69.95 for 5",
+      "referenceLabel": "Amazon typical price",
       "referenceUrl": "https://www.amazon.com/dp/B07XG3RM58",
-      "unverified": true,
+      "unverified": false,
       "photoSource": "https://www.3dfoxshop.de/sunlu-pla-filament-schwarz-1-75-mm-1-kg/"
     },
     {
@@ -257,12 +257,12 @@
       "id": "medicube-kojic-serum",
       "brand": "medicube",
       "name": "Kojic Acid Turmeric Niacinamide Serum",
-      "price": "$21",
-      "priceNote": "Ulta · online only",
+      "price": "$14.70",
+      "priceNote": "Ulta · one-time sale · online only",
       "specs": [
         "30 mL / 1.01 fl oz"
       ],
-      "note": "Current Ulta bottle pictured. The screenshot shows a pump bottle; confirm packaging before buying. Ulta currently offers this listing for delivery.",
+      "note": "Current Ulta bottle pictured. The screenshot shows a pump bottle; confirm packaging before buying. The exact 30 mL listing is $14.70 on sale, regularly $21, and available for delivery at the November 8 check. This Ulta listing is online only; confirm destination shipping at checkout.",
       "caption": "Current retailer bottle · dropper packaging",
       "url": "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448",
       "actions": [
@@ -275,8 +275,11 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448",
       "priceSourceUrl": "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448",
-      "checkedDate": "2026-11-03",
-      "originalPhotoSHA256": "f7307cca107ce94de1dc4c1ccde4f75525209cdf848d915599e68dd0b3f1c645"
+      "checkedDate": "2026-11-08",
+      "originalPhotoSHA256": "f7307cca107ce94de1dc4c1ccde4f75525209cdf848d915599e68dd0b3f1c645",
+      "referencePrice": "$21",
+      "referenceLabel": "Ulta regular price",
+      "referenceUrl": "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448"
     },
     {
       "id": "canon-sx740-hs",
@@ -736,14 +739,14 @@
       "id": "connecting-wires",
       "brand": "ELEGOO",
       "name": "Breadboard jumper-wire kit",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$6.98",
+      "priceNote": "Amazon · ELEGOO Official US · 120 wires",
       "priceSourceUrl": "https://www.amazon.com/dp/B01EV70C78",
       "specs": [
         "120 wires",
         "M–F / M–M / F–F"
       ],
-      "note": "40 wires of each connector type for breadboards and signal connections; use separate suitable wiring for motor power. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
+      "note": "40 wires of each connector type for breadboards and signal connections; use separate suitable wiring for motor power. The exact 120-wire kit is $6.98, sold by ELEGOO Official US and shipped by Amazon, in stock at the November 8 check. Confirm destination shipping to 77204 or 77406; Prime and order-value conditions may affect delivery.",
       "caption": "Exact 120-wire assortment",
       "url": "https://www.amazon.com/dp/B01EV70C78",
       "actions": [
@@ -755,11 +758,8 @@
       "image": "/birthday/images/connecting-wires-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B01EV70C78",
-      "checkedDate": "2026-11-03",
-      "referencePrice": "$6.98",
-      "referenceLabel": "Amazon offer · last verified November 2, 2026",
-      "referenceUrl": "https://www.amazon.com/dp/B01EV70C78",
-      "unverified": true
+      "checkedDate": "2026-11-08",
+      "unverified": false
     },
     {
       "id": "nema17-closed-loop-kit",
@@ -806,8 +806,8 @@
       "id": "budget-nema17-stepper",
       "brand": "STEPPERONLINE",
       "name": "Budget NEMA 17 stepper motor",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$10.99",
+      "priceNote": "Amazon · StepperOnline · one motor",
       "priceSourceUrl": "https://www.amazon.com/dp/B0B38GX54H",
       "specs": [
         "1 motor",
@@ -815,7 +815,7 @@
         "1.5 A",
         "42 × 42 × 38 mm"
       ],
-      "note": "Exact 17HE15-1504S single motor: 42 x 42 x 38 mm body, 5 mm D-shaft, 23.5 mm shaft length, 1 m cable and connector. The manufacturer page lists exact 17HE15-1504S.STEP (sign-in required) and 17HE15-1504S_Full_Datasheet.pdf; do not use 17HS15 dimensions or generic 38/39 mm CAD. Last verified November 4 at $10.99 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
+      "note": "Exact 17HE15-1504S single motor: 42 x 42 x 38 mm body, 5 mm D-shaft, 23.5 mm shaft length, 1 m cable and connector. The manufacturer page lists exact 17HE15-1504S.STEP (sign-in required) and 17HE15-1504S_Full_Datasheet.pdf; do not use 17HS15 dimensions or generic 38/39 mm CAD. The exact one-motor offer is $10.99, sold by StepperOnline and shipped by Amazon, in stock at the November 8 check. Confirm destination shipping to 77204 or 77406 before buying.",
       "caption": "Exact single motor",
       "url": "https://www.amazon.com/dp/B0B38GX54H",
       "actions": [
@@ -831,11 +831,8 @@
       "image": "/birthday/images/budget-nema17-stepper-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/e-series-nema-17-bipolar-42ncm-59-49oz-in-1-5a-42x42x38mm-4-wires-w-1m-cable-connector-17he15-1504s",
-      "checkedDate": "2026-11-05",
-      "referencePrice": "$10.99",
-      "referenceLabel": "Amazon offer · last verified November 4, 2026",
-      "referenceUrl": "https://www.amazon.com/dp/B0B38GX54H",
-      "unverified": true,
+      "checkedDate": "2026-11-08",
+      "unverified": false,
       "model": "17HE15-1504S",
       "technicalLinks": [
         [
@@ -936,8 +933,8 @@
       "id": "nema23-open-loop-motor",
       "brand": "STEPPERONLINE",
       "name": "NEMA 23 open-loop stepper motor",
-      "price": "Check current price",
-      "priceNote": "STEPPERONLINE · current warehouse offers unverified",
+      "price": "$18.26",
+      "priceNote": "STEPPERONLINE · China warehouse · one motor",
       "specs": [
         "23HS30-2804S",
         "57 × 57 mm frame",
@@ -945,7 +942,7 @@
         "6.35 mm D shaft",
         "2.8 A/phase · one motor only"
       ],
-      "note": "One full-size bipolar stepper motor. The current manufacturer page rates holding torque at 2.00 Nm; this is holding torque, not guaranteed torque while moving. Driver, power supply and controller are separate. The last verified November 6 China-warehouse one-unit price was $18.26. At the November 6 check, the US warehouse had one unit with a $5.41 surcharge ($23.67 item price before shipping and tax). This is warehouse shipping availability, not local pickup. Current warehouse prices and stock could not be reverified on November 7. Confirm stock, destination shipping and the final delivered total to 77204 or 77406. The older public drawing lists 1.90 Nm and earlier electrical values; use the current linked datasheet for the latest revision. STEP download requires manufacturer sign-in.",
+      "note": "One full-size bipolar stepper motor. The current manufacturer page rates holding torque at 2.00 Nm; this is holding torque, not guaranteed torque while moving. Driver, power supply and controller are separate. The November 8 manufacturer listing shows $18.26 for one from China. The US warehouse shows one unit with a $5.41 surcharge ($23.67 item price before shipping and tax). This is warehouse shipping availability, not local pickup. Confirm stock, destination shipping and the final delivered total to 77204 or 77406. The older public drawing lists 1.90 Nm and earlier electrical values; use the current linked datasheet for the latest revision. STEP download requires manufacturer sign-in.",
       "caption": "23HS30-2804S · one NEMA 23 motor",
       "url": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
       "actions": [
@@ -976,11 +973,8 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
       "priceSourceUrl": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
-      "checkedDate": "2026-11-07",
-      "unverified": true,
-      "referencePrice": "$18.26",
-      "referenceLabel": "STEPPERONLINE China-warehouse offer · last verified November 6, 2026",
-      "referenceUrl": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s"
+      "checkedDate": "2026-11-08",
+      "unverified": false
     },
     {
       "id": "nema23-closed-loop-kit",
@@ -1157,15 +1151,15 @@
       "id": "6806zz-radial-bearing",
       "brand": "uxcell",
       "name": "6806ZZ radial bearings",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$14.59",
+      "priceNote": "Amazon · uxcell · 10-pack",
       "priceSourceUrl": "https://www.amazon.com/dp/B082PY8F6G",
       "specs": [
         "6806ZZ",
         "30 × 42 × 7 mm",
         "10-pack"
       ],
-      "note": "Ten metal-shielded 6806ZZ radial bearings, 30 × 42 × 7 mm. Match the shaft and housing dimensions to your design; project fit is not verified. Last verified November 6 at $13.86, sold by uxcell and shipped by Amazon. Current price and availability could not be reverified on November 7. Confirm destination shipping to 77204 or 77406; Prime and basket conditions may affect delivery.",
+      "note": "Ten metal-shielded 6806ZZ radial bearings, 30 × 42 × 7 mm. Match the shaft and housing dimensions to your design; project fit is not verified. The exact ten-pack is $14.59, sold by uxcell and shipped by Amazon, with stock shown at the November 8 check. The last verified November 6 price was $13.86. Confirm destination shipping to 77204 or 77406; Prime and order-value conditions may affect delivery.",
       "caption": "Exact 6806ZZ bearing selection",
       "url": "https://www.amazon.com/dp/B082PY8F6G",
       "actions": [
@@ -1181,11 +1175,11 @@
       "image": "/birthday/images/6806zz-radial-bearing-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B082PY8F6G",
-      "checkedDate": "2026-11-07",
+      "checkedDate": "2026-11-08",
       "referencePrice": "$13.86",
       "referenceLabel": "Amazon offer · last verified November 6, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B082PY8F6G",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "51110-thrust-bearing",
@@ -1552,12 +1546,12 @@
       "brand": "FDR",
       "name": "Camo & yellow 3/4 jorts",
       "price": "Check current price",
-      "priceNote": "TikTok Shop",
+      "priceNote": "TikTok Shop · FDR · Camo / M listed $43.99",
       "specs": [
         "Medium",
         "Camo & yellow"
       ],
-      "note": "Camo and yellow, Medium. My original TikTok Shop product. Current price and stock could not be verified; check the selected color.",
+      "note": "Camo and yellow, Medium. My original TikTok Shop product. Seller FDR lists the exact Camo / M selection at $43.99, with stock shown at the November 8 check. The yellow selection, its current price and destination shipping still need confirmation; check the selected color and length before buying.",
       "caption": "Original camo product photo",
       "url": "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726",
       "actions": [
@@ -1566,7 +1560,7 @@
           "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726"
         ]
       ],
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-08",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726",
       "unverified": true,
       "referencePrice": "$40.99",
@@ -1585,7 +1579,7 @@
         "Medium",
         "All colors"
       ],
-      "note": "Medium, all colors. Black is pictured. Check the current TikTok Shop price for the color you select.",
+      "note": "Medium, all colors. Black is pictured. TikTok Shop lists $29.99 and shows stock for Medium color options. The exact Medium price for each color still needs confirmation, along with shipping to 77204 or 77406.",
       "caption": "Black - FB County model photo",
       "url": "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089",
       "actions": [
@@ -1594,8 +1588,8 @@
           "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089"
         ]
       ],
-      "checkedDate": "2026-11-03",
-      "priceNote": "TikTok Shop",
+      "checkedDate": "2026-11-08",
+      "priceNote": "TikTok Shop · FB County · listing $29.99",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089",
       "referencePrice": "$29.99",
       "referenceLabel": "FB County website price",
@@ -1610,13 +1604,13 @@
       "image": "/birthday/images/shaka-long-sleeve-black-editorial.jpg",
       "brand": "Shaka Wear",
       "name": "Oversized long-sleeve tee",
-      "price": "Check current price",
-      "priceNote": "TikTok Shop",
+      "price": "$18",
+      "priceNote": "TikTok Shop · ShakaWear · each tee",
       "specs": [
         "Small",
         "White & black"
       ],
-      "note": "White and black, Small. Check the current price on my TikTok Shop listing.",
+      "note": "White and black, Small. TikTok Shop seller ShakaWear lists each requested Small color at $18 per tee, with both variants in stock at the November 8 check. Select the intended color and confirm shipping to 77204 or 77406 and any checkout conditions.",
       "caption": "Black · Shaka Wear photo",
       "alternate": {
         "label": "View white",
@@ -1629,14 +1623,14 @@
           "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889"
         ]
       ],
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-08",
       "imageStyle": "portrait",
       "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889",
       "referencePrice": "$17.90",
       "referenceLabel": "Shaka Wear retail price",
       "referenceUrl": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve",
-      "unverified": true
+      "unverified": false
     },
     {
       "number": 4,
@@ -1644,13 +1638,13 @@
       "image": "/birthday/images/shaka-oversized-tee-burgundy-editorial.jpg",
       "brand": "Shaka Wear",
       "name": "Oversized short-sleeve tee",
-      "price": "Check current Medium price",
-      "priceNote": "TikTok Shop",
+      "price": "$23.90",
+      "priceNote": "TikTok Shop · ShakaWear · each tee",
       "specs": [
         "Medium",
         "Deep Burgundy & Dark Navy"
       ],
-      "note": "Deep Burgundy and Dark Navy, Medium. Check the current Medium price on my TikTok Shop listing; the brand’s reference price varies by selection.",
+      "note": "Deep Burgundy and Dark Navy, Medium. TikTok Shop seller ShakaWear lists each requested Medium color at $23.90 per tee, with both variants in stock at the November 8 check. Select the intended color and confirm shipping to 77204 or 77406 and any checkout conditions; the brand’s reference price varies by selection.",
       "caption": "Deep Burgundy · Shaka Wear photo",
       "alternate": {
         "label": "View navy",
@@ -1663,8 +1657,8 @@
           "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105"
         ]
       ],
-      "checkedDate": "2026-11-03",
-      "unverified": true,
+      "checkedDate": "2026-11-08",
+      "unverified": false,
       "imageStyle": "portrait",
       "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105",
@@ -1814,12 +1808,12 @@
       "id": "anua-vita-porestrix-serum",
       "brand": "ANUA",
       "name": "Vita 10 + Porestrix Brightening Serum",
-      "price": "Check current price",
-      "priceNote": "DODOSKIN · current one-time offer unverified",
+      "price": "$36.14",
+      "priceNote": "DODOSKIN · one-time USD price",
       "specs": [
         "20 mL / 0.67 fl oz"
       ],
-      "note": "The selected 20 mL ANUA Vita 10+ Porestrix serum. The last verified November 6 one-time DODOSKIN price was $36.14 USD. Current price and stock could not be reverified on November 7. Confirm shipping charges and delivery to 77204 or 77406 at checkout.",
+      "note": "The selected 20 mL ANUA Vita 10+ Porestrix serum. DODOSKIN lists the one-time price at $36.14 USD and the exact variant in stock at the November 8 check. Confirm shipping charges and delivery to 77204 or 77406 at checkout.",
       "caption": "20 mL / 0.67 fl oz",
       "url": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
       "actions": [
@@ -1834,10 +1828,10 @@
       "originalPhotoSHA256": "099ee927aa6d59ed7d75784247f3b6847b4be27979b46aa32406992e440ad265",
       "priceSourceUrl": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
       "referencePrice": "$50.40",
-      "referenceLabel": "Historical DODOSKIN list price",
+      "referenceLabel": "DODOSKIN listed comparison price",
       "referenceUrl": "https://www.dodoskin.com/products/anua-vita-10-porestrix-brightening-toning-serum-20ml",
-      "checkedDate": "2026-11-07",
-      "unverified": true
+      "checkedDate": "2026-11-08",
+      "unverified": false
     },
     {
       "id": "remedy-vitamin-c-serum",
