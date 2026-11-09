@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-08",
+  "lastReviewed": "2026-11-09",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -39,15 +39,15 @@
       "id": "black-pla-filament",
       "brand": "SUNLU",
       "name": "Black PLA filament · 5 spools",
-      "price": "$62.95",
-      "priceNote": "Amazon · five 1 kg spools at $12.59 each",
+      "price": "$69.95",
+      "priceNote": "Amazon · five 1 kg spools at $13.99 each",
       "specs": [
         "Quantity: 5",
         "Black",
         "1.75 mm",
         "1 kg per spool"
       ],
-      "note": "Five separate black 1 kg spools of 1.75 mm PLA (5 kg total). Choose Black / 1 kg and set quantity to 5. Amazon’s one-time offer is $12.59 per spool, $62.95 for five before tax and shipping, sold by SUNLU Industry and shipped by Amazon. In stock at the November 8 check; the public page showed delivery to 77406. Confirm the final delivery date and charges for 77204 or 77406 at checkout; Prime and order-value conditions may apply.",
+      "note": "Five separate black 1 kg spools of 1.75 mm PLA (5 kg total). Choose Black / 1 kg and set quantity to 5. Amazon’s one-time offer is $13.99 per spool, $69.95 for five before tax and shipping, sold by SUNLU Industry and shipped by Amazon. In stock at the November 9 check; the public page showed delivery to 77406. Confirm the final delivery date, charges and availability for quantity five at 77204 or 77406; Prime and order-value conditions may apply.",
       "caption": "Black PLA · one 1 kg spool pictured",
       "url": "https://www.amazon.com/dp/B07XG3RM58",
       "actions": [
@@ -58,13 +58,10 @@
       ],
       "image": "/birthday/images/black-pla-filament-product-only.png",
       "imageStyle": "cutout",
-      "checkedDate": "2026-11-08",
+      "checkedDate": "2026-11-09",
       "quantity": 5,
-      "unitPriceUSD": 12.59,
+      "unitPriceUSD": 13.99,
       "priceSourceUrl": "https://www.amazon.com/dp/B07XG3RM58",
-      "referencePrice": "$13.99 each / $69.95 for 5",
-      "referenceLabel": "Amazon typical price",
-      "referenceUrl": "https://www.amazon.com/dp/B07XG3RM58",
       "unverified": false,
       "photoSource": "https://www.3dfoxshop.de/sunlu-pla-filament-schwarz-1-75-mm-1-kg/"
     },
@@ -511,11 +508,11 @@
       "id": "pc-speakers",
       "brand": "Cyber Acoustics",
       "name": "CA-3090 PC speakers with subwoofer",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$37.99",
+      "priceNote": "Amazon · sold by Cyber Acoustics · shipped by Amazon",
       "priceSourceUrl": "https://www.amazon.com/dp/B00006B9W1",
       "referencePrice": "$39.99",
-      "referenceLabel": "Amazon list price · last verified November 2, 2026",
+      "referenceLabel": "Amazon list price",
       "referenceUrl": "https://www.amazon.com/dp/B00006B9W1",
       "specs": [
         "Black & silver",
@@ -523,34 +520,34 @@
         "4-inch subwoofer",
         "Adjustable bass"
       ],
-      "note": "Two desktop speakers and a 4-inch subwoofer with adjustable bass; 9 W RMS total, wired 3.5 mm audio and AC adapter. Current price, seller and shipping to 77406 could not be confirmed on November 3. The saved November 2 offer was $37.99 sold by Cyber Acoustics and shipped by Amazon. Keep the item price under $50.",
+      "note": "Two desktop speakers and a 4-inch subwoofer with adjustable bass; 9 W RMS total, wired 3.5 mm audio and AC adapter. The new full set is $37.99, sold by Cyber Acoustics and shipped by Amazon, and was in stock at the November 9 check. This meets my strictly under-$50 item-price budget. The public page showed delivery to 77406. Confirm the final delivery date and shipping charges for 77204 or 77406; Prime and order-value conditions may apply.",
       "caption": "CA-3090 · full speaker set",
       "url": "https://www.amazon.com/dp/B00006B9W1",
       "actions": [
         [
-          "Check current price · Amazon · under $50 budget",
+          "Shop delivery · Amazon",
           "https://www.amazon.com/dp/B00006B9W1"
         ]
       ],
       "image": "/birthday/images/pc-speakers-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.cyberacoustics.com/ca3090",
-      "checkedDate": "2026-11-03",
-      "unverified": true
+      "checkedDate": "2026-11-09",
+      "unverified": false
     },
     {
       "id": "yihua-soldering-station",
       "brand": "YIHUA",
       "name": "926LED-III soldering station",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$43.99",
+      "priceNote": "Amazon · one-time purchase · sold by EVERSTONE US",
       "priceSourceUrl": "https://www.amazon.com/dp/B082F1WKP9",
       "specs": [
         "Black",
         "US plug",
         "90–480°C"
       ],
-      "note": "Adjustable station with two helping hands, six spare tips, solder sucker, tweezers and 35 g of lead-free solder. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
+      "note": "Adjustable station with two helping hands, six spare tips, solder sucker, tweezers and 35 g of lead-free solder. The current $43.99 one-time offer is sold by EVERSTONE US and shipped by Amazon; stock was shown at the November 9 check. Confirm the final delivery date and shipping charges for 77204 or 77406; Prime and order-value conditions may apply.",
       "caption": "926LED-III · Black station and included kit",
       "url": "https://www.amazon.com/dp/B082F1WKP9",
       "actions": [
@@ -562,11 +559,11 @@
       "image": "/birthday/images/yihua-soldering-station-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B082F1WKP9",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-09",
       "referencePrice": "$44.99",
       "referenceLabel": "Amazon offer · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B082F1WKP9",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "electronics-solder-wire",
@@ -610,15 +607,15 @@
       "id": "electronics-flux-pen",
       "brand": "SRA",
       "name": "#312 no-clean flux pen",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$9.49",
+      "priceNote": "Amazon · one-time purchase · sold by SRA Soldering Products",
       "priceSourceUrl": "https://www.amazon.com/dp/B008OC0E5M",
       "specs": [
         "10 mL",
         "Refillable",
         "Electronics flux"
       ],
-      "note": "SRA #312 filled 10 mL no-clean flux pen for electronics soldering and rework. The saved offer is a one-time purchase, not the lower subscription price. Last verified November 4 at $9.49 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
+      "note": "SRA #312 filled 10 mL no-clean flux pen for electronics soldering and rework. Use the $9.49 one-time purchase, not the $9.02 subscription offer. The current $9.49 one-time offer is sold by SRA Soldering Products and shipped by Amazon; stock was shown at the November 9 check. Confirm the final delivery date and shipping charges for 77204 or 77406; Prime and order-value conditions may apply.",
       "caption": "Exact #312 flux pen",
       "url": "https://www.amazon.com/dp/B008OC0E5M",
       "actions": [
@@ -634,11 +631,11 @@
       "image": "/birthday/images/electronics-flux-pen-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B008OC0E5M",
-      "checkedDate": "2026-11-05",
+      "checkedDate": "2026-11-09",
       "referencePrice": "$9.49",
       "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B008OC0E5M",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "heat-set-threaded-inserts",
@@ -709,15 +706,15 @@
       "id": "esp32-cam-kit",
       "brand": "Aideepen",
       "name": "ESP32-CAM + MB programmer kit",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$28.99",
+      "priceNote": "Amazon · one-time purchase · sold by Aideepen",
       "priceSourceUrl": "https://www.amazon.com/dp/B0948ZFTQZ",
       "specs": [
         "2-pack",
         "OV2640 2 MP cameras",
         "Micro-USB / CH340G"
       ],
-      "note": "Two camera boards with ESP32-CAM-MB USB programmer bases. Select 2PCS ESP32-CAM-MB. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
+      "note": "Two camera boards with ESP32-CAM-MB USB programmer bases. Select 2PCS ESP32-CAM-MB. The current $28.99 one-time offer is sold by Aideepen and shipped by Amazon; stock was shown at the November 9 check. Confirm the final delivery date and shipping charges for 77204 or 77406; Prime and order-value conditions may apply.",
       "caption": "Two camera boards and programmer bases",
       "url": "https://www.amazon.com/dp/B0948ZFTQZ",
       "actions": [
@@ -729,11 +726,11 @@
       "image": "/birthday/images/esp32-cam-kit-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0948ZFTQZ",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-09",
       "referencePrice": "$27.99",
       "referenceLabel": "Amazon offer · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B0948ZFTQZ",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "connecting-wires",
@@ -765,15 +762,15 @@
       "id": "nema17-closed-loop-kit",
       "brand": "STEPPERONLINE",
       "name": "NEMA 17 closed-loop stepper kit",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$68.00",
+      "priceNote": "Amazon · one-time purchase · sold by StepperOnline",
       "priceSourceUrl": "https://www.amazon.com/dp/B0CWSR77Q9",
       "specs": [
         "52 Ncm",
         "Motor + encoder + driver",
         "CL42T V4.1"
       ],
-      "note": "Exact Amazon kit includes 17HS19-2004D-E1K motor (52 Ncm, 42 x 42 x 68 mm body, 5 mm D-shaft, 24 mm shaft length), CL42T-V41 closed-loop driver and CABLE-PC-1 RS232 debugging cable. The driver requires 24-48 VDC; a power supply and controller are separate. The manufacturer kit page lists exact motor/driver STEP files (sign-in required) and dimensions/manual links. Do not use older 17HS19-2004D-E1000 (59 Ncm, 72 mm body) CAD. Last verified November 4 at $68.00 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
+      "note": "Exact Amazon kit includes 17HS19-2004D-E1K motor (52 Ncm, 42 x 42 x 68 mm body, 5 mm D-shaft, 24 mm shaft length), CL42T-V41 closed-loop driver and CABLE-PC-1 RS232 debugging cable. The driver requires 24-48 VDC; a power supply and controller are separate. The manufacturer kit page lists exact motor/driver STEP files (sign-in required) and dimensions/manual links. Do not use older 17HS19-2004D-E1000 (59 Ncm, 72 mm body) CAD. The current $68.00 one-time offer is sold by StepperOnline and shipped by Amazon; stock was shown at the November 9 check. Confirm the final delivery date and shipping charges for 77204 or 77406; Prime and order-value conditions may apply.",
       "caption": "Exact motor and driver kit",
       "url": "https://www.amazon.com/dp/B0CWSR77Q9",
       "actions": [
@@ -789,11 +786,11 @@
       "image": "/birthday/images/nema17-closed-loop-kit-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0CWSR77Q9",
-      "checkedDate": "2026-11-05",
+      "checkedDate": "2026-11-09",
       "referencePrice": "$68.00",
       "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B0CWSR77Q9",
-      "unverified": true,
+      "unverified": false,
       "model": "1-CL42T-S05-V41 / 17HS19-2004D-E1K / CL42T-V41",
       "technicalLinks": [
         [
@@ -1185,15 +1182,15 @@
       "id": "51110-thrust-bearing",
       "brand": "uxcell",
       "name": "51110 thrust bearing",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$13.49",
+      "priceNote": "Amazon · one-time purchase · sold by uxcell",
       "priceSourceUrl": "https://www.amazon.com/dp/B07G83D98C",
       "specs": [
         "51110",
         "50 × 70 × 14 mm",
         "2-pack"
       ],
-      "note": "Two single-direction 51110 thrust bearings, 50 × 70 × 14 mm, for axial loads. Confirm these dimensions against your assembly. Shipping depends on the destination and may require Prime or a qualifying basket. Last verified November 4 at $12.82 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
+      "note": "Two single-direction 51110 thrust bearings, 50 × 70 × 14 mm, for axial loads. Confirm these dimensions against your assembly. Shipping depends on the destination and may require Prime or a qualifying basket. The current $13.49 one-time offer is sold by uxcell and shipped by Amazon; stock was shown at the November 9 check. Confirm the final delivery date and shipping charges for 77204 or 77406; Prime and order-value conditions may apply.",
       "caption": "Exact 51110 bearing selection",
       "url": "https://www.amazon.com/dp/B07G83D98C",
       "actions": [
@@ -1209,25 +1206,25 @@
       "image": "/birthday/images/51110-thrust-bearing-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07G83D98C",
-      "checkedDate": "2026-11-05",
+      "checkedDate": "2026-11-09",
       "referencePrice": "$12.82",
       "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B07G83D98C",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "small-radial-bearings",
       "brand": "NaiveBlue",
       "name": "Small radial bearings",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$6.99",
+      "priceNote": "Amazon · one-time purchase · sold by Beautiful & Gorgeous",
       "priceSourceUrl": "https://www.amazon.com/dp/B07H83VV6B",
       "specs": [
         "608ZZ",
         "8 × 22 × 7 mm",
         "10-pack"
       ],
-      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm the shaft and mounting dimensions before buying. Shipping depends on the destination and may require Prime or a qualifying basket. Last verified November 4 at $6.79 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
+      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm the shaft and mounting dimensions before buying. Shipping depends on the destination and may require Prime or a qualifying basket. The current $6.99 one-time offer is sold by Beautiful & Gorgeous and shipped by Amazon; stock was shown at the November 9 check. Confirm the final delivery date and shipping charges for 77204 or 77406; Prime and order-value conditions may apply.",
       "caption": "Exact 608ZZ bearing pack",
       "url": "https://www.amazon.com/dp/B07H83VV6B",
       "actions": [
@@ -1243,11 +1240,11 @@
       "image": "/birthday/images/small-radial-bearings-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07H83VV6B",
-      "checkedDate": "2026-11-05",
+      "checkedDate": "2026-11-09",
       "referencePrice": "$6.79",
       "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B07H83VV6B",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "gridded-workbench-mat",
@@ -1283,15 +1280,15 @@
       "id": "robotics-assembly-supplies",
       "brand": "EEEEE",
       "name": "Robotics mounting hardware assortment",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
+      "price": "$34.99",
+      "priceNote": "Amazon · one-time purchase · sold by eeeee_shop",
       "priceSourceUrl": "https://www.amazon.com/dp/B0B57DQZHF",
       "specs": [
         "572 pieces",
         "M2 / M2.5 / M3 / M4",
         "Brass standoffs"
       ],
-      "note": "572-piece M2 / M2.5 / M3 / M4 assortment of brass standoffs, screws and nuts for circuit-board mounting. Shipping depends on the destination and may require Prime or a qualifying basket. Last verified November 4 at $34.99 for this exact selection. Current Amazon price and availability could not be reverified on November 5; confirm destination shipping before buying.",
+      "note": "572-piece M2 / M2.5 / M3 / M4 assortment of brass standoffs, screws and nuts for circuit-board mounting. Shipping depends on the destination and may require Prime or a qualifying basket. The current $34.99 one-time offer is sold by eeeee_shop and shipped by Amazon; stock was shown at the November 9 check. Confirm the final delivery date and shipping charges for 77204 or 77406; Prime and order-value conditions may apply.",
       "caption": "Exact mounting-hardware assortment",
       "url": "https://www.amazon.com/dp/B0B57DQZHF",
       "actions": [
@@ -1307,11 +1304,11 @@
       "image": "/birthday/images/robotics-assembly-supplies-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0B57DQZHF",
-      "checkedDate": "2026-11-05",
+      "checkedDate": "2026-11-09",
       "referencePrice": "$34.99",
       "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B0B57DQZHF",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "solder-wick",
@@ -1574,12 +1571,12 @@
       "image": "/birthday/images/tiktok-fb-shorts.webp",
       "brand": "FB County",
       "name": "Heavyweight Basketball Mesh Shorts",
-      "price": "Check current Medium price",
+      "price": "$38.98",
       "specs": [
         "Medium",
         "All colors"
       ],
-      "note": "Medium, all colors. Black is pictured. TikTok Shop lists $29.99 and shows stock for Medium color options. The exact Medium price for each color still needs confirmation, along with shipping to 77204 or 77406.",
+      "note": "Medium, all colors. Black is pictured. TikTok Shop seller FB County lists the requested Medium selections in Black, Navy and Grey at $38.98 each, with stock shown at the November 9 check. The public listing also showed $8.99 shipping; confirm the final shipping charge and delivery estimate for 77204 or 77406 before buying.",
       "caption": "Black - FB County model photo",
       "url": "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089",
       "actions": [
@@ -1588,13 +1585,13 @@
           "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089"
         ]
       ],
-      "checkedDate": "2026-11-08",
-      "priceNote": "TikTok Shop · FB County · listing $29.99",
+      "checkedDate": "2026-11-09",
+      "priceNote": "TikTok Shop · FB County · each Medium pair",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089",
       "referencePrice": "$29.99",
-      "referenceLabel": "FB County website price",
+      "referenceLabel": "FB County website price · last verified November 8, 2026",
       "referenceUrl": "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts",
-      "unverified": true,
+      "unverified": false,
       "photoSource": "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts",
       "imageStyle": "landscape"
     },
