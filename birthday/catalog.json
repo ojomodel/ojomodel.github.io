@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-09",
+  "lastReviewed": "2026-11-10",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -283,15 +283,15 @@
       "image": "/birthday/images/canon-sx740-hs-black.png",
       "brand": "Canon",
       "name": "PowerShot SX740 HS digital camera",
-      "price": "Check current price",
-      "priceNote": "Walmart Marketplace · current offer unverified",
+      "price": "$685.50",
+      "priceNote": "Walmart Marketplace · RedTagCamera · new international version",
       "specs": [
         "Black",
         "International version",
         "40× optical zoom",
         "4K video"
       ],
-      "note": "New Black international version. Last verified November 5 at $625.50, sold and shipped by Web Offers. Current Walmart price, seller and availability could not be reverified on November 6. Confirm shipping to 77204 or 77406 and the seller’s warranty before buying; local pickup has not been verified.",
+      "note": "New Black international version, listed at $685.50 and sold and shipped by RedTagCamera. The exact listing showed stock at the November 10 check, but its default delivery location was Sacramento, CA 95829. Confirm availability, shipping charges and delivery dates for 77204 or 77406 and the seller’s warranty before buying; Texas delivery and local pickup have not been verified.",
       "caption": "SX740 HS · Black",
       "url": "https://www.walmart.com/ip/581034212",
       "actions": [
@@ -304,14 +304,14 @@
           "https://www.bestbuy.com/product/canon-powershot-sx740-hs-20-3-megapixel-digital-camera-black/6287924"
         ]
       ],
-      "checkedDate": "2026-11-06",
+      "checkedDate": "2026-11-10",
       "photoSource": "https://www.usa.canon.com/shop/p/powershot-sx740-hs?color=Black&type=New",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.walmart.com/ip/581034212",
       "referencePrice": "$549.99",
       "referenceLabel": "Canon US listed price · unavailable",
       "referenceUrl": "https://www.usa.canon.com/shop/digital-cameras/point-and-shoot-cameras",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "canon-g7x",
@@ -641,21 +641,21 @@
       "id": "heat-set-threaded-inserts",
       "brand": "ruthex",
       "name": "M3 heat-set threaded inserts",
-      "price": "Check current price",
-      "priceNote": "Amazon · exact M3 variant unverified",
-      "priceSourceUrl": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
+      "price": "$9.99",
+      "priceNote": "Amazon · ruthex · M3x5.7 / 100 pieces",
+      "priceSourceUrl": "https://www.amazon.com/dp/B08BCRZZS3?th=1&psc=1",
       "specs": [
         "100 pieces",
         "Brass",
         "M3 × 5.7 mm"
       ],
-      "note": "Choose ruthex RX-M3x5.7, 100 pieces. The exact Amazon variant price remains unverified. The linked 3DJake 100-pack is $8.36 USD, but US shipping starts at $31.93, excluding applicable tax; compare the delivered total before choosing it. A previous Amazon check selected a different thread size. Printed holes must match the chosen insert.",
+      "note": "Exact ruthex RX-M3x5.7 brass heat-set inserts, 100 pieces. The selected M3x5.7 (100pcs) offer is $9.99, sold by ruthex and shipped by Amazon; the page showed only one pack left at the November 10 check. Confirm current stock and shipping for 77204 or 77406; Prime or a qualifying basket may be required for free delivery. The optional 3DJake 100-pack was last verified November 7 at $8.36 USD with US shipping from $31.93 before tax; confirm its current delivered total. Printed holes must match the chosen insert.",
       "caption": "RX-M3x5.7 insert detail · 100 pieces requested",
-      "url": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
+      "url": "https://www.amazon.com/dp/B08BCRZZS3?th=1&psc=1",
       "actions": [
         [
-          "Select M3 and check price · Amazon",
-          "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
+          "Shop delivery · Amazon · M3 / 100 pieces",
+          "https://www.amazon.com/dp/B08BCRZZS3?th=1&psc=1"
         ],
         [
           "Optional 100-pack · 3DJake · shipping from $31.93",
@@ -669,8 +669,8 @@
       "image": "/birthday/images/heat-set-threaded-inserts-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.3djake.de/ruthex/gewindeeinsatz-m3-100-stueck",
-      "checkedDate": "2026-11-07",
-      "unverified": true
+      "checkedDate": "2026-11-10",
+      "unverified": false
     },
     {
       "id": "bench-power-supply",
@@ -1216,15 +1216,15 @@
       "id": "small-radial-bearings",
       "brand": "NaiveBlue",
       "name": "Small radial bearings",
-      "price": "$6.99",
-      "priceNote": "Amazon · one-time purchase · sold by Beautiful & Gorgeous",
+      "price": "$6.97",
+      "priceNote": "Amazon · one-time purchase · sold by NAIVE BLUE",
       "priceSourceUrl": "https://www.amazon.com/dp/B07H83VV6B",
       "specs": [
         "608ZZ",
         "8 × 22 × 7 mm",
         "10-pack"
       ],
-      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm the shaft and mounting dimensions before buying. Shipping depends on the destination and may require Prime or a qualifying basket. The current $6.99 one-time offer is sold by Beautiful & Gorgeous and shipped by Amazon; stock was shown at the November 9 check. Confirm the final delivery date and shipping charges for 77204 or 77406; Prime and order-value conditions may apply.",
+      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm the shaft and mounting dimensions before buying. The current $6.97 one-time offer is sold by NAIVE BLUE and shipped by Amazon; stock was shown at the November 10 check. Confirm final delivery dates and shipping charges for 77204 or 77406; Prime and order-value conditions may apply.",
       "caption": "Exact 608ZZ bearing pack",
       "url": "https://www.amazon.com/dp/B07H83VV6B",
       "actions": [
@@ -1240,7 +1240,7 @@
       "image": "/birthday/images/small-radial-bearings-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07H83VV6B",
-      "checkedDate": "2026-11-09",
+      "checkedDate": "2026-11-10",
       "referencePrice": "$6.79",
       "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B07H83VV6B",
@@ -1447,11 +1447,11 @@
       "id": "window-tint",
       "brand": "Nix Mobile Detail",
       "name": "Window tint",
-      "price": "From $245",
+      "price": "From $195",
       "specs": [
         "Local appointment"
       ],
-      "note": "Starting package price. Confirm vehicle, windows included and film with the shop.",
+      "note": "The shop advertises vehicle window-tint packages starting at $195. Confirm the vehicle, windows included, selected film and final quote with the shop.",
       "caption": "Window film example",
       "photoSource": "https://vvividshop.com/products/vvivid-dark-black-transparent-window-tint",
       "url": "https://www.nixmobiledetail.com/window-tint-richmond-tx",
@@ -1462,7 +1462,7 @@
         ]
       ],
       "image": "/birthday/images/window-tint-product.png",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-10",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.nixmobiledetail.com/window-tint-richmond-tx",
       "priceNote": "Nix Mobile Detail · starting package"
