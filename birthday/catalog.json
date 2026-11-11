@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-10",
+  "lastReviewed": "2026-11-11",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -165,14 +165,14 @@
       "id": "kisocare-azelaic-acid-15",
       "brand": "KISOCARE",
       "name": "Azelaic Acid Cream 15",
-      "price": "$20.16",
-      "priceNote": "KISOCARE · one-time purchase",
+      "price": "$10.29",
+      "priceNote": "KISOCARE · listed one-time sale",
       "specs": [
         "15%",
         "20 g",
         "No. 057"
       ],
-      "note": "The 15% cream shown in my screenshot. Ships from Japan. The brand lists $20 shipping below $50; confirm the final delivery total.",
+      "note": "KISOCARE’s product page lists this 15% cream at $10.29 one-time, while its collection page displays $20.16. Confirm the final price and stock at checkout. Ships from Japan. Standard shipping is $20 below $50.",
       "caption": "15% cream · 20 g",
       "url": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g",
       "actions": [
@@ -186,28 +186,28 @@
       "photoSource": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g",
       "originalPhotoSHA256": "9fd2f944b8687836dd3bf70d96ad6c53c955e7121a2391e94161940b569ecc0d",
       "priceSourceUrl": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g",
-      "checkedDate": "2026-11-03",
-      "referencePrice": "$22.40",
-      "referenceLabel": "KISOCARE regular price",
+      "checkedDate": "2026-11-11",
+      "referencePrice": "$20.16",
+      "referenceLabel": "KISOCARE previous price shown on the product page",
       "referenceUrl": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g"
     },
     {
       "id": "arencia-fresh-green-cleanser",
       "brand": "Arencia",
       "name": "Fresh Green Rice Mochi Cleanser",
-      "price": "$21",
-      "priceNote": "Arencia · 120 g",
+      "price": "$19",
+      "priceNote": "Sephora · one-time purchase · standard 4.23 oz",
       "specs": [
         "Fresh Green",
         "120 g / 4.23 oz"
       ],
-      "note": "Green jar cleanser from my screenshot. Check Sephora pickup around 77406 first; exact local stock and Sephora price need confirmation. The displayed $21 belongs to Arencia’s linked 120 g offer.",
+      "note": "Sephora lists the standard Fresh Green jar, SKU 3039732, at $19 one-time and offers shipping. Check pickup around 77204 or 77406 first. Local stock still needs confirmation. Arencia lists the 120 g jar for $21 before shipping.",
       "caption": "Fresh Green · 120 g",
-      "url": "https://arencia.us/products/arencia-fresh-green-mochi-cleanser?variant=45709564018841",
+      "url": "https://www.sephora.com/product/arencia-fresh-green-rice-mochi-cleanser-P521617",
       "actions": [
         [
-          "Check pickup · Sephora",
-          "https://www.sephora.com/product/arencia-fresh-green-rice-mochi-cleanser-P521617?skuId=3039732"
+          "Check pickup or delivery · Sephora",
+          "https://www.sephora.com/product/arencia-fresh-green-rice-mochi-cleanser-P521617"
         ],
         [
           "Shop delivery · Arencia · $21",
@@ -218,8 +218,8 @@
       "imageStyle": "cutout",
       "photoSource": "https://arencia.us/products/arencia-fresh-green-mochi-cleanser?variant=45709564018841",
       "originalPhotoSHA256": "cbf4b47830a3c3ea2d1d1c8abb632a8e3d25550f34561116b97e53e581521f88",
-      "priceSourceUrl": "https://arencia.us/products/arencia-fresh-green-mochi-cleanser?variant=45709564018841",
-      "checkedDate": "2026-11-03"
+      "priceSourceUrl": "https://www.sephora.com/product/arencia-fresh-green-rice-mochi-cleanser-P521617",
+      "checkedDate": "2026-11-11"
     },
     {
       "id": "dr-althea-vitamin-c-serum",
@@ -641,24 +641,24 @@
       "id": "heat-set-threaded-inserts",
       "brand": "ruthex",
       "name": "M3 heat-set threaded inserts",
-      "price": "$9.99",
-      "priceNote": "Amazon · ruthex · M3x5.7 / 100 pieces",
-      "priceSourceUrl": "https://www.amazon.com/dp/B08BCRZZS3?th=1&psc=1",
+      "price": "Check current price",
+      "priceNote": "Amazon · exact M3 variant unverified",
+      "priceSourceUrl": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
       "specs": [
         "100 pieces",
         "Brass",
         "M3 × 5.7 mm"
       ],
-      "note": "Exact ruthex RX-M3x5.7 brass heat-set inserts, 100 pieces. The selected M3x5.7 (100pcs) offer is $9.99, sold by ruthex and shipped by Amazon; the page showed only one pack left at the November 10 check. Confirm current stock and shipping for 77204 or 77406; Prime or a qualifying basket may be required for free delivery. The optional 3DJake 100-pack was last verified November 7 at $8.36 USD with US shipping from $31.93 before tax; confirm its current delivered total. Printed holes must match the chosen insert.",
+      "note": "Choose ruthex RX-M3x5.7, 100 pieces. Amazon selected a different thread size on November 11. The exact M3 pack was $9.99 on November 10. 3DJake lists the exact 100-pack for $8.40, with U.S. shipping starting around $32. Confirm the final shipping charge at checkout. Printed holes must match the chosen insert.",
       "caption": "RX-M3x5.7 insert detail · 100 pieces requested",
-      "url": "https://www.amazon.com/dp/B08BCRZZS3?th=1&psc=1",
+      "url": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
       "actions": [
         [
-          "Shop delivery · Amazon · M3 / 100 pieces",
-          "https://www.amazon.com/dp/B08BCRZZS3?th=1&psc=1"
+          "Find M3 / 100 pieces · Amazon",
+          "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
         ],
         [
-          "Optional 100-pack · 3DJake · shipping from $31.93",
+          "Optional 100-pack · 3DJake · shipping from about $32",
           "https://www.3djake.com/ruthex/threaded-insert-m3-100-pieces"
         ],
         [
@@ -669,44 +669,51 @@
       "image": "/birthday/images/heat-set-threaded-inserts-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.3djake.de/ruthex/gewindeeinsatz-m3-100-stueck",
-      "checkedDate": "2026-11-10",
-      "unverified": false
+      "checkedDate": "2026-11-11",
+      "unverified": true,
+      "referencePrice": "$9.99",
+      "referenceLabel": "Amazon M3 / 100-piece offer · last verified November 10, 2026",
+      "referenceUrl": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
     },
     {
       "id": "bench-power-supply",
       "brand": "HANMATEK",
       "name": "HM310 adjustable bench power supply",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
-      "priceSourceUrl": "https://www.amazon.com/dp/B0852JZQZR",
+      "price": "$79.99",
+      "priceNote": "Amazon · sold by Keytape Direct-AU · shipped by Amazon",
+      "priceSourceUrl": "https://www.amazon.com/dp/B087TK6ZM2",
       "specs": [
         "0–30 V DC",
         "0–10 A",
         "US 110 V input"
       ],
-      "note": "Adjustable voltage and current with an output on/off button, USB charging port and included test leads. Current Amazon price and availability could not be confirmed on November 3; the saved offer below is from November 2.",
+      "note": "The verified Amazon offer is for the HANMATEK HM310 with 110 V input, 0–30 V DC and 0–10 A. It was in stock on November 11 and showed delivery to 77204. Amazon selected this HM310 offer when opened from the original listing. Confirm dates and final charges for your ZIP.",
       "caption": "Exact HM310 power supply",
-      "url": "https://www.amazon.com/dp/B0852JZQZR",
+      "url": "https://www.amazon.com/dp/B087TK6ZM2",
       "actions": [
         [
-          "Shop · Amazon",
+          "Shop HM310 · Amazon",
+          "https://www.amazon.com/dp/B087TK6ZM2"
+        ],
+        [
+          "Original Amazon listing",
           "https://www.amazon.com/dp/B0852JZQZR"
         ]
       ],
       "image": "/birthday/images/bench-power-supply-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0852JZQZR",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-11",
       "referencePrice": "$79.99",
       "referenceLabel": "Amazon offer · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B0852JZQZR",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "esp32-cam-kit",
       "brand": "Aideepen",
       "name": "ESP32-CAM + MB programmer kit",
-      "price": "$28.99",
+      "price": "$29.99",
       "priceNote": "Amazon · one-time purchase · sold by Aideepen",
       "priceSourceUrl": "https://www.amazon.com/dp/B0948ZFTQZ",
       "specs": [
@@ -714,7 +721,7 @@
         "OV2640 2 MP cameras",
         "Micro-USB / CH340G"
       ],
-      "note": "Two camera boards with ESP32-CAM-MB USB programmer bases. Select 2PCS ESP32-CAM-MB. The current $28.99 one-time offer is sold by Aideepen and shipped by Amazon; stock was shown at the November 9 check. Confirm the final delivery date and shipping charges for 77204 or 77406; Prime and order-value conditions may apply.",
+      "note": "Two camera boards with ESP32-CAM-MB USB programmer bases. Select 2PCS ESP32-CAM-MB. Amazon’s $29.99 one-time offer was in stock on November 11, sold by Aideepen and shipped by Amazon. The listing showed delivery to 77204. Confirm dates and final charges for your ZIP.",
       "caption": "Two camera boards and programmer bases",
       "url": "https://www.amazon.com/dp/B0948ZFTQZ",
       "actions": [
@@ -726,7 +733,7 @@
       "image": "/birthday/images/esp32-cam-kit-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B0948ZFTQZ",
-      "checkedDate": "2026-11-09",
+      "checkedDate": "2026-11-11",
       "referencePrice": "$27.99",
       "referenceLabel": "Amazon offer · last verified November 2, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B0948ZFTQZ",
@@ -1216,15 +1223,15 @@
       "id": "small-radial-bearings",
       "brand": "NaiveBlue",
       "name": "Small radial bearings",
-      "price": "$6.97",
-      "priceNote": "Amazon · one-time purchase · sold by NAIVE BLUE",
+      "price": "$6.99",
+      "priceNote": "Amazon · one-time purchase · sold by Beautiful & Gorgeous",
       "priceSourceUrl": "https://www.amazon.com/dp/B07H83VV6B",
       "specs": [
         "608ZZ",
         "8 × 22 × 7 mm",
         "10-pack"
       ],
-      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm the shaft and mounting dimensions before buying. The current $6.97 one-time offer is sold by NAIVE BLUE and shipped by Amazon; stock was shown at the November 10 check. Confirm final delivery dates and shipping charges for 77204 or 77406; Prime and order-value conditions may apply.",
+      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm the shaft and mounting dimensions before buying. Amazon’s $6.99 one-time offer was in stock on November 11, sold by Beautiful & Gorgeous and shipped by Amazon. The listing showed delivery to 77204. Confirm dates and final charges for your ZIP.",
       "caption": "Exact 608ZZ bearing pack",
       "url": "https://www.amazon.com/dp/B07H83VV6B",
       "actions": [
@@ -1240,7 +1247,7 @@
       "image": "/birthday/images/small-radial-bearings-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07H83VV6B",
-      "checkedDate": "2026-11-10",
+      "checkedDate": "2026-11-11",
       "referencePrice": "$6.79",
       "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B07H83VV6B",
@@ -1250,18 +1257,22 @@
       "id": "gridded-workbench-mat",
       "brand": "Dahle",
       "name": "Gridded workbench cutting mat",
-      "price": "Check current price",
-      "priceNote": "Amazon · current offer unverified",
-      "priceSourceUrl": "https://www.amazon.com/dp/B0027ROZ9G",
+      "price": "$39.99",
+      "priceNote": "Walmart Marketplace · Dahle North America",
+      "priceSourceUrl": "https://www.walmart.com/ip/157141838",
       "specs": [
         "10672",
         "Black",
         "18 × 24 in"
       ],
-      "note": "Black 10672, 18 × 24 in. Amazon last required adding this item to the cart to see its price; the current Amazon price and availability could not be confirmed on November 3. Use a separate heat-resistant surface for soldering.",
+      "note": "Black Dahle 10672, 18 × 24 in. Walmart’s $39.99 offer is sold and shipped by Dahle North America. Confirm shipping to 77204 or 77406. Amazon lists the same mat and hides the price until cart. Use a separate heat-resistant surface for soldering.",
       "caption": "Exact black gridded mat",
-      "url": "https://www.amazon.com/dp/B0027ROZ9G",
+      "url": "https://www.walmart.com/ip/157141838",
       "actions": [
+        [
+          "Shop delivery · Walmart",
+          "https://www.walmart.com/ip/157141838"
+        ],
         [
           "Shop · Amazon",
           "https://www.amazon.com/dp/B0027ROZ9G"
@@ -1270,8 +1281,8 @@
       "image": "/birthday/images/gridded-workbench-mat-product-only.png",
       "imageStyle": "landscape",
       "photoSource": "https://www.amazon.com/dp/B0027ROZ9G",
-      "checkedDate": "2026-11-03",
-      "unverified": true,
+      "checkedDate": "2026-11-11",
+      "unverified": false,
       "referencePrice": "$53.99",
       "referenceLabel": "Manufacturer MSRP",
       "referenceUrl": "https://www.dahle.com/cutting-mat/item/10672"
@@ -1414,12 +1425,12 @@
       "id": "lululemon-backpack-30l",
       "brand": "lululemon",
       "name": "New Crew Backpack Large 30L",
-      "price": "Check current price",
+      "price": "$128",
       "specs": [
         "30 L",
         "Black / Graphite Grey"
       ],
-      "note": "The exact New Crew Backpack Large 30L in Black/Graphite Grey from my link. Last verified November 6 at $128. The current exact offer and stock could not be reverified on November 7. Check pickup around 77204 or 77406 first; local stock is unconfirmed.",
+      "note": "New Crew Backpack Large 30L in Black / Graphite Grey. lululemon lists the exact one-size bag at $128. Check pickup around 77204 or 77406 first and confirm stock for the selected store.",
       "caption": "New Crew 30L Â· Black / Graphite Grey",
       "url": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
       "actions": [
@@ -1433,15 +1444,15 @@
         ]
       ],
       "image": "/birthday/images/lululemon-backpack-30l-product.png",
-      "checkedDate": "2026-11-07",
-      "priceNote": "lululemon · current exact offer unverified",
+      "checkedDate": "2026-11-11",
+      "priceNote": "lululemon · Black / Graphite Grey",
       "photoSource": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
       "referencePrice": "$128",
-      "referenceLabel": "lululemon listed price · last verified November 6, 2026",
+      "referenceLabel": "lululemon regular price",
       "referenceUrl": "https://shop.lululemon.com/p/new-crew-backpack-large-30l/mzycr0ee1h?fp=1&color=43646",
-      "unverified": true
+      "unverified": false
     },
     {
       "id": "window-tint",
@@ -1503,23 +1514,23 @@
       "id": "arcteryx-beta-jacket",
       "brand": "Arc’teryx",
       "name": "Beta Jacket",
-      "price": "Check Black / Medium price",
-      "priceNote": "REI · selected variant needs confirmation",
+      "price": "$400",
+      "priceNote": "Arc’teryx · Black / Medium · in stock online",
       "specs": [
         "Medium",
         "Black"
       ],
-      "note": "Waterproof GORE-TEX shell with a water-repellent finish. Select Black / Medium; Black Sapphire is a different color. Exact price and stock need confirmation. Check REI pickup near 77406 first.",
+      "note": "Waterproof GORE-TEX shell with a water-repellent finish. Arc’teryx lists Black / Medium in stock online at $400 (SKU X000010868010). Check REI pickup near 77204 or 77406 first. REI price and local stock for Black / Medium still need confirmation.",
       "caption": "Beta Jacket · Black",
-      "url": "https://www.rei.com/product/228617/arcteryx-beta-jacket-mens",
+      "url": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868",
       "actions": [
+        [
+          "Shop Black / Medium · Arc’teryx",
+          "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868"
+        ],
         [
           "Check pickup · REI",
           "https://www.rei.com/product/228617/arcteryx-beta-jacket-mens"
-        ],
-        [
-          "Shop delivery · Arc’teryx",
-          "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868"
         ],
         [
           "REI Houston store",
@@ -1527,14 +1538,14 @@
         ]
       ],
       "image": "/birthday/images/arcteryx-beta-editorial.jpg",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-11",
       "photoSource": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868",
       "imageStyle": "portrait",
-      "priceSourceUrl": "https://www.rei.com/product/228617/arcteryx-beta-jacket-mens",
+      "priceSourceUrl": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868",
       "referencePrice": "$400",
-      "referenceLabel": "Arc’teryx retail reference · verify Black / Medium",
+      "referenceLabel": "Arc’teryx regular price",
       "referenceUrl": "https://arcteryx.com/us/en/shop/mens/beta-jacket-0868",
-      "unverified": true
+      "unverified": false
     },
     {
       "number": 1,
@@ -1543,12 +1554,12 @@
       "brand": "FDR",
       "name": "Camo & yellow 3/4 jorts",
       "price": "Check current price",
-      "priceNote": "TikTok Shop · FDR · Camo / M listed $43.99",
+      "priceNote": "TikTok Shop · Nov 8 offer · Camo / M $43.99",
       "specs": [
         "Medium",
         "Camo & yellow"
       ],
-      "note": "Camo and yellow, Medium. My original TikTok Shop product. Seller FDR lists the exact Camo / M selection at $43.99, with stock shown at the November 8 check. The yellow selection, its current price and destination shipping still need confirmation; check the selected color and length before buying.",
+      "note": "Camo and yellow, Medium. The November 8 TikTok Shop check showed FDR’s Camo / M at $43.99 in stock. Current price, Yellow / M and destination shipping still need confirmation.",
       "caption": "Original camo product photo",
       "url": "https://shop.tiktok.com/us/pdp/fdr-unisex-camo-print-jorts-vintage-wide-leg-shorts-streetwear/1732423479359541726",
       "actions": [
@@ -1571,12 +1582,12 @@
       "image": "/birthday/images/tiktok-fb-shorts.webp",
       "brand": "FB County",
       "name": "Heavyweight Basketball Mesh Shorts",
-      "price": "$38.98",
+      "price": "Check current price",
       "specs": [
         "Medium",
         "All colors"
       ],
-      "note": "Medium, all colors. Black is pictured. TikTok Shop seller FB County lists the requested Medium selections in Black, Navy and Grey at $38.98 each, with stock shown at the November 9 check. The public listing also showed $8.99 shipping; confirm the final shipping charge and delivery estimate for 77204 or 77406 before buying.",
+      "note": "Medium, all colors. Black is pictured. TikTok Shop seller FB County showed Black, Navy and Grey in Medium at $38.98 each on November 9, with $8.99 shipping shown then. Check current exact-size prices, stock and shipping to 77204 or 77406.",
       "caption": "Black - FB County model photo",
       "url": "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089",
       "actions": [
@@ -1586,12 +1597,12 @@
         ]
       ],
       "checkedDate": "2026-11-09",
-      "priceNote": "TikTok Shop · FB County · each Medium pair",
+      "priceNote": "TikTok Shop · Nov 9 offer · $38.98 each",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089",
       "referencePrice": "$29.99",
       "referenceLabel": "FB County website price · last verified November 8, 2026",
       "referenceUrl": "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts",
-      "unverified": false,
+      "unverified": true,
       "photoSource": "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts",
       "imageStyle": "landscape"
     },
@@ -1601,13 +1612,13 @@
       "image": "/birthday/images/shaka-long-sleeve-black-editorial.jpg",
       "brand": "Shaka Wear",
       "name": "Oversized long-sleeve tee",
-      "price": "$18",
-      "priceNote": "TikTok Shop · ShakaWear · each tee",
+      "price": "Check current price",
+      "priceNote": "TikTok Shop · Nov 8 offer · $18 each",
       "specs": [
         "Small",
         "White & black"
       ],
-      "note": "White and black, Small. TikTok Shop seller ShakaWear lists each requested Small color at $18 per tee, with both variants in stock at the November 8 check. Select the intended color and confirm shipping to 77204 or 77406 and any checkout conditions.",
+      "note": "White and black, Small. TikTok Shop seller ShakaWear showed both requested colors at $18 each on November 8. Check current prices, stock and shipping to 77204 or 77406.",
       "caption": "Black · Shaka Wear photo",
       "alternate": {
         "label": "View white",
@@ -1627,7 +1638,7 @@
       "referencePrice": "$17.90",
       "referenceLabel": "Shaka Wear retail price",
       "referenceUrl": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve",
-      "unverified": false
+      "unverified": true
     },
     {
       "number": 4,
@@ -1635,13 +1646,13 @@
       "image": "/birthday/images/shaka-oversized-tee-burgundy-editorial.jpg",
       "brand": "Shaka Wear",
       "name": "Oversized short-sleeve tee",
-      "price": "$23.90",
-      "priceNote": "TikTok Shop · ShakaWear · each tee",
+      "price": "Check current price",
+      "priceNote": "TikTok Shop · Nov 8 offer · $23.90 each",
       "specs": [
         "Medium",
         "Deep Burgundy & Dark Navy"
       ],
-      "note": "Deep Burgundy and Dark Navy, Medium. TikTok Shop seller ShakaWear lists each requested Medium color at $23.90 per tee, with both variants in stock at the November 8 check. Select the intended color and confirm shipping to 77204 or 77406 and any checkout conditions; the brand’s reference price varies by selection.",
+      "note": "Deep Burgundy and Dark Navy, Medium. TikTok Shop seller ShakaWear showed both requested colors at $23.90 each on November 8. Check current prices, stock and shipping to 77204 or 77406.",
       "caption": "Deep Burgundy · Shaka Wear photo",
       "alternate": {
         "label": "View navy",
@@ -1655,7 +1666,7 @@
         ]
       ],
       "checkedDate": "2026-11-08",
-      "unverified": false,
+      "unverified": true,
       "imageStyle": "portrait",
       "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105",
@@ -1696,17 +1707,21 @@
       "specs": [
         "Richmond, TX"
       ],
-      "note": "Free initial consultation. Treatment price is quoted after an assessment.",
+      "note": "Free initial consultation. The clinic quotes the treatment price after an assessment. Smile Studio advertises $1,000 off comprehensive braces through November 15, 2026 for patients who have yet to start treatment. Mention the ad. One offer per patient and no combining discounts.",
       "caption": "Braces demonstration model · treatment example",
       "url": "https://www.smilestudioortho.com/request-your-appointment/",
       "actions": [
         [
           "Book a local consultation",
           "https://www.smilestudioortho.com/request-your-appointment/"
+        ],
+        [
+          "November 15 offer terms",
+          "https://www.smilestudioortho.com/wp-content/uploads/2026/10/Fall-2026-Normal-Cohort-Terms-and-Conditions.pdf"
         ]
       ],
       "image": "/birthday/images/braces-model-product.png",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-11",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.smilestudioortho.com/request-your-appointment/",
       "priceNote": "Smile Studio Orthodontics",
