@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-11",
+  "lastReviewed": "2026-11-12",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -283,7 +283,7 @@
       "image": "/birthday/images/canon-sx740-hs-black.png",
       "brand": "Canon",
       "name": "PowerShot SX740 HS digital camera",
-      "price": "$685.50",
+      "price": "$679.00",
       "priceNote": "Walmart Marketplace · RedTagCamera · new international version",
       "specs": [
         "Black",
@@ -291,7 +291,7 @@
         "40× optical zoom",
         "4K video"
       ],
-      "note": "New Black international version, listed at $685.50 and sold and shipped by RedTagCamera. The exact listing showed stock at the November 10 check, but its default delivery location was Sacramento, CA 95829. Confirm availability, shipping charges and delivery dates for 77204 or 77406 and the seller’s warranty before buying; Texas delivery and local pickup have not been verified.",
+      "note": "RedTagCamera lists this new Black international version at $679.00 on Walmart Marketplace and handles shipping. The November 12 listing showed shipping availability for its default Houston ZIP 77004 and no pickup at the displayed store. Confirm shipping, delivery dates and pickup for 77204 or 77406, and check the seller’s warranty.",
       "caption": "SX740 HS · Black",
       "url": "https://www.walmart.com/ip/581034212",
       "actions": [
@@ -300,11 +300,11 @@
           "https://www.walmart.com/ip/581034212"
         ],
         [
-          "Check Best Buy pickup · availability unverified",
+          "Best Buy · $599.99 sold out",
           "https://www.bestbuy.com/product/canon-powershot-sx740-hs-20-3-megapixel-digital-camera-black/6287924"
         ]
       ],
-      "checkedDate": "2026-11-10",
+      "checkedDate": "2026-11-12",
       "photoSource": "https://www.usa.canon.com/shop/p/powershot-sx740-hs?color=Black&type=New",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.walmart.com/ip/581034212",
@@ -641,24 +641,24 @@
       "id": "heat-set-threaded-inserts",
       "brand": "ruthex",
       "name": "M3 heat-set threaded inserts",
-      "price": "Check current price",
-      "priceNote": "Amazon · exact M3 variant unverified",
-      "priceSourceUrl": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
+      "price": "$9.99",
+      "priceNote": "Amazon · ruthex · M3x5.7 / 100 pieces",
+      "priceSourceUrl": "https://www.amazon.com/dp/B08BCRZZS3?th=1&psc=1",
       "specs": [
         "100 pieces",
         "Brass",
         "M3 × 5.7 mm"
       ],
-      "note": "Choose ruthex RX-M3x5.7, 100 pieces. Amazon selected a different thread size on November 11. The exact M3 pack was $9.99 on November 10. 3DJake lists the exact 100-pack for $8.40, with U.S. shipping starting around $32. Confirm the final shipping charge at checkout. Printed holes must match the chosen insert.",
+      "note": "Choose ruthex RX-M3x5.7, 100 pieces. Amazon showed the exact M3 pack at $9.99, sold by ruthex and shipped by Amazon, with estimated December 2–12 delivery to 77204 on November 12. Confirm the selected variant, stock, shipping charges and delivery at checkout. 3DJake lists the exact 100-pack at $8.33 USD and estimates $38.19 for U.S. shipping. Confirm its delivered total at checkout. Printed holes must match the chosen insert.",
       "caption": "RX-M3x5.7 insert detail · 100 pieces requested",
-      "url": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
+      "url": "https://www.amazon.com/dp/B08BCRZZS3?th=1&psc=1",
       "actions": [
         [
-          "Find M3 / 100 pieces · Amazon",
-          "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
+          "Shop delivery · Amazon · M3 / 100 pieces",
+          "https://www.amazon.com/dp/B08BCRZZS3?th=1&psc=1"
         ],
         [
-          "Optional 100-pack · 3DJake · shipping from about $32",
+          "Optional 100-pack · 3DJake · $8.33 + shipping",
           "https://www.3djake.com/ruthex/threaded-insert-m3-100-pieces"
         ],
         [
@@ -669,11 +669,8 @@
       "image": "/birthday/images/heat-set-threaded-inserts-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.3djake.de/ruthex/gewindeeinsatz-m3-100-stueck",
-      "checkedDate": "2026-11-11",
-      "unverified": true,
-      "referencePrice": "$9.99",
-      "referenceLabel": "Amazon M3 / 100-piece offer · last verified November 10, 2026",
-      "referenceUrl": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
+      "checkedDate": "2026-11-12",
+      "unverified": false
     },
     {
       "id": "bench-power-supply",
