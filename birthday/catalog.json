@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-12",
+  "lastReviewed": "2026-11-13",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -172,7 +172,7 @@
         "20 g",
         "No. 057"
       ],
-      "note": "KISOCARE’s product page lists this 15% cream at $10.29 one-time, while its collection page displays $20.16. Confirm the final price and stock at checkout. Ships from Japan. Standard shipping is $20 below $50.",
+      "note": "KISOCARE lists this 15% cream at $10.29 one-time. Confirm the final price and stock at checkout. Ships from Japan. Standard shipping is $20 below $50.",
       "caption": "15% cream · 20 g",
       "url": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g",
       "actions": [
@@ -186,7 +186,7 @@
       "photoSource": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g",
       "originalPhotoSHA256": "9fd2f944b8687836dd3bf70d96ad6c53c955e7121a2391e94161940b569ecc0d",
       "priceSourceUrl": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g",
-      "checkedDate": "2026-11-11",
+      "checkedDate": "2026-11-13",
       "referencePrice": "$20.16",
       "referenceLabel": "KISOCARE previous price shown on the product page",
       "referenceUrl": "https://kisocare.com/products/15-azelaic-acid-face-cream-20g"
@@ -283,7 +283,7 @@
       "image": "/birthday/images/canon-sx740-hs-black.png",
       "brand": "Canon",
       "name": "PowerShot SX740 HS digital camera",
-      "price": "$679.00",
+      "price": "$676.50",
       "priceNote": "Walmart Marketplace · RedTagCamera · new international version",
       "specs": [
         "Black",
@@ -291,7 +291,7 @@
         "40× optical zoom",
         "4K video"
       ],
-      "note": "RedTagCamera lists this new Black international version at $679.00 on Walmart Marketplace and handles shipping. The November 12 listing showed shipping availability for its default Houston ZIP 77004 and no pickup at the displayed store. Confirm shipping, delivery dates and pickup for 77204 or 77406, and check the seller’s warranty.",
+      "note": "RedTagCamera lists this new Black international version at $676.50 on Walmart Marketplace and handles shipping. On November 13, Walmart showed November 16 delivery to its default Houston ZIP 77004 and no pickup at the displayed store. Confirm delivery and pickup for 77204 or 77406, and check the seller’s warranty.",
       "caption": "SX740 HS · Black",
       "url": "https://www.walmart.com/ip/581034212",
       "actions": [
@@ -304,7 +304,7 @@
           "https://www.bestbuy.com/product/canon-powershot-sx740-hs-20-3-megapixel-digital-camera-black/6287924"
         ]
       ],
-      "checkedDate": "2026-11-12",
+      "checkedDate": "2026-11-13",
       "photoSource": "https://www.usa.canon.com/shop/p/powershot-sx740-hs?color=Black&type=New",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.walmart.com/ip/581034212",
@@ -384,7 +384,7 @@
         "Men’s US 7",
         "Core Black / Cloud White / Carbon"
       ],
-      "note": "Nordstrom’s Black listing shows $112.50, down from $150 (25% off). Confirm the price, stock and pickup options for men’s US 7. A November 2 check offered ship-to-store pickup at Nordstrom Rack Market at Town Center in Sugar Land, with November 7 arrival shown. adidas lists $120, with size 7 availability unverified.",
+      "note": "Nordstrom’s Black listing shows $112.50, down from $150 (25% off). Confirm the price, stock and pickup options for men’s US 7. A November 2 check offered ship-to-store pickup at Nordstrom Rack Market at Town Center in Sugar Land, with November 7 arrival shown. adidas lists $150, with a $120 adiClub member price. Size 7 availability still needs confirmation.",
       "caption": "Black JR4728 · official adidas product photo",
       "url": "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090",
       "actions": [
@@ -393,12 +393,12 @@
           "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090"
         ],
         [
-          "Check size 7 · adidas · $120 listed",
+          "Check size 7 · adidas · $150 / $120 for members",
           "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html"
         ]
       ],
       "image": "/birthday/images/adidas-evo-sl-product.png",
-      "checkedDate": "2026-11-04",
+      "checkedDate": "2026-11-13",
       "photoSource": "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090",
@@ -641,24 +641,24 @@
       "id": "heat-set-threaded-inserts",
       "brand": "ruthex",
       "name": "M3 heat-set threaded inserts",
-      "price": "$9.99",
-      "priceNote": "Amazon · ruthex · M3x5.7 / 100 pieces",
-      "priceSourceUrl": "https://www.amazon.com/dp/B08BCRZZS3?th=1&psc=1",
+      "price": "Check current price",
+      "priceNote": "Amazon · exact M3 variant unverified",
+      "priceSourceUrl": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
       "specs": [
         "100 pieces",
         "Brass",
         "M3 × 5.7 mm"
       ],
-      "note": "Choose ruthex RX-M3x5.7, 100 pieces. Amazon showed the exact M3 pack at $9.99, sold by ruthex and shipped by Amazon, with estimated December 2–12 delivery to 77204 on November 12. Confirm the selected variant, stock, shipping charges and delivery at checkout. 3DJake lists the exact 100-pack at $8.33 USD and estimates $38.19 for U.S. shipping. Confirm its delivered total at checkout. Printed holes must match the chosen insert.",
+      "note": "Choose ruthex RX-M3x5.7, 100 pieces. Amazon’s direct link selected a different thread size on November 13. The exact M3 pack was $9.99 on November 12, sold by ruthex and shipped by Amazon. 3DJake lists the exact 100-pack at $8.30 USD with estimated U.S. shipping of $38.03. Confirm the delivered total at checkout. Printed holes must match the chosen insert.",
       "caption": "RX-M3x5.7 insert detail · 100 pieces requested",
-      "url": "https://www.amazon.com/dp/B08BCRZZS3?th=1&psc=1",
+      "url": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
       "actions": [
         [
-          "Shop delivery · Amazon · M3 / 100 pieces",
-          "https://www.amazon.com/dp/B08BCRZZS3?th=1&psc=1"
+          "Find M3 / 100 pieces · Amazon",
+          "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
         ],
         [
-          "Optional 100-pack · 3DJake · $8.33 + shipping",
+          "Optional 100-pack · 3DJake · $8.30 + shipping",
           "https://www.3djake.com/ruthex/threaded-insert-m3-100-pieces"
         ],
         [
@@ -669,8 +669,11 @@
       "image": "/birthday/images/heat-set-threaded-inserts-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.3djake.de/ruthex/gewindeeinsatz-m3-100-stueck",
-      "checkedDate": "2026-11-12",
-      "unverified": false
+      "checkedDate": "2026-11-13",
+      "unverified": true,
+      "referencePrice": "$9.99",
+      "referenceLabel": "Amazon M3 / 100-piece offer · last verified November 12, 2026",
+      "referenceUrl": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
     },
     {
       "id": "bench-power-supply",
@@ -853,8 +856,8 @@
         "5 mm D-shaft; 24 mm shaft length",
         "2.1 A/phase; 76 Ncm holding torque"
       ],
-      "price": "$13.24",
-      "priceNote": "STEPPERONLINE - China warehouse, quantity 1",
+      "price": "Check current price",
+      "priceNote": "STEPPERONLINE · current warehouse price unverified",
       "priceSourceUrl": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s",
       "url": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s",
       "actions": [
@@ -877,19 +880,23 @@
           "https://www.omc-stepperonline.com/download/17HS24-2104S.pdf"
         ]
       ],
-      "note": "17HS24-2104S has a 60 mm body and weighs 500 g. The current manufacturer page lists 76 Ncm; its older URL and dimension drawing use 65 Ncm. Quantity 1 from China is $13.24; the US warehouse option adds $4.27 ($17.51 item price). Both warehouses list stock; shipping and tax are extra, and local pickup is unverified. Motor only: a separate suitable current-limited stepper driver, DC power supply and controller are required. Exact-model STEP is offered with manufacturer sign-in. CAD availability does not confirm fit or sufficient torque for a particular robot arm.",
+      "note": "17HS24-2104S has a 60 mm body and weighs 500 g. The last verified manufacturer listing specified 76 Ncm. Its older URL and dimension drawing use 65 Ncm. On November 4, both warehouses showed stock. The China item price was $13.24 and the US item price was $17.51. Confirm current stock, shipping and tax. Local pickup remains unverified. Motor only: a separate suitable current-limited stepper driver, DC power supply and controller are required. Exact-model STEP is offered with manufacturer sign-in. CAD availability does not confirm fit or sufficient torque for a particular robot arm.",
       "caption": "17HS24-2104S - official motor photo",
       "image": "/birthday/images/nema17-long-body-motor.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s",
-      "checkedDate": "2026-11-04"
+      "checkedDate": "2026-11-04",
+      "referencePrice": "$13.24",
+      "referenceLabel": "STEPPERONLINE China warehouse offer · verified Nov 4",
+      "referenceUrl": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s",
+      "unverified": true
     },
     {
       "id": "nema17-planetary-geared-motor",
       "brand": "STEPPERONLINE",
       "name": "NEMA 17 planetary geared stepper motor",
-      "price": "$28.86",
-      "priceNote": "STEPPERONLINE · one unit · China warehouse",
+      "price": "Check current price",
+      "priceNote": "STEPPERONLINE · current warehouse price unverified",
       "specs": [
         "17HS19-1684S-PG5",
         "42 × 42 mm frame",
@@ -897,7 +904,7 @@
         "5.18:1 planetary gearbox",
         "8 mm shaft · 1.68 A/phase"
       ],
-      "note": "One motor with integrated 5.18:1 planetary gearbox: 48 mm motor plus 27.3 mm gearbox, excluding the 20 mm output shaft. A stepper driver, suitable power supply and controller are separate. The displayed price is for one unit from China stock; the US warehouse adds $7.10 before shipping and was in stock at this check. Confirm the final warehouse price, shipping and delivery to 77406. The current page and older drawing differ in gearbox torque/backlash ratings, so confirm the current revision before load calculations. STEP download requires manufacturer sign-in; public dimension drawings are linked separately.",
+      "note": "One motor with integrated 5.18:1 planetary gearbox: 48 mm motor plus 27.3 mm gearbox, excluding the 20 mm output shaft. A stepper driver, suitable power supply and controller are separate. On November 4, the China warehouse listed one unit at $28.86. The US warehouse was in stock and added $7.10 before shipping. Current warehouse offers need confirmation. Confirm the final warehouse price, shipping and delivery to 77406. The current page and older drawing differ in gearbox torque/backlash ratings, so confirm the current revision before load calculations. STEP download requires manufacturer sign-in; public dimension drawings are linked separately.",
       "caption": "17HS19-1684S-PG5 · motor and planetary gearbox",
       "url": "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-48mm-w-gear-ratio-5-1-planetary-gearbox-17hs19-1684s-pg5",
       "actions": [
@@ -928,14 +935,18 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-48mm-w-gear-ratio-5-1-planetary-gearbox-17hs19-1684s-pg5",
       "priceSourceUrl": "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-48mm-w-gear-ratio-5-1-planetary-gearbox-17hs19-1684s-pg5",
-      "checkedDate": "2026-11-04"
+      "checkedDate": "2026-11-04",
+      "referencePrice": "$28.86",
+      "referenceLabel": "STEPPERONLINE China warehouse offer · verified Nov 4",
+      "referenceUrl": "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-48mm-w-gear-ratio-5-1-planetary-gearbox-17hs19-1684s-pg5",
+      "unverified": true
     },
     {
       "id": "nema23-open-loop-motor",
       "brand": "STEPPERONLINE",
       "name": "NEMA 23 open-loop stepper motor",
-      "price": "$18.26",
-      "priceNote": "STEPPERONLINE · China warehouse · one motor",
+      "price": "Check current price",
+      "priceNote": "STEPPERONLINE · current warehouse price unverified",
       "specs": [
         "23HS30-2804S",
         "57 × 57 mm frame",
@@ -943,7 +954,7 @@
         "6.35 mm D shaft",
         "2.8 A/phase · one motor only"
       ],
-      "note": "One full-size bipolar stepper motor. The current manufacturer page rates holding torque at 2.00 Nm; this is holding torque, not guaranteed torque while moving. Driver, power supply and controller are separate. The November 8 manufacturer listing shows $18.26 for one from China. The US warehouse shows one unit with a $5.41 surcharge ($23.67 item price before shipping and tax). This is warehouse shipping availability, not local pickup. Confirm stock, destination shipping and the final delivered total to 77204 or 77406. The older public drawing lists 1.90 Nm and earlier electrical values; use the current linked datasheet for the latest revision. STEP download requires manufacturer sign-in.",
+      "note": "One full-size bipolar stepper motor. The current manufacturer page rates holding torque at 2.00 Nm; this is holding torque, not guaranteed torque while moving. Driver, power supply and controller are separate. On November 8, the China warehouse listed one motor at $18.26 and the US warehouse showed one unit at $23.67 before shipping and tax. Current warehouse prices and stock need confirmation. Confirm stock, destination shipping and the final delivered total to 77204 or 77406. The older public drawing lists 1.90 Nm and earlier electrical values; use the current linked datasheet for the latest revision. STEP download requires manufacturer sign-in.",
       "caption": "23HS30-2804S · one NEMA 23 motor",
       "url": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
       "actions": [
@@ -975,14 +986,17 @@
       "photoSource": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
       "priceSourceUrl": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
       "checkedDate": "2026-11-08",
-      "unverified": false
+      "unverified": true,
+      "referencePrice": "$18.26",
+      "referenceLabel": "STEPPERONLINE China warehouse offer · verified Nov 8",
+      "referenceUrl": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s"
     },
     {
       "id": "nema23-closed-loop-kit",
       "brand": "STEPPERONLINE",
       "name": "NEMA 23 closed-loop motor and driver kit",
-      "price": "$58.66",
-      "priceNote": "STEPPERONLINE · one unit · China warehouse",
+      "price": "Check current price",
+      "priceNote": "STEPPERONLINE · current warehouse price unverified",
       "specs": [
         "1-CL57T-S20-V41",
         "57 mm NEMA 23 frame",
@@ -990,7 +1004,7 @@
         "CL57T-V4.1 driver + extension cables",
         "24–48 V DC supply required separately"
       ],
-      "note": "Includes one 23HS30-5004D-E1000 motor, CL57T-V4.1 driver, CABLE-PC-1 RS232 debugging cable, CE2M encoder extension and CM2M-20 motor extension. DC power supply and motion controller are not included. The current motor drawing specifies a 98 mm body and 21 mm output shaft; the product table/older drawing says 101 mm, so confirm the supplied revision before designing mounts. The displayed one-kit price is from China stock; US warehouse stock was on backorder. Confirm shipping and delivered total to 77406. STEP download requires manufacturer sign-in.",
+      "note": "Includes one 23HS30-5004D-E1000 motor, CL57T-V4.1 driver, CABLE-PC-1 RS232 debugging cable, CE2M encoder extension and CM2M-20 motor extension. DC power supply and motion controller are not included. The current motor drawing specifies a 98 mm body and 21 mm output shaft; the product table/older drawing says 101 mm, so confirm the supplied revision before designing mounts. On November 4, the China warehouse listed the kit in stock at $58.66 and the US warehouse was on backorder. Current warehouse prices and stock need confirmation. Confirm shipping and delivered total to 77406. STEP download requires manufacturer sign-in.",
       "caption": "NEMA 23 motor · driver and included cables",
       "url": "https://www.omc-stepperonline.com/ts-series-2-0-nm-283-28oz-in-1-axis-closed-loop-stepper-cnc-kit-nema-23-motor-driver-1-cl57t-s20-v41",
       "actions": [
@@ -1021,7 +1035,11 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/ts-series-2-0-nm-283-28oz-in-1-axis-closed-loop-stepper-cnc-kit-nema-23-motor-driver-1-cl57t-s20-v41",
       "priceSourceUrl": "https://www.omc-stepperonline.com/ts-series-2-0-nm-283-28oz-in-1-axis-closed-loop-stepper-cnc-kit-nema-23-motor-driver-1-cl57t-s20-v41",
-      "checkedDate": "2026-11-04"
+      "checkedDate": "2026-11-04",
+      "referencePrice": "$58.66",
+      "referenceLabel": "STEPPERONLINE China warehouse offer · verified Nov 4",
+      "referenceUrl": "https://www.omc-stepperonline.com/ts-series-2-0-nm-283-28oz-in-1-axis-closed-loop-stepper-cnc-kit-nema-23-motor-driver-1-cl57t-s20-v41",
+      "unverified": true
     },
     {
       "id": "pololu-37d-12v-encoder-motor",
