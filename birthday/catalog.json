@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-14",
+  "lastReviewed": "2026-11-15",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -254,12 +254,12 @@
       "id": "medicube-kojic-serum",
       "brand": "medicube",
       "name": "Kojic Acid Turmeric Niacinamide Serum",
-      "price": "$14.70",
-      "priceNote": "Ulta · one-time sale · online only",
+      "price": "$21",
+      "priceNote": "Ulta · one-time price · online only",
       "specs": [
         "30 mL / 1.01 fl oz"
       ],
-      "note": "Current Ulta bottle pictured. The screenshot shows a pump bottle; confirm packaging before buying. The exact 30 mL listing is $14.70 on sale, regularly $21, and available for delivery at the November 8 check. This Ulta listing is online only; confirm destination shipping at checkout.",
+      "note": "Ulta lists the exact 30 mL serum at $21 and in stock for shipping as of November 15. This Ulta listing is online only. The pictured dropper bottle differs from the pump bottle in the screenshot. Confirm packaging and destination shipping before buying.",
       "caption": "Current retailer bottle · dropper packaging",
       "url": "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448",
       "actions": [
@@ -272,7 +272,7 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448",
       "priceSourceUrl": "https://www.ulta.com/p/kojic-acid-turmeric-niacinamide-serum-pimprod2056593?sku=2652448",
-      "checkedDate": "2026-11-08",
+      "checkedDate": "2026-11-15",
       "originalPhotoSHA256": "f7307cca107ce94de1dc4c1ccde4f75525209cdf848d915599e68dd0b3f1c645",
       "referencePrice": "$21",
       "referenceLabel": "Ulta regular price",
