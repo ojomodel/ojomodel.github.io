@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-15",
+  "lastReviewed": "2026-11-16",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -1238,7 +1238,7 @@
       "id": "small-radial-bearings",
       "brand": "NaiveBlue",
       "name": "Small radial bearings",
-      "price": "$6.97",
+      "price": "$6.99",
       "priceNote": "Amazon · one-time purchase · sold by Beautiful & Gorgeous",
       "priceSourceUrl": "https://www.amazon.com/dp/B07H83VV6B",
       "specs": [
@@ -1246,7 +1246,7 @@
         "8 × 22 × 7 mm",
         "10-pack"
       ],
-      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm the shaft and mounting dimensions before buying. Amazon’s $6.97 one-time offer was in stock on November 14, sold by Beautiful & Gorgeous and shipped by Amazon. The listing showed delivery to 77204. Confirm dates and final charges for your ZIP.",
+      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm shaft and mounting dimensions before buying. Amazon showed the $6.99 one-time offer in stock on November 16, sold by Beautiful & Gorgeous and shipped by Amazon, with delivery shown for 77204. Confirm the delivery date and final charges for your ZIP.",
       "caption": "Exact 608ZZ bearing pack",
       "url": "https://www.amazon.com/dp/B07H83VV6B",
       "actions": [
@@ -1262,7 +1262,7 @@
       "image": "/birthday/images/small-radial-bearings-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07H83VV6B",
-      "checkedDate": "2026-11-14",
+      "checkedDate": "2026-11-16",
       "referencePrice": "$6.79",
       "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B07H83VV6B",
@@ -1726,21 +1726,17 @@
       "specs": [
         "Richmond, TX"
       ],
-      "note": "Free initial consultation. The clinic quotes the treatment price after an assessment. Smile Studio advertises $1,000 off comprehensive braces through November 15, 2026 for patients who have yet to start treatment. Mention the ad. One offer per patient and no combining discounts.",
+      "note": "Free initial consultation. The clinic quotes the treatment price after an assessment. Its advertised $1,000 comprehensive-braces promotion ended November 15, 2026.",
       "caption": "Braces demonstration model · treatment example",
       "url": "https://www.smilestudioortho.com/request-your-appointment/",
       "actions": [
         [
           "Book a local consultation",
           "https://www.smilestudioortho.com/request-your-appointment/"
-        ],
-        [
-          "November 15 offer terms",
-          "https://www.smilestudioortho.com/wp-content/uploads/2026/10/Fall-2026-Normal-Cohort-Terms-and-Conditions.pdf"
         ]
       ],
       "image": "/birthday/images/braces-model-product.png",
-      "checkedDate": "2026-11-11",
+      "checkedDate": "2026-11-16",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.smilestudioortho.com/request-your-appointment/",
       "priceNote": "Smile Studio Orthodontics",
