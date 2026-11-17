@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-16",
+  "lastReviewed": "2026-11-17",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -455,7 +455,7 @@
         "All-in-one desktop",
         "2021 M1 model pictured"
       ],
-      "note": "An iMac with a built-in screen, around $500 before tax and shipping. Buya lists a used / Good M1 unit at $499.99; confirm exact memory, storage, availability and included accessories before buying. Shipping to 77204 or 77406 needs confirmation. The seller’s pickup location is in Michigan; nearby pickup has not been verified.",
+      "note": "An iMac with a built-in screen, with a $500 item-price target. Buya lists a used / Good M1 at $499.99 with $70 listed shipping. That would be $569.99 before tax at that shipping rate. The seller describes a box, power cord, keyboard and third-party mouse. Confirm the exact memory, storage, accessories, availability and delivery to 77204 or 77406. The seller is in Battle Creek, Michigan. Pickup availability needs confirmation.",
       "caption": "2021 M1 · representative Silver model photo",
       "url": "https://www.buya.com/Item/Details/APPLE-IMAC-A2439-M1/64539ab19dbe4ceba8011e98d017ba1a",
       "actions": [
@@ -467,7 +467,7 @@
       "image": "/birthday/images/apple-imac-m1.png",
       "imageStyle": "cutout",
       "photoSource": "https://focuscamera.com/products/apple-mgpc3lla-crb-computers-tablets-desktop-computers",
-      "checkedDate": "2026-11-04",
+      "checkedDate": "2026-11-17",
       "unverified": true,
       "budget": 500
     },
@@ -945,8 +945,8 @@
       "id": "nema23-open-loop-motor",
       "brand": "STEPPERONLINE",
       "name": "NEMA 23 open-loop stepper motor",
-      "price": "Check current price",
-      "priceNote": "STEPPERONLINE · current warehouse price unverified",
+      "price": "$18.26",
+      "priceNote": "STEPPERONLINE · China warehouse · US backorder",
       "specs": [
         "23HS30-2804S",
         "57 × 57 mm frame",
@@ -954,7 +954,7 @@
         "6.35 mm D shaft",
         "2.8 A/phase · one motor only"
       ],
-      "note": "One full-size bipolar stepper motor. The current manufacturer page rates holding torque at 2.00 Nm; this is holding torque, not guaranteed torque while moving. Driver, power supply and controller are separate. On November 8, the China warehouse listed one motor at $18.26 and the US warehouse showed one unit at $23.67 before shipping and tax. Current warehouse prices and stock need confirmation. Confirm stock, destination shipping and the final delivered total to 77204 or 77406. The older public drawing lists 1.90 Nm and earlier electrical values; use the current linked datasheet for the latest revision. STEP download requires manufacturer sign-in.",
+      "note": "One full-size bipolar stepper motor. The current manufacturer page rates holding torque at 2.00 Nm; this is holding torque, not guaranteed torque while moving. Driver, power supply and controller are separate. On November 17, the China warehouse showed stock at $18.26. The US warehouse showed zero stock and backorder at a listed $23.67. Confirm current stock, shipping and the delivered total to 77204 or 77406. The older public drawing lists 1.90 Nm and earlier electrical values; use the current linked datasheet for the latest revision. STEP download requires manufacturer sign-in.",
       "caption": "23HS30-2804S · one NEMA 23 motor",
       "url": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
       "actions": [
@@ -985,11 +985,8 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
       "priceSourceUrl": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
-      "checkedDate": "2026-11-08",
-      "unverified": true,
-      "referencePrice": "$18.26",
-      "referenceLabel": "STEPPERONLINE China warehouse offer · verified Nov 8",
-      "referenceUrl": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s"
+      "checkedDate": "2026-11-17",
+      "unverified": false
     },
     {
       "id": "nema23-closed-loop-kit",
@@ -1477,7 +1474,7 @@
       "specs": [
         "Local appointment"
       ],
-      "note": "The shop advertises vehicle window-tint packages starting at $195. Confirm the vehicle, windows included, selected film and final quote with the shop.",
+      "note": "Nix advertises tint from $195 on its general service page. The shop lists its online Vehicle Tint Package from $225. Confirm the price for your vehicle, windows and choice of film with the Richmond shop.",
       "caption": "Window film example",
       "photoSource": "https://vvividshop.com/products/vvivid-dark-black-transparent-window-tint",
       "url": "https://www.nixmobiledetail.com/window-tint-richmond-tx",
@@ -1485,13 +1482,17 @@
         [
           "Get a local quote",
           "https://www.nixmobiledetail.com/window-tint-richmond-tx"
+        ],
+        [
+          "View Vehicle Tint Package · from $225",
+          "https://www.nixmobiledetail.com/service-page/vehicle-tint-package"
         ]
       ],
       "image": "/birthday/images/window-tint-product.png",
-      "checkedDate": "2026-11-10",
+      "checkedDate": "2026-11-17",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.nixmobiledetail.com/window-tint-richmond-tx",
-      "priceNote": "Nix Mobile Detail · starting package"
+      "priceNote": "Nix Mobile Detail · general service page"
     },
     {
       "id": "carhartt-double-knee",
@@ -1697,26 +1698,33 @@
       "id": "canon-vixia-hf-w11",
       "brand": "Canon",
       "name": "VIXIA HF W11 camcorder",
-      "price": "Current price unavailable",
-      "unverified": true,
+      "price": "$335.80",
+      "unverified": false,
       "specs": [
         "Full HD · 1080p"
       ],
-      "note": "This model records Full HD, not 4K. B&H lists it as no longer available; a current seller and price need confirmation.",
+      "note": "The exact Black VIXIA HF W11 records Full HD (1080p) and has 32 GB of internal storage. The eBay seller reports testing it and includes a charger and USB cable. One used unit was left at the $335.80 November 17 sale price. The seller does not accept returns. Confirm the current price, stock and delivery to 77204 or 77406. The Canon photo shows the model.",
       "caption": "Canon product photo",
-      "url": "https://www.bhphotovideo.com/c/product/1451711-REG/canon_3908c001_vixia_hf_w11_waterproof.html",
+      "url": "https://www.ebay.com/itm/327035388027",
       "actions": [
         [
-          "View model · B&H",
+          "Check used offer · eBay · $335.80 at review",
+          "https://www.ebay.com/itm/327035388027"
+        ],
+        [
+          "B&H model page · no longer available",
           "https://www.bhphotovideo.com/c/product/1451711-REG/canon_3908c001_vixia_hf_w11_waterproof.html"
         ]
       ],
       "image": "/birthday/images/canon-vixia-hf-w11-editorial.png",
-      "checkedDate": "2026-11-03",
+      "checkedDate": "2026-11-17",
       "photoSource": "https://www.usa.canon.com/support/p/vixia-hf-w11",
       "imageStyle": "cutout",
-      "priceNote": "B&H · no longer available",
-      "priceSourceUrl": "https://www.bhphotovideo.com/c/product/1451711-REG/canon_3908c001_vixia_hf_w11_waterproof.html"
+      "priceNote": "eBay · cheaper.for.you.now · used · Nov 17 sale",
+      "priceSourceUrl": "https://www.ebay.com/itm/327035388027",
+      "referencePrice": "$353.47",
+      "referenceLabel": "Previous price reported by the eBay seller",
+      "referenceUrl": "https://www.ebay.com/itm/327035388027"
     },
     {
       "id": "braces",
