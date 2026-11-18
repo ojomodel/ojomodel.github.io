@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-17",
+  "lastReviewed": "2026-11-18",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -649,7 +649,7 @@
         "Brass",
         "M3 × 5.7 mm"
       ],
-      "note": "Choose ruthex RX-M3x5.7, 100 pieces. Amazon’s direct link selected a different thread size on November 14. The exact M3 pack was $9.99 on November 12, sold by ruthex and shipped by Amazon. 3DJake lists the exact 100-pack at $8.28 USD with estimated U.S. shipping of $37.93. Confirm the delivered total at checkout. Printed holes must match the chosen insert.",
+      "note": "Choose ruthex RX-M3x5.7, 100 pieces. Amazon’s direct link selected a different thread size on November 18. The exact M3 pack was $9.99 on November 12, sold by ruthex and shipped by Amazon. 3DJake listed the exact 100-pack in stock at $8.23 USD. Its published US shipping rates start at $31.43. Confirm the delivered total for your ZIP. Printed holes must match the chosen insert.",
       "caption": "RX-M3x5.7 insert detail · 100 pieces requested",
       "url": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
       "actions": [
@@ -658,7 +658,7 @@
           "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
         ],
         [
-          "Optional 100-pack · 3DJake · $8.28 + shipping",
+          "3DJake 100-pack ($8.23 + shipping)",
           "https://www.3djake.com/ruthex/threaded-insert-m3-100-pieces"
         ],
         [
@@ -669,7 +669,7 @@
       "image": "/birthday/images/heat-set-threaded-inserts-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.3djake.de/ruthex/gewindeeinsatz-m3-100-stueck",
-      "checkedDate": "2026-11-14",
+      "checkedDate": "2026-11-18",
       "unverified": true,
       "referencePrice": "$9.99",
       "referenceLabel": "Amazon M3 / 100-piece offer · last verified November 12, 2026",
@@ -856,8 +856,8 @@
         "5 mm D-shaft; 24 mm shaft length",
         "2.1 A/phase; 76 Ncm holding torque"
       ],
-      "price": "Check current price",
-      "priceNote": "STEPPERONLINE · current warehouse price unverified",
+      "price": "$13.24",
+      "priceNote": "STEPPERONLINE · China warehouse · US stock at $17.51",
       "priceSourceUrl": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s",
       "url": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s",
       "actions": [
@@ -880,23 +880,20 @@
           "https://www.omc-stepperonline.com/download/17HS24-2104S.pdf"
         ]
       ],
-      "note": "17HS24-2104S has a 60 mm body and weighs 500 g. The last verified manufacturer listing specified 76 Ncm. Its older URL and dimension drawing use 65 Ncm. On November 4, both warehouses showed stock. The China item price was $13.24 and the US item price was $17.51. Confirm current stock, shipping and tax. Local pickup remains unverified. Motor only: a separate suitable current-limited stepper driver, DC power supply and controller are required. Exact-model STEP is offered with manufacturer sign-in. CAD availability does not confirm fit or sufficient torque for a particular robot arm.",
+      "note": "17HS24-2104S has a 60 mm body and weighs 500 g. The manufacturer listing specifies 76 Ncm. Its older URL and dimension drawing use 65 Ncm. On November 18, STEPPERONLINE listed this exact motor in stock at $13.24 in China and $17.51 in the US before shipping and tax. Confirm the final shipping cost and delivery window. Local pickup remains unverified. Motor only: a separate suitable current-limited stepper driver, DC power supply and controller are required. Exact-model STEP is offered with manufacturer sign-in. CAD availability does not confirm fit or sufficient torque for a particular robot arm.",
       "caption": "17HS24-2104S - official motor photo",
       "image": "/birthday/images/nema17-long-body-motor.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s",
-      "checkedDate": "2026-11-04",
-      "referencePrice": "$13.24",
-      "referenceLabel": "STEPPERONLINE China warehouse offer · verified Nov 4",
-      "referenceUrl": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s",
-      "unverified": true
+      "checkedDate": "2026-11-18",
+      "unverified": false
     },
     {
       "id": "nema17-planetary-geared-motor",
       "brand": "STEPPERONLINE",
       "name": "NEMA 17 planetary geared stepper motor",
-      "price": "Check current price",
-      "priceNote": "STEPPERONLINE · current warehouse price unverified",
+      "price": "$28.86",
+      "priceNote": "STEPPERONLINE · China warehouse · US stock at $35.96",
       "specs": [
         "17HS19-1684S-PG5",
         "42 × 42 mm frame",
@@ -904,7 +901,7 @@
         "5.18:1 planetary gearbox",
         "8 mm shaft · 1.68 A/phase"
       ],
-      "note": "One motor with integrated 5.18:1 planetary gearbox: 48 mm motor plus 27.3 mm gearbox, excluding the 20 mm output shaft. A stepper driver, suitable power supply and controller are separate. On November 4, the China warehouse listed one unit at $28.86. The US warehouse was in stock and added $7.10 before shipping. Current warehouse offers need confirmation. Confirm the final warehouse price, shipping and delivery to 77406. The current page and older drawing differ in gearbox torque/backlash ratings, so confirm the current revision before load calculations. STEP download requires manufacturer sign-in; public dimension drawings are linked separately.",
+      "note": "One motor with integrated 5.18:1 planetary gearbox: 48 mm motor plus 27.3 mm gearbox, excluding the 20 mm output shaft. A stepper driver, suitable power supply and controller are separate. On November 18, STEPPERONLINE listed this exact motor in stock at $28.86 in China and $35.96 in the US before shipping and tax. Confirm shipping and delivery to 77204 or 77406. The current page and older drawing differ in gearbox torque/backlash ratings, so confirm the current revision before load calculations. STEP download requires manufacturer sign-in; public dimension drawings are linked separately.",
       "caption": "17HS19-1684S-PG5 · motor and planetary gearbox",
       "url": "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-48mm-w-gear-ratio-5-1-planetary-gearbox-17hs19-1684s-pg5",
       "actions": [
@@ -935,11 +932,8 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-48mm-w-gear-ratio-5-1-planetary-gearbox-17hs19-1684s-pg5",
       "priceSourceUrl": "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-48mm-w-gear-ratio-5-1-planetary-gearbox-17hs19-1684s-pg5",
-      "checkedDate": "2026-11-04",
-      "referencePrice": "$28.86",
-      "referenceLabel": "STEPPERONLINE China warehouse offer · verified Nov 4",
-      "referenceUrl": "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-48mm-w-gear-ratio-5-1-planetary-gearbox-17hs19-1684s-pg5",
-      "unverified": true
+      "checkedDate": "2026-11-18",
+      "unverified": false
     },
     {
       "id": "nema23-open-loop-motor",
@@ -992,8 +986,8 @@
       "id": "nema23-closed-loop-kit",
       "brand": "STEPPERONLINE",
       "name": "NEMA 23 closed-loop motor and driver kit",
-      "price": "Check current price",
-      "priceNote": "STEPPERONLINE · current warehouse price unverified",
+      "price": "$58.66",
+      "priceNote": "STEPPERONLINE · China warehouse · US backorder",
       "specs": [
         "1-CL57T-S20-V41",
         "57 mm NEMA 23 frame",
@@ -1001,7 +995,7 @@
         "CL57T-V4.1 driver + extension cables",
         "24–48 V DC supply required separately"
       ],
-      "note": "Includes one 23HS30-5004D-E1000 motor, CL57T-V4.1 driver, CABLE-PC-1 RS232 debugging cable, CE2M encoder extension and CM2M-20 motor extension. DC power supply and motion controller are not included. The current motor drawing specifies a 98 mm body and 21 mm output shaft; the product table/older drawing says 101 mm, so confirm the supplied revision before designing mounts. On November 4, the China warehouse listed the kit in stock at $58.66 and the US warehouse was on backorder. Current warehouse prices and stock need confirmation. Confirm shipping and delivered total to 77406. STEP download requires manufacturer sign-in.",
+      "note": "Includes one 23HS30-5004D-E1000 motor, CL57T-V4.1 driver, CABLE-PC-1 RS232 debugging cable, CE2M encoder extension and CM2M-20 motor extension. DC power supply and motion controller are not included. The current motor drawing specifies a 98 mm body and 21 mm output shaft; the product table/older drawing says 101 mm, so confirm the supplied revision before designing mounts. On November 18, the China warehouse showed the exact kit in stock at $58.66. The US warehouse showed backorder at a listed $74.59. Confirm shipping and the delivered total to 77204 or 77406. STEP download requires manufacturer sign-in.",
       "caption": "NEMA 23 motor · driver and included cables",
       "url": "https://www.omc-stepperonline.com/ts-series-2-0-nm-283-28oz-in-1-axis-closed-loop-stepper-cnc-kit-nema-23-motor-driver-1-cl57t-s20-v41",
       "actions": [
@@ -1032,11 +1026,8 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/ts-series-2-0-nm-283-28oz-in-1-axis-closed-loop-stepper-cnc-kit-nema-23-motor-driver-1-cl57t-s20-v41",
       "priceSourceUrl": "https://www.omc-stepperonline.com/ts-series-2-0-nm-283-28oz-in-1-axis-closed-loop-stepper-cnc-kit-nema-23-motor-driver-1-cl57t-s20-v41",
-      "checkedDate": "2026-11-04",
-      "referencePrice": "$58.66",
-      "referenceLabel": "STEPPERONLINE China warehouse offer · verified Nov 4",
-      "referenceUrl": "https://www.omc-stepperonline.com/ts-series-2-0-nm-283-28oz-in-1-axis-closed-loop-stepper-cnc-kit-nema-23-motor-driver-1-cl57t-s20-v41",
-      "unverified": true
+      "checkedDate": "2026-11-18",
+      "unverified": false
     },
     {
       "id": "pololu-37d-12v-encoder-motor",
@@ -1235,15 +1226,15 @@
       "id": "small-radial-bearings",
       "brand": "NaiveBlue",
       "name": "Small radial bearings",
-      "price": "$6.99",
-      "priceNote": "Amazon · one-time purchase · sold by Beautiful & Gorgeous",
+      "price": "$6.97",
+      "priceNote": "Amazon · one-time purchase · sold by NAIVE BLUE",
       "priceSourceUrl": "https://www.amazon.com/dp/B07H83VV6B",
       "specs": [
         "608ZZ",
         "8 × 22 × 7 mm",
         "10-pack"
       ],
-      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm shaft and mounting dimensions before buying. Amazon showed the $6.99 one-time offer in stock on November 16, sold by Beautiful & Gorgeous and shipped by Amazon, with delivery shown for 77204. Confirm the delivery date and final charges for your ZIP.",
+      "note": "Ten metal-shielded 608ZZ radial bearings, 8 × 22 × 7 mm. Confirm shaft and mounting dimensions before buying. On November 18, Amazon showed the $6.97 one-time offer in stock, sold by NAIVE BLUE and shipped by Amazon. Confirm delivery and final charges for 77204 or 77406.",
       "caption": "Exact 608ZZ bearing pack",
       "url": "https://www.amazon.com/dp/B07H83VV6B",
       "actions": [
@@ -1259,7 +1250,7 @@
       "image": "/birthday/images/small-radial-bearings-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.amazon.com/dp/B07H83VV6B",
-      "checkedDate": "2026-11-16",
+      "checkedDate": "2026-11-18",
       "referencePrice": "$6.79",
       "referenceLabel": "Amazon offer · last verified November 4, 2026",
       "referenceUrl": "https://www.amazon.com/dp/B07H83VV6B",
@@ -1502,12 +1493,16 @@
       "specs": [
         "30 × 30"
       ],
-      "note": "Carhartt lists the black B01 double-front work pants in 30 × 30 at $64.99 and in stock online (SKU 106679-BLKW30L30). Check Academy Cinco Ranch first for pickup. Its price and stock for this size still need confirmation. The photo shows a worn B01 styling example.",
+      "note": "C-A-L Ranch showed the exact Black B01 double-front pants in 30 × 30 in stock for shipping at $64.99 on November 18. Select Black / 30 × 30 (retailer SKU 21052549) and confirm delivery to 77204 or 77406. Carhartt’s $64.99 direct offer was verified November 14. Academy did not show an orderable Black 30 × 30 SKU on November 18. Cinco Ranch shelf stock remains unverified. The photo shows a worn B01 styling example.",
       "caption": "Styling photo - worn B01 example",
-      "url": "https://www.carhartt.com/Categories/Carhartt-Collections/Fabric-%26-Linings/Duck-Gear/Loose-Fit-Firm-Duck-Double-Front-Utility-Work-Pant/p/106679-BLKW30L30",
+      "url": "https://www.calranch.com/products/clothing/mens/mens-jeans-pants/mens-pants/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant-02105106679-blk",
       "actions": [
         [
-          "Shop Black / 30 × 30 · Carhartt",
+          "Shop Black / 30 × 30 · C-A-L Ranch · $64.99",
+          "https://www.calranch.com/products/clothing/mens/mens-jeans-pants/mens-pants/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant-02105106679-blk"
+        ],
+        [
+          "Check current direct offer · Carhartt",
           "https://www.carhartt.com/Categories/Carhartt-Collections/Fabric-%26-Linings/Duck-Gear/Loose-Fit-Firm-Duck-Double-Front-Utility-Work-Pant/p/106679-BLKW30L30"
         ],
         [
@@ -1520,11 +1515,11 @@
         ]
       ],
       "image": "/birthday/images/carhartt-b01-editorial.jpg",
-      "checkedDate": "2026-11-14",
+      "checkedDate": "2026-11-18",
       "photoSource": "https://shop.mavazi.jp/items/109109797",
       "imageStyle": "landscape",
-      "priceNote": "Carhartt · Black / 30 × 30 · in stock online",
-      "priceSourceUrl": "https://www.carhartt.com/Categories/Carhartt-Collections/Fabric-%26-Linings/Duck-Gear/Loose-Fit-Firm-Duck-Double-Front-Utility-Work-Pant/p/106679-BLKW30L30",
+      "priceNote": "C-A-L Ranch · Black / 30 × 30 · in stock online",
+      "priceSourceUrl": "https://www.calranch.com/products/clothing/mens/mens-jeans-pants/mens-pants/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant-02105106679-blk",
       "referencePrice": "$59.99",
       "referenceLabel": "Academy displayed price · last verified Nov 2",
       "referenceUrl": "https://www.academy.com/p/carhartt-mens-b01-loose-fit-firm-duck-double-front-utility-work-pant",
@@ -1607,20 +1602,32 @@
         "Medium",
         "All colors"
       ],
-      "note": "Medium, all colors. Black is pictured. TikTok Shop seller FB County showed Black, Navy and Grey in Medium at $38.98 each on November 9, with $8.99 shipping shown then. Check current exact-size prices, stock and shipping to 77204 or 77406.",
+      "note": "Medium, all colors. Black is pictured. TikTok Shop seller FB County showed Black, Navy and Grey in Medium at $38.98 each on November 9, with $8.99 shipping shown then. The FB County website showed Medium in stock on November 18 at $23.99 in Black or Navy and $28.49 in Grey. Confirm final prices and shipping to 77204 or 77406.",
       "caption": "Black - FB County model photo",
       "url": "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089",
       "actions": [
         [
           "Shop · TikTok Shop",
           "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089"
+        ],
+        [
+          "Black Medium · FB County · $23.99",
+          "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts?variant=45596596404382"
+        ],
+        [
+          "Navy Medium · FB County · $23.99",
+          "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts?variant=45596596666526"
+        ],
+        [
+          "Grey Medium · FB County · $28.49",
+          "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts?variant=45596619505822"
         ]
       ],
-      "checkedDate": "2026-11-09",
+      "checkedDate": "2026-11-18",
       "priceNote": "TikTok Shop · Nov 9 offer · $38.98 each",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/basketball-mesh-shorts-by-fb-county-heavyweight-unisex-3-pockets/1731336232320930089",
-      "referencePrice": "$29.99",
-      "referenceLabel": "FB County website price · last verified November 8, 2026",
+      "referencePrice": "$23.99–$28.49",
+      "referenceLabel": "FB County website · Medium by color · verified Nov 18",
       "referenceUrl": "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts",
       "unverified": true,
       "photoSource": "https://fbcountyusa.com/products/fb-county-heavyweight-basketball-shorts",
@@ -1638,7 +1645,7 @@
         "Small",
         "White & black"
       ],
-      "note": "White and black, Small. TikTok Shop seller ShakaWear showed both requested colors at $18 each on November 8. Check current prices, stock and shipping to 77204 or 77406.",
+      "note": "White and black, Small. TikTok Shop seller ShakaWear showed both requested colors at $18 each on November 8. Shaka Wear’s website showed both Small colors in stock at $17.90 each on November 18. Confirm shipping and final price to 77204 or 77406.",
       "caption": "Black · Shaka Wear photo",
       "alternate": {
         "label": "View white",
@@ -1649,14 +1656,22 @@
         [
           "Shop · TikTok Shop",
           "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889"
+        ],
+        [
+          "White Small · Shaka Wear · $17.90",
+          "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve?Size=S&Color=White"
+        ],
+        [
+          "Black Small · Shaka Wear · $17.90",
+          "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve?Size=S&Color=Black"
         ]
       ],
-      "checkedDate": "2026-11-08",
+      "checkedDate": "2026-11-18",
       "imageStyle": "portrait",
       "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/oversized-long-sleeve-shirt-by-unknown-brand-for-comfort-style/1730955345197961889",
       "referencePrice": "$17.90",
-      "referenceLabel": "Shaka Wear retail price",
+      "referenceLabel": "Shaka Wear · Small in White or Black · verified Nov 18",
       "referenceUrl": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-long-sleeve",
       "unverified": true
     },
@@ -1672,7 +1687,7 @@
         "Medium",
         "Deep Burgundy & Dark Navy"
       ],
-      "note": "Deep Burgundy and Dark Navy, Medium. TikTok Shop seller ShakaWear showed both requested colors at $23.90 each on November 8. Check current prices, stock and shipping to 77204 or 77406.",
+      "note": "Deep Burgundy and Dark Navy, Medium. TikTok Shop seller ShakaWear showed both requested colors at $23.90 each on November 8. Shaka Wear’s website showed both Medium colors in stock at $13.90 each on November 18. Confirm shipping and final price to 77204 or 77406.",
       "caption": "Deep Burgundy · Shaka Wear photo",
       "alternate": {
         "label": "View navy",
@@ -1683,32 +1698,40 @@
         [
           "Shop · TikTok Shop",
           "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105"
+        ],
+        [
+          "Deep Burgundy Medium · Shaka Wear · $13.90",
+          "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee?Size=M&Color=Deep+Burgundy"
+        ],
+        [
+          "Dark Navy Medium · Shaka Wear · $13.90",
+          "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee?Size=M&Color=Dark+Navy"
         ]
       ],
-      "checkedDate": "2026-11-08",
+      "checkedDate": "2026-11-18",
       "unverified": true,
       "imageStyle": "portrait",
       "photoSource": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee",
       "priceSourceUrl": "https://shop.tiktok.com/us/pdp/short-sleeve-t-shirt-7-5oz-max-heavyweight-oversized-design/1730955347467539105",
-      "referencePrice": "From $13.90",
-      "referenceLabel": "Shaka Wear retail price",
+      "referencePrice": "$13.90",
+      "referenceLabel": "Shaka Wear · Medium in Deep Burgundy or Dark Navy · verified Nov 18",
       "referenceUrl": "https://www.shakawear.com/products/7-5oz-max-heavyweight-oversized-tee"
     },
     {
       "id": "canon-vixia-hf-w11",
       "brand": "Canon",
       "name": "VIXIA HF W11 camcorder",
-      "price": "$335.80",
-      "unverified": false,
+      "price": "Check current price",
+      "unverified": true,
       "specs": [
         "Full HD · 1080p"
       ],
-      "note": "The exact Black VIXIA HF W11 records Full HD (1080p) and has 32 GB of internal storage. The eBay seller reports testing it and includes a charger and USB cable. One used unit was left at the $335.80 November 17 sale price. The seller does not accept returns. Confirm the current price, stock and delivery to 77204 or 77406. The Canon photo shows the model.",
+      "note": "The Black VIXIA HF W11 records Full HD (1080p) and has 32 GB of internal storage. The eBay seller described a tested unit with a charger and USB cable and no returns. The timed $335.80 November 17 sale expired. The current price, availability and delivery to 77204 or 77406 could not be verified. The Canon photo shows the model.",
       "caption": "Canon product photo",
       "url": "https://www.ebay.com/itm/327035388027",
       "actions": [
         [
-          "Check used offer · eBay · $335.80 at review",
+          "Check used offer · eBay",
           "https://www.ebay.com/itm/327035388027"
         ],
         [
@@ -1717,13 +1740,13 @@
         ]
       ],
       "image": "/birthday/images/canon-vixia-hf-w11-editorial.png",
-      "checkedDate": "2026-11-17",
+      "checkedDate": "2026-11-18",
       "photoSource": "https://www.usa.canon.com/support/p/vixia-hf-w11",
       "imageStyle": "cutout",
-      "priceNote": "eBay · cheaper.for.you.now · used · Nov 17 sale",
+      "priceNote": "eBay · used · current price and stock unverified",
       "priceSourceUrl": "https://www.ebay.com/itm/327035388027",
-      "referencePrice": "$353.47",
-      "referenceLabel": "Previous price reported by the eBay seller",
+      "referencePrice": "$335.80",
+      "referenceLabel": "eBay sale price · November 17, expired",
       "referenceUrl": "https://www.ebay.com/itm/327035388027"
     },
     {
