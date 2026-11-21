@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-18",
+  "lastReviewed": "2026-11-21",
   "pickupZip": "77406",
   "pickupNote": "I’ll pick it up myself. Just text me.",
   "items": [
@@ -384,7 +384,7 @@
         "Men’s US 7",
         "Core Black / Cloud White / Carbon"
       ],
-      "note": "Nordstrom’s Black listing shows $112.50, down from $150 (25% off). Confirm the price, stock and pickup options for men’s US 7. A November 2 check offered ship-to-store pickup at Nordstrom Rack Market at Town Center in Sugar Land, with November 7 arrival shown. adidas lists $150, with a $120 adiClub member price. Size 7 availability still needs confirmation.",
+      "note": "Nordstrom’s Black listing shows $112.50, down from $150 (25% off). Confirm the price, stock and pickup options for men’s US 7. A November 2 check offered ship-to-store pickup at Nordstrom Rack Market at Town Center in Sugar Land, with November 7 arrival shown. On November 21, adidas’s public Core Black / Cloud White / Carbon listing showed a $120 Black Friday sale price from $150. The price and availability of men’s US 7 still need confirmation.",
       "caption": "Black JR4728 · official adidas product photo",
       "url": "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090",
       "actions": [
@@ -393,12 +393,12 @@
           "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090"
         ],
         [
-          "Check size 7 · adidas · $150 / $120 for members",
+          "Check size 7 · adidas · $120 Black Friday listing",
           "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html"
         ]
       ],
       "image": "/birthday/images/adidas-evo-sl-product.png",
-      "checkedDate": "2026-11-13",
+      "checkedDate": "2026-11-21",
       "photoSource": "https://www.adidas.com/us/adizero-evo-sl-shoes/JR4728.html",
       "imageStyle": "cutout",
       "priceSourceUrl": "https://www.nordstrom.com/s/adidas-adizero-evo-sl-running-shoe-men/8690090",
@@ -649,7 +649,7 @@
         "Brass",
         "M3 × 5.7 mm"
       ],
-      "note": "Choose ruthex RX-M3x5.7, 100 pieces. Amazon’s direct link selected a different thread size on November 18. The exact M3 pack was $9.99 on November 12, sold by ruthex and shipped by Amazon. 3DJake listed the exact 100-pack in stock at $8.23 USD. Its published US shipping rates start at $31.43. Confirm the delivered total for your ZIP. Printed holes must match the chosen insert.",
+      "note": "Choose ruthex RX-M3x5.7, 100 pieces. Amazon’s direct link selected a different thread size on November 18. The exact M3 pack was $9.99 on November 12, sold by ruthex and shipped by Amazon. On November 21, 3DJake listed the exact 100-pack in stock at a $6.58 USD sale price, with $8.23 shown as the comparison. Its published US shipping rates start at $31.43, making one pack at least $38.01 before tax or other charges. Confirm the delivered total for your ZIP. Printed holes must match the chosen insert.",
       "caption": "RX-M3x5.7 insert detail · 100 pieces requested",
       "url": "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial",
       "actions": [
@@ -658,7 +658,7 @@
           "https://www.amazon.com/s?k=ruthex+M3x5.7+100&i=industrial"
         ],
         [
-          "3DJake 100-pack ($8.23 + shipping)",
+          "3DJake 100-pack ($6.58 sale + shipping)",
           "https://www.3djake.com/ruthex/threaded-insert-m3-100-pieces"
         ],
         [
@@ -669,7 +669,7 @@
       "image": "/birthday/images/heat-set-threaded-inserts-product-only.png",
       "imageStyle": "cutout",
       "photoSource": "https://www.3djake.de/ruthex/gewindeeinsatz-m3-100-stueck",
-      "checkedDate": "2026-11-18",
+      "checkedDate": "2026-11-21",
       "unverified": true,
       "referencePrice": "$9.99",
       "referenceLabel": "Amazon M3 / 100-piece offer · last verified November 12, 2026",
@@ -940,7 +940,7 @@
       "brand": "STEPPERONLINE",
       "name": "NEMA 23 open-loop stepper motor",
       "price": "$18.26",
-      "priceNote": "STEPPERONLINE · China warehouse · US backorder",
+      "priceNote": "STEPPERONLINE · China warehouse · US stock listed",
       "specs": [
         "23HS30-2804S",
         "57 × 57 mm frame",
@@ -948,7 +948,7 @@
         "6.35 mm D shaft",
         "2.8 A/phase · one motor only"
       ],
-      "note": "One full-size bipolar stepper motor. The current manufacturer page rates holding torque at 2.00 Nm; this is holding torque, not guaranteed torque while moving. Driver, power supply and controller are separate. On November 17, the China warehouse showed stock at $18.26. The US warehouse showed zero stock and backorder at a listed $23.67. Confirm current stock, shipping and the delivered total to 77204 or 77406. The older public drawing lists 1.90 Nm and earlier electrical values; use the current linked datasheet for the latest revision. STEP download requires manufacturer sign-in.",
+      "note": "One full-size bipolar stepper motor. The current manufacturer page rates holding torque at 2.00 Nm; this is holding torque, not guaranteed torque while moving. Driver, power supply and controller are separate. On November 21, the manufacturer listed the China warehouse in stock at $18.26 and the US warehouse in stock (20 listed). The US warehouse surcharge of $5.41 makes $23.67 before tax and shipping. Confirm current stock, shipping and the delivered total to 77204 or 77406. The older public drawing lists 1.90 Nm and earlier electrical values; use the current linked datasheet for the latest revision. STEP download requires manufacturer sign-in.",
       "caption": "23HS30-2804S · one NEMA 23 motor",
       "url": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
       "actions": [
@@ -979,7 +979,7 @@
       "imageStyle": "cutout",
       "photoSource": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
       "priceSourceUrl": "https://www.omc-stepperonline.com/nema-23-bipolar-1-8deg-1-9nm-269oz-in-2-8a-3-2v-57x57x76mm-4-wires-23hs30-2804s",
-      "checkedDate": "2026-11-17",
+      "checkedDate": "2026-11-21",
       "unverified": false
     },
     {
