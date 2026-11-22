@@ -1,0 +1,25 @@
+.birthday-lock{margin:0;min-height:100vh;min-height:100svh;box-sizing:border-box;display:grid;place-items:center;padding:32px 20px;background:#0a0a0a;color:#f4f1eb;font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;color-scheme:dark}
+.birthday-lock *{box-sizing:border-box}
+.birthday-lock-card{width:min(100%,390px);padding:40px 30px 28px;border:1px solid #2c2c2c;border-radius:20px;background:#111}
+.birthday-lock-home{display:inline-block;margin-bottom:42px;color:#aaa6a0;font-size:10px;line-height:1.6;letter-spacing:.2em;text-decoration:none;text-transform:uppercase}
+.birthday-lock-home:hover{color:#f4f1eb}
+.birthday-lock-mark{display:grid;place-items:center;width:52px;height:52px;border:1px solid #36372c;border-radius:15px;color:#d7e5a3;background:#1b1e14}
+.birthday-lock h1{margin:22px 0 10px;font-size:32px;line-height:1.15;letter-spacing:-.035em;font-weight:600}
+.birthday-lock-intro{margin:0 0 30px;color:#aaa6a0;font-size:15px;line-height:1.65}
+.birthday-lock-form{display:grid;gap:12px}
+.birthday-lock-form label{font-size:12px;color:#ccc7c0}
+.birthday-lock-form input{width:100%;min-height:54px;border:1px solid #454545;border-radius:9px;padding:12px 16px;color:#f4f1eb;background:#191919;font-size:22px;line-height:1.3;letter-spacing:.4em;font-family:Arial,Helvetica,sans-serif}
+.birthday-lock-form input[aria-invalid=true]{border-color:#e7a08e}
+.birthday-lock-form button{min-height:50px;border:1px solid #d7e5a3;border-radius:9px;padding:12px 18px;background:#d7e5a3;color:#161a0d;font:600 14px/1.4 Arial,Helvetica,sans-serif;cursor:pointer}
+.birthday-lock-form button:hover{background:#e3efb9}
+.birthday-lock-form button:disabled{opacity:.6;cursor:wait}
+.birthday-lock-form input:focus-visible,.birthday-lock-form button:focus-visible,.birthday-lock-home:focus-visible{outline:2px solid #d7e5a3;outline-offset:4px}
+.birthday-lock-status{min-height:42px;margin:4px 0 0;color:#aaa6a0;font-size:13px;line-height:1.6}
+.birthday-lock-status[data-error=true]{color:#efb09f}
+.birthday-lock-noscript{font-size:13px;line-height:1.6;color:#efb09f}
+.birthday-private-tools{box-sizing:border-box;display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap;width:min(1100px,calc(100% - 40px));margin:0 auto;padding:14px 0 0;color:#aaa6a0;font:12px/1.5 Arial,Helvetica,sans-serif}
+.birthday-private-tools button{box-sizing:border-box;min-height:36px;padding:6px 13px;border:1px solid #454545;border-radius:7px;background:#111;color:#e5e2dd;font:500 12px/1.5 Arial,Helvetica,sans-serif;cursor:pointer}
+.birthday-private-tools button:hover{border-color:#aaa6a0;color:#fff}
+.birthday-private-tools button:focus-visible{outline:2px solid #d7e5a3;outline-offset:3px}
+.birthday-private-tools [hidden]{display:none}
+@media(max-width:390px){.birthday-lock-card{padding:32px 22px 24px}.birthday-lock h1{font-size:29px}}

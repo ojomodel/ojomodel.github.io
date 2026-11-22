@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Birthday locked — Oluwaseun Omodele</title>
+  <meta name="description" content="Enter the PIN to open this birthday list.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Birthday locked">
+  <meta property="og:description" content="Enter the PIN to open this birthday list.">
+  <meta property="og:url" content="https://oluwaseuno.com/birthday/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Birthday locked">
+  <meta name="twitter:description" content="Enter the PIN to open this birthday list.">
+  <link rel="canonical" href="https://oluwaseuno.com/birthday/">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/birthday/lock.css?v=20261122">
+  <script src="/birthday/lock.js?v=20261122" defer></script>
+</head>
+<body class="birthday-lock">
+  <main class="birthday-lock-card">
+    <a class="birthday-lock-home" href="/">Oluwaseun Omodele</a>
+    <div class="birthday-lock-mark" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="11" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path><path d="M12 14v3"></path></svg>
+    </div>
+    <h1>Birthday locked</h1>
+    <p class="birthday-lock-intro">Enter the four-digit PIN to open the list.</p>
+    <form class="birthday-lock-form" id="birthday-unlock-form" method="post" novalidate>
+      <label for="birthday-passcode">PIN</label>
+      <input id="birthday-passcode" type="password" inputmode="numeric" pattern="[0-9]{4}" minlength="4" maxlength="4" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="go" required aria-describedby="birthday-lock-status">
+      <button type="submit" id="birthday-unlock-button" disabled>Unlock</button>
+      <p id="birthday-lock-status" class="birthday-lock-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </form>
+    <noscript><p class="birthday-lock-noscript">Turn on JavaScript to unlock this list.</p></noscript>
+  </main>
+</body>
+</html>
